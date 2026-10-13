@@ -1,0 +1,40 @@
+# ---- 备份与副本（手动复制的快照，不入库）----
+vibmon_v2 - 副本/
+*副本*/
+*备份*/
+
+# ---- 压缩包（二进制快照，与源码重复）----
+*.zip
+*.rar
+*.7z
+
+# ---- 编译产物（二进制，不入库）----
+*.exe
+*.o
+*.obj
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+
+# ---- Arduino / arduino-cli 构建目录 ----
+build/
+build-*/
+.arduino/
+arduino-build/
+
+# ---- 编辑器原子写入遗留的临时目录 ----
+.*.tmpdir/
+*.tmpdir/
+
+# ---- 编辑器与系统垃圾 ----
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store

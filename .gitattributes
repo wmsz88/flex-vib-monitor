@@ -1,0 +1,21 @@
+# 换行统一锁定为 LF，避免 Windows 上 autocrlf 造成整文件假改动
+* text=auto eol=lf
+
+# 显式声明文本类型，保证 diff 正常
+*.ino   text eol=lf
+*.h     text eol=lf
+*.hpp   text eol=lf
+*.c     text eol=lf
+*.cpp   text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+
+# 二进制类型（不参与换行转换与文本 diff）
+*.exe   binary
+*.zip   binary
+*.docx  binary
+*.png   binary
+*.jpg   binary
+*.pdf   binary
