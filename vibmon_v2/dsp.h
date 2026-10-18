@@ -1,67 +1,88 @@
 // 信号处理模块：标定、去零偏、高通滤波、RMS 包络、姿态（低频）支路、主频估计。
-//
-// 【本模块在全工程中的位置】
-//   sampler 送来"原始 LSB" → dsp 算出"物理量" → state 判断"是什么状态" → output 打印
-// dsp 是唯一做数值计算的地方：把 raw 换成 mg、滤掉重力、算出幅值与主频。
-// 它不做任何"是/否"判断（除了结果有效性），判定逻辑全在 state，便于单独测试。
-//
-// 【两条并行支路】每个样本进来后同时走两条路，互不干扰：
-//   振动支路：去零偏 → 二阶高通(70Hz) → ①RMS包络(30样本) ②存入主频窗(128样本)
-//             → 输出 env（幅值）与 freqHz（主频）
-//   姿态支路：去零偏 → 一阶低通(0.2s) → 模长 → 输出 ctDev（模块朝向偏离静置的程度）
-//   之所以要分两路：振动（>60Hz）和姿态（≈0Hz）在频域上差了三个数量级，
-//   用同一套滤波参数无法同时照顾好两者，分开处理各取所需。
 #pragma once
 #include <stdint.h>
 #include "sampler.h"
 
-// 标定结果。由 dspCalibrate() 一次算出，之后作为所有阈值的基准长期使用。
-// 现场排障时这些数字是判断"标定是否可信"的依据（outPrintCal 会打印全部字段）。
 struct DspCal {
   float bias[3];       // 零偏 mg
-                       // 三轴零偏矢量。静置时它其实就等于重力矢量，模长应接近 1000mg
   float rawStd[3];     // 阶段A 原始数据标准差 mg（标定质量）
-                       // 标定期间若被碰过，这个值会明显变大，用于判定 quality
   float biasNormMg;    // 零偏模长，静置时应接近 1000mg
   float sigBand[3];    // 高通后带内噪声 sigma mg
-                       // 高通滤掉了重力，剩下的全是噪声+振动。静置标定时它=纯噪声底，
-                       // 用于自适应设定过零阈值（ZCL_K × sigma）
   float envRest;       // 静置包络 mg
-                       // 静置时 RMS 包络的实测值，作为启停阈值的基准（TH_HI_K × envRest）
   float ctRest;        // 静置姿态偏差 mg
-                       // 静置时 ctDev 的实测值，作为接触阈值的基准（CT_K × ctRest）
   float zcl;           // 过零阈值 mg
-                       // 主频估计用的滞回阈值，抗噪核心参数
   uint32_t nBias;      // 阶段A 样本数
-                       // 用于判断标定是否真的采够了数据（<200 视为失败）
-  bool  ok;            // 标定流程完成
-                       // true 表示上面各字段已填充且可用；false 时下游沿用默认阈值
-  bool  quality;       // 标定期间确实静置（标准差、模长都合格）
-                       // ok 与 quality 是两件事：ok=流程跑完了，quality=数据可信。
-                       // 流程可能跑完但期间被碰过，此时 ok=true 而 quality=false
+  uint8_t  fsSel;      // 标定时的 ACCEL_FS_SEL（诊断用，不做运行期一致性检查）
+  bool  ok;            // 【语义】当前生效配置是否来自一次成功标定
+                       //   true  = 有一份可信配置在跑（可能是上次成功的）
+                       //   false = 从未成功过，阈值仍是编译期默认值
+                       // 它不表示"本次流程是否跑完"，后者看 DspCalReport
+  bool  quality;       // 当前生效配置来自静置合格的标定
+};
+
+// 本次标定尝试的结果。与 DspCal 是两个维度：
+//   DspCal       回答"现在用的是哪套参数、可不可信"
+//   DspCalReport 回答"刚才那次尝试怎么样、为什么失败"
+enum CalResult : uint8_t {
+  CALRES_NONE = 0,             // 本次上电还没跑过标定
+  CALRES_OK,                   // 本次成功，已提交
+  CALRES_ERR_SAMPLES,          // 阶段A 样本不足
+  CALRES_ERR_STAGE_A,          // 阶段A 静置质量不合格（std 或模长超限）
+  CALRES_ERR_STAGE_B,          // 阶段B 数据不足 / 参数非有限
+  CALRES_ERR_STAGE_B_QUALITY,  // 阶段B 削顶 / 静置包络或姿态偏差超限
+  CALRES_ERR_TIMER,            // 阶段B 采样器启动失败
+  CALRES_ERR_STOP_TIMEOUT,     // 阶段B 结束时采样回调未退出
+};
+
+// 本次尝试的诊断证据：成功失败都填，供串口排障
+struct DspCalReport {
+  CalResult result;
+  uint32_t  nBias;        // 阶段A 样本数（失败时也能看）
+  float     rawStdMax;    // 阶段A 最大标准差
+  float     biasNormMg;   // 阶段A 零偏模长
+  float     envRest;      // 阶段B 静置包络（没走到阶段B 时为 0）
+  float     ctRest;       // 阶段B 静置姿态偏差
+  uint16_t  stageBClip;   // 阶段B 削顶样本数（取自 samplerStats().clip 差值）
+};
+
+// 本窗削顶等级：由主轴上的削顶比例决定
+//   幅值与主频的判据故意不同——
+//   幅值是合成 RMS，任意轴削顶都让它偏小；
+//   主频只看主轴，非主轴削顶不破坏过零序列。
+enum ClipLevel : uint8_t {
+  CLIP_NONE = 0,    // 主轴无削顶
+  CLIP_MILD,        // 主轴削顶 < CLIP_SEVERE_RATIO：幅值失效，主频保留
+  CLIP_SEVERE,      // 主轴削顶 >= CLIP_SEVERE_RATIO：幅值和主频都失效
 };
 
 // 每个样本处理后的输出；各 *Ready 标志表示本样本是否产生了对应的新结果
-// （不是每个样本都会产生包络和主频：包络每 10 个样本一次，主频每 64 个样本一次）
 struct DspFrame {
   float fx, fy, fz;    // 高通后三轴 mg
-                       // 已去掉重力和零偏，只剩振动分量。仅供示波器组观察
-  bool  envReady;      // true 表示本样本刷新了包络，env/ctDev 有效
+  bool  envReady;
   float env;           // 合成 RMS 包络 mg
-                       // 三轴平方和的均方根，代表"振动有多强"，是启停判据的输入
   float ctDev;         // 姿态偏差 mg（每轴低通后相对零偏的模长）
-                       // 静置时接近 0（或某个稳定小值），模块被转动/按压时增大
-  bool  winReady;      // true 表示本样本跑完了一个主频窗，freqHz/axis/winClip 有效
+  bool  winReady;
   float freqHz;        // 0 = 本窗无有效主频
   uint8_t axis;        // 本窗选用的主轴 0/1/2
-                       // 取方差最大的轴：振动主方向上的信噪比最好
-  uint16_t winClip;    // 本窗削顶样本数
-                       // 非 0 说明该窗内波形被削平，主频读数需要打折看待
+  // ---- 削顶质量字段（每样本重新初始化，见 dspProcess 开头）----
+  uint16_t  winClip;       // 主轴上的削顶数（真窗口计数，覆盖最近 BLOCK_N 个样本）
+  ClipLevel clipLevel;     // 主轴削顶等级
+  bool      sampleClipped; // 本样本任意轴是否削顶（逐样本，用于立即失效）
+  bool      envClipped;    // 最近 ENV_WIN 样本内任意轴是否削顶（用于判断能否恢复）
+  uint8_t   clipAxisMask;  // 本样本哪些轴削顶：bit0=X, bit1=Y, bit2=Z
 };
 
-void dspInit(void);                       // 上电调用一次：算滤波器系数 + 清状态
+void dspInit(void);
 void dspReset(void);                      // 清空滤波器、包络、历史窗（不清标定）
-void dspOnGap(uint32_t missed);           // 采样不连续：窗口重新攒满前不出主频
-void dspProcess(const Sample& s, DspFrame* out);   // 每样本主处理链
-bool dspCalibrate(void);                  // 会停止并重置采样器，返回时采样器处于停止状态
-const DspCal& dspCal(void);               // 读取当前标定结果（只读）
+void dspOnGap(const SamplerGap& gap);    // 任何缺口：窗口/高通/包络全部重置
+void dspProcess(const Sample& s, DspFrame* out);
+
+// 事务化标定：先算到候选，全部校验通过才一次性提交；任一失败 s_cal 一个字节都不变。
+// 合约：无论成功失败，返回时采样器处于停止状态、DSP 状态已清空、
+//       候选与标定模式标志均已复位。
+bool dspCalibrate(void);
+
+const DspCal&        dspCal(void);         // 当前生效参数（只读）
+CalResult            dspCalLastResult(void);
+const DspCalReport&  dspCalReport(void);
+const char*          calResultStr(CalResult r);
