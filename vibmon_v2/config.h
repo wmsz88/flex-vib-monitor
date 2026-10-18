@@ -34,7 +34,7 @@
 #define MPU_ADDR         0x68    // AD0 接地
 #define I2C_CLOCK        200000UL // I2C 时钟 Hz。400k 更快但线长/上拉不足时易出错，200k 留余量
 #define I2C_TIMEOUT_MS   5       // 采样回调里不能长时间阻塞
-#define ACCEL_FS_SEL     0       // 0=±2g 1=±4g 2=±8g 3=±16g
+#define ACCEL_FS_SEL     1       // 0=±2g 1=±4g 2=±8g 3=±16g
                                  // 量程越小分辨率越高：±2g 时 16384 LSB/g（见 mpuLsbPerG）
                                  // 换量程必须同时确认振动峰值不削顶，否则主频会被削平的波形带偏
 #define DLPF_CFG         0       // 0 = 加速度带宽 260Hz（保住 180Hz）
