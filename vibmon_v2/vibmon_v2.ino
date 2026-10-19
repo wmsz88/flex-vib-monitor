@@ -6,6 +6,7 @@
 #include "dsp.h"
 #include "state.h"
 #include "output.h"
+#include "motor_test.h"     // 【临时调试】默认关闭（MOTOR_TEST_ENABLE=0）
 
 static bool     s_fault = false;
 static uint32_t s_lastRecoverMs = 0;
@@ -81,6 +82,9 @@ void setup() {
   outBegin();
   delay(300);
   outPrintBanner();
+#if MOTOR_TEST_ENABLE
+  motorTestBegin();       // 【临时调试】同板驱动马达
+#endif
   dspInit();
 
   if (!bringUpSensor()) { enterFault("传感器初始化失败"); return; }
@@ -140,6 +144,7 @@ void loop() {
       samplerNoteOutUs((uint32_t)micros() - tOut);
     }
     stateTick((uint32_t)micros());
+    stateTickTouchRef((uint32_t)micros());   // 参考点采集结算（非阻塞）
     if (samplerSensorLost()) enterFault("传感器无响应");
   }
 
@@ -165,6 +170,9 @@ void loop() {
   ledUpdate(nowMs, stateResult());
   outPeriodic(nowMs);
   compPeriodic(nowMs);      // COMP_FRAME_ENABLED=0 时编译为空
+#if MOTOR_TEST_ENABLE
+  motorTestTick(nowMs);     // 【临时调试】推进马达扫频
+#endif
 
   // 本轮回合做了重活：下一轮重置基准，避免把重活耗时计入 loopUs
   if (didHeavy) s_loopStatsResetPending = true;

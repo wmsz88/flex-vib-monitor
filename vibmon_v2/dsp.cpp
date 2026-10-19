@@ -233,6 +233,19 @@ void dspProcess(const Sample& s, DspFrame* out) {
   const float aLp = 1.0f / ((float)FS_HZ * CT_LPF_TAU_S);
   for (int a = 0; a < 3; a++) s_lp[a] += (d[a] - s_lp[a]) * aLp;
   out->ctDev = sqrtf(s_lp[0] * s_lp[0] + s_lp[1] * s_lp[1] + s_lp[2] * s_lp[2]);
+  /* 【Q4】同时输出三轴低通值，保留方向信息。
+   * ctDev 是模长，"哪个轴在变、往哪个方向变"这种信息被压掉了；
+   * 接触可能只表现在某一轴上，分轴看才能分析。
+   *
+   * 【语义】s_lp 是**相对标定零偏后的偏差量**，不是含重力的绝对值。
+   *   因为 d[a] 在上面已经减掉了 ac.bias[a]（bias 就是标定姿态的重力向量），
+   *   所以静置时 ctAxis ≈ (0,0,0)。
+   *   这与 ctRest 的实测值一致：静置姿态偏差约 0.1mg，若含重力会是 1000mg，
+   *   阈值就会变成 4000mg 而不是实测的 30~56mg。
+   *   要还原绝对朝向，把 dspCal().bias[a] 加回来即可。 */
+  out->ctAxis[0] = s_lp[0];
+  out->ctAxis[1] = s_lp[1];
+  out->ctAxis[2] = s_lp[2];
 
   /* 振动支路 */
   float f[3];

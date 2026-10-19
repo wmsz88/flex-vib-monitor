@@ -2,6 +2,7 @@
 #include "config.h"
 #include "mpu.h"
 #include "sampler.h"
+#include "motor_test.h"     // 【临时调试】MOTOR_TEST_ENABLE=0 时无实际内容
 #include <Arduino.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -24,6 +25,20 @@ static uint8_t s_waveDecimCnt = 0;
 static uint32_t s_waveDropped = 0;
 
 static const char* const kPlotName[PLOT_COUNT] = {"关", "结果", "启停包络", "接触", "三轴波形"};
+
+/* ---- Q4 打标模式 ----
+ * s_label    当前人工标签 0~6（k0~k6）
+ * s_labelMode 是否处于打标模式（独占串口，只输出 CSV）
+ * s_csvSeq   CSV 行序号，用于离线检测丢行
+ */
+static bool     s_labelMode = false;
+static uint8_t  s_label     = 0;
+static uint32_t s_csvSeq    = 0;
+static uint16_t s_csvDecimCnt = 0;
+
+/* CSV 抽取比 = 1kHz / 100Hz = 10，即每 10 个样本输出一行。
+ * 不用 1kHz 是因为数据量大 100 倍，而接触判据关心的是几十~几百 ms 尺度的变化。 */
+#define CSV_DECIM      (FS_HZ / (FS_HZ / ENV_HOP))
 
 void outBegin(void) {
 #if OUT_USB_CDC
@@ -206,13 +221,29 @@ void outPrintStatus(void) {
             r.calOk ? "有效" : "未标定",
             r.calQuality ? "合格" : "可疑",
             (unsigned)s_plot, kPlotName[s_plot], s_dbg ? "开" : "关");
-  outPrintf("主频 %.1f Hz(%s%s)  幅值 %.1f mg(%s)  振动 %u  启停 %.2f Hz(%s, %u 周期)  接触 %u  主轴 %c\n",
+  outPrintf("主频 %.1f Hz(%s%s)  幅值 %.1f mg(%s)  振动 %u  启停 %.2f Hz(%s, %u 周期)\n",
             fin(r.freqHz), r.freqValid ? "有效" : "无效",
             r.freqClipLimited ? ",削顶降级" : "",
             fin(r.ampMg), r.ampValid ? "可信" : "不可信",
             (unsigned)r.vib,
-            fin(r.ssHz), r.ssValid ? "有效" : "未确立", (unsigned)r.ssPeriods, (unsigned)r.contact,
-            'X' + r.axis);
+            fin(r.ssHz), r.ssValid ? "有效" : "未确立", (unsigned)r.ssPeriods);
+  /* 接触单独一行：必须显式区分"未接触"和"不知道"（contactValid=false 时判据不可信） */
+#if CT_MODE == 2
+  if (stateTouchRefCapturing()) {
+    outPrintf("接触 采集中… 请保持握住不动（尚未生效）\n");
+  } else if (r.ctRefSet) {
+    outPrintf("接触 %u(%s)  到接触姿态 %.1f mg (进入%.0f/退出%.0f)  姿态偏差 %.1f mg  主轴 %c\n",
+              (unsigned)r.contact, r.contactValid ? "可信" : "不可信",
+              fin(r.ctTouchDist), CT_TOUCH_MG, CT_TOUCH_OFF_MG, fin(r.ctDev), 'X' + r.axis);
+  } else {
+    outPrintf("接触 %u(不可信)  未记录接触姿态参考点，按 't' 记录（握住测试件时按）\n",
+              (unsigned)r.contact);
+  }
+#else
+  outPrintf("接触 %u(%s)  姿态偏差 %.1f mg  主轴 %c\n",
+            (unsigned)r.contact, r.contactValid ? "可信" : "不可信",
+            fin(r.ctDev), 'X' + r.axis);
+#endif
   outPrintf("起 %lu / 停 %lu | 读失败 %lu  缓冲溢出 %lu  不连续 %lu(缺 %lu, 抖动 %lu)  削顶 %lu  I2C错 %lu\n",
             (unsigned long)r.nStart, (unsigned long)r.nStop, (unsigned long)s.readFail,
             (unsigned long)s.ringDrop, (unsigned long)s.gaps, (unsigned long)s.missed,
@@ -224,7 +255,83 @@ void outPrintStatus(void) {
   outPrintCal();
 }
 
+/* ---------- Q4 打标模式 ---------- */
+
+/* 一帧 CSV。字段见 output.h 注释。
+ * gap 取自 samplerStats().gaps 的变化：本行相对上一行是否有新增缺口。
+ * 用静态变量记录上次数值，差值 >0 即表示这一行之前发生过缺口。 */
+static void csvLine(const DspFrame& f) {
+  const Result& r = stateResult();
+  const SamplerStats& s = samplerStats();
+  static uint32_t s_lastGaps = 0;
+  uint8_t gapFlag = (s.gaps != s_lastGaps) ? 1 : 0;
+  s_lastGaps = s.gaps;
+
+  outPrintf("%lu,%lu,%.2f,%.2f,%.2f,%.2f,%.2f,%u,%u,%u,%u,%u,%.2f\n",
+            (unsigned long)(++s_csvSeq),
+            (unsigned long)millis(),
+            fin(f.ctAxis[0]), fin(f.ctAxis[1]), fin(f.ctAxis[2]),
+            fin(r.ctDev), fin(r.ampMg),
+            (unsigned)r.vib, (unsigned)r.contact, (unsigned)r.contactValid,
+            (unsigned)gapFlag, (unsigned)s_label,
+            fin(r.ctTouchDist));      /* 第 13 列：到接触姿态的距离（-1 = 无参考点） */
+}
+
+/* 标签切换事件行。人工打标有反应延迟，离线分析靠它精确定位切换时刻。 */
+static void csvEvent(uint8_t label) {
+  outPrintf("EV,t_ms=%lu,label=%u\n", (unsigned long)millis(), (unsigned)label);
+}
+
+/* 【打标模式要能恢复原设置】
+ * 进入时把绘图组/调试行/波形抽取全部关掉（独占串口），
+ * 但**退出时必须恢复**，否则打标一次之后就永久用不了波形组：
+ *   s_waveDecim 被设成 0，而 outOnSample 里 "s_waveDecim == 0" 直接 return，
+ *   之后即使发 '4' 选了波形组也永远没有输出。
+ * 实测踩过这个坑（2026-10-18）：打完标后发 '4' 无任何输出，
+ * 必须发 w1 手工恢复。
+ * 所以这里把三个设置存起来，退出时还原。 */
+static uint8_t s_savedPlot      = PLOT_OFF;
+static bool    s_savedDbg       = false;
+static uint8_t s_savedWaveDecim = 0;
+
+void outEnterLabelMode(void) {
+  if (!s_labelMode) {
+    s_labelMode = true;
+    s_csvSeq    = 0;
+    /* 只在首次进入时保存（重复按 k0~k6 不应覆盖成"已是打标态"的值） */
+    s_savedPlot      = s_plot;
+    s_savedDbg       = s_dbg;
+    s_savedWaveDecim = s_waveDecim;
+    outPrintf("#打标模式：仅输出 CSV（seq,t_ms,ctX,ctY,ctZ,ctDev,ampMg,vib,contact,cvalid,gap,label）\n"
+              "#k0 空闲 | k1 接触中 | k2 保持+振动暂停 | k3 释放 | k4 无接触转动 | k5 周期振动 | k6 接触中+振动 | K 退出\n");
+  }
+  s_plot       = PLOT_OFF;   // 关绘图
+  s_dbg        = false;      // 关调试行
+  s_waveDecim  = 0;          // 关三轴波形
+}
+
+void outExitLabelMode(void) {
+  if (!s_labelMode) return;
+  s_labelMode = false;
+  /* 恢复进入打标前的设置，避免"打标一次后波形组永久失效" */
+  s_plot      = s_savedPlot;
+  s_dbg       = s_savedDbg;
+  s_waveDecim = s_savedWaveDecim;
+  outPrintf("#退出打标模式，共 %lu 行；已恢复绘图组 %u(%s)、波形抽取 w%u\n",
+            (unsigned long)s_csvSeq,
+            (unsigned)s_plot, kPlotName[s_plot], (unsigned)s_waveDecim);
+}
+
+bool outInLabelMode(void) { return s_labelMode; }
+
 void outOnSample(const DspFrame& f) {
+  if (s_labelMode) {
+    /* 打标模式：每 CSV_DECIM 个样本输出一行。
+     * 放在这里（逐样本回调）而不是 outPeriodic，是为了让时间戳严格对齐
+     * 实际采样序列 —— 用 millis() 定时会因为主循环抖动产生不均匀间隔。 */
+    if (++s_csvDecimCnt >= CSV_DECIM) { s_csvDecimCnt = 0; csvLine(f); }
+    return;                                  // 独占：不再走波形输出
+  }
   if (s_plot != PLOT_WAVE) return;
   if (s_waveDecim == 0) { s_waveDropped++; return; }        // 0 = 关闭输出
   if (++s_waveDecimCnt < s_waveDecim) { s_waveDropped++; return; }
@@ -262,10 +369,12 @@ static void plotLine(void) {
 static void debugLine(void) {
   const Result& r = stateResult();
   const SamplerStats& s = samplerStats();
-  outPrintf("#F=%.1f%s A=%.1f%s vib=%u SS=%.2f%s ct=%u dev=%.1f ax=%u sens=%u gap=%lu jit=%lu drop=%lu fail=%lu clip=%lu%s\n",
+  outPrintf("#F=%.1f%s A=%.1f%s vib=%u SS=%.2f%s ct=%u%s dev=%.1f ax=%u sens=%u gap=%lu jit=%lu drop=%lu fail=%lu clip=%lu%s\n",
             fin(r.freqHz), r.freqValid ? "" : "(x)",
             fin(r.ampMg), r.ampValid ? "" : "(x)", (unsigned)r.vib,
-            fin(r.ssHz), r.ssValid ? "" : "(x)", (unsigned)r.contact, fin(r.ctDev), (unsigned)r.axis,
+            fin(r.ssHz), r.ssValid ? "" : "(x)",
+            (unsigned)r.contact, r.contactValid ? "" : "(x)",
+            fin(r.ctDev), (unsigned)r.axis,
             (unsigned)r.sensorOk, (unsigned long)s.gaps, (unsigned long)s.jitter,
             (unsigned long)s.ringDrop, (unsigned long)s.readFail, (unsigned long)s.clip,
             r.freqClipLimited ? " [clip]" : "");
@@ -273,6 +382,7 @@ static void debugLine(void) {
 
 void outPeriodic(uint32_t nowMs) {
   static uint32_t tPlot = 0, tDbg = 0;
+  if (s_labelMode) return;   // 打标模式独占串口：只有 CSV，不混入绘图行/调试行
   if (s_plot != PLOT_OFF && s_plot != PLOT_WAVE && nowMs - tPlot >= PLOT_MS) { tPlot = nowMs; plotLine(); }
   if (s_dbg && nowMs - tDbg >= DBG_MS) { tDbg = nowMs; debugLine(); }
 }
@@ -383,8 +493,13 @@ CmdAction outPollCmd(void) {
     switch (c) {
       case '?':
         setPlot(PLOT_OFF);
-        outPrintf("命令: 0~4 选绘图组(0关 1结果 2启停包络 3接触 4三轴波形) | p 轮换绘图组\n"
-                  "      d 调试文字行 | S 状态 | c 重新标定(须静置) | n 清零统计 | ? 帮助\n");
+        /* 【必须拆成多条】outPrintf 的缓冲区是 256 字节，超长会被**静默截断**。
+         * 中文一个字 3 字节，整段帮助 330 字节 → 之前第 3 行起全丢了。
+         * 所以每条控制在一行以内，不依赖缓冲区大小。 */
+        outPrintf("命令: 0~4 选绘图组(0关 1结果 2启停 3接触 4波形) | p 轮换\n");
+        outPrintf("      d 调试行 | S 状态 | c 重标定(须静置) | n 清零统计 | ? 帮助\n");
+        outPrintf("      t 记录接触姿态(握住时按) | t0 清除参考点\n");
+        outPrintf("      k0~k6 打标模式(仅CSV) | K 退出打标\n");
         break;
       case '0': case '1': case '2': case '3': case '4':
         setPlot((uint8_t)(c - '0'));
@@ -425,6 +540,77 @@ CmdAction outPollCmd(void) {
         samplerTimingReset();
         outPrintf("#统计已清零（含时序），开始新一轮测量\n");
         break;
+
+      /* ---- 接触姿态参考点（CT_MODE=2）----
+       * t  = 记录当前姿态为"接触姿态"（选手在**握住**测试件时按一下）
+       * t0 = 清除参考点（换机械手/换工位时用）
+       * 为什么必须现场手动记录：接触姿态取决于机械手型号、装夹位置、工位姿态，
+       * 换一套就完全失效，写死固定值不可靠。 */
+      case 't': {
+        bool clear = false;
+        if (OUT.available()) {
+          char d = (char)OUT.peek();
+          if (d == '0') { OUT.read(); clear = true; }
+        }
+        if (clear) {
+          stateClearTouchRef();
+          outPrintf("#已清除接触姿态参考点（接触判定回到不可信）\n");
+        } else if (stateStartTouchRef()) {
+          /* 两阶段采集：先稳定 CT_REF_SETTLE_MS，再平均 CT_REF_AVG_MS。
+           * 为什么要延时：实测按下的瞬间手往往还没握到位，
+           * 记瞬时值会偏 1593mg（稳态只有 21mg）。 */
+          outPrintf("#开始采集接触姿态：等待 %dms 稳定 + 平均 %dms，请保持握住不动\n",
+                    CT_REF_SETTLE_MS, CT_REF_AVG_MS);
+        } else {
+          outPrintf("#正在采集中，请稍等\n");
+        }
+        break;
+      }
+
+      /* ---- Q4 打标模式 ----
+       * k0~k6 直接写目标标签（不是"循环切换"）：
+       *   采到一半忘了当前在哪一档就会整段标错，显式数字杜绝这个问题。
+       * 每次切换额外输出一行 EV 事件，离线分析靠它定位切换时刻。 */
+      case 'k': {
+        if (!OUT.available()) break;
+        char d = (char)OUT.peek();
+        if (d >= '0' && d <= '6') {
+          OUT.read();
+          uint8_t newLabel = (uint8_t)(d - '0');
+          outEnterLabelMode();
+          s_label = newLabel;
+          csvEvent(newLabel);
+        }
+        break;
+      }
+      case 'K':
+        outExitLabelMode();
+        break;
+
+      /* ---- 【临时调试】同板马达驱动 ----
+       * 仅 MOTOR_TEST_ENABLE=1 时生效。命令字符与正式功能完全不重叠：
+       *   m0~m9 占空比、H 100%、P 55%、q/r 微调、W 扫频
+       * 用 'm' 前缀是为了避开已有的 0~9（绘图组选择）。 */
+#if MOTOR_TEST_ENABLE
+      case 'm': {
+        /* m<digit>：占空比 = 数字 x 10% */
+        if (OUT.available()) {
+          char d = (char)OUT.peek();
+          if (d >= '0' && d <= '9') {
+            OUT.read();
+            motorTestSetDutyDigit(d);
+            break;
+          }
+        }
+        outPrintf("#[motor] 当前 duty %u%%（用法 m0~m9 / H / P / q / r / W）\n",
+                  (unsigned)motorTestDuty());
+        break;
+      }
+      case 'H': case 'P': case 'q': case 'r': case 'W':
+        motorTestHandleCmd(c);
+        break;
+#endif
+
       default: break;
     }
   }

@@ -61,6 +61,10 @@ struct DspFrame {
   bool  envReady;
   float env;           // 合成 RMS 包络 mg
   float ctDev;         // 姿态偏差 mg（每轴低通后相对零偏的模长）
+  float ctAxis[3];     // 【Q4】三轴低通值 mg，**相对标定零偏后的偏差量**
+                       // 为什么要它：ctDev 是模长，方向信息已丢失。
+                       // 接触可能只表现在某一轴的变化上，模长看不出来。
+                       // 语义：静置时 ≈ (0,0,0)；要还原绝对朝向，加回 dspCal().bias[a]。
   bool  winReady;
   float freqHz;        // 0 = 本窗无有效主频
   uint8_t axis;        // 本窗选用的主轴 0/1/2

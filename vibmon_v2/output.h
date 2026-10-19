@@ -40,3 +40,17 @@ void outPeriodic(uint32_t nowMs);             // 绘图行 / 调试行定时输�
 void ledSet(LedMode m);
 void ledUpdate(uint32_t nowMs, const Result& r);
 CmdAction outPollCmd(void);
+
+/* ---- Q4 打标模式（T10 接触判据数据采集）----
+ * 目的：为"接触判据"采集带人工标签的数据。
+ *
+ * 为什么必须独占串口：打标期间若同时输出绘图行（Freq_Hz:...）、调试行（#F=...）
+ * 或三轴波形（X:...），CSV 里会混入这些行，离线解析要额外处理且容易误判。
+ * 所以进入打标模式时强制关掉它们，只输出一条 CSV。
+ *
+ * 输出速率：每 10ms 一行（跟随包络输出，100Hz）。1kHz 逐样本输出数据量会大 100 倍。
+ * 命令：k0~k6 设标签（自动进入打标模式）| K 退出
+ */
+void outEnterLabelMode(void);
+void outExitLabelMode(void);
+bool outInLabelMode(void);

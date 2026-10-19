@@ -43,7 +43,7 @@ loop: samplerPop → 缺样? dspOnGap → dspProcess → DspFrame           (dsp
 | 主频旧值 | 只在窗口计算时更新 | 振动停止立即清零；结果超过 300ms 没更新也清零 | `state.cpp stateTick` |
 | 运行中断线 | 读失败时直接 return，一直输出最后一次的读数 | 连续 20 次读失败或 100ms 没有新样本就进入故障：清零结果，LED 快闪，每秒尝试重连，恢复后沿用原标定 | `sampler.cpp samplerSensorLost`，`.ino enterFault` |
 | NaN 进入输出 | 没有检查 | 滤波输出出现非有限值时重置流水线；主频和启停频率都检查 `isfinite`；输出前再过一遍 `fin()` | `dsp.cpp`，`state.cpp`，`output.cpp` |
-| 接触判据 | 原始数据减零偏后的模长做 EMA，振动本身会把它抬高；状态没有滞回 | 先对每个轴低通，再求模长，振动分量基本被去掉；加了滞回（释放阈值为接触阈值的 0.6 倍）和 100ms 确认；`CT_MODE` 选择是否把"振动中"也算作接触 | `dsp.cpp` 姿态支路，`state.cpp ctStep` |
+| 接触判据 | 原始数据减零偏后的模长做 EMA，振动本身会把它抬高；状态没有滞回 | 先对每个轴低通，再求模长，振动分量基本被去掉；加了滞回和 100ms 确认。**判据默认 `CT_MODE=2`：以「接触姿态」为参考点求三轴距离**（旧模式 0/1 相对"标定姿态"，实测会全程误报，保留做对比） | `dsp.cpp` 姿态支路，`state.cpp ctStep` / `stateStartTouchRef` |
 | 标定质量 | 没有检查 | 记录阶段A 的标准差和零偏模长，标定时被碰过会提示"可疑" | `dsp.cpp dspCalibrate` |
 | 削顶 | 没有检查 | 统计 \|raw\| > 32700 的样本数，在调试行里显示 | `dsp.cpp` |
 | 回调属性 | `IRAM_ATTR` 加在会调用 Wire 的 esp_timer 回调上 | 去掉，显式指定 `ESP_TIMER_TASK` | `sampler.cpp` |
@@ -85,7 +85,23 @@ arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v
 | `S` | 状态汇总：结果、各项统计、标定参数 |
 | `c` | 重新标定（须静置） |
 | `n` | 清零统计 |
+| **`t`** | **记录接触姿态参考点**（握住测试件时按，等 0.8 秒）|
+| **`t0`** | 清除接触姿态参考点（换机械手/工位时用）|
+| `k0`~`k6` | 打标模式（仅输出 CSV，用于采接触判据数据）|
+| `K` | 退出打标模式 |
 | `?` | 帮助 |
+
+**⚠️ 接触判据的现场流程**（`CT_MODE=2`）：
+
+```
+上电 → 自动标定 3.2 秒（必须静置）
+     → 握住测试件 → 按 t → 等 0.8 秒
+     → 松开，状态应显示"接触 0(可信)"
+     → 开始测试
+```
+
+**每次重新标定（`c`）后必须重按 `t`** —— 标定改变零偏，
+旧参考点不在同一坐标系，固件会自动清除它（`contactValid` 同步回 false）。
 
 ### LED
 
@@ -106,15 +122,17 @@ arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v
 | 主频跳到 2 倍频 | 绘图组 4 看波形是否畸变 | 需要实测，可能要加 FFT 辅助 |
 | 不连续计数一直增长 | `S` 看"不连续"和"读失败" | `I2C_CLOCK` 降到 100k，或 `FS_HZ` 降到 500（`FREQ_HI_HZ` 也要相应调整） |
 | 启停频率出不来 | 调试行 `SS=…(x)` | `SS_CONSIST_RATIO` 放宽，`SS_T_MIN_MS`/`SS_T_MAX_MS` |
-| 接触误判 | 绘图组 3 | `CT_MODE`、`CT_K`、`CT_LPF_TAU_S`、`CT_CONFIRM_MS` |
+| 接触误判 | `S` 看"到接触姿态"距离 | 模式 2：`CT_TOUCH_MG`/`CT_TOUCH_OFF_MG`（阈值设在握住与松开典型值之间）；先确认已按 `t` 记录参考点 |
+| 握住时距离偏大（参考点没记准） | `S` 看采集提示 | 确认按 `t` 后保持了 0.8 秒不动；必要时调 `CT_REF_SETTLE_MS`/`CT_REF_AVG_MS` |
 
 ## 测试
 
-`test/` 下有 11 个主机测试，全部在电脑上运行并链接**真实源码**：
+`test/` 下有 12 个主机测试，全部在电脑上运行并链接**真实源码**：
 
 | 测试 | 项数 | 覆盖 |
 |---|---|---|
 | `host_test` | 14 | 主频、启停、缺样、超时（算法基线） |
+| **`ct_test`** | **39 / 23 / 22** | **接触判据（T10a~j），对应 `CT_MODE=2/0/1`** |
 | `cal_test` | 54 | 标定事务化（T01~T04） |
 | `sampler_test` | 41 | 采样器启动/停止（T04、T14） |
 | `lock_probe` | 15 | 临界区配对（7 条路径的锁深度） |
@@ -125,6 +143,14 @@ arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v
 | `comp_test` | 29 | 比赛帧格式（T11） |
 | `wrap_test` | 14 | 序号与时间戳回绕（T13） |
 | `recover_test` | 21 | 断线恢复与阈值契约（T12） |
+
+**`ct_test` 要跑三种 `CT_MODE`**（判据方向相反，各模式分别断言）：
+
+```bash
+g++ -std=c++17 -Wall -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test.exe   # 默认 2
+g++ -std=c++17 -Wall -DCT_MODE=0 -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test_0.exe
+g++ -std=c++17 -Wall -DCT_MODE=1 -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test_1.exe
+```
 
 最快的入口是 `host_test`：
 
@@ -144,7 +170,7 @@ g++ -std=c++17 -Wall -I test -I . test/host_test.cpp dsp.cpp state.cpp -o test/h
 
 | # | 项目 | 状态 | 说明 |
 |---|---|---|---|
-| 1 | **接触识别** | ❌ **未实现** | `contactValid` 恒为 `false`。加速度计可能**原理上**分不开"静止接触"与"静止未接触"；需要带人工标签的实板数据才能定判据（采集方案见 `../vibmon_v2_修复方案/07-Q4-接触判据.md`） |
+| 1 | **接触识别** | ✅ **已实测可用** | 判据 = 「当前姿态到**接触姿态**的距离 < 400mg」（`CT_MODE=2`）。实机准确率 **99.13%**，零误报；握住 ≈ 0~50mg、松开 ≈ 1082~1750mg，两侧余量 398/382mg。参考点由选手现场按 `t` 记录（**注意**：是"关节旋转"引起姿态变化，轻触不转测不到）。见 `../vibmon_v2_修复方案/07-Q4-实测数据与判据决策.md` |
 | 2 | 主频抗谐波 | ⚠️ **主机已验证，待实测** | 20% 二/三次谐波 × 5 相位全部算对基频，无需 FFT。实板未验 |
 | 3 | 采样时钟拍频 | ⚠️ **待实测** | 用 `T` 命令看 `spanUsMax-Min`；若抖动偏大把 `MPU_CLKSEL` 改 1（PLL） |
 | 4 | 比赛帧 | ⚠️ **通道已就绪，帧未启用** | UART1 独立通道已建（`PIN_COMP_TX/RX`），但 `COMP_FRAME_ENABLED=0`，比赛口**完全静默**。等帧口径与对接方确认 |
