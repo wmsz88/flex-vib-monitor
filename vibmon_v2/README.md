@@ -15,7 +15,10 @@
 | `state.h/.cpp` | 状态判断 | 振动启停、启停频率、接触状态、结果有效性、超时 | dsp |
 | `output.h/.cpp` | 输出 | 绘图行、调试行、LED、串口命令 | 上面全部（只读） |
 | `vibmon_v2.ino` | 主程序 | 模块编排：运行、故障恢复、标定 | 全部 |
-| `test/` | 主机测试 | 用合成信号测 dsp + state，不参与固件编译 | — |
+
+> **本目录是比赛烧录版**：已移除 `test/`（主机测试）与 `motor_test`（同板驱动马达的临时调试模块），
+> 只保留编译固件所需的最小源码集。测试与调试模块仍在 git 历史 `dc2d2c6` 中，需要时用
+> `git checkout dc2d2c6 -- vibmon_v2/test vibmon_v2/motor_test.cpp vibmon_v2/motor_test.h` 取回。
 
 数据流：
 
@@ -127,40 +130,17 @@ arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v
 
 ## 测试
 
-`test/` 下有 12 个主机测试，全部在电脑上运行并链接**真实源码**：
-
-| 测试 | 项数 | 覆盖 |
-|---|---|---|
-| `host_test` | 14 | 主频、启停、缺样、超时（算法基线） |
-| **`ct_test`** | **39 / 23 / 22** | **接触判据（T10a~j），对应 `CT_MODE=2/0/1`** |
-| `cal_test` | 54 | 标定事务化（T01~T04） |
-| `sampler_test` | 41 | 采样器启动/停止（T04、T14） |
-| `lock_probe` | 15 | 临界区配对（7 条路径的锁深度） |
-| `timing_test` | 24 | 时序统计（EMA、水位、缺口分流） |
-| `gap_test` | 41 | 缺样通知、虚假边沿（T05、T06） |
-| `clip_test` | 38 | 削顶质量（T09） |
-| `sweep_test` | 36 | 启停/主频矩阵、谐波、边界（T07、T08） |
-| `comp_test` | 29 | 比赛帧格式（T11） |
-| `wrap_test` | 14 | 序号与时间戳回绕（T13） |
-| `recover_test` | 21 | 断线恢复与阈值契约（T12） |
-
-**`ct_test` 要跑三种 `CT_MODE`**（判据方向相反，各模式分别断言）：
+**本烧录版不包含 `test/`。** 主机测试在开发时用于验证 dsp/state 算法，它们只在本机编译运行、
+从不参与固件构建，因此已从本目录移除以保持烧录包干净。原始测试套件（12 个，链接真实源码）
+仍在 git 历史 `dc2d2c6` 中，需要回归时取回：
 
 ```bash
-g++ -std=c++17 -Wall -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test.exe   # 默认 2
-g++ -std=c++17 -Wall -DCT_MODE=0 -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test_0.exe
-g++ -std=c++17 -Wall -DCT_MODE=1 -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test_1.exe
+git checkout dc2d2c6 -- vibmon_v2/test
+cd vibmon_v2 && g++ -std=c++17 -Wall -I test -I . test/host_test.cpp dsp.cpp state.cpp -o test/host_test.exe
+./test/host_test.exe
 ```
 
-最快的入口是 `host_test`：
-
-```bash
-cd vibmon_v2
-g++ -std=c++17 -Wall -I test -I . test/host_test.cpp dsp.cpp state.cpp -o test/host_test.exe && ./test/host_test.exe
-```
-
-各测试的编译命令（含所需 `-D` 与附加源文件）见文件头部注释。
-改动任何源码后，**全部 11 个都要跑**。
+`ct_test` 需分别以 `CT_MODE=2/0/1` 编译三次（判据方向相反，各模式分别断言）。
 
 合成信号只能验证逻辑，**不能代替实板测试**。各项实板验证见 `../vibmon_v2_修复方案/README.md` §6。
 

@@ -2,7 +2,6 @@
 #include "config.h"
 #include "mpu.h"
 #include "sampler.h"
-#include "motor_test.h"     // 【临时调试】MOTOR_TEST_ENABLE=0 时无实际内容
 #include <Arduino.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -586,30 +585,6 @@ CmdAction outPollCmd(void) {
       case 'K':
         outExitLabelMode();
         break;
-
-      /* ---- 【临时调试】同板马达驱动 ----
-       * 仅 MOTOR_TEST_ENABLE=1 时生效。命令字符与正式功能完全不重叠：
-       *   m0~m9 占空比、H 100%、P 55%、q/r 微调、W 扫频
-       * 用 'm' 前缀是为了避开已有的 0~9（绘图组选择）。 */
-#if MOTOR_TEST_ENABLE
-      case 'm': {
-        /* m<digit>：占空比 = 数字 x 10% */
-        if (OUT.available()) {
-          char d = (char)OUT.peek();
-          if (d >= '0' && d <= '9') {
-            OUT.read();
-            motorTestSetDutyDigit(d);
-            break;
-          }
-        }
-        outPrintf("#[motor] 当前 duty %u%%（用法 m0~m9 / H / P / q / r / W）\n",
-                  (unsigned)motorTestDuty());
-        break;
-      }
-      case 'H': case 'P': case 'q': case 'r': case 'W':
-        motorTestHandleCmd(c);
-        break;
-#endif
 
       default: break;
     }
