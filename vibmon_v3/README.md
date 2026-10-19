@@ -1,6 +1,9 @@
-# vibmon v2 维护说明
+# vibmon v3 维护说明
 
 基于 `zlj/sketch_oct12a`（vibmon v1.1）的模块化重构版。核心算法与 v1.1 相同，这一版把它拆成模块，并修了下面列出的问题。`zlj` 原文件没有改动。
+
+> **版本沿革**：v1.1（原始）→ v2（模块化重构 + 若干算法修复）→ **v3（本版）**。
+> v3 相对 v2 的改动见下面「本烧录版改进说明」，以及文末「还没解决的问题」中的 Q4 接触判据。
 
 当前串口只输出 Arduino 串口绘图器格式（`标签:值`）。比赛帧协议确定后再加，见「以后加比赛帧」。
 
@@ -14,11 +17,11 @@
 | `dsp.h/.cpp` | 信号处理 | 标定、去零偏、高通、RMS 包络、姿态支路、主频估计 | sampler, mpu |
 | `state.h/.cpp` | 状态判断 | 振动启停、启停频率、接触状态、结果有效性、超时 | dsp |
 | `output.h/.cpp` | 输出 | 绘图行、调试行、LED、串口命令 | 上面全部（只读） |
-| `vibmon_v2.ino` | 主程序 | 模块编排：运行、故障恢复、标定 | 全部 |
+| `vibmon_v3.ino` | 主程序 | 模块编排：运行、故障恢复、标定 | 全部 |
 
-> **本目录是比赛烧录版**：已移除 `test/`（主机测试）与 `motor_test`（同板驱动马达的临时调试模块），
-> 只保留编译固件所需的最小源码集。测试与调试模块仍在 git 历史 `dc2d2c6` 中，需要时用
-> `git checkout dc2d2c6 -- vibmon_v2/test vibmon_v2/motor_test.cpp vibmon_v2/motor_test.h` 取回。
+> **本目录是比赛烧录版（v3）**：已移除 `test/`（主机测试）与 `motor_test`（同板驱动马达的临时调试模块），
+> 只保留编译固件所需的最小源码集。测试与调试模块仍在 git 历史 `dc2d2c6` 中（当时的路径是 `vibmon_v2/`），
+> 需要时用 `git checkout dc2d2c6 -- vibmon_v2/test vibmon_v2/motor_test.cpp vibmon_v2/motor_test.h` 取回。
 
 数据流：
 
@@ -70,6 +73,9 @@ loop: samplerPop → 缺样? dspOnGap → dspProcess → DspFrame           (dsp
 
 ### 四、如果只想看"改了什么代码"
 
+> 注意：下面命令里的 `vibmon_v2/` 是**历史提交中当时的路径**（目录后来才改名为 `vibmon_v3/`），
+> 照抄即可，不要改成 v3，否则 git 找不到对象。
+
 ```bash
 git diff dc2d2c6 4db2630 --stat          # 文件级：21 个文件，+11 / -4144
 git diff dc2d2c6 4db2630 -- vibmon_v2/output.cpp vibmon_v2/vibmon_v2.ino   # 仅有的两处源码改动
@@ -103,8 +109,8 @@ git diff dc2d2c6 4db2630 -- vibmon_v2/output.cpp vibmon_v2/vibmon_v2.ino   # 仅
 - 命令行：
 
 ```bash
-arduino-cli compile -b esp32:esp32:esp32c3 --warnings all vibmon_v2
-arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v2
+arduino-cli compile -b esp32:esp32:esp32c3 --warnings all vibmon_v3
+arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v3
 ```
 
 上电后先标定 3.2s（绿灯和黄灯常亮），**这段时间不要碰模块**。
@@ -176,8 +182,8 @@ arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v
 仍在 git 历史 `dc2d2c6` 中，需要回归时取回：
 
 ```bash
-git checkout dc2d2c6 -- vibmon_v2/test
-cd vibmon_v2 && g++ -std=c++17 -Wall -I test -I . test/host_test.cpp dsp.cpp state.cpp -o test/host_test.exe
+git checkout dc2d2c6 -- vibmon_v2/test        # 历史路径，取回后 test/ 会落在当前目录
+cd vibmon_v3 && g++ -std=c++17 -Wall -I test -I . test/host_test.cpp dsp.cpp state.cpp -o test/host_test.exe
 ./test/host_test.exe
 ```
 
@@ -221,7 +227,7 @@ cd vibmon_v2 && g++ -std=c++17 -Wall -I test -I . test/host_test.cpp dsp.cpp sta
 大部分核心参数带 `#ifndef` 守卫，因此命令行 `-D` 可以覆盖，便于做对比实验：
 
 ```bash
-arduino-cli compile -b esp32:esp32:esp32c3 --build-property "compiler.cpp.extra_flags=-DCT_MODE=1" vibmon_v2
+arduino-cli compile -b esp32:esp32:esp32c3 --build-property "compiler.cpp.extra_flags=-DCT_MODE=1" vibmon_v3
 ```
 
 `_probe/check_params.ps1` 会自动验证这批检查（10 个错误用例都应被拦住）：

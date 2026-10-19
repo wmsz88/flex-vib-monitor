@@ -170,7 +170,7 @@ void outPrintf(const char* fmt, ...) {
 static float fin(float v) { return isfinite(v) ? v : 0.0f; }
 
 void outPrintBanner(void) {
-  outPrintf("\n===== vibmon v2.0 (ESP32-C3 + MPU6050) =====\n");
+  outPrintf("\n===== vibmon v3.0 (ESP32-C3 + MPU6050) =====\n");
   outPrintf("采样 %d Hz | 窗 %d/%d | 高通 %.0f Hz | 包络 %d ms | %d bps %s\n",
             FS_HZ, BLOCK_N, HOP, HP_FC_HZ, ENV_WIN * 1000 / FS_HZ, BAUD,
             OUT_USB_CDC ? "USB-CDC" : "UART 调试口");

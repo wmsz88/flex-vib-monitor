@@ -1,4 +1,4 @@
-// vibmon v2.0 主程序：只负责模块编排与运行状态（运行 / 故障恢复 / 标定）。
+// vibmon v3.0 主程序：只负责模块编排与运行状态（运行 / 故障恢复 / 标定）。
 // 模块说明见同目录 README.md。
 #include "config.h"
 #include "mpu.h"
