@@ -34,6 +34,47 @@ loop: samplerPop → 缺样? dspOnGap → dspProcess → DspFrame           (dsp
 - `Result` 里的 `freqValid`、`ssValid` 为 false 时，对应数值一定是 0。比赛帧直接用 `Result`，不需要再判断。
 - 新参数一律加到 `config.h`，不在 .cpp 里写数字常量。
 
+## 本烧录版改进说明（相对 dc2d2c6）
+
+本目录是比赛烧录版，相比上一版 `dc2d2c6` **只做减法与文档整理，未改动任何算法与运行逻辑**。
+硬件行为、阈值、判据与 `dc2d2c6` 完全一致。
+
+### 一、代码层面：去掉不参与固件构建的内容
+
+| # | 改进 | 具体做法 | 影响 |
+|---|---|---|---|
+| 1 | **移除主机测试目录** | 删除 `test/` 共 17 个文件（12 个测试 + `Arduino.h`/`esp_timer.h`/`esp_timer_stub.cpp`/`lock_probe_counters.cpp` 等桩，另有被 gitignore 的 `host_test.exe`） | 这些测试只在 PC 上 `g++` 编译，Arduino 构建本就不会合并它们；删除后目录从 33 个文件降到 14 个 |
+| 2 | **移除临时调试模块** | 删除 `motor_test.h/.cpp`（同板驱动马达扫频，`MOTOR_TEST_ENABLE` 默认 0） | 该模块默认就不编译，删掉消除"以为它在工作"的误解，也避免 GPIO3 被误占用 |
+| 3 | **清理源码中的悬空引用** | 共 5 处：`.ino` 的 `#include` 与 `setup()/loop()` 两处条件调用；`output.cpp` 的 `#include` 与 `outPollCmd()` 中 `m/H/P/q/r/W` 命令分支 | 纯删除，无逻辑改动。命令表中这些字符改由 `default` 忽略，与原来 `MOTOR_TEST_ENABLE=0` 时的行为**完全等价** |
+
+### 二、文档层面
+
+| # | 改进 | 说明 |
+|---|---|---|
+| 4 | **模块表标注烧录版性质** | 在模块划分表后增加提示：本目录已移除测试与调试模块，并给出用 `git checkout dc2d2c6 -- ...` 一键取回的方法 |
+| 5 | **测试章节改为"如何取回"** | 原文详细列出 12 个测试及编译命令，但目录里已没有 `test/`，照做会失败。改为说明"本烧录版不含 `test/`"+ 取回与运行命令 |
+| 6 | **新增本章节** | 让拿到这份代码的人（队友、评委、未来的自己）清楚"这版和上一版的差别只是精简" |
+
+### 三、验证
+
+精简后做了以下检查，确认没有破坏可编译性：
+
+| 检查项 | 方法 | 结果 |
+|---|---|---|
+| 悬空 include | 扫描全部 `#include "..."` 并检查目标是否存在 | 全部可解析 |
+| 编译单元语法 | 用 Arduino/Wire/esp_timer 主机桩，对 `mpu/sampler/dsp/state/output` 五个 `.cpp` 跑 `g++ -std=c++17 -Wall -fsyntax-only` | 5/5 通过，0 error |
+| 结构完整性 | 统计 `{`/`}` 与 `#if`/`#endif` 配平；确认 `outPollCmd` 的 `switch` 只有一个 `default` | 64/64、7/7 平衡 |
+
+> **未做的验证**：本机没有 `arduino-cli`，上述检查用的是主机桩，**不等于真实 ESP32 工具链编译**。
+> 烧录前请在 Arduino IDE 里实际编译一次。
+
+### 四、如果只想看"改了什么代码"
+
+```bash
+git diff dc2d2c6 4db2630 --stat          # 文件级：21 个文件，+11 / -4144
+git diff dc2d2c6 4db2630 -- vibmon_v2/output.cpp vibmon_v2/vibmon_v2.ino   # 仅有的两处源码改动
+```
+
 ## 相对 v1.1 的修改
 
 | 问题 | v1.1 的情况 | v2 的处理 | 位置 |
