@@ -159,7 +159,14 @@ int main(void) {
       feed(700.0f, 150.0f, 600);      // 闭合 0.6s
       feed(700.0f, 0.0f, 300);        // 停一下（角度保持）
       feed(0.0f, 0.0f, 1500);         // 回张开并静止 1.5s ⇒ parked ⇒ 清零
-      if (stateResult().closeAngleDeg > 3.0f) bad++;
+      if (stateResult().closeAngleDeg > 3.0f) {
+        bad++;
+        if (k < 2) {
+          printf("   [dbg] cycle %d: ang=%.1f D=%.0f flatRef=%d\n", k,
+                 (double)stateResult().closeAngleDeg, (double)stateResult().flatDist,
+                 (int)stateResult().flatRefSet);
+        }
+      }
     }
     CHECK(bad == 0, "G7 10 次开合循环，回张开后角度未归零的次数 = %d", bad);
   }

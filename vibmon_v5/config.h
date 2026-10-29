@@ -73,7 +73,7 @@
 #define GYRO_DEADBAND_DPS   1.5f   // 小于此角速度视为静止，不积分
 #endif
 #ifndef GYRO_STILL_MS
-#define GYRO_STILL_MS       300    // 连续静止超过此时间才冻结角度
+#define GYRO_STILL_MS       500    // 连续静止超过此时间才认定"停住了"（回零/冻结都用它）
 #endif
 #ifndef GYRO_CAL_MAX_STD_DPS
 #define GYRO_CAL_MAX_STD_DPS 3.0f  // 标定阶段陀螺标准差上限：超过说明在动
@@ -104,9 +104,30 @@
 #define ANGLE_OPEN_DEG      20.0f   /* 低于此角且静止 = 回到张开位，角度清零 */
 #endif
 #ifndef OPEN_D_MG
-#define OPEN_D_MG           280.0f /* D 低于此值（且静止满 GYRO_STILL_MS）判"已回到张开"。
-                                    * H1 实测静止张开态 D=3~212mg，120 会漏掉部分张开位；
-                                    * 280 覆盖到 212 且仍远低于闭合态 >1000mg。 */
+#define OPEN_D_MG           400.0f /* D 低于此值（且静止满 GYRO_STILL_MS）判"已回到张开"。
+                                    * H1 实测静止张开态 D=3~212mg，闭合态 >1000mg；
+                                    * 取 400：对张开侧余量近 2 倍，对闭合侧仍有 2.5 倍。
+                                    * 机械限位做不到时，放宽这一项能让"每次张开位置不同"
+                                    * 也能被判成回到张开位，配合下面的自动重采基准。 */
+
+/* ---------- 自动重采基准（无机械限位时的兜底，2026-10-29） ----------
+ * 触发条件全部满足才重采：
+ *   已静止 >= AUTO_ZERO_REST_MS（陀螺在死区、由 GYRO_STILL_MS 体系维护）
+ *   且 幅值 < AUTO_ZERO_AMP_MG（没有振动，排除"夹着东西静止"）
+ *   且 当前闭合角 < AUTO_ZERO_ANGLE_DEG（确实回到张开位，排除"夹着东西停顿"）
+ * 重采后 D 归零、θ 归零，等于自动替操作员按了一次 't'。 */
+#ifndef AUTO_ZERO_ENABLE
+#define AUTO_ZERO_ENABLE      1
+#endif
+#ifndef AUTO_ZERO_REST_MS
+#define AUTO_ZERO_REST_MS     2000
+#endif
+#ifndef AUTO_ZERO_AMP_MG
+#define AUTO_ZERO_AMP_MG      100.0f
+#endif
+#ifndef AUTO_ZERO_ANGLE_DEG
+#define AUTO_ZERO_ANGLE_DEG   8.0f
+#endif
 #endif
 
 /* ---------- 采样 ---------- */

@@ -65,6 +65,7 @@ static uint32_t s_stillUs       = 0;                   // 连续静止时长（Z
 static uint32_t s_lastGyroUs    = 0;                   // 最近一次收到陀螺数据的时刻
 static uint8_t  s_angOpenHeld   = 0;                   // 角度滞回：已离开松手位
 static uint8_t  s_angAirHeld    = 0;                   // 角度滞回：已闭合到底（空夹）
+static bool     s_sinceClose    = false;               // 上次采基准以来是否闭合过（自动重采用）
 /* 【为什么上面这些模式3变量不放在 #if CT_MODE == 3 里】
  *   它们的使用点分布在 stateStartFlatRef / flatRefCommit / stateTickFlatRef /
  *   stateClearFlatRef / stateApplyCal / stateReset 等函数中，这些函数本身是
@@ -412,6 +413,7 @@ static void ctStep(float dev, uint32_t tUs) {
 #endif
   /* 显式给出"已闭合"，让上位机不必再从角度自己推断 */
   s_r.closed = (s_ctPostCmd != 0);
+  if (s_ctPostCmd) s_sinceClose = true;   // 记下"本轮到过闭合位"，供自动重采判据用
 
   /* 回到共用确认链（与模式 0/1/2 完全一致，保证确认延时不因模式而异） */
   if (raw == s_r.contact) { s_ctCand = raw; return; }
@@ -599,12 +601,34 @@ static bool flatRefCommit(void) {
   s_r.contact = 0;
   s_r.flatDist = 0.0f;
   s_flatAutoFail = 0;
+  /* 【2026-10-29】刚采到一份基准，静止计时必须归零。
+   * 否则采集过程本身累积的静置时间（>= AUTO_ZERO_REST_MS）会让
+   * 自动重采在下一圈立刻再次触发，把刚采到的基准清掉，形成"采了又清"的抖动。 */
+  s_stillUs = 0;
   return true;
 }
 
 /* 由主循环每圈调用：自动启动 + 阶段推进 + 结算 + 重试。
  * 与 stateTickTouchRef 结构相同，多出"自动启动"和"失败重试"两步。 */
 void stateTickFlatRef(uint32_t nowUs) {
+#if AUTO_ZERO_ENABLE
+  /* 【无机械限位时的兜底】静止足够久、没有振动、且角度已经回到张开位 ⇒ 自动重采基准。
+   * 三个条件缺一不可：
+   *   - 只看"静止"：夹着物体停住不动 2s 也会触发，会把闭合位当成张开位；
+   *   - 只看"角度小"：还没回到张开位（例如刚松开一半）也会触发，零点偏；
+   *   - 只看"幅值低"：张开但还在动的时候也会触发，基准采到运动中的姿态。
+   * 触发后清基准，下一圈由下面的 CT_REF_AUTO_ENABLE 块自动重采。 */
+  if (s_sinceClose && s_flatRefSet && s_refPhase == CTREF_IDLE &&
+      s_stillUs >= (uint32_t)AUTO_ZERO_REST_MS * 1000u &&
+      s_r.ampValid && s_r.ampMg < AUTO_ZERO_AMP_MG &&
+      fabsf(s_r.closeAngleDeg) < AUTO_ZERO_ANGLE_DEG) {
+    stateClearFlatRef();
+    s_stillUs = 0;              // 防止连续触发
+    s_sinceClose = false;       // 一次闭合只重采一次，避免静止时反复清基准
+    s_angleDeg[0] = s_angleDeg[1] = s_angleDeg[2] = 0.0f;
+  }
+#endif
+
 #if CT_REF_AUTO_ENABLE
   /* 自动启动：上电后若还没有基准、也不在采集中、且重试未用尽，就启动。 */
   if (!s_flatRefSet && s_refPhase == CTREF_IDLE &&
@@ -694,6 +718,7 @@ void stateApplyCal(const DspCal& cal) {
   }
   s_stillUs = 0;
   s_angOpenHeld = 0; s_angAirHeld = 0;
+  s_sinceClose = false;
   s_r.closeAngleDeg = 0.0f;
   s_r.angleValid = false;
   /* 标定会改变零偏，进行中的参考点采集作废（采到的值在新坐标系里没意义） */
@@ -759,6 +784,7 @@ void stateReset(void) {
   s_stillUs = 0;
   s_lastGyroUs = 0;
   s_angOpenHeld = 0; s_angAirHeld = 0;
+  s_sinceClose = false;
   s_r.closeAngleDeg = 0.0f;
   s_r.angleValid = false;
 
