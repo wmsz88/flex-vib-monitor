@@ -267,6 +267,7 @@ static void angleStep(const DspFrame& f, uint32_t tUs) {
 
     const float w = sqrtf(f.gyroDps[0] * f.gyroDps[0] + f.gyroDps[1] * f.gyroDps[1] +
                           f.gyroDps[2] * f.gyroDps[2]);
+    s_r.gyroW = w;          // 诊断：当前合成角速度（判断是否静止）
     const uint32_t dtUs = (uint32_t)(GYRO_DT_S * 1e6f + 0.5f);
 
     const bool still = (w < GYRO_DEADBAND_DPS);
@@ -395,15 +396,22 @@ static void ctStep(float dev, uint32_t tUs) {
   s_r.contactValid = true;
 
   /* 空夹判定（诊断用，不参与 contact）：
-   *   姿态已握下 + 有可信幅值 + 频率门没通过
-   *   -> 手合上了、在抖，却没有物体共振特征，最可能是没夹到东西。
-   * 若根本没有振动（幅值也无效/极低），那是"握住静止"，不报空夹 ——
-   * 两者的处置完全不同：空夹要调整物体位置，静止要检查激励。 */
+   *   姿态已握下 + **幅值门真的过了** + 频率门没通过
+   *   -> 手合上了、确实有振动，却没有物体共振特征，最可能是没夹到东西。
+   *
+   * 【2026-10-29 评审修正】原来用的是 s_r.ampValid，它只表示"幅值可信"，
+   * 不表示"幅值够大"。于是"闭合后一点振动都没有（5mg）"也被标成空夹 ——
+   * 把"不知道有没有物体"说成了"确定没有物体"。
+   * 现在改用 s_ampHeld（幅值门已经过，>CT_FLAT_A_ON_MG）：
+   *   没有振动证据 ⇒ gripNoObject=0（既不说有、也不说没有），
+   *   上位机应结合 closed / closedAngle 自行判断"已闭合但无振动证据"。 */
 #if CT_FLAT_REPORT_NO_OBJ
-  s_r.gripNoObject = (s_ctPostCmd && s_r.ampValid && !s_freqHeld) ? true : false;
+  s_r.gripNoObject = (s_ctPostCmd && s_ampHeld && !s_freqHeld) ? true : false;
 #else
   s_r.gripNoObject = false;
 #endif
+  /* 显式给出"已闭合"，让上位机不必再从角度自己推断 */
+  s_r.closed = (s_ctPostCmd != 0);
 
   /* 回到共用确认链（与模式 0/1/2 完全一致，保证确认延时不因模式而异） */
   if (raw == s_r.contact) { s_ctCand = raw; return; }

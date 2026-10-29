@@ -56,16 +56,17 @@ SWEEP_RE = re.compile(
     r"(?:ang=\s*(?P<ang>[0-9.]+|\?)deg )?"
     r"tr=\s*(?P<tr>[0-9.]+|\?)mg "
     r"vib=(?P<vib>\d+) ct=(?P<ct>\d+) grip=(?P<grip>\d+) "
+    r"cl=(?P<cl>\d+) w=(?P<w>[0-9.]+|\?) "
     r"cliplim=(?P<clim>\d+) ax=(?P<ax>\d+) ok=(?P<ok>\d+)"
 )
 
 SWEEP_HEADER = ["state", "wall_s", "t_dev_s", "Freq_Hz", "Amp_mg", "FlatDist_mg",
                 "Angle_deg", "RefSwing_mg", "vib", "contact", "gripNoObject",
-                "clipLimited", "axis", "ok"]
+                "Closed", "GyroW_dps", "clipLimited", "axis", "ok"]
 
 LABEL_HEADER = ["state", "seq", "t_ms", "ctX", "ctY", "ctZ", "ctDev",
                 "ampMg", "vib", "contact", "cvalid", "gap", "label",
-                "ctTouchDist"]
+                "ctTouchDist", "closed", "closeAngleDeg", "gyroW"]
 
 STATE_NAMES = {
     0: "空闲", 1: "接触中", 2: "保持+振动暂停", 3: "释放",
@@ -76,13 +77,13 @@ STATE_NAMES = {
 # 与固件 sweepLine / csvLine 逐字一致的样例行，用于无硬件时验证解析链路。
 # 注意 '?' 是固件的"无效"语义（区别于测得 0），必须解析成空而不是 0。
 SELFTEST_SWEEP = [
-    "#SWEEP t=1s F=      ?Hz A=     0.00mg D=     0mg tr=   12mg vib=0 ct=0 grip=0 cliplim=0 ax=2 ok=0",
-    "#SWEEP t=2s F=  140.1Hz A=    81.9mg D=   756mg tr=   12mg vib=1 ct=1 grip=0 cliplim=0 ax=0 ok=1",
-    "#SWEEP t=3s F=  140.1Hz A=    81.9mg D=   756mg tr=   12mg vib=1 ct=1 grip=0 cliplim=1 ax=0 ok=0",
+    "#SWEEP t=1s F=      ?Hz A=     0.00mg D=     0mg ang=    0deg tr=   12mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0",
+    "#SWEEP t=2s F=  140.1Hz A=    81.9mg D=   756mg ang=   95deg tr=   12mg vib=1 ct=1 grip=0 cl=1 w=0.2 cliplim=0 ax=0 ok=1",
+    "#SWEEP t=3s F=  140.1Hz A=    81.9mg D=   756mg ang=   96deg tr=   12mg vib=1 ct=1 grip=0 cl=1 w=0.2 cliplim=1 ax=0 ok=0",
 ]
 
 SELFTEST_LABEL = [
-    "1,1234,0.12,-0.34,981.20,1.50,40.20,1,0,1,0,6,0.00",
+    "1,1234,0.12,-0.34,981.20,1.50,40.20,1,0,1,0,6,0.00,1,95.0,0.20",
     "EV,t_ms=1300,label=6",
     "#打标模式：仅输出 CSV",
 ]
@@ -197,6 +198,8 @@ def parse_sweep(text, state, step_start):
         "vib": get("vib"),
         "contact": get("ct"),
         "gripNoObject": get("grip"),
+        "Closed": get("cl"),
+        "GyroW_dps": "" if get("w") == "?" else get("w"),
         "clipLimited": get("clim"),
         "axis": get("ax"),
         "ok": get("ok"),
@@ -207,7 +210,7 @@ def parse_label(text, state):
     if not text or text.startswith("#") or text.startswith("EV,"):
         return None
     parts = text.split(",")
-    if len(parts) != 13:
+    if len(parts) != 16:
         return None
     try:
         int(parts[0])

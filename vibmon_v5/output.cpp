@@ -323,14 +323,19 @@ static void csvLine(const DspFrame& f) {
   uint8_t gapFlag = (s.gaps != s_lastGaps) ? 1 : 0;
   s_lastGaps = s.gaps;
 
-  outPrintf("%lu,%lu,%.2f,%.2f,%.2f,%.2f,%.2f,%u,%u,%u,%u,%u,%.2f\n",
+  /* v5 追加 3 列：closed / closeAngleDeg / gyroW
+   * 打标 CSV 是离线分析的主要证据，缺了角度和角速度就无法验证"轨迹停顿"与"稳态"。 */
+  outPrintf("%lu,%lu,%.2f,%.2f,%.2f,%.2f,%.2f,%u,%u,%u,%u,%u,%.2f,%u,%.1f,%.2f\n",
             (unsigned long)(++s_csvSeq),
             (unsigned long)millis(),
             fin(f.ctAxis[0]), fin(f.ctAxis[1]), fin(f.ctAxis[2]),
             fin(r.ctDev), fin(r.ampMg),
             (unsigned)r.vib, (unsigned)r.contact, (unsigned)r.contactValid,
             (unsigned)gapFlag, (unsigned)s_label,
-            fin(r.ctTouchDist));      /* 第 13 列：到接触姿态的距离（-1 = 无参考点） */
+            fin(r.ctTouchDist),       /* 第 13 列：到接触姿态的距离（-1 = 无参考点） */
+            (unsigned)(r.closed ? 1u : 0u),
+            fin(r.closeAngleDeg),
+            fin(r.gyroW));
 }
 
 /* 标签切换事件行。人工打标有反应延迟，离线分析靠它精确定位切换时刻。 */
@@ -461,12 +466,14 @@ static void sweepLine(void) {
   if (r.angleValid && isfinite(r.closeAngleDeg)) snprintf(angBuf, sizeof(angBuf), "%5.0f", r.closeAngleDeg);
   else                                          snprintf(angBuf, sizeof(angBuf), "%5s", "?");
 
-  outPrintf("#SWEEP t=%lus F=%sHz A=%smg D=%smg ang=%sdeg tr=%smg vib=%u ct=%u grip=%u cliplim=%u ax=%u ok=%u\n",
+  outPrintf("#SWEEP t=%lus F=%sHz A=%smg D=%smg ang=%sdeg tr=%smg vib=%u ct=%u grip=%u cl=%u w=%.1f cliplim=%u ax=%u ok=%u\n",
             (unsigned long)(millis() / 1000u),
             fBuf, aBuf, dBuf, angBuf, sBuf,
             (unsigned)r.vib,
             (unsigned)r.contact,
             (unsigned)(r.gripNoObject ? 1u : 0u),   /* 空夹：握下但未证明接触 */
+            (unsigned)(r.closed ? 1u : 0u),         /* 已闭合（姿态门过） */
+            (double)r.gyroW,                         /* 合成角速度 dps */
             (unsigned)(r.freqClipLimited ? 1u : 0u),/* 主频因削顶降级 */
             (unsigned)r.axis,                        /* 主频取用的轴 */
             (unsigned)(allOk ? 1u : 0u));

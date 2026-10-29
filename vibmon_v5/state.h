@@ -69,6 +69,9 @@ struct Result {
   float   closeAngleDeg;  // 无效时为 0，可信度看 angleValid
   bool    angleValid;     // 有陀螺数据且未超时、未削顶
   bool    gyroSeen;       // 本次上电以来是否收到过陀螺数据
+  bool    closed;         // 已闭合（姿态门过）。与 contact 独立：
+                          //   closed=1 且 contact=0 表示"闭合了但没有振动证据"
+  float   gyroW;          // 当前合成角速度 dps（诊断用，判断是否静止）
 
   uint32_t nStart, nStop;
 };
