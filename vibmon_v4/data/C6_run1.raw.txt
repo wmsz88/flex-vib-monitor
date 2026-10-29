@@ -1,0 +1,80 @@
+Freq_Hz:0.0,Amp_mg:9.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:7.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:7.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:7.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:8.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:7.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:7.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:12.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:14.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:9.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:9.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:9.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:8.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:7.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:7.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:100
+#SWEEP t=69s F=      ?Hz A=     6.3mg D=   568mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=70s F=      ?Hz A=     6.3mg D=   560mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=71s F=      ?Hz A=     5.4mg D=   565mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=72s F=      ?Hz A=     6.1mg D=   568mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=73s F=      ?Hz A=     6.0mg D=   571mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=74s F=      ?Hz A=     6.0mg D=   573mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=75s F=      ?Hz A=     5.4mg D=   574mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=76s F=      ?Hz A=     5.6mg D=   570mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=77s F=      ?Hz A=     5.3mg D=   561mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=78s F=      ?Hz A=     5.7mg D=   557mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=79s F=      ?Hz A=     7.2mg D=   565mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=80s F=      ?Hz A=    10.0mg D=   579mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=81s F=      ?Hz A=    21.4mg D=   462mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=0 ok=0
+#SWEEP t=82s F=      ?Hz A=     6.4mg D=   394mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=83s F=      ?Hz A=     5.5mg D=   393mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=84s F=      ?Hz A=     5.9mg D=   390mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=85s F=      ?Hz A=     5.6mg D=   378mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=86s F=      ?Hz A=     5.6mg D=   381mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=87s F=      ?Hz A=     6.4mg D=   385mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
+#SWEEP t=88s F=      ?Hz A=     6.0mg D=   389mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=90s F=      ?Hz A=     4.9mg D=   389mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=91s F=      ?Hz A=     5.7mg D=   391mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=92s F=      ?Hz A=     5.2mg D=   391mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=93s F=      ?Hz A=     5.7mg D=   392mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=94s F=   99.5Hz A=    40.5mg D=   379mg tr=    8mg vib=1 ct=1 grip=0 cliplim=0 ax=1 ok=1
+#SWEEP t=95s F=      ?Hz A=    12.2mg D=   385mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=0 ok=0
+#SWEEP t=96s F=      ?Hz A=     6.4mg D=   376mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=97s F=      ?Hz A=     7.1mg D=   373mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=2 ok=0
+#SWEEP t=98s F=      ?Hz A=    14.6mg D=   339mg tr=    8mg vib=0 ct=1 grip=0 cliplim=0 ax=1 ok=0
