@@ -2,6 +2,7 @@
 #include "config.h"
 #include "mpu.h"
 #include "sampler.h"
+#include "posture.h"
 #include <Arduino.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -308,6 +309,28 @@ void outPrintStatus(void) {
             (unsigned long)samplerInFlight(), (unsigned long)s.stopTimeout,
             (unsigned long)s.resetViolation, (unsigned long)s.timerErr,
             (unsigned)s.timerErrCode);
+#if POSTURE_ENABLE
+  {
+    const PostureResult& p = postureResult();
+    if (p.calActive) {
+      outPrintf("姿态诊断 | 正在采集 START 基线（n=%lu）\n",
+                (unsigned long)p.calN);
+    } else if (!p.calValid) {
+      outPrintf("姿态诊断 | 未标定 START 基线，请保持 START 后按 'P'\n");
+    } else if (p.calFailed) {
+      outPrintf("姿态诊断 | 本次 P 失败，沿用旧 START 基线；请回 START 后重按 'P'\n");
+    } else {
+      outPrintf("姿态诊断 | raw=%s stable=%s d=%.0fmg x/y/z=%.0f/%.0f/%.0f 窗口=%s scnt=%u n=%lu 基线=%.0f/%.0f/%.0f\n",
+                postureClassName(p.cls), postureClassName(p.stableCls),
+                (double)p.distMg,
+                (double)p.x, (double)p.y, (double)p.z,
+                p.valid ? "有效" : "无效",
+                (unsigned)p.stableCount,
+                (unsigned long)p.blockN,
+                (double)p.startX, (double)p.startY, (double)p.startZ);
+    }
+  }
+#endif
   outPrintCal();
 }
 
@@ -479,6 +502,25 @@ static void sweepLine(void) {
             (unsigned)(allOk ? 1u : 0u));
 }
 
+#if POSTURE_ENABLE
+static void postureLine(void) {
+  const PostureResult& p = postureResult();
+  outPrintf("#POST cal=%u act=%u valid=%u cls=%u d=%.1f x=%.1f y=%.1f z=%.1f "
+            "bx=%.1f by=%.1f bz=%.1f clsd=%u stable=%u scnt=%u n=%lu\n",
+            (unsigned)(p.calValid ? 1u : 0u),
+            (unsigned)(p.calActive ? 1u : 0u),
+            (unsigned)(p.valid ? 1u : 0u),
+            (unsigned)p.cls,
+            (double)p.distMg,
+            (double)p.x, (double)p.y, (double)p.z,
+            (double)p.startX, (double)p.startY, (double)p.startZ,
+            (unsigned)p.stableCls,
+            (unsigned)(p.stable ? 1u : 0u),
+            (unsigned)p.stableCount,
+            (unsigned long)p.blockN);
+}
+#endif
+
 static void plotLine(void) {
   const Result& r = stateResult();
   const Thresholds& t = stateThresholds();
@@ -636,6 +678,8 @@ CmdAction outPollCmd(void) {
 #else
         outPrintf("      t 记录接触姿态(握住时按) | t0 清除参考点\n");
 #endif
+        outPrintf("      P 重采 START 姿态基线 | S 状态\n");
+        outPrintf("      Q 单行姿态诊断帧（便于连续记录）\n");
         outPrintf("      k0~k6 打标模式(仅CSV) | K 退出打标\n");
         outPrintf("      w 扫频采样：打一行带有效标记的标定数据(无效量显示?)\n");
         break;
@@ -653,6 +697,32 @@ CmdAction outPollCmd(void) {
         break;
       case 'S': setPlot(PLOT_OFF); outPrintStatus(); break;
       case 'T': setPlot(PLOT_OFF); outPrintTiming(); break;
+      case 'Q':
+#if POSTURE_ENABLE
+        postureLine();
+#else
+        outPrintf("#POST disabled\n");
+#endif
+        break;
+      case 'P':
+#if POSTURE_ENABLE
+        if (!stateResult().angleValid) {
+          outPrintf("#P 拒绝：闭合角尚无效，请等待角度有效并回到 START\n");
+        } else if (stateResult().closeAngleDeg >= AUTO_ZERO_ANGLE_DEG) {
+          outPrintf("#P 拒绝：当前闭合角 %.0f°，请回到 START（<%.0f°）再按 P\n",
+                    (double)stateResult().closeAngleDeg, AUTO_ZERO_ANGLE_DEG);
+        } else if (stateResult().ctDev > POSTURE_START_MAX_CTDEV_MG) {
+          outPrintf("#P 拒绝：当前三轴姿态偏差 %.0f mg，超过 START 门限 %.0f mg\n",
+                    (double)stateResult().ctDev, POSTURE_START_MAX_CTDEV_MG);
+        } else if (postureStartCal()) {
+          outPrintf("#开始采集 START 姿态：保持 2 s 不动\n");
+        } else {
+          outPrintf("#正在采集 START 姿态，请稍等\n");
+        }
+#else
+        outPrintf("#姿态诊断未启用\n");
+#endif
+        break;
       /* ---- 现场标定入口（按判据模式分发）----
        * 两种模式都需要"现场采一次姿态基准"，但采的东西不同：
        *   CT_MODE=2：采"接触姿态"——选手**握住**测试件时按（有物体可抓的前提下才成立）

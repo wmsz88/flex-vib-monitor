@@ -128,6 +128,51 @@
 #ifndef AUTO_ZERO_ANGLE_DEG
 #define AUTO_ZERO_ANGLE_DEG   8.0f
 #endif
+
+/* ---------- 姿态诊断（START/HONGEST，仅诊断） ----------
+ * 不参与 contact。上电或按 'P' 时保持 START 姿态完成一次基线采集；
+ * 运行时每 500 ms 取三轴均值，按到 START 基线的距离分类。
+ */
+#ifndef POSTURE_ENABLE
+#define POSTURE_ENABLE          1
+#endif
+#ifndef POSTURE_CAL_SETTLE_MS
+#define POSTURE_CAL_SETTLE_MS   300
+#endif
+#ifndef POSTURE_CAL_AVG_MS
+#define POSTURE_CAL_AVG_MS      1500
+#endif
+#ifndef POSTURE_WINDOW_MS
+#define POSTURE_WINDOW_MS       500
+#endif
+#ifndef POSTURE_STALE_MS
+#define POSTURE_STALE_MS        500
+#endif
+#ifndef POSTURE_CAL_RANGE_MG
+#define POSTURE_CAL_RANGE_MG    40.0f
+#endif
+#ifndef POSTURE_CAL_STILL_DPS
+#define POSTURE_CAL_STILL_DPS   10.0f
+#endif
+#ifndef POSTURE_STATIC_RANGE_MG
+#define POSTURE_STATIC_RANGE_MG 40.0f
+#endif
+#ifndef POSTURE_STATIC_GYRO_DPS
+#define POSTURE_STATIC_GYRO_DPS 10.0f
+#endif
+#ifndef POSTURE_START_RADIUS_MG
+#define POSTURE_START_RADIUS_MG 150.0f
+#endif
+#ifndef POSTURE_START_MAX_CTDEV_MG
+#define POSTURE_START_MAX_CTDEV_MG 300.0f
+#endif
+#ifndef POSTURE_HONGEST_DIST_MG
+#define POSTURE_HONGEST_DIST_MG 500.0f
+#endif
+#ifndef POSTURE_STABLE_WINDOWS
+#define POSTURE_STABLE_WINDOWS  3
+#endif
+
 #endif
 
 /* ---------- 采样 ---------- */

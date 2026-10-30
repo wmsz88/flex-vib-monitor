@@ -5,6 +5,7 @@
 #include "sampler.h"
 #include "dsp.h"
 #include "state.h"
+#include "posture.h"
 #include "output.h"
 
 static bool     s_fault = false;
@@ -48,6 +49,9 @@ static bool startRun(void) {
   }
   dspReset();
   stateReset();
+#if POSTURE_ENABLE
+  postureResetRuntime();
+#endif
   stateSetSensorOk(true);
 
   SamplerStartResult r = samplerStart();
@@ -66,7 +70,12 @@ static void runCalibration(void) {
   ledSet(LED_CAL);
   outPrintf("[CAL] 开始标定 %d ms，请保持模块静置\n", CAL_BIAS_MS + CAL_NOISE_MS);
   bool ok = dspCalibrate();
-  if (ok) stateApplyCal(dspCal());   // 只有成功才应用阈值，失败时阈值原封不动
+  if (ok) {
+    stateApplyCal(dspCal());         // 只有成功才应用阈值，失败时阈值原封不动
+#if POSTURE_ENABLE
+    postureInvalidateCal();          // 新零偏会让旧三轴基线失去坐标一致性
+#endif
+  }
   outPrintCal();
   if (!ok) {
     outPrintf("[CAL] 未提交：%s；沿用%s\n",
@@ -82,12 +91,20 @@ void setup() {
   delay(300);
   outPrintBanner();
   dspInit();
+#if POSTURE_ENABLE
+  postureInit();
+#endif
 
   if (!bringUpSensor()) { enterFault("传感器初始化失败"); return; }
   runCalibration();
   // 从未标定成功：允许带标记运行，并定时重试（已有旧标定时绝不重试）
   if (!dspCal().ok) { s_calNeedsRetry = true; s_lastCalTryMs = millis(); }
   startRun();
+#if POSTURE_ENABLE
+  if (postureStartCal()) {
+    outPrintf("[POST] 开始采集 START 基线：请保持 START 2 s 不动；之后按 'P' 可重采\n");
+  }
+#endif
 }
 
 void loop() {
@@ -131,10 +148,16 @@ void loop() {
     while (samplerPop(&s, &gap)) {
       if (gap.kind != SMP_GAP_NONE) {
         dspOnGap(gap);
+        #if POSTURE_ENABLE
+        postureOnGap(gap);
+        #endif
         stateOnGap(gap);        // 必须在 stateOnFrame 之前：先作废旧读数
       }
       dspProcess(s, &f);
       stateOnFrame(f, s.tUs);
+      #if POSTURE_ENABLE
+      postureOnFrame(f, s.tUs);
+      #endif
       const uint32_t tOut = (uint32_t)micros();
       outOnSample(f);
       samplerNoteOutUs((uint32_t)micros() - tOut);
@@ -142,6 +165,9 @@ void loop() {
     stateTick((uint32_t)micros());
     stateTickTouchRef((uint32_t)micros());   // 参考点采集结算（非阻塞）
     stateTickFlatRef((uint32_t)micros());    // 【模式3】平放基准采集：自动启动/结算/重试（非阻塞）
+    #if POSTURE_ENABLE
+    postureTick((uint32_t)micros());
+    #endif
     if (samplerSensorLost()) enterFault("传感器无响应");
   }
 
@@ -161,6 +187,11 @@ void loop() {
     runCalibration();
     if (dspCal().ok) s_calNeedsRetry = false;
     startRun();
+#if POSTURE_ENABLE
+    if (dspCal().ok) {
+      outPrintf("#重标定后 START 基线已失效：保持 START 后按 'P' 重采\n");
+    }
+#endif
     didHeavy = true;
   }
 
