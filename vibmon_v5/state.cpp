@@ -7,6 +7,12 @@ static Result     s_r = {};
 
 /* 启停状态机 */
 static uint8_t  s_hiCnt = 0, s_loCnt = 0;
+/* 启停频率专用包络状态。它与 s_r.vib 分开：
+ * s_r.vib 仍按低阈值判断真实振动，供 contact/freq 使用；
+ * s_ssVib 使用更低的灵敏度/更高阈值，用来识别 ERM 惯性残余后的
+ * 幅值下降沿，只驱动 ssHz。 */
+static uint8_t  s_ssVib = 0;
+static uint8_t  s_ssHiCnt = 0, s_ssLoCnt = 0;
 static bool     s_haveEdge = false;
 static uint32_t s_lastEdgeUs = 0;
 static float    s_periodMs[SS_EDGE_MAX];
@@ -151,25 +157,42 @@ static void ssOnStartEdge(uint32_t tUs) {
 }
 
 static void ssStep(float env, uint32_t tUs) {
-  // ① 上升穿越检测：只在"未振动 + 真的跨过 hi"时记录插值时刻。
-  //    这一步与确认机制解耦：确认要等 SS_CONFIRM 个点，但边沿时刻用穿越点。
-  if (s_havePrevEnv && s_r.vib == 0 &&
-      s_prevEnv <= s_th.hi && env > s_th.hi) {
-    s_pendingEdgeUs   = crossTimeUs(s_prevEnv, s_prevEnvUs, env, tUs, s_th.hi);
+  // ① 启停频率支路：用独立的 SS_HI/SS_LO 看包络调制。
+  //    它不改变 s_r.vib，也不把残余振动冒充成 contact。
+  if (s_havePrevEnv && s_ssVib == 0 &&
+      s_prevEnv <= SS_HI_MG && env > SS_HI_MG) {
+    s_pendingEdgeUs   = crossTimeUs(s_prevEnv, s_prevEnvUs, env, tUs, SS_HI_MG);
     s_havePendingEdge = true;
   }
 
-  if (s_r.vib == 0) {
-    if (env > s_th.hi) {
-      if (++s_hiCnt >= SS_CONFIRM) {
-        s_hiCnt = 0; s_r.vib = 1; s_r.nStart++;
+  if (s_ssVib == 0) {
+    if (env > SS_HI_MG) {
+      if (++s_ssHiCnt >= SS_CONFIRM) {
+        s_ssHiCnt = 0; s_ssVib = 1;
         // 用插值出的穿越时刻；没有记录（如启动时已在阈值上）则回退到当前时刻
         ssOnStartEdge(s_havePendingEdge ? s_pendingEdgeUs : tUs);
         s_havePendingEdge = false;
       }
     } else {
-      s_hiCnt = 0;
+      s_ssHiCnt = 0;
       s_havePendingEdge = false;   // 没升上去，作废
+    }
+  } else {
+    if (env < SS_LO_MG) {
+      if (++s_ssLoCnt >= SS_CONFIRM) {
+        s_ssLoCnt = 0; s_ssVib = 0;
+      }
+    } else s_ssLoCnt = 0;
+  }
+
+  // ② 原振动状态仍按 TH_HI/TH_LO 维护，供 contact/freqValid 使用。
+  if (s_r.vib == 0) {
+    if (env > s_th.hi) {
+      if (++s_hiCnt >= SS_CONFIRM) {
+        s_hiCnt = 0; s_r.vib = 1; s_r.nStart++;
+      }
+    } else {
+      s_hiCnt = 0;
     }
   } else {
     if (env < s_th.lo) {
@@ -484,6 +507,12 @@ bool stateTouchRefCapturing(void) { return s_refPhase != CTREF_IDLE; }
 
 /* 由主循环每圈调用：结算采集（用样本时间戳，不用 millis） */
 void stateTickTouchRef(uint32_t nowUs) {
+#if CT_MODE != 2
+  /* 模式 3/4 使用 stateTickFlatRef；两套采集共用 s_refPhase，
+   * 不能同时推进，否则平放基准会被接触姿态采集提前消费。 */
+  (void)nowUs;
+  return;
+#else
   if (s_refPhase == CTREF_IDLE) return;
   if (s_refStartUs == 0) { s_refStartUs = nowUs; return; }
 
@@ -514,6 +543,7 @@ void stateTickTouchRef(uint32_t nowUs) {
     }
     s_refPhase = CTREF_IDLE;
   }
+#endif
 }
 
 void stateClearTouchRef(void) {
@@ -611,6 +641,10 @@ static bool flatRefCommit(void) {
 /* 由主循环每圈调用：自动启动 + 阶段推进 + 结算 + 重试。
  * 与 stateTickTouchRef 结构相同，多出"自动启动"和"失败重试"两步。 */
 void stateTickFlatRef(uint32_t nowUs) {
+#if CT_MODE != 3 && CT_MODE != 4
+  (void)nowUs;
+  return;
+#else
 #if AUTO_ZERO_ENABLE
   /* 【无机械限位时的兜底】静止足够久、没有振动、且角度已经回到张开位 ⇒ 自动重采基准。
    * 三个条件缺一不可：
@@ -663,6 +697,7 @@ void stateTickFlatRef(uint32_t nowUs) {
     }
     s_flatAutoArm = false;
   }
+#endif
 }
 
 void stateClearFlatRef(void) {
@@ -768,6 +803,7 @@ void stateReset(void) {
   s_r.sensorOk = sensorOk; s_r.calOk = calOk; s_r.calQuality = calQ;
   s_r.nStart = ns; s_r.nStop = np;
   s_hiCnt = s_loCnt = 0;
+  s_ssVib = 0; s_ssHiCnt = s_ssLoCnt = 0;
   s_haveEdge = false;
   s_nPeriod = 0;
   s_haveWin = false;
@@ -831,6 +867,9 @@ void stateOnGap(const SamplerGap& g) {
   // ② 确认链：不跨缺口累计"连续"
   s_hiCnt = 0;
   s_loCnt = 0;
+  s_ssVib = 0;
+  s_ssHiCnt = 0;
+  s_ssLoCnt = 0;
   s_ctCand = s_r.contact;      // 候选回到当前状态，重新计时
   s_ctCandUs = 0;
 

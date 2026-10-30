@@ -260,6 +260,19 @@
 #ifndef SS_USE_PERIODS
 #define SS_USE_PERIODS   4       // 取最近 N 个周期的中位数
 #endif
+
+/* 启停频率专用包络阈值（mg）。
+ * ERM 断电后不会立即停转，3Hz 的 166ms 停止段仍会残留约 30~150mg 振动；
+ * 如果直接复用接触/振动的 TH 阈值（本机约 28/14mg），vib 会一直保持 1，
+ * 启停边沿永远不出现。这里仅给 ssHz 的包络状态机使用一组更高的阈值，
+ * 不改变 contact、freqValid、gripNoObject 的判据。 */
+#ifndef SS_HI_MG
+#define SS_HI_MG          180.0f
+#endif
+#ifndef SS_LO_MG
+#define SS_LO_MG          150.0f
+#endif
+
 #define SS_TIMEOUT_K     2.0f    // 超过 K × 当前周期没有新边沿 → 启停频率失效
 #define SS_CONSIST_RATIO 1.5f    // 参与统计的周期 最大/最小 超过此比值 → 节奏不稳，不给读数
 #define FREQ_STALE_MS    300     // 主频结果超过此时间未更新 → 失效

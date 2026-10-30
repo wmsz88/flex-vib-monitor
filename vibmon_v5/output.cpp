@@ -673,7 +673,7 @@ CmdAction outPollCmd(void) {
          * 所以每条控制在一行以内，不依赖缓冲区大小。 */
         outPrintf("命令: 0~4 选绘图组(0关 1结果 2启停 3接触 4波形) | p 轮换\n");
         outPrintf("      d 调试行 | S 状态 | c 重标定(须静置) | n 清零统计 | ? 帮助\n");
-#if CT_MODE == 3
+#if CT_MODE == 3 || CT_MODE == 4
         outPrintf("      t 记录平放基准(平放时按) | t0 清除基准\n");
 #else
         outPrintf("      t 记录接触姿态(握住时按) | t0 清除参考点\n");
@@ -691,6 +691,10 @@ CmdAction outPollCmd(void) {
        * 为什么单独一条命令：plotLine 的 CSV 丢掉了有效性标记，
        * 无效数据会被 fin() 变成 0.0，扫频时无法分辨真假。 */
       case 'w': sweepLine(); break;
+      case 'c':
+        setPlot(PLOT_OFF);
+        act = CMD_RECAL;
+        break;
       case 'd':
         s_dbg = !s_dbg;
         if (s_dbg) s_plot = PLOT_OFF;
@@ -740,7 +744,7 @@ CmdAction outPollCmd(void) {
           char d = (char)OUT.peek();
           if (d == '0') { OUT.read(); clear = true; }
         }
-#if CT_MODE == 3
+#if CT_MODE == 3 || CT_MODE == 4
         if (clear) {
           stateClearFlatRef();
           outPrintf("#已清除平放基准（接触判定回到不可信，将自动重采）\n");
