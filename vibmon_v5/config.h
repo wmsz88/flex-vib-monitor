@@ -361,9 +361,8 @@
  * 【2026-10-31 实板实测修正】空夹最坏瞬态 304mg、真接触 500~1152mg，
  *   幅值门是当前**实际起把关作用**的判据；频率门只作辅助证据（实测频段重叠）。
  */
-#define CT_FLAT_A_ON_MG   400.0f  /* 实测：空夹典型 6~50mg、最坏瞬态单点 304mg、真接触 796~834mg。
-                                   * 取 400（量程 ±4g 的 10%）：高于最坏瞬态 1.3 倍、低于最弱接触 2.0 倍。
-                                   * 两侧等余量的理论最优是 sqrt(304*796)=492，取 400 更保守。
+#define CT_FLAT_A_ON_MG   400.0f  /* 实测：空夹中位 6.2mg、最坏瞬态 304mg；真接触 500~1152mg。
+                                   * 取 400：高于最坏瞬态 1.3 倍、低于最弱接触 1.25 倍。
                                    * 历史：80 曾被瞬态点着过；200 时最坏瞬态 304 仍能越过门限，
                                    * 只是那一刻主频无效才没误判。 */
 #define CT_FLAT_A_OFF_MG  300.0f  /* 滞回退出 */
@@ -605,6 +604,9 @@
   #endif
   #if (CT_FLAT_F_OFF_HZ_INT >= CT_FLAT_F_ON_HZ_INT)
     #error "CT_FLAT_F_OFF 必须小于 CT_FLAT_F_ON（同上）"
+  #endif
+  #if (CT_FLAT_F_ON_HZ_INT >= 80)
+    #error "CT_FLAT_F_ON 高于命题频段下限 80Hz，80~门限之间的合规振源将永远判不出接触"
   #endif
   #if (CT_FLAT_F_ON_HZ_INT > FREQ_HI_HZ_INT)
     #error "CT_FLAT_F_ON 高于测频上限 FREQ_HI_HZ，接触永远不可能成立（主频最多到 FREQ_HI_HZ）"
