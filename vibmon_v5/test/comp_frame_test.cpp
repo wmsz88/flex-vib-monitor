@@ -1,4 +1,4 @@
-// v5 串口比赛帧协议主机测试
+﻿// v5 串口比赛帧协议主机测试
 //
 // 编译：
 //   g++ -std=c++17 -Wall -I test -I .. test/comp_frame_test.cpp ../output.cpp ../state.cpp -o test/comp_frame_test.exe
@@ -106,7 +106,6 @@ static void testAllZero(void) {
   Result r = {};   // 全零：所有字段无效
   char buf[64];
   int n = compBuildFrame(r, 0, buf, sizeof(buf));
-  printf("[allzero] len=%d frame=[%s]\n", n, n > 0 ? buf : "?");
   CHECK(n == 35, "all-zero frame is 35 bytes");
   if (n == 35) {
     CHECK(memcmp(buf, "$VD,0000,00000,00000,0,0,000,0", 30) == 0,
@@ -125,7 +124,6 @@ static void testContact(void) {
   Result r = makeContact();
   char buf[64];
   int n = compBuildFrame(r, 137, buf, sizeof(buf));
-  printf("[contact] len=%d frame=[%s]\n", n, n > 0 ? buf : "?");
   CHECK(n == 35, "contact frame is 35 bytes");
   if (n == 35) {
     CHECK(memcmp(buf, "$VD,0137,01652,00966,1,1,120,F", 30) == 0,
