@@ -379,8 +379,8 @@
  *   本方案需要重新设计（例如改用幅值谱形状或双频特征）。
  *   采样时务必分别记录空夹与握有物体的 freqHz 分布。
  */
-#define CT_FLAT_F_ON_HZ   85.0f   /* 覆盖命题 80~180Hz：进入门限取 85 */
-#define CT_FLAT_F_OFF_HZ  70.0f   /* 滞回退出；低于测频下限 60 但高于空夹本底 */
+#define CT_FLAT_F_ON_HZ   78.0f   /* 判据是严格大于：78 才能覆盖命题下限 80Hz */
+#define CT_FLAT_F_OFF_HZ  65.0f   /* 滞回退出；仍高于测频下限 60 */
 
 /* ---- 判据降级策略 ----
  * 三重与的代价：任何一路数据失效（频率没估出来、幅值被削顶）都会让
@@ -458,10 +458,10 @@
 #define CT_FLAT_A_OFF_MG_INT    300
 #endif
 #ifndef CT_FLAT_F_ON_HZ_INT
-#define CT_FLAT_F_ON_HZ_INT     85
+#define CT_FLAT_F_ON_HZ_INT     78
 #endif
 #ifndef CT_FLAT_F_OFF_HZ_INT
-#define CT_FLAT_F_OFF_HZ_INT    70
+#define CT_FLAT_F_OFF_HZ_INT    65
 #endif
 
 /* ---------- 输出 ---------- */

@@ -164,14 +164,14 @@ closed = angleValid && theta > 60°
 
 contact = closed
           && A > 400mg
-          && F > 85Hz
+          && F > 78Hz
 ```
 
 退出使用滞回：
 
 ```text
 theta < 45° -> closed=0
-A < 300mg 或 F < 70Hz -> contact=0
+A < 300mg 或 F < 65Hz -> contact=0
 ```
 
 ### 3.6 posture.cpp / posture.h
@@ -404,7 +404,7 @@ P 必须在真正 START 姿态下按
 2. 开启振源
 3. 等 2~3s
 4. 发 w 或 S
-5. 预期：cl=1，A>400，F>120，ct=1
+5. 预期：cl=1，A>400，F>78，ct=1
 ```
 
 ### 7.5 退出测试
@@ -431,8 +431,8 @@ P 必须在真正 START 姿态下按
 | `ANGLE_CLOSED_OFF_DEG` | 45 | 闭合退出门限 |
 | `CT_FLAT_A_ON_MG` | 400 | 接触幅值进入门限 |
 | `CT_FLAT_A_OFF_MG` | 300 | 接触幅值退出门限 |
-| `CT_FLAT_F_ON_HZ` | 85 | 接触主频进入门限，覆盖 80~180Hz |
-| `CT_FLAT_F_OFF_HZ` | 70 | 接触主频退出门限 |
+| `CT_FLAT_F_ON_HZ` | 78 | 接触主频进入门限，严格大于后覆盖 80~180Hz |
+| `CT_FLAT_F_OFF_HZ` | 65 | 接触主频退出门限 |
 | `FREQ_LO_HZ` | 60 | 主频有效下限 |
 | `FREQ_HI_HZ` | 220 | 主频有效上限 |
 
@@ -562,7 +562,7 @@ SDA/SCL
 ```text
 closed 是否为 1
 A 是否 > 400mg
-F 是否 > 85Hz
+F 是否 > 78Hz
 cliplim 是否为 1
 是否真的压住振源
 ```
