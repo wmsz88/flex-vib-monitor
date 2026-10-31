@@ -31,6 +31,7 @@ static uint32_t s_blockStartUs = 0;
 static float s_blockSum[3];
 static float s_blockMin[3];
 static float s_blockMax[3];
+static float s_blockMaxGyro;
 static uint32_t s_blockN;
 static bool s_blockHave;
 static uint32_t s_lastFrameUs = 0;
@@ -64,6 +65,7 @@ static void resetBlock(void) {
     s_blockMin[i] = 0.0f;
     s_blockMax[i] = 0.0f;
   }
+  s_blockMaxGyro = 0.0f;
 }
 
 /* 结束一次 P 基线采集。
@@ -252,6 +254,7 @@ void postureOnFrame(const DspFrame& f, uint32_t tUs) {
       s_blockMin[i] = f.ctAxis[i];
       s_blockMax[i] = f.ctAxis[i];
     }
+    s_blockMaxGyro = 0.0f;
   }
   for (int i = 0; i < 3; i++) {
     const float v = f.ctAxis[i];
@@ -260,6 +263,7 @@ void postureOnFrame(const DspFrame& f, uint32_t tUs) {
     if (v > s_blockMax[i]) s_blockMax[i] = v;
   }
   s_blockN++;
+  if (gyroW > s_blockMaxGyro) s_blockMaxGyro = gyroW;
   if (tUs - s_blockStartUs < (uint32_t)POSTURE_WINDOW_MS * 1000u) return;
 
   float maxRange = 0.0f;
@@ -273,7 +277,7 @@ void postureOnFrame(const DspFrame& f, uint32_t tUs) {
   s_p.blockN = s_blockN;
   s_p.valid = s_p.calValid && s_blockN >= 100 &&
               maxRange <= POSTURE_STATIC_RANGE_MG &&
-              gyroW <= POSTURE_STATIC_GYRO_DPS;
+              s_blockMaxGyro <= POSTURE_STATIC_GYRO_DPS;
   if (s_p.valid) {
     s_p.distMg = norm3(s_p.x - s_p.startX, s_p.y - s_p.startY, s_p.z - s_p.startZ);
     if (s_p.distMg <= POSTURE_START_RADIUS_MG) {

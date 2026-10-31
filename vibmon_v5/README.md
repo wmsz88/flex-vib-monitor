@@ -164,14 +164,14 @@ closed = angleValid && theta > 60°
 
 contact = closed
           && A > 400mg
-          && F > 120Hz
+          && F > 85Hz
 ```
 
 退出使用滞回：
 
 ```text
 theta < 45° -> closed=0
-A < 300mg 或 F < 90Hz -> contact=0
+A < 300mg 或 F < 70Hz -> contact=0
 ```
 
 ### 3.6 posture.cpp / posture.h
@@ -431,8 +431,8 @@ P 必须在真正 START 姿态下按
 | `ANGLE_CLOSED_OFF_DEG` | 45 | 闭合退出门限 |
 | `CT_FLAT_A_ON_MG` | 400 | 接触幅值进入门限 |
 | `CT_FLAT_A_OFF_MG` | 300 | 接触幅值退出门限 |
-| `CT_FLAT_F_ON_HZ` | 120 | 接触主频进入门限 |
-| `CT_FLAT_F_OFF_HZ` | 90 | 接触主频退出门限 |
+| `CT_FLAT_F_ON_HZ` | 85 | 接触主频进入门限，覆盖 80~180Hz |
+| `CT_FLAT_F_OFF_HZ` | 70 | 接触主频退出门限 |
 | `FREQ_LO_HZ` | 60 | 主频有效下限 |
 | `FREQ_HI_HZ` | 220 | 主频有效上限 |
 
@@ -459,7 +459,7 @@ g++ -std=c++17 -Wall -I test -I . `
 要求：
 
 ```text
-6/6 通过
+8/8 通过
 ```
 
 比赛帧测试：
@@ -501,6 +501,10 @@ $src = "D:\大学\课程\工科赛\代码\vibmon_v5"
 & $cli upload --fqbn "esp32:esp32:esp32c3:CDCOnBoot=cdc" `
   --port COM8 $src
 ```
+
+比赛烧录**必须**使用 `CDCOnBoot=cdc`。非 CDC 构建会让 `Serial`
+占用 GPIO20/21，与默认 `PIN_COMP_RX/TX` 冲突，比赛帧无法正常初始化。
+`COMP_FRAME_ENABLED` 保持默认 0，只有确认平台协议后才改为 1 并重新烧录。
 
 COM 口变化时先执行：
 
@@ -558,7 +562,7 @@ SDA/SCL
 ```text
 closed 是否为 1
 A 是否 > 400mg
-F 是否 > 120Hz
+F 是否 > 85Hz
 cliplim 是否为 1
 是否真的压住振源
 ```
@@ -582,7 +586,7 @@ I2C 错误是否非零
 
 ```text
 双 FQBN 编译 0 warning
-gyro_test 6/6
+gyro_test 8/8
 comp_frame_test 22/22
 静止漂移测试
 0.5 / 1 / 2 / 3Hz 启停频率

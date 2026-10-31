@@ -109,6 +109,7 @@
                                     * 取 400：对张开侧余量近 2 倍，对闭合侧仍有 2.5 倍。
                                     * 机械限位做不到时，放宽这一项能让"每次张开位置不同"
                                     * 也能被判成回到张开位，配合下面的自动重采基准。 */
+#endif
 
 /* ---------- 自动重采基准（无机械限位时的兜底，2026-10-29） ----------
  * 触发条件全部满足才重采：
@@ -171,8 +172,6 @@
 #endif
 #ifndef POSTURE_STABLE_WINDOWS
 #define POSTURE_STABLE_WINDOWS  3
-#endif
-
 #endif
 
 /* ---------- 采样 ---------- */
@@ -380,8 +379,8 @@
  *   本方案需要重新设计（例如改用幅值谱形状或双频特征）。
  *   采样时务必分别记录空夹与握有物体的 freqHz 分布。
  */
-#define CT_FLAT_F_ON_HZ   120.0f  /* TODO(实测) 频率进入：主频 > 此值 */
-#define CT_FLAT_F_OFF_HZ  90.0f   /* TODO(实测) 频率退出：主频 < 此值 */
+#define CT_FLAT_F_ON_HZ   85.0f   /* 覆盖命题 80~180Hz：进入门限取 85 */
+#define CT_FLAT_F_OFF_HZ  70.0f   /* 滞回退出；低于测频下限 60 但高于空夹本底 */
 
 /* ---- 判据降级策略 ----
  * 三重与的代价：任何一路数据失效（频率没估出来、幅值被削顶）都会让
@@ -459,10 +458,10 @@
 #define CT_FLAT_A_OFF_MG_INT    300
 #endif
 #ifndef CT_FLAT_F_ON_HZ_INT
-#define CT_FLAT_F_ON_HZ_INT     120
+#define CT_FLAT_F_ON_HZ_INT     85
 #endif
 #ifndef CT_FLAT_F_OFF_HZ_INT
-#define CT_FLAT_F_OFF_HZ_INT    90
+#define CT_FLAT_F_OFF_HZ_INT    70
 #endif
 
 /* ---------- 输出 ---------- */
@@ -593,10 +592,10 @@
   #error "COMP_PERIOD_MS 必须大于 0"
 #endif
 
-/* ---------- 模式 3（平放三重与）参数检查 ----------
- * 只在 CT_MODE==3 时检查，其它模式下去掉这些宏也不该报错。
+/* ---------- 模式 3/4（平放三重与）参数检查 ----------
+ * 模式 4 复用同一组 A/F 门限，必须一起做编译期检查。
  */
-#if (CT_MODE == 3)
+#if (CT_MODE == 3) || (CT_MODE == 4)
   #if (CT_FLAT_D_OFF_MG_INT >= CT_FLAT_D_ON_MG_INT)
     #error "CT_FLAT_D_OFF 必须小于 CT_FLAT_D_ON（否则滞回带反了，接触会在阈值处抖动）"
   #endif

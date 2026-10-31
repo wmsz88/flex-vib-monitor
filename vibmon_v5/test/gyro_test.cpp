@@ -142,6 +142,12 @@ int main(void) {
   feed(700.0f, 0.0f, 200);
   feed(700.0f, GYRO_CLIP_DPS + 50.0f, 200);
   CHECK(stateResult().angleValid == false, "G5 over-range -> angleValid=false");
+  feed(700.0f, 0.0f, 1000);
+  CHECK(stateResult().angleValid == false,
+        "G5b over-range latch stays invalid after normal samples");
+  feed(0.0f, 0.0f, 1500);
+  CHECK(stateResult().angleValid == true,
+        "G5c parked at open clears over-range latch");
 
   /* G6：连续无陀螺超过 GYRO_STALE_MS ⇒ angleValid=false */
   resetAll();

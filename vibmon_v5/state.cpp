@@ -71,6 +71,7 @@ static uint32_t s_stillUs       = 0;                   // 连续静止时长（Z
 static uint32_t s_lastGyroUs    = 0;                   // 最近一次收到陀螺数据的时刻
 static uint8_t  s_angOpenHeld   = 0;                   // 角度滞回：已离开松手位
 static uint8_t  s_angAirHeld    = 0;                   // 角度滞回：已闭合到底（空夹）
+static bool     s_gyroClipLatched = false;              // 超量程后角度不可信，直到张开归零
 static bool     s_sinceClose    = false;               // 上次采基准以来是否闭合过（自动重采用）
 /* 【为什么上面这些模式3变量不放在 #if CT_MODE == 3 里】
  *   它们的使用点分布在 stateStartFlatRef / flatRefCommit / stateTickFlatRef /
@@ -284,7 +285,9 @@ static void angleStep(const DspFrame& f, uint32_t tUs) {
     s_r.gyroSeen = true;
 
     if (f.gyroClipped) {
-      /* 超量程：这一段角度不可信，直接标无效；恢复后从当前值继续 */
+      /* 超量程：漏掉的角度无法补回。锁存到下次在张开位归零，
+       * 避免下一帧恢复非削顶后 angleValid 又立刻变成 true。 */
+      s_gyroClipLatched = true;
       s_r.angleValid = false;
       return;
     }
@@ -314,6 +317,7 @@ static void angleStep(const DspFrame& f, uint32_t tUs) {
     /* 停在张开位 ⇒ 角度归零。这是整套方案的"绝对参考"来源。 */
     if (parked) {
       s_angleDeg[0] = s_angleDeg[1] = s_angleDeg[2] = 0.0f;
+      s_gyroClipLatched = false;
     }
 
     float m = fabsf(s_angleDeg[0]);
@@ -324,9 +328,12 @@ static void angleStep(const DspFrame& f, uint32_t tUs) {
     if (m > 360.0f) {
       s_angleDeg[0] = s_angleDeg[1] = s_angleDeg[2] = 0.0f;
       m = 0.0f;
+      s_gyroClipLatched = true;
       s_r.angleValid = false;
-    } else {
+    } else if (!s_gyroClipLatched) {
       s_r.angleValid = true;
+    } else {
+      s_r.angleValid = false;
     }
     s_r.closeAngleDeg = m;
   }
@@ -754,6 +761,7 @@ void stateApplyCal(const DspCal& cal) {
   s_stillUs = 0;
   s_angOpenHeld = 0; s_angAirHeld = 0;
   s_sinceClose = false;
+  s_gyroClipLatched = false;
   s_r.closeAngleDeg = 0.0f;
   s_r.angleValid = false;
   /* 标定会改变零偏，进行中的参考点采集作废（采到的值在新坐标系里没意义） */
@@ -820,6 +828,7 @@ void stateReset(void) {
   s_stillUs = 0;
   s_lastGyroUs = 0;
   s_angOpenHeld = 0; s_angAirHeld = 0;
+  s_gyroClipLatched = false;
   s_sinceClose = false;
   s_r.closeAngleDeg = 0.0f;
   s_r.angleValid = false;
