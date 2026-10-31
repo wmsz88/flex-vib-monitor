@@ -17,6 +17,9 @@ static uint32_t s_lastCalTryMs  = 0;
 static bool     s_ignoreLoopStats = false;
 static bool     s_loopStatsResetPending = false;
 
+/* 进入传感器故障态。
+ * 顺序很关键：先停采样器，再清 state 结果并切故障灯。
+ * stop 超时说明回调还没退出，本轮绝不能碰 Wire。 */
 static void enterFault(const char* why) {
   SamplerStopResult st = samplerStop();
   s_fault = true;
@@ -30,6 +33,8 @@ static void enterFault(const char* why) {
   }
 }
 
+/* 初始化 MPU 总线和寄存器。
+ * 每次 fault 恢复都调用，不假设上一次 Wire 状态仍然有效。 */
 static bool bringUpSensor(void) {
   mpuBusBegin();
   uint8_t bad = 0;
@@ -42,6 +47,8 @@ static bool bringUpSensor(void) {
   return true;
 }
 
+/* 从停止/故障状态重新进入正常采样。
+ * 只清各模块运行态，不清标定参数和 START 基线。 */
 static bool startRun(void) {
   if (!samplerReset()) {
     enterFault("采样器状态未清，拒绝启动");
@@ -65,6 +72,9 @@ static bool startRun(void) {
   return true;
 }
 
+/* 阻塞式标定。
+ * 标定期间忽略主循环耗时统计，防止把 3.2s 静置算进 loopUsMax。
+ * 成功后才应用阈值，并作废 posture 的旧 START 基线。 */
 static void runCalibration(void) {
   s_ignoreLoopStats = true;          // 标定 3.2s 不能污染 loopUsMax
   ledSet(LED_CAL);
@@ -86,6 +96,8 @@ static void runCalibration(void) {
   s_loopStatsResetPending = true;    // 下一轮重置计时基准，避免把标定耗时算进去
 }
 
+/* 上电流程：串口/横幅 -> DSP 初始化 -> MPU 初始化 -> 标定 -> 启动采样。
+ * MPU 初始化失败时进入 fault 并返回，主循环按 1s 重试。 */
 void setup() {
   outBegin();
   delay(300);
@@ -107,6 +119,9 @@ void setup() {
 #endif
 }
 
+/* 主循环。
+ * 数据流顺序固定：samplerPop -> gap 通知 -> dsp -> state/posture -> output。
+ * gap 通知必须在 stateOnFrame 之前，先作废旧结果，避免缺口前后被插值。 */
 void loop() {
   /* ---- 主循环计时：测的是"上一轮 loop() 从头到尾"的耗时 ---- */
   static uint32_t s_lastLoopUs = 0;
@@ -154,6 +169,8 @@ void loop() {
         stateOnGap(gap);        // 必须在 stateOnFrame 之前：先作废旧读数
       }
       dspProcess(s, &f);
+      /* state 先消费，posture 再消费同一个 DspFrame。
+       * posture 只读，不影响正式 contact。 */
       stateOnFrame(f, s.tUs);
       #if POSTURE_ENABLE
       postureOnFrame(f, s.tUs);

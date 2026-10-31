@@ -17,6 +17,8 @@ static DspCalReport s_report = {};   // 本次尝试的诊断证据
 static uint8_t s_clipBits[3][BLOCK_N / 8];
 static uint8_t s_envClipBits[(ENV_WIN + 7) / 8];
 
+/* 位图 popcount。削顶统计用位图而不是逐样本数组，
+ * 把每个 128 样本窗口的内存占用压到 16 字节/轴。 */
 static uint16_t popcountBits(const uint8_t* bits, uint16_t nBytes) {
   uint16_t n = 0;
   for (uint16_t i = 0; i < nBytes; i++) n += (uint16_t)__builtin_popcount((unsigned)bits[i]);
@@ -65,6 +67,8 @@ static uint32_t s_calBandN;
 static double   s_calEnv, s_calCt;
 static uint32_t s_calEnvN;
 
+/* 初始化二阶 Butterworth 高通系数。
+ * 只在 dspInit 时计算一次，避免 1kHz 路径反复调用三角函数。 */
 static void hpInit(void) {
   float w0 = 2.0f * PI * HP_FC_HZ / (float)FS_HZ;
   float cw = cosf(w0), sw = sinf(w0);
@@ -77,10 +81,14 @@ static void hpInit(void) {
   s_a2 = (1.0f - alpha) / a0;
 }
 
+/* 清空滤波器内部状态。
+ * 缺样或重置后旧状态不再对应连续时间轴，继续使用会产生暂态。 */
 static void hpReset(void) {
   for (int i = 0; i < 3; i++) { s_z1[i] = 0; s_z2[i] = 0; }
 }
 
+/* 单轴二阶差分方程。Direct Form II 只用两个状态变量，
+ * 比保存历史输入/输出更省 RAM。 */
 static inline float hpStep(int a, float x) {
   float y = s_b0 * x + s_z1[a];
   s_z1[a] = s_b1 * x - s_a1 * y + s_z2[a];
@@ -88,12 +96,16 @@ static inline float hpStep(int a, float x) {
   return y;
 }
 
+/* 清空 RMS 缓冲并重建累计和。
+ * 每轮重新求和，避免浮点累计误差长期保留。 */
 static void envReset(void) {
   memset(s_envBuf, 0, sizeof(s_envBuf));   // 缓冲内容必须与累计和一致
   memset(s_envClipBits, 0, sizeof(s_envClipBits));
   s_envIdx = 0; s_envFill = 0; s_envSum = 0.0f; s_envHop = 0; s_env = 0.0f;
 }
 
+/* 清空主频窗口。缺样后必须重新攒满 BLOCK_N 个连续样本，
+ * 否则窗口内的时间间隔是假的，过零频率会错。 */
 static void winReset(void) {
   s_histFill = 0; s_hopCnt = 0;
   // 位图必须一起清：缺口后窗口重新攒，旧削顶记录不再属于"最近 BLOCK_N 个样本"

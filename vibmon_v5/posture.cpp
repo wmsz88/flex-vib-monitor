@@ -7,12 +7,16 @@
 
 namespace {
 
+/* P 基线采集三阶段状态机：
+ * SETTLE 等手放稳，AVG 累加样本，IDLE 表示无采集。 */
 enum CalPhase : uint8_t {
   CAL_IDLE = 0,
   CAL_SETTLE,
   CAL_AVG,
 };
 
+/* 姿态诊断模块的全部状态集中在本文件。
+ * state/output 只通过 postureResult() 读取，不直接改这些变量。 */
 static PostureResult s_p = {};
 static CalPhase s_calPhase = CAL_IDLE;
 static uint32_t s_calStartUs = 0;
@@ -33,10 +37,12 @@ static uint32_t s_lastFrameUs = 0;
 static uint8_t s_candidateCls = POSTURE_UNKNOWN;
 static uint8_t s_candidateCount = 0;
 
+/* 三轴欧氏距离：把当前姿态折算成“离 START 基线多远”。 */
 static float norm3(float x, float y, float z) {
   return sqrtf(x * x + y * y + z * z);
 }
 
+/* 清空 P 基线累加器。min/max 用首样本初始化，不能只置 0。 */
 static void resetCalAccumulator(void) {
   for (int i = 0; i < 3; i++) {
     s_calSum[i] = 0.0f;
@@ -48,6 +54,7 @@ static void resetCalAccumulator(void) {
   s_p.calN = 0;
 }
 
+/* 清空 500ms 运行窗口。每轮分类结束后调用，避免旧样本进入下一窗。 */
 static void resetBlock(void) {
   s_blockN = 0;
   s_blockHave = false;
@@ -59,6 +66,9 @@ static void resetBlock(void) {
   }
 }
 
+/* 结束一次 P 基线采集。
+ * ok=true: 把平均值提交为 START 基线，并重置稳定分类。
+ * ok=false: 不修改旧基线；calFailed 置位，让现场知道这次 P 没生效。 */
 static void finishCalibration(bool ok, const char* why) {
   s_calPhase = CAL_IDLE;
   s_p.calActive = false;
@@ -86,6 +96,8 @@ static void finishCalibration(bool ok, const char* why) {
 
 }  // namespace
 
+/* 上电全量复位。与 postureInvalidateCal 的区别：
+ * 这里还清 s_p 的结果字段和最近帧时间戳。 */
 void postureInit(void) {
   s_p = PostureResult{};
   s_calPhase = CAL_IDLE;
@@ -100,6 +112,8 @@ void postureInit(void) {
   s_candidateCount = 0;
 }
 
+/* 重启采样器前调用。
+ * 保留 START 基线（它是现场事实），只丢弃当前窗口和稳定分类。 */
 void postureResetRuntime(void) {
   resetBlock();
   s_p.valid = false;
@@ -112,6 +126,9 @@ void postureResetRuntime(void) {
   s_candidateCount = 0;
 }
 
+/* 主动清 START 基线。
+ * 触发点：重标定成功后。新 ctAxis 在新加速度零偏坐标系下计算，
+ * 旧 START 三轴均值不能继续用。 */
 void postureInvalidateCal(void) {
   s_calPhase = CAL_IDLE;
   s_p.calActive = false;
@@ -128,6 +145,8 @@ void postureInvalidateCal(void) {
   resetBlock();
 }
 
+/* 启动 P 基线采集。这里只做状态切换；
+ * 输出层已先检查 closeAngle/ctDev，防止在 HONGEST 上误按 P。 */
 bool postureStartCal(void) {
   if (s_calPhase != CAL_IDLE) return false;
   s_calPhase = CAL_SETTLE;
@@ -144,6 +163,9 @@ bool postureCalCapturing(void) {
   return s_calPhase != CAL_IDLE;
 }
 
+/* 采样缺口等于证据中断。
+ * 当前窗口必须作废；若 P 正在采集，本次基线也必须失败，
+ * 不能用残缺数据凑一个 START 均值。 */
 void postureOnGap(const SamplerGap& gap) {
   (void)gap;
   resetBlock();
@@ -159,6 +181,15 @@ void postureOnGap(const SamplerGap& gap) {
   }
 }
 
+/* 逐样本驱动。
+ *
+ * 输入: f.ctAxis 三轴低通值；f.gyroDps 三轴角速度。
+ * 处理:
+ *   1. P 采集期间：SETTLE/AVG 推进，并检查极差和角速度；
+ *   2. 运行期间：每 POSTURE_WINDOW_MS 求一次三轴均值；
+ *   3. 距 START 基线 < START_RADIUS 判 START，> HONGEST_DIST 判 HONGEST；
+ *   4. 连续 POSTURE_STABLE_WINDOWS 个同类别窗口才提交 stableCls。
+ * 输出: 更新 s_p；不写 Result，不改变 contact。 */
 void postureOnFrame(const DspFrame& f, uint32_t tUs) {
   s_lastFrameUs = tUs;
   const float gyroW = f.gyroValid
@@ -292,6 +323,9 @@ void postureOnFrame(const DspFrame& f, uint32_t tUs) {
   resetBlock();
 }
 
+/* 非采样数据驱动的超时处理。
+ * 这里不能只用 frame 时间戳：主循环卡死时 frame 停止推进，
+ * 只有 nowUs 能发现“太久没有新样本”。 */
 void postureTick(uint32_t nowUs) {
   if (s_calPhase == CAL_SETTLE && s_calStartUs != 0 &&
       nowUs - s_calStartUs > (uint32_t)(POSTURE_CAL_SETTLE_MS + POSTURE_CAL_AVG_MS + 1000u) * 1000u) {
