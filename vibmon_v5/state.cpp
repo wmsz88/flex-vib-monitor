@@ -407,7 +407,7 @@ static void ctStep(float dev, uint32_t tUs) {
   }
   s_r.condAmp = (s_r.ampValid && s_r.ampMg > CT_FLAT_A_ON_MG) ? 1 : 0;
 
-  /* ---- (3) 频率门：区分空夹与真接触的唯一依据 ----
+  /* ---- (3) 频率门：辅助证据（实测不能单独区分空夹）----
    * 同上：freqValid=false（空夹测不出主频）时必须把保持位清零，
    * 否则瞬态估出的一次主频会让频率门永久为真。 */
   if (s_r.freqValid) {
