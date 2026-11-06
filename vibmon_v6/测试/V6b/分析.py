@@ -7,7 +7,7 @@
 import argparse
 import re
 import statistics as st
-from datetime import datetime
+from datetime import datetime, timedelta
 
 RE_V6 = re.compile(r"#V6 closed=(\d) ang=(-?[\d.]+) lpW=([\d.]+) settled=(\d) moved=([\d.]+)")
 RE_F = re.compile(r"#F=([\d.]+)\S* A=([\d.]+)\S* .*?vib=(\d+).*? SS=([\d.]+)\S* ct=(\d+)")
@@ -76,30 +76,49 @@ def main():
         stats(fr, 1, "F(Hz)")
         stats(fr, 4, "SS(Hz)")
     if vd:
-        good = [r for r in vd if r[7] != "0"]
-        print("$VD:")
-        print(f"  帧数={len(vd)}  ct=1 占比={sum(1 for r in vd if r[5]) / len(vd):.1%}")
-        stats(vd, 2, "FREQ(Hz)")
-        stats(vd, 3, "AMP(mg)")
-        stats(vd, 6, "SS(Hz)")
-        # 连续帧序列号的缺口
-        gaps = sum(1 for a, b in zip(vd, vd[1:]) if (b[1] - a[1]) % 10000 != 1)
-        print(f"  SEQ 不连续次数={gaps}")
+        # 采集脚本按"读到就写"打时间戳，一坨帧会同毫秒。用 20ms 帧周期把批内时间拉平，
+        # 让每帧时刻≈该批最后到达时刻减去它在批内的位置。
+        fixed, i, n = [], 0, len(vd)
+        batches = []
+        while i < n:
+            j = i
+            while j + 1 < n and vd[j + 1][0] == vd[i][0]:
+                j += 1
+            m = j - i + 1
+            batches.append(m)
+            for k in range(i, j + 1):
+                fixed.append((vd[i][0] - timedelta(milliseconds=20 * (j - k)),) + vd[k][1:])
+            i = j + 1
 
-    if len(vd) >= 4:
-        body = "".join(f"{r[1]:04d},{int(r[2] * 10):05d},{r[3]:05d},{r[4]},{r[5]},{int(r[6] * 100):03d},{r[7]}"
-                       for r in vd[:0])
-        # 逐帧重算 CHK（正文 XOR），抽前 5 帧
+        print("$VD:")
+        print(f"  首帧 {fixed[0][0].strftime('%H:%M:%S.%f')[:-3]}  末帧 {fixed[-1][0].strftime('%H:%M:%S.%f')[:-3]}"
+              f"  时长 {(fixed[-1][0] - fixed[0][0]).total_seconds():.1f}s")
+        print(f"  帧数={len(fixed)}  平均批大小={sum(batches) / len(batches):.1f}  ct=1 占比={sum(1 for r in fixed if r[5]) / len(fixed):.1%}")
+        stats(fixed, 2, "FREQ(Hz)")
+        stats(fixed, 3, "AMP(mg)")
+        stats(fixed, 6, "SS(Hz)")
+        gaps = sum(1 for a, b in zip(fixed, fixed[1:]) if (b[1] - a[1]) % 10000 != 1)
+        print(f"  SEQ 不连续次数={gaps}")
+        # 帧正文长度（$VD,... 到 CHK 之前）
+        lens = {}
+        for r in fixed[:200]:
+            L = len(f"$VD,{r[1]:04d},{int(round(r[2] * 10)):05d},{r[3]:05d},{int(r[4])},{int(r[5])},{int(round(r[6] * 100)):03d},{r[7]}")
+            lens[L] = lens.get(L, 0) + 1
+        print(f"  正文长度分布（抽 200 帧）: {lens}")
         bad = 0
-        for r in vd[:5]:
-            body = f"{r[1]:04d},{int(round(r[2] * 10)):05d},{r[3]:05d},{r[4]},{r[5]},{int(round(r[6] * 100)):03d},{r[7]}"
+        for r in fixed[:5]:
+            body = f"$VD,{r[1]:04d},{int(round(r[2] * 10)):05d},{r[3]:05d},{int(r[4])},{int(r[5])},{int(round(r[6] * 100)):03d},{r[7]}"
             x = 0
             for ch in body:
                 x ^= ord(ch)
             if f"{x:02X}" != r[8]:
                 bad += 1
         print(f"  抽 5 帧重算 CHK：{5 - bad}/5 对")
-
+        print("  ct 跳变：")
+        for a, b in zip(fixed, fixed[1:]):
+            if a[5] != b[5]:
+                print(f"    {b[0].strftime('%H:%M:%S.%f')[:-3]}  ct {int(a[5])}->{int(b[5])}"
+                      f"  (AMP={b[3]:d}mg, FREQ={b[2]:g}Hz, SEQ={b[1]})")
 
 if __name__ == "__main__":
     main()
