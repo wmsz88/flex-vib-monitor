@@ -1,0 +1,15 @@
+T013 实板体检采集说明（2026-11-06）
+
+固件：vibmon_v6 CDC 构建（esp32:esp32:esp32c3:CDCOnBoot=cdc，Flash 373000B / RAM 30340B）。
+      烧录：arduino-cli upload --input-dir <英文临时目录>\bp_cdc -p COM9，写入 373152 字节，Hash verified。
+调试行：采集中发了 'd'，日志里每 200ms 一行 #F= 与一行 #V6。
+
+串口分工（本机只有两个 USB 口，轮着插）：
+  COM9 = 检测模块原生 USB -> #F / #V6
+  COM4 = 4pin 比赛口经 CH340 -> $VD（这一趟没接）
+  COM7 = 振源 C3-KEY（串口选源/档位：b=旧振子 B、T2=自动通断 2.0Hz ON250/OFF250 @85%）
+
+采集顺序：
+  1. 检查C-空握.txt    70s   空握 10 次，全程不开振源 -> #F ct 一次没进
+  2. 检查A-旧2Hz.txt   45s   振源 b + T2，19:09:32.4~19:10:07.6 手保持不动
+  3. 检查B / 检查D           待把第二根 USB 换成 4pin(CH340) 后补

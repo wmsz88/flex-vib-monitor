@@ -1,0 +1,700 @@
+18:53:05.624 #F=145.5 A=53.2 vib=1 SS=0.00(x) ct=0 dev=807.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:05.624 #V6 closed=1 ang=64.8 lpW=81.2 settled=0 moved=0.0
+18:53:05.826 #F=100.7 A=26.3 vib=1 SS=0.00(x) ct=0 dev=1015.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:05.826 #V6 closed=1 ang=75.3 lpW=55.7 settled=0 moved=0.0
+18:53:06.028 #F=134.2 A=29.7 vib=1 SS=0.00(x) ct=0 dev=1190.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:06.028 #V6 closed=1 ang=85.8 lpW=54.5 settled=0 moved=0.0
+18:53:06.243 #F=109.3 A=60.7 vib=1 SS=0.00(x) ct=0 dev=1336.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:06.243 #V6 closed=1 ang=96.0 lpW=54.7 settled=0 moved=0.0
+18:53:06.446 #F=83.7 A=43.6 vib=1 SS=0.00(x) ct=0 dev=1481.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:06.446 #V6 closed=1 ang=108.6 lpW=61.3 settled=0 moved=0.0
+18:53:06.664 #F=103.2 A=23.6 vib=1 SS=0.00(x) ct=0 dev=1617.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:06.664 #V6 closed=1 ang=118.4 lpW=36.6 settled=0 moved=0.0
+18:53:06.880 #F=0.0(x) A=17.3 vib=1 SS=0.00(x) ct=0 dev=1690.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:06.880 #V6 closed=1 ang=118.9 lpW=3.5 settled=0 moved=0.0
+18:53:07.096 #F=0.0(x) A=10.7 vib=0 SS=0.00(x) ct=0 dev=1718.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:07.096 #V6 closed=1 ang=118.9 lpW=0.3 settled=1 moved=0.0
+18:53:07.296 #F=0.0(x) A=11.8 vib=0 SS=0.00(x) ct=0 dev=1729.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:07.296 #V6 closed=1 ang=118.9 lpW=1.4 settled=1 moved=0.0
+18:53:07.497 #F=0.0(x) A=24.8 vib=0 SS=0.00(x) ct=0 dev=1732.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:07.497 #V6 closed=1 ang=118.7 lpW=3.2 settled=1 moved=0.0
+18:53:07.699 #F=116.4 A=83.1 vib=1 SS=0.00(x) ct=0 dev=1735.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:07.699 #V6 closed=1 ang=120.3 lpW=12.4 settled=0 moved=0.0
+18:53:07.900 #F=123.1 A=109.3 vib=1 SS=0.00(x) ct=0 dev=1743.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:07.900 #V6 closed=1 ang=120.7 lpW=8.4 settled=0 moved=0.0
+18:53:08.102 #F=122.3 A=183.5 vib=1 SS=0.00(x) ct=0 dev=1755.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:08.102 #V6 closed=1 ang=120.7 lpW=9.4 settled=0 moved=0.0
+18:53:08.304 #F=125.6 A=432.8 vib=1 SS=0.00(x) ct=0 dev=1733.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:08.304 #V6 closed=1 ang=109.2 lpW=87.4 settled=0 moved=0.0
+18:53:08.519 #F=101.0 A=148.0 vib=1 SS=0.00(x) ct=0 dev=1639.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:08.519 #V6 closed=1 ang=96.2 lpW=96.7 settled=0 moved=0.0
+18:53:08.725 #F=109.1 A=171.1 vib=1 SS=0.00(x) ct=0 dev=1461.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:08.725 #V6 closed=1 ang=87.2 lpW=58.3 settled=0 moved=0.0
+18:53:08.938 #F=115.4 A=172.0 vib=1 SS=0.00(x) ct=0 dev=1395.6 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:08.938 #V6 closed=1 ang=75.6 lpW=94.7 settled=0 moved=0.0
+18:53:09.140 #F=80.8 A=124.2 vib=1 SS=0.00(x) ct=0 dev=1058.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:09.141 #V6 closed=0 ang=42.4 lpW=154.4 settled=0 moved=0.0
+18:53:09.356 #F=95.9 A=33.2 vib=1 SS=0.00(x) ct=0 dev=723.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:09.356 #V6 closed=0 ang=30.6 lpW=47.2 settled=0 moved=0.0
+18:53:09.560 #F=0.0(x) A=78.4 vib=1 SS=0.00(x) ct=0 dev=555.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:09.560 #V6 closed=0 ang=27.2 lpW=17.5 settled=0 moved=0.0
+18:53:09.761 #F=178.2 A=70.4 vib=1 SS=0.00(x) ct=0 dev=460.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:09.761 #V6 closed=0 ang=27.2 lpW=12.9 settled=0 moved=0.0
+18:53:09.964 #F=148.4 A=49.8 vib=1 SS=0.00(x) ct=0 dev=452.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:09.964 #V6 closed=0 ang=26.7 lpW=11.8 settled=0 moved=0.0
+18:53:10.168 #F=125.2 A=23.7 vib=1 SS=0.00(x) ct=0 dev=427.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:10.168 #V6 closed=0 ang=25.6 lpW=3.6 settled=0 moved=0.0
+18:53:10.370 #F=0.0(x) A=87.4 vib=1 SS=0.00(x) ct=0 dev=446.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:10.370 #V6 closed=0 ang=32.5 lpW=43.4 settled=0 moved=0.0
+18:53:10.571 #F=91.1 A=46.8 vib=1 SS=0.00(x) ct=0 dev=591.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:10.571 #V6 closed=0 ang=47.6 lpW=65.9 settled=0 moved=0.0
+18:53:10.775 #F=117.5 A=68.8 vib=1 SS=0.00(x) ct=0 dev=774.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:10.775 #V6 closed=1 ang=63.8 lpW=94.9 settled=0 moved=0.0
+18:53:10.977 #F=65.0 A=76.7 vib=1 SS=0.00(x) ct=0 dev=1040.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:10.977 #V6 closed=1 ang=85.6 lpW=107.0 settled=0 moved=0.0
+18:53:11.192 #F=82.1 A=23.0 vib=1 SS=0.00(x) ct=0 dev=1309.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:11.192 #V6 closed=1 ang=104.1 lpW=80.3 settled=0 moved=0.0
+18:53:11.394 #F=0.0(x) A=17.0 vib=1 SS=0.00(x) ct=0 dev=1515.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:11.394 #V6 closed=1 ang=113.9 lpW=37.9 settled=0 moved=0.0
+18:53:11.596 #F=87.4 A=35.3 vib=1 SS=0.00(x) ct=0 dev=1648.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:11.597 #V6 closed=1 ang=124.5 lpW=53.4 settled=0 moved=0.0
+18:53:11.801 #F=0.0(x) A=10.0 vib=0 SS=0.00(x) ct=0 dev=1738.2 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:11.801 #V6 closed=1 ang=125.9 lpW=4.5 settled=0 moved=0.0
+18:53:12.002 #F=0.0(x) A=7.5 vib=0 SS=0.00(x) ct=0 dev=1770.4 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:12.002 #V6 closed=1 ang=125.9 lpW=0.5 settled=1 moved=0.0
+18:53:12.202 #F=0.0(x) A=9.1 vib=0 SS=0.00(x) ct=0 dev=1782.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:12.203 #V6 closed=1 ang=125.9 lpW=0.6 settled=1 moved=0.0
+18:53:12.418 #F=0.0(x) A=9.2 vib=0 SS=0.00(x) ct=0 dev=1786.2 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:12.418 #V6 closed=1 ang=125.4 lpW=3.2 settled=1 moved=0.0
+18:53:12.618 #F=91.2 A=103.1 vib=1 SS=0.00(x) ct=0 dev=1759.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:12.618 #V6 closed=1 ang=114.9 lpW=64.9 settled=0 moved=0.0
+18:53:12.618 #F=0.0(x) A=251.2 vib=1 SS=0.00(x) ct=0 dev=1673.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:12.821 #V6 closed=1 ang=99.5 lpW=114.5 settled=0 moved=0.0
+18:53:12.821 #F=77.3 A=41.1 vib=1 SS=0.00(x) ct=0 dev=1460.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:12.821 #V6 closed=1 ang=79.6 lpW=97.5 settled=0 moved=0.0
+18:53:13.036 #F=0.0(x) A=61.9 vib=1 SS=0.00(x) ct=0 dev=1300.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:13.036 #V6 closed=1 ang=70.7 lpW=50.0 settled=0 moved=0.0
+18:53:13.236 #F=96.8 A=48.2 vib=1 SS=0.00(x) ct=0 dev=1117.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:13.236 #V6 closed=1 ang=57.0 lpW=60.5 settled=0 moved=0.0
+18:53:13.438 #F=98.6 A=20.5 vib=1 SS=0.00(x) ct=0 dev=917.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:13.438 #V6 closed=0 ang=44.3 lpW=62.4 settled=0 moved=0.0
+18:53:13.641 #F=0.0(x) A=34.6 vib=1 SS=0.00(x) ct=0 dev=728.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:13.641 #V6 closed=0 ang=34.2 lpW=47.7 settled=0 moved=0.0
+18:53:13.842 #F=0.0(x) A=27.3 vib=1 SS=0.00(x) ct=0 dev=600.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:13.842 #V6 closed=0 ang=31.5 lpW=11.5 settled=0 moved=0.0
+18:53:14.055 #F=0.0(x) A=17.4 vib=1 SS=0.00(x) ct=0 dev=533.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:14.055 #V6 closed=0 ang=29.7 lpW=8.7 settled=0 moved=0.0
+18:53:14.256 #F=0.0(x) A=22.7 vib=1 SS=0.00(x) ct=0 dev=494.0 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:14.256 #V6 closed=0 ang=28.4 lpW=6.4 settled=1 moved=0.0
+18:53:14.457 #F=190.5 A=27.3 vib=1 SS=0.00(x) ct=0 dev=467.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:14.457 #V6 closed=0 ang=27.2 lpW=6.1 settled=1 moved=0.0
+18:53:14.659 #F=153.8 A=51.4 vib=1 SS=0.00(x) ct=0 dev=445.7 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:14.659 #V6 closed=0 ang=25.6 lpW=12.9 settled=0 moved=0.0
+18:53:14.862 #F=0.0(x) A=16.1 vib=1 SS=0.00(x) ct=0 dev=421.0 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:14.862 #V6 closed=0 ang=24.3 lpW=9.7 settled=0 moved=0.0
+18:53:15.067 #F=0.0(x) A=12.6 vib=0 SS=0.00(x) ct=0 dev=404.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:15.067 #V6 closed=0 ang=24.2 lpW=4.3 settled=1 moved=0.0
+18:53:15.269 #F=0.0(x) A=12.2 vib=0 SS=0.00(x) ct=0 dev=393.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:15.269 #V6 closed=0 ang=23.0 lpW=8.2 settled=1 moved=0.0
+18:53:15.471 #F=0.0(x) A=8.9 vib=0 SS=0.00(x) ct=0 dev=372.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:15.471 #V6 closed=0 ang=22.2 lpW=5.0 settled=0 moved=0.0
+18:53:15.675 #F=0.0(x) A=7.6 vib=0 SS=0.00(x) ct=0 dev=355.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:15.675 #V6 closed=0 ang=21.7 lpW=1.4 settled=1 moved=0.0
+18:53:15.876 #F=0.0(x) A=11.2 vib=1 SS=0.00(x) ct=0 dev=343.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:15.876 #V6 closed=0 ang=21.2 lpW=9.0 settled=0 moved=0.0
+18:53:16.092 #F=0.0(x) A=16.1 vib=0 SS=0.00(x) ct=0 dev=340.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:16.092 #V6 closed=0 ang=21.8 lpW=3.1 settled=1 moved=0.0
+18:53:16.294 #F=0.0(x) A=16.3 vib=0 SS=0.00(x) ct=0 dev=347.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:16.294 #V6 closed=0 ang=22.7 lpW=4.9 settled=1 moved=0.0
+18:53:16.495 #F=0.0(x) A=37.6 vib=1 SS=0.00(x) ct=0 dev=366.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:16.495 #V6 closed=0 ang=25.1 lpW=13.3 settled=0 moved=0.0
+18:53:16.696 #F=70.1 A=38.6 vib=1 SS=0.00(x) ct=0 dev=415.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:16.696 #V6 closed=0 ang=29.0 lpW=17.4 settled=0 moved=0.0
+18:53:16.899 #F=0.0(x) A=9.4 vib=0 SS=0.00(x) ct=0 dev=449.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:16.899 #V6 closed=0 ang=29.9 lpW=5.8 settled=1 moved=0.0
+18:53:17.101 #F=102.7 A=25.9 vib=1 SS=0.00(x) ct=0 dev=494.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:17.101 #V6 closed=0 ang=35.9 lpW=36.0 settled=0 moved=0.0
+18:53:17.302 #F=75.8 A=40.0 vib=1 SS=0.00(x) ct=0 dev=622.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:17.303 #V6 closed=0 ang=49.1 lpW=66.1 settled=0 moved=0.0
+18:53:17.517 #F=84.7 A=48.6 vib=1 SS=0.00(x) ct=0 dev=808.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:17.518 #V6 closed=1 ang=64.6 lpW=82.0 settled=0 moved=0.0
+18:53:17.720 #F=95.2 A=40.3 vib=1 SS=0.00(x) ct=0 dev=1027.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:17.720 #V6 closed=1 ang=80.3 lpW=81.2 settled=0 moved=0.0
+18:53:17.921 #F=157.9 A=30.1 vib=1 SS=0.00(x) ct=0 dev=1253.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:17.922 #V6 closed=1 ang=97.9 lpW=84.0 settled=0 moved=0.0
+18:53:18.123 #F=82.6 A=45.4 vib=1 SS=0.00(x) ct=0 dev=1459.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:18.123 #V6 closed=1 ang=111.1 lpW=64.1 settled=0 moved=0.0
+18:53:18.328 #F=134.6 A=72.7 vib=1 SS=0.00(x) ct=0 dev=1605.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:18.328 #V6 closed=1 ang=121.7 lpW=59.1 settled=0 moved=0.0
+18:53:18.529 #F=86.8 A=68.8 vib=1 SS=0.00(x) ct=0 dev=1711.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:18.529 #V6 closed=1 ang=124.5 lpW=7.9 settled=0 moved=0.0
+18:53:18.732 #F=0.0(x) A=8.0 vib=0 SS=0.00(x) ct=0 dev=1752.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:18.732 #V6 closed=1 ang=125.0 lpW=2.5 settled=1 moved=0.0
+18:53:18.932 #F=0.0(x) A=8.8 vib=0 SS=0.00(x) ct=0 dev=1769.0 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:18.932 #V6 closed=1 ang=125.0 lpW=0.8 settled=1 moved=0.0
+18:53:19.132 #F=0.0(x) A=7.6 vib=0 SS=0.00(x) ct=0 dev=1776.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:19.132 #V6 closed=1 ang=125.1 lpW=0.6 settled=1 moved=0.0
+18:53:19.335 #F=0.0(x) A=14.9 vib=0 SS=0.00(x) ct=0 dev=1778.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:19.335 #V6 closed=1 ang=125.1 lpW=1.1 settled=1 moved=0.0
+18:53:19.537 #F=0.0(x) A=51.7 vib=1 SS=0.00(x) ct=0 dev=1773.6 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:19.537 #V6 closed=1 ang=121.0 lpW=28.7 settled=0 moved=0.0
+18:53:19.739 #F=97.6 A=53.4 vib=1 SS=0.00(x) ct=0 dev=1719.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:19.739 #V6 closed=1 ang=113.0 lpW=35.8 settled=0 moved=0.0
+18:53:19.942 #F=0.0(x) A=21.8 vib=1 SS=0.00(x) ct=0 dev=1675.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:19.942 #V6 closed=1 ang=108.8 lpW=30.4 settled=0 moved=0.0
+18:53:20.144 #F=0.0(x) A=17.7 vib=1 SS=0.00(x) ct=0 dev=1569.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:20.144 #V6 closed=1 ang=96.7 lpW=41.7 settled=0 moved=0.0
+18:53:20.348 #F=0.0(x) A=15.3 vib=1 SS=0.00(x) ct=0 dev=1492.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:20.348 #V6 closed=1 ang=89.8 lpW=39.2 settled=0 moved=0.0
+18:53:20.551 #F=0.0(x) A=61.1 vib=1 SS=0.00(x) ct=0 dev=1374.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:20.552 #V6 closed=1 ang=78.2 lpW=54.5 settled=0 moved=0.0
+18:53:20.757 #F=77.3 A=55.2 vib=1 SS=0.00(x) ct=0 dev=1223.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:20.757 #V6 closed=1 ang=65.5 lpW=65.3 settled=0 moved=0.0
+18:53:20.959 #F=0.0(x) A=34.1 vib=1 SS=0.00(x) ct=0 dev=1071.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:20.959 #V6 closed=1 ang=56.8 lpW=46.1 settled=0 moved=0.0
+18:53:21.191 #F=81.3 A=18.9 vib=1 SS=0.00(x) ct=0 dev=938.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:21.192 #V6 closed=1 ang=48.7 lpW=46.2 settled=0 moved=0.0
+18:53:21.394 #F=0.0(x) A=9.9 vib=0 SS=0.00(x) ct=0 dev=812.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:21.394 #V6 closed=0 ang=43.3 lpW=26.1 settled=0 moved=0.0
+18:53:21.608 #F=0.0(x) A=13.1 vib=1 SS=0.00(x) ct=0 dev=722.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:21.608 #V6 closed=0 ang=39.8 lpW=16.0 settled=0 moved=0.0
+18:53:21.822 #F=0.0(x) A=20.6 vib=1 SS=0.00(x) ct=0 dev=662.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:21.822 #V6 closed=0 ang=37.3 lpW=11.1 settled=0 moved=0.0
+18:53:21.822 #F=0.0(x) A=12.1 vib=0 SS=0.00(x) ct=0 dev=615.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:21.822 #V6 closed=0 ang=35.1 lpW=11.4 settled=0 moved=0.0
+18:53:22.024 #F=0.0(x) A=12.0 vib=0 SS=0.00(x) ct=0 dev=567.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:22.024 #V6 closed=0 ang=32.1 lpW=13.7 settled=0 moved=0.0
+18:53:22.226 #F=0.0(x) A=17.3 vib=0 SS=0.00(x) ct=0 dev=523.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:22.226 #V6 closed=0 ang=29.8 lpW=11.2 settled=0 moved=0.0
+18:53:22.440 #F=0.0(x) A=10.9 vib=0 SS=0.00(x) ct=0 dev=478.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:22.440 #V6 closed=0 ang=27.2 lpW=10.1 settled=0 moved=0.0
+18:53:22.644 #F=74.7 A=18.1 vib=1 SS=0.00(x) ct=0 dev=442.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:22.644 #V6 closed=0 ang=25.7 lpW=6.5 settled=0 moved=0.0
+18:53:22.848 #F=0.0(x) A=9.4 vib=0 SS=0.00(x) ct=0 dev=415.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:22.848 #V6 closed=0 ang=24.4 lpW=7.4 settled=1 moved=0.0
+18:53:23.051 #F=0.0(x) A=8.0 vib=0 SS=0.00(x) ct=0 dev=392.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:23.051 #V6 closed=0 ang=23.5 lpW=4.1 settled=1 moved=0.0
+18:53:23.251 #F=0.0(x) A=20.6 vib=0 SS=0.00(x) ct=0 dev=375.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:23.251 #V6 closed=0 ang=22.7 lpW=4.1 settled=1 moved=0.0
+18:53:23.453 #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=365.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:23.453 #V6 closed=0 ang=22.7 lpW=1.1 settled=1 moved=0.0
+18:53:23.657 #F=0.0(x) A=6.6 vib=0 SS=0.00(x) ct=0 dev=360.7 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:23.657 #V6 closed=0 ang=22.6 lpW=0.8 settled=1 moved=0.0
+18:53:23.861 #F=0.0(x) A=7.4 vib=0 SS=0.00(x) ct=0 dev=357.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:23.861 #V6 closed=0 ang=22.5 lpW=1.4 settled=1 moved=0.0
+18:53:24.077 #F=0.0(x) A=6.6 vib=0 SS=0.00(x) ct=0 dev=354.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:24.077 #V6 closed=0 ang=22.3 lpW=1.6 settled=1 moved=0.0
+18:53:24.291 #F=0.0(x) A=13.8 vib=0 SS=0.00(x) ct=0 dev=351.5 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:24.291 #V6 closed=0 ang=22.4 lpW=1.3 settled=1 moved=0.0
+18:53:24.496 #F=0.0(x) A=12.8 vib=1 SS=0.00(x) ct=0 dev=368.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:24.496 #V6 closed=0 ang=25.4 lpW=13.5 settled=0 moved=0.0
+18:53:24.712 #F=0.0(x) A=11.9 vib=0 SS=0.00(x) ct=0 dev=409.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:24.712 #V6 closed=0 ang=29.0 lpW=17.6 settled=0 moved=0.0
+18:53:24.927 #F=0.0(x) A=23.8 vib=0 SS=0.00(x) ct=0 dev=484.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:24.927 #V6 closed=0 ang=35.8 lpW=35.1 settled=0 moved=0.0
+18:53:25.128 #F=0.0(x) A=9.9 vib=0 SS=0.00(x) ct=0 dev=587.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:25.128 #V6 closed=0 ang=42.4 lpW=27.2 settled=0 moved=0.0
+18:53:25.328 #F=97.6 A=15.6 vib=1 SS=0.00(x) ct=0 dev=700.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:25.329 #V6 closed=0 ang=50.7 lpW=38.7 settled=0 moved=0.0
+18:53:25.531 #F=0.0(x) A=22.2 vib=1 SS=0.00(x) ct=0 dev=820.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:25.531 #V6 closed=0 ang=59.3 lpW=46.1 settled=0 moved=0.0
+18:53:25.733 #F=0.0(x) A=25.4 vib=0 SS=0.00(x) ct=0 dev=955.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:25.733 #V6 closed=1 ang=68.8 lpW=49.7 settled=0 moved=0.0
+18:53:25.934 #F=0.0(x) A=11.3 vib=0 SS=0.00(x) ct=0 dev=1085.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:25.934 #V6 closed=1 ang=75.8 lpW=35.5 settled=0 moved=0.0
+18:53:26.135 #F=0.0(x) A=8.7 vib=0 SS=0.00(x) ct=0 dev=1193.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:26.135 #V6 closed=1 ang=81.7 lpW=26.0 settled=0 moved=0.0
+18:53:26.337 #F=0.0(x) A=8.3 vib=0 SS=0.00(x) ct=0 dev=1303.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:26.337 #V6 closed=1 ang=91.5 lpW=42.1 settled=0 moved=0.0
+18:53:26.538 #F=0.0(x) A=8.7 vib=0 SS=0.00(x) ct=0 dev=1395.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:26.538 #V6 closed=1 ang=96.2 lpW=24.3 settled=0 moved=0.0
+18:53:26.738 #F=0.0(x) A=13.9 vib=0 SS=0.00(x) ct=0 dev=1465.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:26.738 #V6 closed=1 ang=102.0 lpW=30.9 settled=0 moved=0.0
+18:53:26.953 #F=0.0(x) A=15.8 vib=1 SS=0.00(x) ct=0 dev=1544.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:26.953 #V6 closed=1 ang=108.9 lpW=33.1 settled=0 moved=0.0
+18:53:27.154 #F=83.9 A=28.9 vib=1 SS=0.00(x) ct=0 dev=1624.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:27.154 #V6 closed=1 ang=117.8 lpW=45.6 settled=0 moved=0.0
+18:53:27.355 #F=111.7 A=34.1 vib=1 SS=0.00(x) ct=0 dev=1704.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:27.355 #V6 closed=1 ang=123.3 lpW=20.8 settled=0 moved=0.0
+18:53:27.559 #F=0.0(x) A=9.8 vib=0 SS=0.00(x) ct=0 dev=1743.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:27.559 #V6 closed=1 ang=123.8 lpW=3.0 settled=1 moved=0.0
+18:53:27.760 #F=0.0(x) A=9.9 vib=0 SS=0.00(x) ct=0 dev=1759.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:27.761 #V6 closed=1 ang=123.8 lpW=0.6 settled=1 moved=0.0
+18:53:27.992 #F=0.0(x) A=8.1 vib=0 SS=0.00(x) ct=0 dev=1765.1 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:27.992 #V6 closed=1 ang=123.8 lpW=0.5 settled=1 moved=0.0
+18:53:28.193 #F=0.0(x) A=8.6 vib=0 SS=0.00(x) ct=0 dev=1768.1 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:28.193 #V6 closed=1 ang=123.9 lpW=1.9 settled=1 moved=0.0
+18:53:28.393 #F=0.0(x) A=11.3 vib=0 SS=0.00(x) ct=0 dev=1767.2 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:28.393 #V6 closed=1 ang=123.6 lpW=2.6 settled=1 moved=0.0
+18:53:28.593 #F=0.0(x) A=10.5 vib=1 SS=0.00(x) ct=0 dev=1755.3 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:28.593 #V6 closed=1 ang=120.4 lpW=14.5 settled=0 moved=0.0
+18:53:28.794 #F=0.0(x) A=8.7 vib=0 SS=0.00(x) ct=0 dev=1733.3 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:28.794 #V6 closed=1 ang=117.3 lpW=14.5 settled=0 moved=0.0
+18:53:28.995 #F=80.8 A=37.1 vib=1 SS=0.00(x) ct=0 dev=1690.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:28.995 #V6 closed=1 ang=109.3 lpW=46.8 settled=0 moved=0.0
+18:53:29.198 #F=0.0(x) A=13.5 vib=0 SS=0.00(x) ct=0 dev=1626.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:29.198 #V6 closed=1 ang=104.1 lpW=24.3 settled=0 moved=0.0
+18:53:29.400 #F=109.4 A=18.3 vib=1 SS=0.00(x) ct=0 dev=1559.5 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:29.400 #V6 closed=1 ang=97.9 lpW=27.4 settled=0 moved=0.0
+18:53:29.602 #F=0.0(x) A=24.5 vib=0 SS=0.00(x) ct=0 dev=1494.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:29.602 #V6 closed=1 ang=91.2 lpW=35.9 settled=0 moved=0.0
+18:53:29.802 #F=0.0(x) A=9.8 vib=0 SS=0.00(x) ct=0 dev=1431.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:29.802 #V6 closed=1 ang=87.9 lpW=16.3 settled=0 moved=0.0
+18:53:30.004 #F=0.0(x) A=16.1 vib=0 SS=0.00(x) ct=0 dev=1359.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:30.004 #V6 closed=1 ang=81.3 lpW=33.2 settled=0 moved=0.0
+18:53:30.205 #F=0.0(x) A=15.2 vib=0 SS=0.00(x) ct=0 dev=1301.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:30.205 #V6 closed=1 ang=78.2 lpW=17.6 settled=0 moved=0.0
+18:53:30.420 #F=0.0(x) A=9.4 vib=0 SS=0.00(x) ct=0 dev=1246.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:30.420 #V6 closed=1 ang=73.9 lpW=20.3 settled=0 moved=0.0
+18:53:30.420 #F=0.0(x) A=9.6 vib=0 SS=0.00(x) ct=0 dev=1187.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:30.420 #V6 closed=1 ang=70.8 lpW=14.8 settled=0 moved=0.0
+18:53:30.622 #F=0.0(x) A=11.4 vib=0 SS=0.00(x) ct=0 dev=1142.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:30.622 #V6 closed=1 ang=68.5 lpW=12.3 settled=0 moved=0.0
+18:53:30.827 #F=0.0(x) A=22.9 vib=0 SS=0.00(x) ct=0 dev=1097.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:30.827 #V6 closed=1 ang=64.6 lpW=17.9 settled=0 moved=0.0
+18:53:31.030 #F=0.0(x) A=17.3 vib=0 SS=0.00(x) ct=0 dev=1049.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:31.030 #V6 closed=1 ang=61.6 lpW=15.2 settled=0 moved=0.0
+18:53:31.244 #F=0.0(x) A=17.6 vib=0 SS=0.00(x) ct=0 dev=995.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:31.244 #V6 closed=1 ang=57.3 lpW=25.2 settled=0 moved=0.0
+18:53:31.446 #F=0.0(x) A=10.2 vib=0 SS=0.00(x) ct=0 dev=944.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:31.446 #V6 closed=1 ang=55.3 lpW=9.2 settled=0 moved=0.0
+18:53:31.648 #F=0.0(x) A=8.0 vib=0 SS=0.00(x) ct=0 dev=904.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:31.648 #V6 closed=1 ang=52.7 lpW=12.9 settled=0 moved=0.0
+18:53:31.849 #F=0.0(x) A=8.0 vib=0 SS=0.00(x) ct=0 dev=856.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:31.849 #V6 closed=1 ang=49.5 lpW=16.0 settled=0 moved=0.0
+18:53:32.081 #F=0.0(x) A=7.8 vib=0 SS=0.00(x) ct=0 dev=806.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:32.081 #V6 closed=1 ang=46.4 lpW=12.3 settled=0 moved=0.0
+18:53:32.285 #F=0.0(x) A=12.1 vib=1 SS=0.00(x) ct=0 dev=750.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:32.285 #V6 closed=0 ang=42.6 lpW=17.6 settled=0 moved=0.0
+18:53:32.487 #F=0.0(x) A=14.0 vib=0 SS=0.00(x) ct=0 dev=690.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:32.487 #V6 closed=0 ang=38.4 lpW=20.2 settled=0 moved=0.0
+18:53:32.687 #F=0.0(x) A=13.5 vib=0 SS=0.00(x) ct=0 dev=629.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:32.688 #V6 closed=0 ang=34.7 lpW=19.4 settled=0 moved=0.0
+18:53:32.890 #F=0.0(x) A=12.0 vib=0 SS=0.00(x) ct=0 dev=560.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:32.890 #V6 closed=0 ang=30.8 lpW=16.9 settled=0 moved=0.0
+18:53:33.105 #F=0.0(x) A=6.8 vib=0 SS=0.00(x) ct=0 dev=513.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:33.105 #V6 closed=0 ang=29.7 lpW=6.0 settled=0 moved=0.0
+18:53:33.308 #F=0.0(x) A=10.5 vib=0 SS=0.00(x) ct=0 dev=485.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:33.308 #V6 closed=0 ang=28.5 lpW=7.5 settled=1 moved=0.0
+18:53:33.510 #F=0.0(x) A=9.1 vib=0 SS=0.00(x) ct=0 dev=460.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:33.510 #V6 closed=0 ang=27.2 lpW=7.2 settled=1 moved=0.0
+18:53:33.712 #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=438.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:33.712 #V6 closed=0 ang=26.3 lpW=4.7 settled=1 moved=0.0
+18:53:33.917 #F=0.0(x) A=4.9 vib=0 SS=0.00(x) ct=0 dev=422.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:33.917 #V6 closed=0 ang=25.8 lpW=2.4 settled=1 moved=0.0
+18:53:34.119 #F=0.0(x) A=7.8 vib=0 SS=0.00(x) ct=0 dev=409.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:34.119 #V6 closed=0 ang=25.0 lpW=3.6 settled=1 moved=0.0
+18:53:34.322 #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=398.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:34.322 #V6 closed=0 ang=24.5 lpW=2.7 settled=1 moved=0.0
+18:53:34.536 #F=0.0(x) A=6.5 vib=0 SS=0.00(x) ct=0 dev=389.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:34.536 #V6 closed=0 ang=24.1 lpW=2.6 settled=1 moved=0.0
+18:53:34.737 #F=0.0(x) A=8.9 vib=0 SS=0.00(x) ct=0 dev=382.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:34.737 #V6 closed=0 ang=23.9 lpW=1.1 settled=1 moved=0.0
+18:53:34.938 #F=0.0(x) A=15.9 vib=0 SS=0.00(x) ct=0 dev=379.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:34.938 #V6 closed=0 ang=24.5 lpW=4.7 settled=1 moved=0.0
+18:53:35.152 #F=0.0(x) A=47.4 vib=1 SS=0.00(x) ct=0 dev=407.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:35.152 #V6 closed=0 ang=29.6 lpW=32.4 settled=0 moved=0.0
+18:53:35.352 #F=0.0(x) A=14.0 vib=0 SS=0.00(x) ct=0 dev=477.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:35.352 #V6 closed=0 ang=34.5 lpW=25.2 settled=0 moved=0.0
+18:53:35.557 #F=0.0(x) A=15.5 vib=0 SS=0.00(x) ct=0 dev=572.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:35.557 #V6 closed=0 ang=42.2 lpW=34.2 settled=0 moved=0.0
+18:53:35.772 #F=0.0(x) A=27.1 vib=0 SS=0.00(x) ct=0 dev=687.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:35.772 #V6 closed=0 ang=51.4 lpW=49.5 settled=0 moved=0.0
+18:53:35.985 #F=121.9 A=30.3 vib=1 SS=0.00(x) ct=0 dev=833.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:35.985 #V6 closed=1 ang=62.9 lpW=63.4 settled=0 moved=0.0
+18:53:36.186 #F=79.8 A=30.7 vib=1 SS=0.00(x) ct=0 dev=1007.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:36.186 #V6 closed=1 ang=74.4 lpW=54.3 settled=0 moved=0.0
+18:53:36.389 #F=75.1 A=29.1 vib=1 SS=0.00(x) ct=0 dev=1163.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:36.389 #V6 closed=1 ang=84.1 lpW=49.3 settled=0 moved=0.0
+18:53:36.590 #F=88.6 A=40.2 vib=1 SS=0.00(x) ct=0 dev=1307.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:36.590 #V6 closed=1 ang=94.3 lpW=50.9 settled=0 moved=0.0
+18:53:36.790 #F=120.5 A=28.6 vib=1 SS=0.00(x) ct=0 dev=1432.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:36.790 #V6 closed=1 ang=103.5 lpW=47.5 settled=0 moved=0.0
+18:53:36.993 #F=0.0(x) A=31.6 vib=1 SS=0.00(x) ct=0 dev=1544.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:36.993 #V6 closed=1 ang=112.0 lpW=38.7 settled=0 moved=0.0
+18:53:37.195 #F=87.4 A=70.8 vib=1 SS=0.00(x) ct=0 dev=1640.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:37.195 #V6 closed=1 ang=122.2 lpW=55.2 settled=0 moved=0.0
+18:53:37.397 #F=0.0(x) A=14.1 vib=1 SS=0.00(x) ct=0 dev=1716.1 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:37.397 #V6 closed=1 ang=122.9 lpW=3.5 settled=0 moved=0.0
+18:53:37.612 #F=0.0(x) A=14.6 vib=0 SS=0.00(x) ct=0 dev=1743.7 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:37.612 #V6 closed=1 ang=123.2 lpW=1.5 settled=1 moved=0.0
+18:53:37.812 #F=0.0(x) A=14.9 vib=0 SS=0.00(x) ct=0 dev=1754.1 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:37.812 #V6 closed=1 ang=123.4 lpW=2.5 settled=1 moved=0.0
+18:53:38.015 #F=0.0(x) A=14.1 vib=0 SS=0.00(x) ct=0 dev=1759.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:38.015 #V6 closed=1 ang=123.1 lpW=6.8 settled=1 moved=0.0
+18:53:38.218 #F=129.2 A=28.7 vib=1 SS=0.00(x) ct=0 dev=1761.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:38.218 #V6 closed=1 ang=122.9 lpW=7.0 settled=1 moved=0.0
+18:53:38.218 #F=130.6 A=74.8 vib=1 SS=0.00(x) ct=0 dev=1758.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:38.218 #V6 closed=1 ang=123.5 lpW=8.0 settled=1 moved=0.0
+18:53:38.421 #F=142.8 A=46.7 vib=1 SS=0.00(x) ct=0 dev=1769.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:38.421 #V6 closed=1 ang=122.9 lpW=10.0 settled=0 moved=0.0
+18:53:38.623 #F=173.1 A=66.8 vib=1 SS=0.00(x) ct=0 dev=1756.4 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:38.623 #V6 closed=1 ang=122.0 lpW=6.8 settled=1 moved=0.0
+18:53:38.827 #F=135.8 A=26.0 vib=1 SS=0.00(x) ct=0 dev=1758.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:38.827 #V6 closed=1 ang=122.3 lpW=7.1 settled=1 moved=0.0
+18:53:39.028 #F=129.9 A=23.4 vib=1 SS=0.00(x) ct=0 dev=1759.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:39.028 #V6 closed=1 ang=123.5 lpW=5.7 settled=1 moved=0.0
+18:53:39.229 #F=116.3 A=440.7 vib=1 SS=1.96 ct=0 dev=1761.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:39.229 #V6 closed=1 ang=119.1 lpW=35.1 settled=0 moved=0.0
+18:53:39.430 #F=132.0 A=92.8 vib=1 SS=1.96 ct=0 dev=1712.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:39.430 #V6 closed=1 ang=111.8 lpW=44.6 settled=0 moved=0.0
+18:53:39.633 #F=101.3 A=103.6 vib=1 SS=0.00(x) ct=0 dev=1522.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:39.633 #V6 closed=1 ang=81.1 lpW=135.0 settled=0 moved=0.0
+18:53:39.837 #F=73.9 A=74.8 vib=1 SS=0.00(x) ct=0 dev=1259.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:39.837 #V6 closed=1 ang=62.5 lpW=91.4 settled=0 moved=0.0
+18:53:40.039 #F=106.5 A=29.1 vib=1 SS=0.00(x) ct=0 dev=992.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:40.039 #V6 closed=1 ang=46.1 lpW=81.6 settled=0 moved=0.0
+18:53:40.242 #F=0.0(x) A=11.4 vib=0 SS=0.00(x) ct=0 dev=792.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:40.242 #V6 closed=0 ang=39.4 lpW=33.6 settled=0 moved=0.0
+18:53:40.443 #F=0.0(x) A=10.5 vib=0 SS=0.00(x) ct=0 dev=668.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:40.443 #V6 closed=0 ang=35.2 lpW=20.0 settled=0 moved=0.0
+18:53:40.644 #F=0.0(x) A=11.7 vib=0 SS=0.00(x) ct=0 dev=589.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:40.644 #V6 closed=0 ang=32.7 lpW=11.5 settled=0 moved=0.0
+18:53:40.844 #F=0.0(x) A=12.3 vib=0 SS=0.00(x) ct=0 dev=535.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:40.844 #V6 closed=0 ang=30.4 lpW=11.3 settled=0 moved=0.0
+18:53:41.049 #F=0.0(x) A=6.7 vib=0 SS=0.00(x) ct=0 dev=497.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:41.050 #V6 closed=0 ang=28.9 lpW=7.6 settled=1 moved=0.0
+18:53:41.253 #F=0.0(x) A=12.3 vib=0 SS=0.00(x) ct=0 dev=466.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:41.253 #V6 closed=0 ang=27.5 lpW=7.6 settled=1 moved=0.0
+18:53:41.455 #F=0.0(x) A=22.2 vib=0 SS=0.00(x) ct=0 dev=446.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:41.455 #V6 closed=0 ang=27.2 lpW=1.6 settled=1 moved=0.0
+18:53:41.659 #F=194.5 A=40.0 vib=1 SS=0.00(x) ct=0 dev=435.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:41.660 #V6 closed=0 ang=26.6 lpW=3.2 settled=1 moved=0.0
+18:53:41.860 #F=147.1 A=21.7 vib=1 SS=0.00(x) ct=0 dev=424.0 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:41.860 #V6 closed=0 ang=25.6 lpW=5.2 settled=1 moved=0.0
+18:53:42.061 #F=0.0(x) A=18.4 vib=0 SS=0.00(x) ct=0 dev=400.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:42.061 #V6 closed=0 ang=23.8 lpW=7.8 settled=0 moved=0.0
+18:53:42.264 #F=0.0(x) A=8.4 vib=0 SS=0.00(x) ct=0 dev=374.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:42.264 #V6 closed=0 ang=21.9 lpW=9.8 settled=0 moved=0.0
+18:53:42.465 #F=0.0(x) A=17.1 vib=0 SS=0.00(x) ct=0 dev=345.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:42.465 #V6 closed=0 ang=20.3 lpW=9.8 settled=0 moved=0.0
+18:53:42.666 #F=0.0(x) A=7.2 vib=0 SS=0.00(x) ct=0 dev=318.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:42.666 #V6 closed=0 ang=19.1 lpW=4.9 settled=0 moved=0.0
+18:53:42.868 #F=0.0(x) A=38.1 vib=1 SS=0.00(x) ct=0 dev=294.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:42.868 #V6 closed=0 ang=17.3 lpW=11.3 settled=0 moved=0.0
+18:53:43.069 #F=0.0(x) A=29.6 vib=0 SS=0.00(x) ct=0 dev=265.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:43.069 #V6 closed=0 ang=16.0 lpW=6.3 settled=1 moved=0.0
+18:53:43.270 #F=0.0(x) A=57.9 vib=1 SS=0.00(x) ct=0 dev=246.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:43.271 #V6 closed=0 ang=16.7 lpW=9.1 settled=1 moved=0.0
+18:53:43.471 #F=96.0 A=37.1 vib=1 SS=0.00(x) ct=0 dev=267.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:43.471 #V6 closed=0 ang=18.7 lpW=5.6 settled=0 moved=0.0
+18:53:43.674 #F=0.0(x) A=34.8 vib=0 SS=0.00(x) ct=0 dev=281.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:43.674 #V6 closed=0 ang=19.3 lpW=3.9 settled=1 moved=0.0
+18:53:43.874 #F=0.0(x) A=9.3 vib=0 SS=0.00(x) ct=0 dev=291.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:43.874 #V6 closed=0 ang=19.4 lpW=1.2 settled=1 moved=0.0
+18:53:44.076 #F=0.0(x) A=8.7 vib=0 SS=0.00(x) ct=0 dev=306.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:44.077 #V6 closed=0 ang=20.4 lpW=1.5 settled=0 moved=0.0
+18:53:44.279 #F=0.0(x) A=16.7 vib=0 SS=0.00(x) ct=0 dev=311.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:44.279 #V6 closed=0 ang=20.4 lpW=1.0 settled=1 moved=0.0
+18:53:44.482 #F=0.0(x) A=29.1 vib=0 SS=0.00(x) ct=0 dev=316.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:44.482 #V6 closed=0 ang=20.8 lpW=2.6 settled=1 moved=0.0
+18:53:44.684 #F=0.0(x) A=9.6 vib=0 SS=0.00(x) ct=0 dev=321.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:44.684 #V6 closed=0 ang=21.2 lpW=3.1 settled=1 moved=0.0
+18:53:44.888 #F=76.9 A=16.6 vib=1 SS=0.00(x) ct=0 dev=337.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:44.888 #V6 closed=0 ang=23.2 lpW=11.8 settled=0 moved=0.0
+18:53:45.088 #F=0.0(x) A=21.6 vib=1 SS=0.00(x) ct=0 dev=380.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:45.088 #V6 closed=0 ang=28.0 lpW=24.4 settled=0 moved=0.0
+18:53:45.290 #F=81.2 A=23.9 vib=1 SS=0.00(x) ct=0 dev=469.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:45.290 #V6 closed=0 ang=37.6 lpW=51.2 settled=0 moved=0.0
+18:53:45.492 #F=0.0(x) A=18.3 vib=1 SS=0.00(x) ct=0 dev=636.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:45.492 #V6 closed=0 ang=52.3 lpW=74.1 settled=0 moved=0.0
+18:53:45.723 #F=83.7 A=38.3 vib=1 SS=0.00(x) ct=0 dev=845.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:45.723 #V6 closed=1 ang=67.5 lpW=79.8 settled=0 moved=0.0
+18:53:45.940 #F=0.0(x) A=19.1 vib=1 SS=0.00(x) ct=0 dev=1038.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:45.940 #V6 closed=1 ang=75.3 lpW=38.0 settled=0 moved=0.0
+18:53:46.143 #F=0.0(x) A=15.7 vib=0 SS=0.00(x) ct=0 dev=1169.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:46.143 #V6 closed=1 ang=82.0 lpW=37.3 settled=0 moved=0.0
+18:53:46.358 #F=0.0(x) A=7.8 vib=0 SS=0.00(x) ct=0 dev=1278.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:46.358 #V6 closed=1 ang=88.4 lpW=29.8 settled=0 moved=0.0
+18:53:46.560 #F=0.0(x) A=18.8 vib=0 SS=0.00(x) ct=0 dev=1371.0 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:46.560 #V6 closed=1 ang=96.1 lpW=38.3 settled=0 moved=0.0
+18:53:46.762 #F=0.0(x) A=15.6 vib=0 SS=0.00(x) ct=0 dev=1469.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:46.762 #V6 closed=1 ang=104.0 lpW=37.8 settled=0 moved=0.0
+18:53:46.965 #F=93.9 A=30.5 vib=1 SS=0.00(x) ct=0 dev=1559.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:46.965 #V6 closed=1 ang=110.8 lpW=32.5 settled=0 moved=0.0
+18:53:47.178 #F=0.0(x) A=26.3 vib=0 SS=0.00(x) ct=0 dev=1620.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:47.178 #V6 closed=1 ang=115.5 lpW=28.3 settled=0 moved=0.0
+18:53:47.382 #F=130.7 A=20.4 vib=1 SS=0.00(x) ct=0 dev=1686.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:47.383 #V6 closed=1 ang=122.1 lpW=29.6 settled=0 moved=0.0
+18:53:47.585 #F=122.6 A=16.2 vib=1 SS=0.00(x) ct=0 dev=1736.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:47.585 #V6 closed=1 ang=123.8 lpW=5.2 settled=0 moved=0.0
+18:53:47.786 #F=0.0(x) A=6.2 vib=0 SS=0.00(x) ct=0 dev=1755.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:47.786 #V6 closed=1 ang=123.9 lpW=1.1 settled=1 moved=0.0
+18:53:47.987 #F=0.0(x) A=6.5 vib=0 SS=0.00(x) ct=0 dev=1763.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:47.988 #V6 closed=1 ang=124.0 lpW=0.7 settled=1 moved=0.0
+18:53:48.189 #F=0.0(x) A=14.3 vib=0 SS=0.00(x) ct=0 dev=1766.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:48.189 #V6 closed=1 ang=124.0 lpW=0.5 settled=1 moved=0.0
+18:53:48.390 #F=0.0(x) A=11.2 vib=0 SS=0.00(x) ct=0 dev=1767.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:48.390 #V6 closed=1 ang=123.8 lpW=1.0 settled=1 moved=0.0
+18:53:48.592 #F=0.0(x) A=37.4 vib=1 SS=0.00(x) ct=0 dev=1761.4 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:48.592 #V6 closed=1 ang=118.9 lpW=29.5 settled=0 moved=0.0
+18:53:48.807 #F=83.3 A=115.9 vib=1 SS=0.00(x) ct=0 dev=1717.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:48.807 #V6 closed=1 ang=108.5 lpW=54.9 settled=0 moved=0.0
+18:53:49.010 #F=79.8 A=30.9 vib=1 SS=0.00(x) ct=0 dev=1589.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:49.010 #V6 closed=1 ang=93.9 lpW=72.7 settled=0 moved=0.0
+18:53:49.211 #F=0.0(x) A=37.2 vib=1 SS=0.00(x) ct=0 dev=1454.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:49.211 #V6 closed=1 ang=82.8 lpW=54.4 settled=0 moved=0.0
+18:53:49.425 #F=78.4 A=25.5 vib=1 SS=0.00(x) ct=0 dev=1314.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:49.425 #V6 closed=1 ang=73.0 lpW=49.7 settled=0 moved=0.0
+18:53:49.425 #F=78.6 A=63.6 vib=1 SS=0.00(x) ct=0 dev=1095.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:49.425 #V6 closed=1 ang=52.5 lpW=98.0 settled=0 moved=0.0
+18:53:49.629 #F=0.0(x) A=59.7 vib=1 SS=0.00(x) ct=0 dev=851.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:49.629 #V6 closed=0 ang=38.6 lpW=72.3 settled=0 moved=0.0
+18:53:49.831 #F=0.0(x) A=10.2 vib=0 SS=0.00(x) ct=0 dev=679.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:49.831 #V6 closed=0 ang=34.7 lpW=18.2 settled=0 moved=0.0
+18:53:50.037 #F=0.0(x) A=9.1 vib=0 SS=0.00(x) ct=0 dev=593.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:50.037 #V6 closed=0 ang=32.7 lpW=9.7 settled=0 moved=0.0
+18:53:50.240 #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=543.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:50.240 #V6 closed=0 ang=31.3 lpW=7.1 settled=1 moved=0.0
+18:53:50.441 #F=0.0(x) A=6.2 vib=0 SS=0.00(x) ct=0 dev=512.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:50.441 #V6 closed=0 ang=30.2 lpW=5.4 settled=1 moved=0.0
+18:53:50.643 #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=490.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:50.643 #V6 closed=0 ang=29.3 lpW=4.0 settled=1 moved=0.0
+18:53:50.848 #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=473.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:50.848 #V6 closed=0 ang=28.5 lpW=4.0 settled=1 moved=0.0
+18:53:51.052 #F=0.0(x) A=6.1 vib=0 SS=0.00(x) ct=0 dev=459.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:51.052 #V6 closed=0 ang=27.8 lpW=3.7 settled=1 moved=0.0
+18:53:51.254 #F=0.0(x) A=6.2 vib=0 SS=0.00(x) ct=0 dev=447.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:51.254 #V6 closed=0 ang=27.2 lpW=2.6 settled=1 moved=0.0
+18:53:51.456 #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=437.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:51.456 #V6 closed=0 ang=26.8 lpW=2.1 settled=1 moved=0.0
+18:53:51.658 #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=427.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:51.659 #V6 closed=0 ang=26.1 lpW=3.6 settled=1 moved=0.0
+18:53:51.860 #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=418.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:51.860 #V6 closed=0 ang=25.8 lpW=1.7 settled=1 moved=0.0
+18:53:52.062 #F=0.0(x) A=6.9 vib=0 SS=0.00(x) ct=0 dev=410.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:52.063 #V6 closed=0 ang=25.1 lpW=5.7 settled=1 moved=0.0
+18:53:52.263 #F=0.0(x) A=23.4 vib=0 SS=0.00(x) ct=0 dev=400.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:52.263 #V6 closed=0 ang=24.7 lpW=2.4 settled=1 moved=0.0
+18:53:52.466 #F=0.0(x) A=8.1 vib=0 SS=0.00(x) ct=0 dev=391.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:52.466 #V6 closed=0 ang=24.3 lpW=2.3 settled=1 moved=0.0
+18:53:52.670 #F=0.0(x) A=12.0 vib=1 SS=0.00(x) ct=0 dev=382.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:52.670 #V6 closed=0 ang=23.6 lpW=4.6 settled=1 moved=0.0
+18:53:52.870 #F=0.0(x) A=10.2 vib=0 SS=0.00(x) ct=0 dev=369.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:52.870 #V6 closed=0 ang=21.9 lpW=13.1 settled=0 moved=0.0
+18:53:53.071 #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=351.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:53.072 #V6 closed=0 ang=21.9 lpW=1.4 settled=1 moved=0.0
+18:53:53.273 #F=0.0(x) A=10.5 vib=0 SS=0.00(x) ct=0 dev=343.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:53.274 #V6 closed=0 ang=21.7 lpW=1.0 settled=1 moved=0.0
+18:53:53.475 #F=0.0(x) A=6.9 vib=0 SS=0.00(x) ct=0 dev=338.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:53.476 #V6 closed=0 ang=21.7 lpW=0.2 settled=1 moved=0.0
+18:53:53.680 #F=0.0(x) A=7.8 vib=0 SS=0.00(x) ct=0 dev=341.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:53.680 #V6 closed=0 ang=22.1 lpW=1.3 settled=1 moved=0.0
+18:53:53.899 #F=0.0(x) A=15.1 vib=1 SS=0.00(x) ct=0 dev=343.6 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:53.899 #V6 closed=0 ang=22.1 lpW=0.5 settled=1 moved=0.0
+18:53:54.102 #F=0.0(x) A=6.3 vib=0 SS=0.00(x) ct=0 dev=344.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:54.102 #V6 closed=0 ang=22.2 lpW=1.3 settled=1 moved=0.0
+18:53:54.303 #F=0.0(x) A=22.0 vib=0 SS=0.00(x) ct=0 dev=345.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:54.303 #V6 closed=0 ang=22.4 lpW=2.0 settled=1 moved=0.0
+18:53:54.506 #F=0.0(x) A=7.6 vib=0 SS=0.00(x) ct=0 dev=350.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:54.506 #V6 closed=0 ang=22.7 lpW=6.7 settled=1 moved=0.0
+18:53:54.709 #F=0.0(x) A=7.2 vib=0 SS=0.00(x) ct=0 dev=355.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:54.709 #V6 closed=0 ang=22.8 lpW=4.4 settled=1 moved=0.0
+18:53:54.909 #F=0.0(x) A=10.3 vib=0 SS=0.00(x) ct=0 dev=358.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:54.909 #V6 closed=0 ang=23.3 lpW=2.9 settled=1 moved=0.0
+18:53:55.111 #F=0.0(x) A=15.1 vib=0 SS=0.00(x) ct=0 dev=371.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:55.111 #V6 closed=0 ang=25.4 lpW=13.7 settled=0 moved=0.0
+18:53:55.314 #F=0.0(x) A=15.5 vib=1 SS=0.00(x) ct=0 dev=401.7 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:55.314 #V6 closed=0 ang=27.7 lpW=14.2 settled=0 moved=0.0
+18:53:55.516 #F=145.0 A=12.5 vib=1 SS=0.00(x) ct=0 dev=446.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:55.516 #V6 closed=0 ang=30.6 lpW=10.4 settled=0 moved=0.0
+18:53:55.716 #F=0.0(x) A=19.1 vib=0 SS=0.00(x) ct=0 dev=494.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:55.716 #V6 closed=0 ang=34.9 lpW=23.7 settled=0 moved=0.0
+18:53:55.933 #F=78.3 A=16.1 vib=1 SS=0.00(x) ct=0 dev=587.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:55.933 #V6 closed=0 ang=46.6 lpW=68.2 settled=0 moved=0.0
+18:53:56.134 #F=0.0(x) A=35.6 vib=1 SS=0.00(x) ct=0 dev=762.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:56.134 #V6 closed=0 ang=59.6 lpW=67.0 settled=0 moved=0.0
+18:53:56.349 #F=86.4 A=54.9 vib=1 SS=0.00(x) ct=0 dev=946.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:56.349 #V6 closed=1 ang=72.8 lpW=75.4 settled=0 moved=0.0
+18:53:56.551 #F=79.9 A=13.5 vib=1 SS=0.00(x) ct=0 dev=1136.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:56.551 #V6 closed=1 ang=83.0 lpW=37.7 settled=0 moved=0.0
+18:53:56.751 #F=96.1 A=26.5 vib=1 SS=0.00(x) ct=0 dev=1295.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:56.751 #V6 closed=1 ang=94.4 lpW=51.9 settled=0 moved=0.0
+18:53:56.954 #F=72.9 A=12.6 vib=1 SS=0.00(x) ct=0 dev=1431.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:56.954 #V6 closed=1 ang=103.1 lpW=38.9 settled=0 moved=0.0
+18:53:57.155 #F=91.9 A=26.9 vib=1 SS=0.00(x) ct=0 dev=1548.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:57.155 #V6 closed=1 ang=113.0 lpW=41.3 settled=0 moved=0.0
+18:53:57.356 #F=94.9 A=88.3 vib=1 SS=0.00(x) ct=0 dev=1644.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:57.356 #V6 closed=1 ang=123.8 lpW=58.5 settled=0 moved=0.0
+18:53:57.559 #F=0.0(x) A=9.0 vib=0 SS=0.00(x) ct=0 dev=1729.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:57.560 #V6 closed=1 ang=124.8 lpW=4.3 settled=0 moved=0.0
+18:53:57.761 #F=0.0(x) A=9.1 vib=0 SS=0.00(x) ct=0 dev=1758.4 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:57.761 #V6 closed=1 ang=124.9 lpW=1.9 settled=1 moved=0.0
+18:53:57.994 #F=0.0(x) A=7.9 vib=0 SS=0.00(x) ct=0 dev=1769.2 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:57.994 #V6 closed=1 ang=124.9 lpW=1.0 settled=1 moved=0.0
+18:53:58.197 #F=0.0(x) A=7.6 vib=0 SS=0.00(x) ct=0 dev=1773.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:58.197 #V6 closed=1 ang=124.8 lpW=0.6 settled=1 moved=0.0
+18:53:58.399 #F=0.0(x) A=9.4 vib=0 SS=0.00(x) ct=0 dev=1773.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:58.399 #V6 closed=1 ang=124.6 lpW=2.1 settled=1 moved=0.0
+18:53:58.601 #F=0.0(x) A=32.7 vib=0 SS=0.00(x) ct=0 dev=1771.1 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:58.601 #V6 closed=1 ang=122.5 lpW=13.7 settled=0 moved=0.0
+18:53:58.803 #F=88.7 A=18.7 vib=1 SS=0.00(x) ct=0 dev=1734.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:58.803 #V6 closed=1 ang=115.2 lpW=33.9 settled=0 moved=0.0
+18:53:59.017 #F=0.0(x) A=16.1 vib=1 SS=0.00(x) ct=0 dev=1688.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:59.017 #V6 closed=1 ang=110.7 lpW=22.7 settled=0 moved=0.0
+18:53:59.017 #F=110.7 A=39.6 vib=1 SS=0.00(x) ct=0 dev=1625.0 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:59.017 #V6 closed=1 ang=101.1 lpW=46.1 settled=0 moved=0.0
+18:53:59.220 #F=0.0(x) A=7.1 vib=1 SS=0.00(x) ct=0 dev=1520.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:59.220 #V6 closed=1 ang=93.3 lpW=33.4 settled=0 moved=0.0
+18:53:59.422 #F=0.0(x) A=16.9 vib=1 SS=0.00(x) ct=0 dev=1441.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:59.422 #V6 closed=1 ang=87.9 lpW=24.2 settled=0 moved=0.0
+18:53:59.623 #F=0.0(x) A=36.8 vib=1 SS=0.00(x) ct=0 dev=1361.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:59.623 #V6 closed=1 ang=79.8 lpW=48.5 settled=0 moved=0.0
+18:53:59.824 #F=88.1 A=21.8 vib=1 SS=0.00(x) ct=0 dev=1259.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:53:59.824 #V6 closed=1 ang=71.4 lpW=45.8 settled=0 moved=0.0
+18:54:00.024 #F=0.0(x) A=29.2 vib=0 SS=0.00(x) ct=0 dev=1130.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:00.024 #V6 closed=1 ang=63.2 lpW=34.6 settled=0 moved=0.0
+18:54:00.226 #F=92.3 A=23.6 vib=1 SS=0.00(x) ct=0 dev=1004.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:00.226 #V6 closed=1 ang=54.1 lpW=44.0 settled=0 moved=0.0
+18:54:00.428 #F=0.0(x) A=19.4 vib=0 SS=0.00(x) ct=0 dev=879.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:00.428 #V6 closed=1 ang=46.0 lpW=41.8 settled=0 moved=0.0
+18:54:00.630 #F=0.0(x) A=17.7 vib=0 SS=0.00(x) ct=0 dev=743.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:00.630 #V6 closed=0 ang=38.2 lpW=34.3 settled=0 moved=0.0
+18:54:00.832 #F=0.0(x) A=85.1 vib=1 SS=0.00(x) ct=0 dev=635.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:00.832 #V6 closed=0 ang=33.8 lpW=25.4 settled=0 moved=0.0
+18:54:01.034 #F=176.5 A=324.7 vib=1 SS=0.00(x) ct=0 dev=562.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:01.034 #V6 closed=0 ang=30.8 lpW=20.0 settled=0 moved=0.0
+18:54:01.236 #F=0.0(x) A=12.6 vib=1 SS=0.00(x) ct=0 dev=506.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:01.236 #V6 closed=0 ang=29.1 lpW=8.7 settled=0 moved=0.0
+18:54:01.437 #F=0.0(x) A=10.7 vib=1 SS=0.00(x) ct=0 dev=471.7 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:01.437 #V6 closed=0 ang=27.7 lpW=7.8 settled=1 moved=0.0
+18:54:01.638 #F=0.0(x) A=102.4 vib=1 SS=0.00(x) ct=0 dev=445.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:01.638 #V6 closed=0 ang=26.2 lpW=8.6 settled=1 moved=0.0
+18:54:01.840 #F=0.0(x) A=12.5 vib=0 SS=0.00(x) ct=0 dev=407.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:01.841 #V6 closed=0 ang=23.3 lpW=17.0 settled=0 moved=0.0
+18:54:02.071 #F=0.0(x) A=12.5 vib=0 SS=0.00(x) ct=0 dev=361.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:02.071 #V6 closed=0 ang=20.6 lpW=14.2 settled=0 moved=0.0
+18:54:02.285 #F=0.0(x) A=44.5 vib=1 SS=0.00(x) ct=0 dev=324.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:02.285 #V6 closed=0 ang=18.7 lpW=11.0 settled=0 moved=0.0
+18:54:02.500 #F=151.0 A=57.0 vib=1 SS=0.00(x) ct=0 dev=270.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:02.500 #V6 closed=0 ang=14.1 lpW=24.7 settled=0 moved=0.0
+18:54:02.715 #F=0.0(x) A=11.5 vib=0 SS=0.00(x) ct=0 dev=211.0 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:02.715 #V6 closed=0 ang=14.0 lpW=11.1 settled=0 moved=0.0
+18:54:02.920 #F=133.4 A=34.8 vib=1 SS=0.00(x) ct=0 dev=171.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:02.920 #V6 closed=0 ang=13.9 lpW=2.7 settled=0 moved=0.0
+18:54:03.120 #F=0.0(x) A=177.9 vib=1 SS=0.00(x) ct=0 dev=158.7 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:03.120 #V6 closed=0 ang=15.4 lpW=39.1 settled=0 moved=0.0
+18:54:03.322 #F=122.1 A=39.2 vib=1 SS=0.00(x) ct=0 dev=231.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:03.322 #V6 closed=0 ang=19.3 lpW=14.4 settled=0 moved=0.0
+18:54:03.523 #F=0.0(x) A=8.3 vib=0 SS=0.00(x) ct=0 dev=273.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:03.523 #V6 closed=0 ang=19.4 lpW=2.1 settled=1 moved=0.0
+18:54:03.725 #F=0.0(x) A=18.0 vib=0 SS=0.00(x) ct=0 dev=295.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:03.725 #V6 closed=0 ang=20.4 lpW=3.2 settled=1 moved=0.0
+18:54:03.930 #F=72.8 A=15.5 vib=1 SS=0.00(x) ct=0 dev=324.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:03.930 #V6 closed=0 ang=24.0 lpW=19.6 settled=0 moved=0.0
+18:54:04.133 #F=75.0 A=33.0 vib=1 SS=0.00(x) ct=0 dev=424.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:04.133 #V6 closed=0 ang=35.6 lpW=55.3 settled=0 moved=0.0
+18:54:04.338 #F=95.5 A=33.1 vib=1 SS=0.00(x) ct=0 dev=577.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:04.338 #V6 closed=0 ang=48.6 lpW=72.9 settled=0 moved=0.0
+18:54:04.551 #F=80.3 A=12.2 vib=1 SS=0.00(x) ct=0 dev=783.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:04.552 #V6 closed=1 ang=60.2 lpW=51.6 settled=0 moved=0.0
+18:54:04.767 #F=0.0(x) A=31.8 vib=1 SS=0.00(x) ct=0 dev=973.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:04.767 #V6 closed=1 ang=74.1 lpW=69.2 settled=0 moved=0.0
+18:54:04.969 #F=0.0(x) A=23.7 vib=1 SS=0.00(x) ct=0 dev=1165.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:04.969 #V6 closed=1 ang=88.4 lpW=75.2 settled=0 moved=0.0
+18:54:05.183 #F=84.5 A=39.6 vib=1 SS=0.00(x) ct=0 dev=1346.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:05.183 #V6 closed=1 ang=102.4 lpW=73.9 settled=0 moved=0.0
+18:54:05.386 #F=93.1 A=28.6 vib=1 SS=0.00(x) ct=0 dev=1515.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:05.386 #V6 closed=1 ang=113.3 lpW=48.5 settled=0 moved=0.0
+18:54:05.589 #F=0.0(x) A=59.5 vib=1 SS=0.00(x) ct=0 dev=1639.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:05.589 #V6 closed=1 ang=123.5 lpW=55.0 settled=0 moved=0.0
+18:54:05.792 #F=133.0 A=19.6 vib=1 SS=0.00(x) ct=0 dev=1720.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:05.792 #V6 closed=1 ang=123.9 lpW=2.8 settled=0 moved=0.0
+18:54:05.994 #F=0.0(x) A=18.1 vib=0 SS=0.00(x) ct=0 dev=1749.9 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:05.994 #V6 closed=1 ang=123.9 lpW=0.4 settled=1 moved=0.0
+18:54:06.196 #F=0.0(x) A=12.1 vib=0 SS=0.00(x) ct=0 dev=1760.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:06.196 #V6 closed=1 ang=123.9 lpW=0.7 settled=1 moved=0.0
+18:54:06.396 #F=0.0(x) A=11.4 vib=0 SS=0.00(x) ct=0 dev=1765.3 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:06.396 #V6 closed=1 ang=124.0 lpW=0.8 settled=1 moved=0.0
+18:54:06.598 #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=1766.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:06.598 #V6 closed=1 ang=123.9 lpW=1.5 settled=1 moved=0.0
+18:54:06.800 #F=0.0(x) A=9.0 vib=0 SS=0.00(x) ct=0 dev=1766.4 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:06.801 #V6 closed=1 ang=123.8 lpW=1.0 settled=1 moved=0.0
+18:54:07.015 #F=0.0(x) A=8.7 vib=0 SS=0.00(x) ct=0 dev=1766.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:07.015 #V6 closed=1 ang=123.9 lpW=1.2 settled=1 moved=0.0
+18:54:07.217 #F=0.0(x) A=9.7 vib=0 SS=0.00(x) ct=0 dev=1767.3 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:07.217 #V6 closed=1 ang=124.1 lpW=1.8 settled=1 moved=0.0
+18:54:07.217 #F=0.0(x) A=31.0 vib=1 SS=0.00(x) ct=0 dev=1768.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:07.217 #V6 closed=1 ang=123.4 lpW=6.4 settled=1 moved=0.0
+18:54:07.420 #F=110.4 A=34.7 vib=1 SS=0.00(x) ct=0 dev=1744.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:07.420 #V6 closed=1 ang=114.9 lpW=46.0 settled=0 moved=0.0
+18:54:07.622 #F=0.0(x) A=324.4 vib=0 SS=0.00(x) ct=0 dev=1693.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:07.622 #V6 closed=1 ang=107.7 lpW=42.6 settled=0 moved=0.0
+18:54:07.822 #F=0.0(x) A=61.5 vib=1 SS=0.00(x) ct=0 dev=1573.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:07.822 #V6 closed=1 ang=94.8 lpW=66.2 settled=0 moved=0.0
+18:54:08.023 #F=91.5 A=85.3 vib=1 SS=0.00(x) ct=0 dev=1459.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:08.023 #V6 closed=1 ang=81.4 lpW=79.1 settled=0 moved=0.0
+18:54:08.224 #F=67.1 A=40.1 vib=1 SS=0.00(x) ct=0 dev=1208.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:08.224 #V6 closed=1 ang=61.1 lpW=96.6 settled=0 moved=0.0
+18:54:08.425 #F=0.0(x) A=18.1 vib=1 SS=0.00(x) ct=0 dev=1007.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:08.425 #V6 closed=1 ang=51.1 lpW=53.3 settled=0 moved=0.0
+18:54:08.629 #F=0.0(x) A=12.9 vib=0 SS=0.00(x) ct=0 dev=851.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:08.629 #V6 closed=0 ang=44.5 lpW=31.7 settled=0 moved=0.0
+18:54:08.832 #F=0.0(x) A=17.5 vib=0 SS=0.00(x) ct=0 dev=738.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:08.832 #V6 closed=0 ang=39.4 lpW=23.5 settled=0 moved=0.0
+18:54:09.034 #F=0.0(x) A=59.0 vib=1 SS=0.00(x) ct=0 dev=642.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:09.034 #V6 closed=0 ang=34.3 lpW=23.3 settled=0 moved=0.0
+18:54:09.248 #F=0.0(x) A=21.4 vib=1 SS=0.00(x) ct=0 dev=574.2 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:09.248 #V6 closed=0 ang=32.4 lpW=9.8 settled=0 moved=0.0
+18:54:09.465 #F=0.0(x) A=40.9 vib=1 SS=0.00(x) ct=0 dev=531.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:09.465 #V6 closed=0 ang=30.8 lpW=9.7 settled=0 moved=0.0
+18:54:09.665 #F=0.0(x) A=9.7 vib=0 SS=0.00(x) ct=0 dev=492.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:09.665 #V6 closed=0 ang=28.5 lpW=9.9 settled=0 moved=0.0
+18:54:09.881 #F=0.0(x) A=24.8 vib=0 SS=0.00(x) ct=0 dev=454.7 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:09.881 #V6 closed=0 ang=26.2 lpW=11.1 settled=0 moved=0.0
+18:54:10.081 #F=0.0(x) A=6.9 vib=0 SS=0.00(x) ct=0 dev=422.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:10.081 #V6 closed=0 ang=25.0 lpW=5.9 settled=1 moved=0.0
+18:54:10.283 #F=195.8 A=28.5 vib=1 SS=0.00(x) ct=0 dev=403.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:10.283 #V6 closed=0 ang=24.7 lpW=3.7 settled=1 moved=0.0
+18:54:10.486 #F=0.0(x) A=11.4 vib=0 SS=0.00(x) ct=0 dev=392.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:10.486 #V6 closed=0 ang=24.6 lpW=2.3 settled=1 moved=0.0
+18:54:10.688 #F=0.0(x) A=9.1 vib=0 SS=0.00(x) ct=0 dev=387.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:10.688 #V6 closed=0 ang=24.5 lpW=1.6 settled=1 moved=0.0
+18:54:10.890 #F=0.0(x) A=18.8 vib=1 SS=0.00(x) ct=0 dev=383.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:10.890 #V6 closed=0 ang=24.4 lpW=4.3 settled=1 moved=0.0
+18:54:11.105 #F=89.0 A=63.2 vib=1 SS=0.00(x) ct=0 dev=404.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:11.105 #V6 closed=0 ang=28.6 lpW=24.7 settled=0 moved=0.0
+18:54:11.309 #F=0.0(x) A=73.3 vib=1 SS=0.00(x) ct=0 dev=499.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:11.309 #V6 closed=0 ang=41.7 lpW=66.8 settled=0 moved=0.0
+18:54:11.511 #F=95.1 A=41.8 vib=1 SS=0.00(x) ct=0 dev=709.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:11.511 #V6 closed=0 ang=60.4 lpW=91.9 settled=0 moved=0.0
+18:54:11.716 #F=83.9 A=85.3 vib=1 SS=0.00(x) ct=0 dev=949.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:11.716 #V6 closed=1 ang=77.1 lpW=85.0 settled=0 moved=0.0
+18:54:11.917 #F=68.5 A=41.2 vib=1 SS=0.00(x) ct=0 dev=1215.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:11.917 #V6 closed=1 ang=98.0 lpW=99.8 settled=0 moved=0.0
+18:54:12.118 #F=0.0(x) A=17.9 vib=1 SS=0.00(x) ct=0 dev=1449.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:12.118 #V6 closed=1 ang=111.4 lpW=57.4 settled=0 moved=0.0
+18:54:12.321 #F=129.8 A=33.0 vib=1 SS=0.00(x) ct=0 dev=1600.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:12.321 #V6 closed=1 ang=122.5 lpW=55.6 settled=0 moved=0.0
+18:54:12.522 #F=108.0 A=14.6 vib=1 SS=0.00(x) ct=0 dev=1711.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:12.522 #V6 closed=1 ang=124.7 lpW=5.7 settled=0 moved=0.0
+18:54:12.726 #F=0.0(x) A=8.7 vib=0 SS=0.00(x) ct=0 dev=1751.4 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:12.726 #V6 closed=1 ang=124.8 lpW=1.7 settled=1 moved=0.0
+18:54:12.928 #F=0.0(x) A=10.0 vib=0 SS=0.00(x) ct=0 dev=1766.6 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:12.928 #V6 closed=1 ang=124.8 lpW=3.5 settled=1 moved=0.0
+18:54:13.131 #F=0.0(x) A=190.0 vib=1 SS=0.00(x) ct=0 dev=1767.8 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:13.132 #V6 closed=1 ang=118.5 lpW=36.6 settled=0 moved=0.0
+18:54:13.332 #F=89.5 A=29.6 vib=1 SS=0.00(x) ct=0 dev=1701.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:13.332 #V6 closed=1 ang=107.3 lpW=49.6 settled=0 moved=0.0
+18:54:13.534 #F=0.0(x) A=47.5 vib=1 SS=0.00(x) ct=0 dev=1533.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:13.534 #V6 closed=1 ang=85.1 lpW=124.5 settled=0 moved=0.0
+18:54:13.735 #F=71.1 A=28.6 vib=1 SS=0.00(x) ct=0 dev=1324.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:13.735 #V6 closed=1 ang=70.4 lpW=70.2 settled=0 moved=0.0
+18:54:13.937 #F=78.8 A=28.7 vib=1 SS=0.00(x) ct=0 dev=1125.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:13.937 #V6 closed=1 ang=59.9 lpW=45.7 settled=0 moved=0.0
+18:54:14.141 #F=75.7 A=27.1 vib=1 SS=0.00(x) ct=0 dev=965.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:14.141 #V6 closed=1 ang=50.2 lpW=44.2 settled=0 moved=0.0
+18:54:14.344 #F=0.0(x) A=16.5 vib=0 SS=0.00(x) ct=0 dev=823.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:14.345 #V6 closed=0 ang=43.6 lpW=28.5 settled=0 moved=0.0
+18:54:14.558 #F=0.0(x) A=20.9 vib=0 SS=0.00(x) ct=0 dev=722.0 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:14.558 #V6 closed=0 ang=38.6 lpW=27.0 settled=0 moved=0.0
+18:54:14.773 #F=0.0(x) A=32.5 vib=1 SS=0.00(x) ct=0 dev=624.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:14.773 #V6 closed=0 ang=33.3 lpW=24.5 settled=0 moved=0.0
+18:54:14.977 #F=149.3 A=27.9 vib=1 SS=0.00(x) ct=0 dev=557.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:14.977 #V6 closed=0 ang=30.8 lpW=11.6 settled=0 moved=0.0
+18:54:15.178 #F=0.0(x) A=26.2 vib=0 SS=0.00(x) ct=0 dev=498.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:15.178 #V6 closed=0 ang=27.9 lpW=12.9 settled=0 moved=0.0
+18:54:15.378 #F=0.0(x) A=16.9 vib=1 SS=0.00(x) ct=0 dev=455.9 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:15.378 #V6 closed=0 ang=26.4 lpW=8.6 settled=0 moved=0.0
+18:54:15.579 #F=154.3 A=13.5 vib=1 SS=0.00(x) ct=0 dev=422.4 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+18:54:15.579 #V6 closed=0 ang=24.8 lpW=6.1 settled=0 moved=0.0
