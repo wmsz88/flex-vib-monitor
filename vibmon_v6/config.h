@@ -52,23 +52,6 @@
 #define COMP_FRAME_CL 0
 #endif
 
-/* ---------- T010 现场适配门控（三只都默认关/默认不变，出发版字节流零变化） ----------
- * 现场对接平台时可能遇到的三种情况，先做成编译期开关，省得现场改代码：
- *   COMP_FRAME_CSV   1 = 比赛口改发 CSV 文本行（无帧头无校验），默认 0 = 原 $VD 帧
- *   COMP_FRAME_DIV   发送分频：1 = 50Hz（默认）、2 = 25Hz、5 = 10Hz。只降帧率，
- *                    SEQ 仍逐帧连续（平台按 SEQ 判丢帧时不会误报）
- *   COMP_FRAME_GATED 1 = 比赛口要收到 'S' 才开始发、收到 'X' 停止，默认 0 = 接上就发
- * 三者都不在判据链上，只影响比赛口的输出形式。 */
-#ifndef COMP_FRAME_CSV
-#define COMP_FRAME_CSV   0
-#endif
-#ifndef COMP_FRAME_DIV
-#define COMP_FRAME_DIV   1
-#endif
-#ifndef COMP_FRAME_GATED
-#define COMP_FRAME_GATED 0
-#endif
-
 /* ---------- MPU6050 ---------- */
 #define MPU_ADDR         0x68    // AD0 接地
 #define I2C_CLOCK        200000UL
@@ -734,18 +717,6 @@
 #endif
 #if (COMP_PERIOD_MS <= 0)
   #error "COMP_PERIOD_MS 必须大于 0"
-#endif
-#if (COMP_FRAME_CSV != 0) && (COMP_FRAME_CSV != 1)
-  #error "COMP_FRAME_CSV 只能为 0 或 1"
-#endif
-#if (COMP_FRAME_DIV < 1)
-  #error "COMP_FRAME_DIV 必须 >= 1（1 = 不分频）"
-#endif
-#if (COMP_FRAME_GATED != 0) && (COMP_FRAME_GATED != 1)
-  #error "COMP_FRAME_GATED 只能为 0 或 1"
-#endif
-#if (COMP_FRAME_GATED != 0) && (COMP_FRAME_ENABLED == 0)
-  #error "COMP_FRAME_GATED 依赖 COMP_FRAME_ENABLED=1"
 #endif
 
 /* ---------- 模式 3/4（平放三重与）参数检查 ----------

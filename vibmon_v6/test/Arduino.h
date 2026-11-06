@@ -29,34 +29,16 @@ public:
   void begin(unsigned long) {}
   void begin(unsigned long, uint8_t, int, int) {}
   void begin(unsigned long, int, int, int) {}
-  int available(void) { return (int)(m_rxTail - m_rxHead); }
-  int peek(void) { return available() ? m_rx[m_rxHead & 63u] : -1; }
-  int read(void) { return available() ? m_rx[m_rxHead++ & 63u] : -1; }
-  void write(const uint8_t* b, size_t n) {
-    for (size_t i = 0; i < n && m_txN + 1 < sizeof(m_tx); i++) m_tx[m_txN++] = (char)b[i];
-    m_tx[m_txN] = '\0';
-  }
+  int available(void) { return 0; }
+  int peek(void) { return -1; }
+  int read(void) { return -1; }
+  void write(const uint8_t*, size_t) {}
   void setTimeout(unsigned long) {}
   void setTxTimeoutMs(unsigned long) {}
-
-  /* ---- 测试用：喂命令 / 读回显。默认空，不影响只测纯编码的用例。 ---- */
-  void push(char c) { if (available() < 64) m_rx[m_rxTail++ & 63u] = (uint8_t)c; }
-  void clearTx(void) { m_txN = 0; m_tx[0] = '\0'; }
-  const char* tx(void) const { return m_tx; }
-
-private:
-  uint8_t m_rx[64] = {};
-  unsigned m_rxHead = 0, m_rxTail = 0;
-  char     m_tx[512] = {};
-  size_t   m_txN = 0;
 };
 extern SerialStub Serial;
 extern SerialStub Serial1;
 
-/* LED 驱动桩。默认空实现；led_test 用 ledWriteHook() = fn 挂钩子抓引脚电平。 */
-inline void (*&ledWriteHook(void))(int, int) {
-  static void (*hook)(int, int) = nullptr;
-  return hook;
-}
+/* LED 驱动桩。输出逻辑测试关心 Result，不关心引脚电平。 */
 inline void pinMode(int, int) {}
-inline void digitalWrite(int pin, int val) { if (ledWriteHook()) ledWriteHook()(pin, val); }
+inline void digitalWrite(int, int) {}

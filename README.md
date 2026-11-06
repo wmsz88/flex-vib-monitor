@@ -8,12 +8,15 @@
 
 ## 〇、当前版本（2026-11-06 · EXEC 汇总）
 
-> **出发固件尚未由人类拍板。** 两个候选都在仓库里，下面写清各自是什么、怎么编。
+> **出发固件 = v6**（2026-11-06 人类拍板，接触三条版，T013 已上板验收）。
+> **现场适配版 = v7**（由 v6 拷贝，判据链一字未改，只加黄灯接触闪 / `y` 命令 / 三只预案宏）。
+> v5 是更早的默认版，作回退归档。
 
 | 版本 | 目录 | 是什么 | 编译产物 |
 |---|---|---|---|
 | v5 | `vibmon_v5\` | 历史默认版。**当前工作区实际配置是 `CT_HOLD_ENABLE=1`（启停保持门）+ T011 进入路径 + `SS_HI_MG/SS_LO_MG = 120/80`**，不是早期文档写的「hold 关默认版」 | `vibmon_v5\_probe\t011\build_uart_b\`（SHA `e945d958…`） |
 | v6 | `vibmon_v6\` | 接触三条候选版：①收拢并停下才算接触 ②接触后不再看加速度 ③只有陀螺判出张开、或进入后又转过 `CT_RELEASE_DEG` 才分离。另含「接触中启停取最新一致段」与起振门 `120/80` | `vibmon_v6\build_uart\` |
+| v7 | `vibmon_v7\` | **现场适配版**：由 v6 拷贝，判据链（`state.cpp`/`dsp.cpp`/`posture.cpp`/`sampler.cpp`/`mpu.cpp`）逐字节未改；只改 `output.cpp`+`config.h` —— 黄灯改接触中 2Hz 闪、新增 `y` 三态命令、新增 `COMP_FRAME_CSV`/`COMP_FRAME_DIV`/`COMP_FRAME_GATED` 三只预案宏（默认关） | `vibmon_v7\_variants\`（7 个变体 + 清单） |
 
 **v6 现场开关**（都在 `vibmon_v6\config.h`）：`CT_V6_ENABLE`（0 = 回退成 v5+T011 行为）、`CT_SETTLE_ENABLE`（0 = 不要求手指停下）、`CT_RELEASE_DEG`（分离角度，默认 10°）。
 

@@ -24,15 +24,6 @@ static uint8_t s_plot = PLOT_DEFAULT;
 static bool    s_dbg = false;
 static LedMode s_led = LED_RUN;
 
-/* 黄灯演示三态（T010 改动 A）。赛题只要求黄灯"预留并可控制亮灭"，这里做成可演示的：
- *   AUTO = 跟随接触：CT=1 时 2Hz 闪、CT=0 灭（"接触闪"最直观）
- *   ON   = 常亮（演示"可控制亮"）
- *   OFF  = 常灭（演示"可控制灭"）
- * 只在 LED_RUN 下生效；LED_FAULT（4Hz 快闪）与 LED_CAL 一律不受影响。 */
-enum LedYMode : uint8_t { LEDY_AUTO = 0, LEDY_ON, LEDY_OFF, LEDY_COUNT };
-static uint8_t s_ledY = LEDY_AUTO;
-static const char* const kLedYName[LEDY_COUNT] = { "AUTO", "ON", "OFF" };
-
 /* 三轴波形抽取比：运行时可通过 'w' 命令调整（0 = 关闭输出） */
 static uint8_t s_waveDecim    = PLOT_WAVE_DEFAULT_DECIM;
 static uint8_t s_waveDecimCnt = 0;
@@ -79,9 +70,6 @@ static bool     s_compReady = false;
 #if COMP_FRAME_ENABLED
 static uint16_t s_compSeq   = 0;
 #endif
-#if COMP_FRAME_GATED
-static bool     s_compGated = false;   // 比赛口命令门控：收到 'S' 才开始发
-#endif
 
 void compBegin(void) {
   Serial1.begin(COMP_BAUD, SERIAL_8N1, PIN_COMP_RX, PIN_COMP_TX);
@@ -93,9 +81,7 @@ void compBegin(void) {
 bool compReady(void) { return s_compReady; }
 
 /* 数值编码：把物理量映射成定宽字段。
- * 约定：无效量一律发 0，由 VALID 位图区分"未知"与"测得 0"。
- * 仅在 $VD 帧模式下需要 —— CSV 模式用不到，编译时整段去掉，否则 -Wall 报未使用函数。 */
-#if !COMP_FRAME_CSV
+ * 约定：无效量一律发 0，由 VALID 位图区分"未知"与"测得 0"。 */
 static unsigned encFreqX10(const Result& r) {
   if (!r.freqValid) return 0;
   float v = r.freqHz * 10.0f;
@@ -135,7 +121,6 @@ static uint8_t xorChk(const char* s, int n) {
   for (int i = 0; i < n; i++) x ^= (uint8_t)s[i];
   return x;
 }
-#endif   // !COMP_FRAME_CSV
 
 /* 帧格式（COMP_FRAME_CL=0 时 35 字节，=1 时 37 字节）：
  *   关闭：$VD,SEQ,FREQx10,AMP_MG,VIB,CT,SSx100,VALID,CHK\r\n
@@ -155,20 +140,6 @@ static uint8_t xorChk(const char* s, int n) {
 int compBuildFrame(const Result& r, uint16_t seq, char* out, int outSize) {
   if (!out || outSize < COMP_OUT_MIN) return -1;
 
-#if COMP_FRAME_CSV
-  /* T010 预案：平台只认 CSV 文本行时用这一支（无帧头、无校验、逗号分隔）。
-   * 格式 ct,vib,freq,amp,ss —— 与 $VD 同量纲，无效量同样输出 0。
-   * 平台要的列序/位数不同，现场只改下面这一条格式串即可。 */
-  const float fqC = isfinite(r.freqHz) ? r.freqHz : 0.0f;
-  const float amC = isfinite(r.ampMg) && r.ampMg > 0.0f ? r.ampMg : 0.0f;
-  const float ssC = isfinite(r.ssHz) ? r.ssHz : 0.0f;
-  const int mC = snprintf(out, (size_t)outSize, "%u,%u,%.1f,%u,%.2f\r\n",
-                          (unsigned)(r.contact ? 1 : 0), (unsigned)(r.vib ? 1 : 0),
-                          (double)fqC, (unsigned)(int)(amC + 0.5f), (double)ssC);
-  if (mC <= 0 || mC >= outSize) return -1;
-  (void)seq;
-  return mC;
-#else
   const unsigned fq = encFreqX10(r);
   const unsigned am = encAmpMg(r);
   const unsigned vb = (unsigned)(r.vib ? 1 : 0);
@@ -191,24 +162,13 @@ int compBuildFrame(const Result& r, uint16_t seq, char* out, int outSize) {
   const int m = snprintf(out, (size_t)outSize, "%s,%02X\r\n", body, chk);
   if (m <= 0 || m >= outSize) return -1;
   return m;
-#endif   // COMP_FRAME_CSV
 }
 
 void compPeriodic(uint32_t nowMs) {
 #if COMP_FRAME_ENABLED
   if (!s_compReady) return;
-#if COMP_FRAME_GATED
-  /* T010 预案：平台要求"命令触发式"时用这一支。比赛口自己收 'S'/'X'。
-   * 默认关（COMP_FRAME_GATED=0），出发版比赛口接上就发、不读任何输入。 */
-  while (Serial1.available()) {
-    const char gc = (char)Serial1.read();
-    if (gc == 'S' || gc == 's') s_compGated = true;
-    else if (gc == 'X' || gc == 'x') s_compGated = false;
-  }
-  if (!s_compGated) return;
-#endif
   static uint32_t lastMs = 0;
-  if ((uint32_t)(nowMs - lastMs) < (uint32_t)(COMP_PERIOD_MS * COMP_FRAME_DIV)) return;
+  if ((uint32_t)(nowMs - lastMs) < (uint32_t)COMP_PERIOD_MS) return;
   lastMs = nowMs;
 
   char buf[40];
@@ -247,16 +207,6 @@ void outPrintBanner(void) {
 #if COMP_FRAME_CL
   outPrintf("[COMP] 帧含 CL 字段：%d 字节（$VD,...,CT,CL,SSx100,VALID,CHK）\n",
             COMP_OUT_MIN - 1);
-#endif
-#if COMP_FRAME_CSV
-  outPrintf("[COMP] CSV 文本行模式：ct,vib,freq,amp,ss（无帧头无校验）\n");
-#endif
-#if COMP_FRAME_DIV > 1
-  outPrintf("[COMP] 发送分频 %d：帧率约 %d Hz\n",
-            COMP_FRAME_DIV, 1000 / (COMP_PERIOD_MS * COMP_FRAME_DIV));
-#endif
-#if COMP_FRAME_GATED
-  outPrintf("[COMP] 命令门控：收到 'S' 开始发、'X' 停止（上电默认静默）\n");
 #endif
   outPrintf("命令 '?' 查看帮助\n");
 }
@@ -409,8 +359,6 @@ void outPrintStatus(void) {
     }
   }
 #endif
-  outPrintf("黄灯 [LEDY] %s（y 切换：AUTO 接触中2Hz闪 / ON 常亮 / OFF 常灭）\n",
-            kLedYName[s_ledY]);
   outPrintCal();
 }
 
@@ -772,13 +720,9 @@ void ledSet(LedMode m) {
 
 void ledUpdate(uint32_t nowMs, const Result& r) {
   switch (s_led) {
-    case LED_RUN:   // 绿 1Hz 心跳；黄 = 接触中 2Hz 闪（y 命令可切常亮/常灭）
+    case LED_RUN:   // 绿 1Hz 心跳，黄 = 振动中
       ledWrite(PIN_LED_G, (nowMs / 500) & 1);
-      switch (s_ledY) {
-        case LEDY_ON:  ledWrite(PIN_LED_Y, true); break;
-        case LEDY_OFF: ledWrite(PIN_LED_Y, false); break;
-        default:       ledWrite(PIN_LED_Y, (r.contact == 1) && (((nowMs / 250) & 1) != 0)); break;
-      }
+      ledWrite(PIN_LED_Y, r.vib == 1);
       break;
     case LED_FAULT: // 绿灭，黄 4Hz 快闪：避免把故障误读成"正常运行"
       ledWrite(PIN_LED_G, false);
@@ -871,7 +815,7 @@ CmdAction outPollCmd(void) {
          * 中文一个字 3 字节，整段帮助 330 字节 → 之前第 3 行起全丢了。
          * 所以每条控制在一行以内，不依赖缓冲区大小。 */
         outPrintf("命令: 0~4 选绘图组(0关 1结果 2启停 3接触 4波形) | p 轮换\n");
-        outPrintf("      d 调试行 | S 状态 | c 重标定(须静置) | n 清零统计 | y 黄灯 | ? 帮助\n");
+        outPrintf("      d 调试行 | S 状态 | c 重标定(须静置) | n 清零统计 | ? 帮助\n");
 #if CT_MODE == 3 || CT_MODE == 4
         outPrintf("      t 记录平放基准(平放时按) | t0 清除基准\n");
 #else
@@ -902,12 +846,6 @@ CmdAction outPollCmd(void) {
       case 'd':
         s_dbg = !s_dbg;
         if (s_dbg) s_plot = PLOT_OFF;
-        break;
-      /* 'y' = 黄灯三态循环 AUTO -> ON -> OFF -> AUTO（T010 改动 A）。
-       * 手动态优先于自动联动；不做门控宏（黄灯不在 $VD 数据路径上）。 */
-      case 'y':
-        s_ledY = (uint8_t)((s_ledY + 1u) % (uint8_t)LEDY_COUNT);
-        outPrintf("[LEDY] %s\n", kLedYName[s_ledY]);
         break;
       case 'S': setPlot(PLOT_OFF); outPrintStatus(); break;
       case 'T': setPlot(PLOT_OFF); outPrintTiming(); break;
