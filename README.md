@@ -6,6 +6,29 @@
 
 ---
 
+## 〇、当前版本（2026-11-06 · EXEC 汇总）
+
+> **出发固件尚未由人类拍板。** 两个候选都在仓库里，下面写清各自是什么、怎么编。
+
+| 版本 | 目录 | 是什么 | 编译产物 |
+|---|---|---|---|
+| v5 | `vibmon_v5\` | 历史默认版。**当前工作区实际配置是 `CT_HOLD_ENABLE=1`（启停保持门）+ T011 进入路径 + `SS_HI_MG/SS_LO_MG = 120/80`**，不是早期文档写的「hold 关默认版」 | `vibmon_v5\_probe\t011\build_uart_b\`（SHA `e945d958…`） |
+| v6 | `vibmon_v6\` | 接触三条候选版：①收拢并停下才算接触 ②接触后不再看加速度 ③只有陀螺判出张开、或进入后又转过 `CT_RELEASE_DEG` 才分离。另含「接触中启停取最新一致段」与起振门 `120/80` | `vibmon_v6\build_uart\` |
+
+**v6 现场开关**（都在 `vibmon_v6\config.h`）：`CT_V6_ENABLE`（0 = 回退成 v5+T011 行为）、`CT_SETTLE_ENABLE`（0 = 不要求手指停下）、`CT_RELEASE_DEG`（分离角度，默认 10°）。
+
+**编译方法**：arduino-cli 的 `--build-path` 不能含中文，本机采用的写法是先把 `vibmon_v6\` 的 `*.ino`、`*.h`、`*.cpp` 拷到一个英文临时目录（文件夹名保持 `vibmon_v6`），再
+
+```bash
+arduino-cli compile --fqbn esp32:esp32:esp32c3 --warnings all "<英文临时目录>/vibmon_v6"
+```
+
+产物 `.bin` 拷回 `vibmon_v6\build_uart\`。
+
+> ⚠️ ESP32 的 `.bin` 里嵌了编译时刻，**同一份源码两次编译的 SHA-256 不同**（实测两次 0 warning 构建差 68 字节，全落在头部描述区与末尾指纹段）。要认定「这是同一个固件」请用 git 提交 + 源码哈希，别拿 `.bin` 的 SHA 当判据。
+
+---
+
 ## 一、这里面有什么
 
 | 文件 | 是什么 | 什么时候用 |
