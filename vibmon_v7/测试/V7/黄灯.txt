@@ -1,0 +1,345 @@
+22:36:46.760 ## 打开 COM9（会复位模块，请保持张开/静止）
+22:36:49.762 TX d
+22:36:49.977 RX #F=153.8 A=40.8 vib=1 SS=0.00(x) ct=0 dev=2010.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:49.978 RX #V6 closed=1 ang=170.4 lpW=4.3 settled=1 moved=0.0
+22:36:49.978 RX #F=145.3 A=319.6 vib=1 SS=0.00(x) ct=0 dev=2008.0 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:49.978 RX #V6 closed=1 ang=171.2 lpW=5.4 settled=1 moved=0.0
+22:36:50.193 RX #F=147.1 A=384.8 vib=1 SS=0.00(x) ct=0 dev=2019.1 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:50.193 RX #V6 closed=1 ang=171.8 lpW=6.6 settled=1 moved=0.0
+22:36:50.396 RX #F=0.0(x) A=12.4 vib=1 SS=0.00(x) ct=0 dev=2017.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:50.398 RX #V6 closed=1 ang=172.1 lpW=1.7 settled=1 moved=0.0
+22:36:50.611 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:50.611 RX #V6 closed=1 ang=172.1 lpW=0.1 settled=1 moved=0.0
+22:36:50.812 RX #F=0.0(x) A=6.6 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:50.812 RX #V6 closed=1 ang=172.1 lpW=0.1 settled=1 moved=0.0
+22:36:50.812 TX 'y'
+22:36:51.014 RX [LEDY] ON
+22:36:51.014 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2016.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:51.014 RX #V6 closed=1 ang=172.1 lpW=0.1 settled=1 moved=0.0
+22:36:51.214 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2017.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:51.214 RX #V6 closed=1 ang=172.1 lpW=0.1 settled=1 moved=0.0
+22:36:51.416 RX #F=0.0(x) A=6.7 vib=0 SS=0.00(x) ct=0 dev=2014.8 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:51.416 RX #V6 closed=1 ang=172.2 lpW=0.2 settled=1 moved=0.0
+22:36:51.617 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2017.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:51.617 RX #V6 closed=1 ang=172.2 lpW=0.2 settled=1 moved=0.0
+22:36:51.819 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2016.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:51.819 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:52.021 RX #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:52.021 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:52.224 RX #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=2015.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:52.224 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:52.426 RX #F=0.0(x) A=5.2 vib=0 SS=0.00(x) ct=0 dev=2016.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:52.426 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:52.628 RX #F=0.0(x) A=6.1 vib=0 SS=0.00(x) ct=0 dev=2016.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:52.628 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:52.834 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2015.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:52.834 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:53.049 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:53.049 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:53.252 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2016.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:53.252 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:53.452 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2016.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:53.452 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:53.654 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2015.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:53.654 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:53.869 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2016.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:53.869 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:54.071 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:54.071 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:54.273 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:54.273 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:54.475 RX #F=0.0(x) A=4.8 vib=0 SS=0.00(x) ct=0 dev=2015.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:54.475 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:54.675 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=2016.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:54.676 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:54.890 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2015.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:54.891 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:55.091 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:55.091 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:55.306 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:55.306 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:55.508 RX #F=0.0(x) A=6.3 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=1 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:55.508 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:55.708 RX #F=0.0(x) A=5.2 vib=0 SS=0.00(x) ct=0 dev=2016.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:55.708 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:55.911 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2016.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:55.911 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:55.911 TX 'S'
+22:36:55.914 RX --- 状态 ---
+22:36:55.914 RX 传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 开
+22:36:55.914 RX 主频 0.0 Hz(无效)  幅值 5.2 mg(可信)  振动 0  启停 0.00 Hz(未确立, 4 周期)
+22:36:55.914 RX 接触 0(可信)  闭合角 172° (闭合>=60/退出45) [V]
+22:36:55.914 RX       幅值 5.2/400 mg [-]  频率 0.0/75 Hz [-]  三路与=0
+22:36:55.914 RX 起 20 / 停 20 | 读失败 0  缓冲溢出 0  不连续 0(缺 0, 抖动 0)  削顶 0  I2C错 0
+22:36:55.914 RX 采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+22:36:55.915 RX 姿态诊断 | raw=HONGEST stable=HONGEST d=2016mg x/y/z=-110/63/2013 窗口=有效 scnt=3 n=502 基线=-0/0/1
+22:36:55.915 RX 黄灯 [LEDY] ON（y 切换：AUTO 接触中2Hz闪 / ON 常亮 / OFF 常灭）
+22:36:55.915 RX [CAL] 本次：成功，已提交
+22:36:55.915 RX [CAL] 生效：有效标定 | 质量合格 | 样本 2285
+22:36:55.915 RX [CAL] bias 154.4/-90.0/-1027.5 mg  |g|=1043 mg  std 4.8/8.2/8.5 mg
+22:36:55.915 RX [CAL] 带内 sigma 2.76/2.91/3.84 mg  静置包络 5.53  静置姿态 0.43 mg
+22:36:55.915 RX [CAL] 阈值 过零 13.8 | 启停 27.6/13.8 | 接触 30.0/18.0 mg
+22:36:56.125 RX [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:36:56.125 RX [GYRO] 零偏 -2.77/1.68/-0.90 dps  标准差最大 0.76 dps  量程 ±500 dps  采样 250 Hz
+22:36:56.125 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2016.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:56.125 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:56.328 RX #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=2015.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:56.328 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:56.543 RX #F=0.0(x) A=4.8 vib=0 SS=0.00(x) ct=0 dev=2016.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:56.543 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:56.744 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=2016.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:56.744 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:56.959 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2015.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:56.959 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:57.174 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:57.175 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:57.175 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2015.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:57.175 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:57.375 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:57.376 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:57.576 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2016.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:57.576 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:57.779 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:57.779 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:57.780 TX 'y'
+22:36:57.981 RX [LEDY] OFF
+22:36:57.982 RX #F=0.0(x) A=6.2 vib=0 SS=0.00(x) ct=0 dev=2016.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:57.982 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:58.183 RX #F=0.0(x) A=5.1 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:58.183 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:58.397 RX #F=0.0(x) A=6.2 vib=0 SS=0.00(x) ct=0 dev=2017.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:58.398 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:58.599 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2017.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:58.599 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:58.799 RX #F=0.0(x) A=6.1 vib=0 SS=0.00(x) ct=0 dev=2016.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:58.799 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:59.014 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:59.014 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:36:59.227 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=2016.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:59.227 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:59.442 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2016.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:59.442 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:59.642 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2016.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:59.642 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:36:59.843 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=2016.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:36:59.843 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:00.044 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=2017.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:00.045 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:00.245 RX #F=0.0(x) A=4.7 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:00.246 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:00.447 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2017.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:00.447 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:00.649 RX #F=0.0(x) A=4.6 vib=0 SS=0.00(x) ct=0 dev=2016.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:00.650 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:00.865 RX #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:00.865 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:01.067 RX #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=2016.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:01.068 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:01.269 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0 dev=2017.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:01.269 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:01.482 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2017.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:01.482 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:01.684 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:01.684 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:01.886 RX #F=0.0(x) A=5.2 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:01.886 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:02.089 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2017.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:02.090 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:02.292 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=2017.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:02.292 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:02.506 RX #F=0.0(x) A=6.6 vib=0 SS=0.00(x) ct=0 dev=2017.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:02.507 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:02.707 RX #F=0.0(x) A=6.5 vib=0 SS=0.00(x) ct=0 dev=2017.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:02.707 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:02.908 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=2016.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:02.908 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:02.908 TX 'y'
+22:37:03.110 RX [LEDY] AUTO
+22:37:03.110 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:03.110 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:03.324 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:03.324 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:03.526 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:03.526 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:03.726 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0 dev=2016.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:03.727 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:03.927 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=2016.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:03.927 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:04.127 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:04.128 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:04.330 RX #F=0.0(x) A=4.7 vib=0 SS=0.00(x) ct=0 dev=2016.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:04.330 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:04.531 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=2016.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:04.531 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:04.745 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2017.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:04.745 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:04.946 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0 dev=2016.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:04.946 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:04.946 TX '?'
+22:37:04.962 RX 命令: 0~4 选绘图组(0关 1结果 2启停 3接触 4波形) | p 轮换
+22:37:04.963 RX       d 调试行 | S 状态 | c 重标定(须静置) | n 清零统计 | y 黄灯 | ? 帮助
+22:37:04.963 RX       t 记录平放基准(平放时按) | t0 清除基准
+22:37:04.963 RX       P 重采 START 姿态基线 | S 状态
+22:37:04.963 RX       Q 单行姿态诊断帧（便于连续记录）
+22:37:04.963 RX       k0~k6 打标模式(仅CSV) | K 退出打标
+22:37:04.963 RX       D 全量状态CSV(表头+数据)：看接触三路 condPosture/condAmp/condFreq
+22:37:05.163 RX #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=2016.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:05.163 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:05.163 RX #F=0.0(x) A=6.5 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:05.163 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:05.364 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2017.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:05.364 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:05.566 RX #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=2016.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:05.567 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:05.769 RX #F=0.0(x) A=6.1 vib=0 SS=0.00(x) ct=0 dev=2016.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:05.769 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:05.971 RX #F=0.0(x) A=7.0 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:05.971 RX #V6 closed=1 ang=172.2 lpW=0.0 settled=1 moved=0.0
+22:37:06.172 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2016.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:06.173 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:06.373 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:06.373 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:06.588 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2016.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:06.588 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:06.788 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0 dev=2016.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:06.788 RX #V6 closed=1 ang=172.2 lpW=0.1 settled=1 moved=0.0
+22:37:06.788 TX 'c'
+22:37:06.990 RX [CAL] 开始标定 3200 ms，请保持模块静置
+22:37:10.002 RX [CAL] 本次：成功，已提交
+22:37:10.002 RX [CAL] 生效：有效标定 | 质量合格 | 样本 2285
+22:37:10.002 RX [CAL] bias 39.8/-25.1/984.7 mg  |g|=986 mg  std 3.3/3.3/4.7 mg
+22:37:10.002 RX [CAL] 带内 sigma 2.80/2.81/4.16 mg  静置包络 5.73  静置姿态 0.54 mg
+22:37:10.002 RX [CAL] 阈值 过零 15.0 | 启停 28.6/14.3 | 接触 30.0/18.0 mg
+22:37:10.002 RX [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:37:10.002 RX [GYRO] 零偏 -2.80/1.69/-0.90 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+22:37:10.212 RX #重标定后 START 基线已失效：保持 START ���按 'P' 重采
+22:37:10.213 RX #F=0.0(x) A=0.0(x) vib=0 SS=0.00(x) ct=0(x) dev=0.0 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:10.213 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=0 moved=0.0
+22:37:10.213 RX #F=0.0(x) A=6.6 vib=0 SS=0.00(x) ct=0(x) dev=0.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:10.213 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:10.414 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0(x) dev=0.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:10.415 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:10.617 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0(x) dev=0.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:10.617 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:10.818 RX #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0(x) dev=0.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:10.818 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:11.033 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=1.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:11.033 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:11.247 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=1.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:11.248 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:11.459 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=1.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:11.459 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:11.659 RX #F=0.0(x) A=6.0 vib=0 SS=0.00(x) ct=0 dev=0.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:11.660 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:11.860 RX #F=0.0(x) A=4.9 vib=0 SS=0.00(x) ct=0 dev=0.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:11.860 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:12.061 RX #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=0.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:12.061 RX #V6 closed=0 ang=0.0 lpW=0.1 settled=1 moved=0.0
+22:37:12.275 RX #F=0.0(x) A=4.9 vib=0 SS=0.00(x) ct=0 dev=0.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:12.275 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:12.475 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=0.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:12.475 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:12.677 RX #F=0.0(x) A=5.1 vib=0 SS=0.00(x) ct=0 dev=1.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:12.677 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:12.879 RX #F=0.0(x) A=6.3 vib=0 SS=0.00(x) ct=0 dev=1.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:12.880 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:13.082 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=1.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:13.083 RX #V6 closed=0 ang=0.0 lpW=0.1 settled=1 moved=0.0
+22:37:13.283 RX #F=0.0(x) A=6.2 vib=0 SS=0.00(x) ct=0 dev=1.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:13.284 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:13.485 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=1.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:13.485 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:13.689 RX #F=0.0(x) A=6.5 vib=0 SS=0.00(x) ct=0 dev=1.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:13.690 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:13.892 RX #F=0.0(x) A=6.1 vib=0 SS=0.00(x) ct=0 dev=1.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:13.892 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:14.092 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=1.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:14.092 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:14.295 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=1.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:14.296 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:14.498 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=1.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:14.498 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:14.698 RX #F=0.0(x) A=5.2 vib=0 SS=0.00(x) ct=0 dev=1.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:14.698 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:14.898 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=1.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:14.898 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:15.098 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=1.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:15.099 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:15.300 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=1.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:15.301 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:15.502 RX #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=1.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:15.503 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:15.704 RX #F=0.0(x) A=6.6 vib=0 SS=0.00(x) ct=0 dev=1.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:15.704 RX #V6 closed=0 ang=0.0 lpW=0.1 settled=1 moved=0.0
+22:37:15.919 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=1.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:15.919 RX #V6 closed=0 ang=0.0 lpW=0.1 settled=1 moved=0.0
+22:37:16.121 RX #F=0.0(x) A=4.8 vib=0 SS=0.00(x) ct=0 dev=1.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:16.122 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:16.323 RX #F=0.0(x) A=5.4 vib=0 SS=0.00(x) ct=0 dev=1.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:16.323 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:16.537 RX #F=0.0(x) A=5.1 vib=0 SS=0.00(x) ct=0 dev=1.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:16.538 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:16.751 RX #F=0.0(x) A=6.8 vib=0 SS=0.00(x) ct=0 dev=1.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:16.751 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:16.954 RX #F=0.0(x) A=5.1 vib=0 SS=0.00(x) ct=0 dev=1.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:16.954 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:17.154 RX #F=0.0(x) A=4.7 vib=0 SS=0.00(x) ct=0 dev=2.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:17.155 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:17.355 RX #F=0.0(x) A=4.8 vib=0 SS=0.00(x) ct=0 dev=1.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:17.355 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:17.570 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=1.7 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:17.570 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:17.771 RX #F=0.0(x) A=6.1 vib=0 SS=0.00(x) ct=0 dev=1.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:17.772 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:17.973 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:17.973 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:18.175 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=1.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:18.175 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:18.376 RX #F=0.0(x) A=6.4 vib=0 SS=0.00(x) ct=0 dev=1.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:18.377 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:18.577 RX #F=0.0(x) A=6.3 vib=0 SS=0.00(x) ct=0 dev=1.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:18.577 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:18.778 RX #F=0.0(x) A=5.0 vib=0 SS=0.00(x) ct=0 dev=2.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:18.779 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:18.994 RX #F=0.0(x) A=4.6 vib=0 SS=0.00(x) ct=0 dev=1.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:18.994 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:19.194 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=1.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:19.194 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:19.397 RX #F=0.0(x) A=5.1 vib=0 SS=0.00(x) ct=0 dev=2.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:19.397 RX #V6 closed=0 ang=0.0 lpW=0.1 settled=1 moved=0.0
+22:37:19.612 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:19.612 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:19.612 RX #F=0.0(x) A=5.8 vib=0 SS=0.00(x) ct=0 dev=1.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:19.612 RX #V6 closed=0 ang=0.0 lpW=0.1 settled=1 moved=0.0
+22:37:19.824 RX #F=0.0(x) A=8.0 vib=0 SS=0.00(x) ct=0 dev=2.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:19.824 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:20.025 RX #F=0.0(x) A=5.7 vib=0 SS=0.00(x) ct=0 dev=2.1 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:20.025 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:20.227 RX #F=0.0(x) A=5.5 vib=0 SS=0.00(x) ct=0 dev=1.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:20.227 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:20.427 RX #F=0.0(x) A=6.3 vib=0 SS=0.00(x) ct=0 dev=1.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:20.427 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:20.628 RX #F=0.0(x) A=4.8 vib=0 SS=0.00(x) ct=0 dev=1.5 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:20.628 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:20.829 RX #F=0.0(x) A=7.9 vib=0 SS=0.00(x) ct=0 dev=1.7 ax=0 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:20.829 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:21.032 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=1.8 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:21.033 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:21.246 RX #F=0.0(x) A=6.4 vib=0 SS=0.00(x) ct=0 dev=2.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:21.246 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:21.447 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:21.447 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:21.648 RX #F=0.0(x) A=6.4 vib=0 SS=0.00(x) ct=0 dev=2.2 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:21.648 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:21.849 RX #F=0.0(x) A=5.9 vib=0 SS=0.00(x) ct=0 dev=2.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:21.849 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:22.051 RX #F=0.0(x) A=5.6 vib=0 SS=0.00(x) ct=0 dev=2.3 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:22.051 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:22.253 RX #F=0.0(x) A=6.8 vib=0 SS=0.00(x) ct=0 dev=1.9 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:22.253 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:22.454 RX #F=0.0(x) A=5.2 vib=0 SS=0.00(x) ct=0 dev=2.0 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:22.454 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:22.655 RX #F=0.0(x) A=5.3 vib=0 SS=0.00(x) ct=0 dev=2.4 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:22.655 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
+22:37:22.856 RX #F=0.0(x) A=4.4 vib=0 SS=0.00(x) ct=0 dev=2.6 ax=2 sens=1 gap=0 jit=0 drop=0 fail=0 clip=0
+22:37:22.856 RX #V6 closed=0 ang=0.0 lpW=0.0 settled=1 moved=0.0
