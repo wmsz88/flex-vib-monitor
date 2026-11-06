@@ -20,6 +20,7 @@ $targets = [ordered]@{
   'gyro_test'       = @{ src = 'test/gyro_test.cpp';       deps = @('dsp.cpp','state.cpp');                defs = @();                     pass = 8;  total = 8  }
   'comp_frame_test' = @{ src = 'test/comp_frame_test.cpp'; deps = @('output.cpp','state.cpp','dsp.cpp');   defs = @();                     pass = 22; total = 22 }
   'dump_test'       = @{ src = 'test/dump_test.cpp';       deps = @('output.cpp','state.cpp','dsp.cpp');   defs = @();                     pass = 15; total = 19 }
+  'led_test'        = @{ src = 'test/led_test.cpp';        deps = @('output.cpp','state.cpp','dsp.cpp');   defs = @();                     pass = 64; total = 64 }
   'ss_replay'       = @{ src = 'test/ss_replay.cpp';       deps = @('state.cpp');                          defs = @('-DSTATE_TEST_HOOKS'); pass = -1; total = -1 }
 }
 
