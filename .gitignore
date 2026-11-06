@@ -19,6 +19,12 @@ vibmon_v2 - 副本/
 *.map
 *.lst
 *.su
+*.a
+core/
+
+# ---- Python 缓存 ----
+__pycache__/
+*.pyc
 
 # ---- Arduino / arduino-cli 构建目录 ----
 build/
