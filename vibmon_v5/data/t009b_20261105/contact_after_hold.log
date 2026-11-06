@@ -1,0 +1,60 @@
+=== v5 contact_test (CT_MODE=4) ===
+
+[PASS] C1 未采基准：flatRefSet=0
+[PASS] C1 未采基准：contactValid=0（FINDING-01 已修）
+[PASS] C1 未采基准：contact=0
+[PASS] C2 稳定采集：flatRefSet=1
+[PASS] C2 稳定采集：contactValid=1
+[PASS] C3 采集在动：flatRefSet=0
+[PASS] C3 采集在动：contactValid=0（FINDING-01 已修）
+[PASS] C4 角度不足：closed=0
+[PASS] C4 角度不足：contact=0
+[PASS] C4 角度不足：contactValid=1（结论可信，值为 0）
+[PASS] C5 三路全过：closed=1
+[PASS] C5 三路全过：contact=1
+[PASS] C6 角度滞回退出：closed=0
+[PASS] C6 角度滞回退出：contact=0
+[PASS] C7 幅值边界：A=399.9 不成立
+[PASS] C7 幅值边界：contact=0
+[PASS] C7 幅值边界：A=400.1 成立
+[PASS] C7 幅值边界：contact=1
+[PASS] C8 频率边界：F=75.0 不成立
+[PASS] C8 频率边界：contact=0
+[PASS] C8 频率边界：F=75.1 成立
+[PASS] C8 频率边界：contact=1
+[PASS] C8b 80Hz 下限：condFreq=1
+[PASS] C8b 80Hz 下限：contact=1
+[PASS] C9 保持规则：先建立 contact=1
+[PASS] C9 保持规则：A=200 时幅值门已掉
+[PASS] C9 保持规则：F 仍在 -> contact 保持 1
+[PASS] C10 频率滞回：F=63.0 仍保持
+[PASS] C10 宏开：两路掉后进入 CT hold
+[PASS] C11 失效降级：先建立 contact=1
+[PASS] C11 失效降级：削顶后 ampValid=0
+[PASS] C11 失效降级：F 仍在 -> contact 保持 1
+[PASS] C11 失效降级：F 也失效
+[PASS] C11 宏开：两路失效后进入 CT hold
+[PASS] C12 角度失效兜底：先建立 contact=1
+[PASS] C12 角度失效兜底：angleValid=0
+[PASS] C12 角度失效兜底：flatDist 高 -> contactValid=1
+[PASS] C12 角度失效兜底：flatDist 高 -> closed=1
+[PASS] C12 角度失效兜底：flatDist 高 -> contact=1
+[PASS] C12 角度失效兜底：flatDist 低 -> contactValid=1
+[PASS] C12 角度失效兜底：flatDist 低 -> closed=0
+[PASS] C12 角度失效兜底：flatDist 低 -> contact=0
+[PASS] C13 空夹：gripNoObject=1
+[PASS] C13 空夹：contact=0
+[PASS] C14 确认延时：<100ms 不翻转
+[PASS] C14 确认延时：>=100ms 翻转
+[PASS] H1 hold 前置：contact=1
+[PASS] H1 hold 未到期：contact 保持 1
+[PASS] H1 hold 到期+确认：contact=0
+[PASS] H2 证据刷新：contact=1
+[PASS] H2 刷新后未到期：contact 保持 1
+[PASS] H2 最后一次证据过期：contact=0
+[PASS] H3 松手前置：hold 仍在
+[PASS] H3 姿态打开：closed=0
+[PASS] H3 姿态打开：contact=0
+[PASS] H3 姿态打开：contact 在 0.2s 内退出
+
+全部通过（56/56 项通过）

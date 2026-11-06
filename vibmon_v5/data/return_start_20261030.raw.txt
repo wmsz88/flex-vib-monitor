@@ -1,0 +1,18 @@
+#SWEEP t=303s F=      ?Hz A=    10.6mg D=   100mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.9 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=94.4 x=91.1 y=41.0 z=16.5 bx=0.2 by=24.3 bz=-2.8 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=304s F=      ?Hz A=    18.9mg D=   100mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=1.5 cliplim=0 ax=1 ok=0
+#SWEEP t=304s F=      ?Hz A=     6.8mg D=    99mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=1.4 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=92.6 x=89.3 y=41.1 z=16.0 bx=0.2 by=24.3 bz=-2.8 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=305s F=      ?Hz A=     5.1mg D=    99mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=305s F=      ?Hz A=     9.1mg D=    97mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.7 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=92.0 x=88.9 y=40.4 z=15.8 bx=0.2 by=24.3 bz=-2.8 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=306s F=      ?Hz A=     9.2mg D=    97mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=90.1 x=87.0 y=40.8 z=14.6 bx=0.2 by=24.3 bz=-2.8 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=306s F=      ?Hz A=     5.3mg D=    97mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=307s F=      ?Hz A=     5.4mg D=    96mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=86.5 y=40.9 z=15.0 bx=0.2 by=24.3 bz=-2.8 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=307s F=      ?Hz A=     8.4mg D=    95mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.9 cliplim=0 ax=1 ok=0
+#SWEEP t=308s F=      ?Hz A=     7.7mg D=    95mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=87.7 x=84.6 y=40.6 z=14.5 bx=0.2 by=24.3 bz=-2.8 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=308s F=      ?Hz A=     9.3mg D=    94mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=1.5 cliplim=0 ax=1 ok=0
+#SWEEP t=309s F=      ?Hz A=     5.5mg D=    93mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=1 ok=0

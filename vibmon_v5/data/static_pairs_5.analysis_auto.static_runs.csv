@@ -1,0 +1,4 @@
+﻿session,runId,tStartMs,tEndMs,durationMs,ctXMean,ctYMean,ctZMean,ctXStd,ctYStd,ctZStd,label,distStart,distHongest
+static_pairs_5,1,91555.0,119406.0,27851.0,-620.850,-68.126,-1509.389,1.427,0.350,0.459,START,9.172,
+static_pairs_5,2,120995.0,123226.0,2231.0,-6.968,-20.300,9.838,3.120,1.661,4.374,OTHER/FINISH,1635.860,
+static_pairs_5,3,125515.0,131466.0,5951.0,-607.642,-55.504,-1507.728,9.173,1.890,2.378,START,9.172,

@@ -1,0 +1,29 @@
+== 1.txt: frames=5052 bursts(amp>=100mg)=88
+  len 20-60ms n= 50 peak p10/p50/max=102/119/448 fmed=112 anyCT=3 >=3fr@200mg=0 >=3fr@250mg=0
+  len 60-120ms n= 25 peak p10/p50/max=144/398/1179 fmed=119 anyCT=0 >=3fr@200mg=6 >=3fr@250mg=2
+  len 120-200ms n=  8 peak p10/p50/max=192/484/1011 fmed=135 anyCT=1 >=3fr@200mg=4 >=3fr@250mg=4
+  len 200-300ms n=  4 peak p10/p50/max=405/667/803 fmed=147 anyCT=1 >=3fr@200mg=4 >=3fr@250mg=4
+  len 300-600ms n=  1 peak p10/p50/max=493/493/493 fmed=166 anyCT=0 >=3fr@200mg=1 >=3fr@250mg=1
+== 2.txt: frames=11291 bursts(amp>=100mg)=35
+  len 20-60ms n= 25 peak p10/p50/max=101/153/670 fmed=0 anyCT=0 >=3fr@200mg=0 >=3fr@250mg=0
+  len 60-120ms n=  8 peak p10/p50/max=123/404/1016 fmed=113 anyCT=0 >=3fr@200mg=2 >=3fr@250mg=0
+  len 120-200ms n=  2 peak p10/p50/max=206/279/352 fmed=142 anyCT=0 >=3fr@200mg=1 >=3fr@250mg=1
+== 3.txt: frames=10133 bursts(amp>=100mg)=78
+  len 20-60ms n= 54 peak p10/p50/max=108/130/662 fmed=75 anyCT=0 >=3fr@200mg=0 >=3fr@250mg=0
+  len 60-120ms n= 20 peak p10/p50/max=156/310/1126 fmed=97 anyCT=0 >=3fr@200mg=4 >=3fr@250mg=2
+  len 120-200ms n=  2 peak p10/p50/max=357/515/673 fmed=145 anyCT=0 >=3fr@200mg=2 >=3fr@250mg=2
+  len 200-300ms n=  2 peak p10/p50/max=319/467/615 fmed=143 anyCT=0 >=3fr@200mg=2 >=3fr@250mg=2
+== 6.1.txt: frames=9191 bursts(amp>=100mg)=187
+  len 20-60ms n= 52 peak p10/p50/max=104/140/1266 fmed=86 anyCT=4 >=3fr@200mg=0 >=3fr@250mg=0
+  len 60-120ms n= 30 peak p10/p50/max=137/235/1458 fmed=124 anyCT=0 >=3fr@200mg=5 >=3fr@250mg=4
+  len 120-200ms n= 10 peak p10/p50/max=250/379/564 fmed=124 anyCT=1 >=3fr@200mg=9 >=3fr@250mg=6
+  len 200-300ms n= 58 peak p10/p50/max=434/502/759 fmed=84 anyCT=11 >=3fr@200mg=58 >=3fr@250mg=57
+  len 300-600ms n= 30 peak p10/p50/max=467/562/982 fmed=94 anyCT=27 >=3fr@200mg=30 >=3fr@250mg=30
+  len 600-20000000000ms n=  7 peak p10/p50/max=372/395/552 fmed=103 anyCT=7 >=3fr@200mg=7 >=3fr@250mg=7
+== 6.2.txt: frames=10271 bursts(amp>=100mg)=248
+  len 20-60ms n= 67 peak p10/p50/max=116/229/1297 fmed=0 anyCT=15 >=3fr@200mg=0 >=3fr@250mg=0
+  len 60-120ms n= 18 peak p10/p50/max=164/244/1171 fmed=80 anyCT=1 >=3fr@200mg=3 >=3fr@250mg=3
+  len 120-200ms n= 37 peak p10/p50/max=245/263/564 fmed=77 anyCT=1 >=3fr@200mg=15 >=3fr@250mg=9
+  len 200-300ms n= 77 peak p10/p50/max=330/487/664 fmed=85 anyCT=13 >=3fr@200mg=77 >=3fr@250mg=77
+  len 300-600ms n= 38 peak p10/p50/max=479/528/702 fmed=98 anyCT=38 >=3fr@200mg=38 >=3fr@250mg=38
+  len 600-20000000000ms n= 11 peak p10/p50/max=401/621/668 fmed=125 anyCT=11 >=3fr@200mg=11 >=3fr@250mg=11

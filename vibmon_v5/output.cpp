@@ -7,6 +7,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+#if CT_HOLD_ENABLE
+bool stateContactHoldOk(void);
+uint32_t stateContactMsSinceEvidence(void);
+#endif
+
 // 勾选 "USB CDC On Boot" 时 Serial 是 USB 口；否则 Serial 是 UART0，绑到 GPIO20/21
 #if defined(ARDUINO_USB_CDC_ON_BOOT) && ARDUINO_USB_CDC_ON_BOOT
   #define OUT_USB_CDC 1
@@ -117,21 +122,40 @@ static uint8_t xorChk(const char* s, int n) {
   return x;
 }
 
-/* 帧格式（35 字节）：
- *   $VD,SEQ,FREQx10,AMP_MG,VIB,CT,SSx100,VALID,CHK\r\n
- *   正文 30 字节 + ',' + 2 位校验 + "\r\n" = 35
+/* 帧格式（COMP_FRAME_CL=0 时 35 字节，=1 时 37 字节）：
+ *   关闭：$VD,SEQ,FREQx10,AMP_MG,VIB,CT,SSx100,VALID,CHK\r\n
+ *         正文 30 字节 + ',' + 2 位校验 + "\r\n" = 35
+ *   开启：$VD,SEQ,FREQx10,AMP_MG,VIB,CT,CL,SSx100,VALID,CHK\r\n
+ *         正文 32 字节 + ',' + 2 位校验 + "\r\n" = 37（CL 插在 CT 之后）
+ * CL 门控在编译期，默认关闭 ⇒ 默认构建的字节流与历史版本完全相同。
  * 返回写入的字节数（不含 \0），失败返回 -1。 */
-int compBuildFrame(const Result& r, uint16_t seq, char* out, int outSize) {
-  if (!out || outSize < 36) return -1;
+#if COMP_FRAME_CL
+  #define COMP_BODY_SIZE  34        /* 正文 32 + '\0' */
+  #define COMP_OUT_MIN    38        /* 整帧 37 + '\0' */
+#else
+  #define COMP_BODY_SIZE  32        /* 正文 30 + '\0' */
+  #define COMP_OUT_MIN    36        /* 整帧 35 + '\0' */
+#endif
 
-  char body[32];
+int compBuildFrame(const Result& r, uint16_t seq, char* out, int outSize) {
+  if (!out || outSize < COMP_OUT_MIN) return -1;
+
+  const unsigned fq = encFreqX10(r);
+  const unsigned am = encAmpMg(r);
+  const unsigned vb = (unsigned)(r.vib ? 1 : 0);
+  const unsigned ct = (unsigned)(r.contact ? 1 : 0);
+  const unsigned ss = encSsX100(r);
+  const char     vd = encValid(r);
+
+  char body[COMP_BODY_SIZE];
+#if COMP_FRAME_CL
+  const unsigned cl = (unsigned)(r.closed ? 1 : 0);
+  const int n = snprintf(body, sizeof(body), "$VD,%04u,%05u,%05u,%u,%u,%u,%03u,%c",
+                         (unsigned)(seq % 10000u), fq, am, vb, ct, cl, ss, vd);
+#else
   const int n = snprintf(body, sizeof(body), "$VD,%04u,%05u,%05u,%u,%u,%03u,%c",
-                         (unsigned)(seq % 10000u),
-                         encFreqX10(r), encAmpMg(r),
-                         (unsigned)(r.vib ? 1 : 0),
-                         (unsigned)(r.contact ? 1 : 0),
-                         encSsX100(r),
-                         encValid(r));
+                         (unsigned)(seq % 10000u), fq, am, vb, ct, ss, vd);
+#endif
   if (n <= 0 || n >= (int)sizeof(body)) return -1;
 
   const uint8_t chk = xorChk(body, n);
@@ -180,6 +204,10 @@ void outPrintBanner(void) {
             s_compReady ? "UART1 ready" : "未启用",
             PIN_COMP_TX, PIN_COMP_RX, COMP_BAUD,
             COMP_FRAME_ENABLED ? "开启" : "关闭（协议未定）");
+#if COMP_FRAME_CL
+  outPrintf("[COMP] 帧含 CL 字段：%d 字节（$VD,...,CT,CL,SSx100,VALID,CHK）\n",
+            COMP_OUT_MIN - 1);
+#endif
   outPrintf("命令 '?' 查看帮助\n");
 }
 
@@ -502,6 +530,116 @@ static void sweepLine(void) {
             (unsigned)(allOk ? 1u : 0u));
 }
 
+/* ---------------- D 命令：单行全量状态 CSV ----------------
+ * 【为什么要有这一条】
+ * 现场排查"CT 一直是 0"时，'#SWEEP' 缺三个最关键的中间量：
+ *   condPosture / condAmp / condFreq —— 三路判据各自**即时**的比较结果（不含滞回与确认）。
+ * 有了它们就能一眼看出是哪一路没起来：
+ *   condPosture=0 → 手没握下去（姿态通道）；condAmp=0 → 没有振动证据；
+ *   condFreq=0 → 有振动但主频不在带内。三条都 1 而 ct=0，则是滞回/确认延时在起作用。
+ *
+ * 【为什么是 CSV 而不是 '?' 风格】
+ * 本行是"状态快照"，所有量都是固件当前值，不存在"无效数字冒充真数据"的风险
+ * （#SWEEP 用 '?' 是因为扫频会批量抄数字进表格）。所以这里一律输出数字，
+ * 同时把有效性拆成独立列（*Valid / flatDistValid / ctValid / angleValid），
+ * 需要判别真假时看标志列即可，表格解析也简单。
+ *
+ * 【列定义】（顺序与 OUT_DUMP_HEADER 严格一致，测试用逗号数校验）
+ *   t_ms          上电毫秒数
+ *   closed        已闭合（姿态门过）0/1
+ *   flatDist      到平放基准的距离 mg；未采到基准时为 -1（state.h 的既有约定）
+ *   flatDistValid 是否已采到平放基准 0/1
+ *   closeAngleDeg 陀螺积分闭合角，度
+ *   angleValid    闭合角是否可信 0/1
+ *   condPosture   姿态通道即时结果 flatDist > CT_FLAT_D_ON_MG 0/1
+ *   condAmp       幅值通道即时结果 0/1
+ *   condFreq      频率通道即时结果 0/1
+ *   ct            接触判定结果（含滞回与确认）0/1
+ *   ctValid       接触判定是否可信 0/1
+ *   vib           振动标志 0/1
+ *   freqHz/ampMg/ssHz  主频 Hz / 幅值 mg / 启停频率 Hz（无效时为 0，看后面标志）
+ *   freqValid / ampValid / ssValid  各量有效性 0/1
+ *   grip          空夹（握下但未证明接触）0/1
+ *   gyroW         合成角速度 dps
+ *   ax            主频所用轴
+ *   cliplim       主频因削顶降级 0/1
+ *   ok            整条可用（F、A 有效且未削顶）0/1
+ *   开宏追加：holdOk 保持门是否成立 0/1；msSinceEvidence 距最近证据毫秒数
+ */
+const char OUT_DUMP_HEADER[] =
+  "#DUMPH,t_ms,closed,flatDist,flatDistValid,closeAngleDeg,angleValid,"
+  "condPosture,condAmp,condFreq,ct,ctValid,vib,freqHz,freqValid,ampMg,ampValid,"
+  "ssHz,ssValid,grip,gyroW,ax,cliplim,ok"
+#if CT_HOLD_ENABLE
+  ",holdOk,msSinceEvidence"
+#endif
+  ;
+
+int outBuildDump(const Result& r, char* out, int outSize) {
+  if (!out || outSize < 64) return -1;
+
+  /* 有效性判定与 sweepLine 同一口径（数值有限 && 固件标记为真），
+   * 但 flatDist 额外要求「基准已采到」：固件在未采到基准时把 flatDist 置 -1，
+   * 零初始化的 Result 则可能是 0.0，不认 flatRefSet 会把"没有基准"印成合法的 0 mg。 */
+  const bool fOk = r.freqValid && isfinite(r.freqHz);
+  const bool aOk = r.ampValid  && isfinite(r.ampMg);
+  const bool sOk = r.ssValid   && isfinite(r.ssHz);
+  const bool dOk = r.flatRefSet && isfinite(r.flatDist) && (r.flatDist >= 0.0f);
+  const bool gOk = r.angleValid && isfinite(r.closeAngleDeg);
+  const bool wOk = isfinite(r.gyroW);
+  const bool allOk = fOk && aOk && !r.freqClipLimited;
+
+  const int n = snprintf(out, (size_t)outSize,
+    "#DUMP,%lu,%u,%.1f,%u,%.1f,%u,%u,%u,%u,%u,%u,%u,"
+    "%.1f,%u,%.1f,%u,%.2f,%u,%u,%.1f,%u,%u,%u"
+#if CT_HOLD_ENABLE
+    ",%u,%lu"
+#endif
+    ,
+    (unsigned long)millis(),
+    (unsigned)(r.closed ? 1u : 0u),
+    (double)(dOk ? r.flatDist : -1.0f),
+    (unsigned)(r.flatRefSet ? 1u : 0u),
+    (double)(gOk ? r.closeAngleDeg : 0.0f),
+    (unsigned)(r.angleValid ? 1u : 0u),
+    (unsigned)r.condPosture,
+    (unsigned)r.condAmp,
+    (unsigned)r.condFreq,
+    (unsigned)(r.contact ? 1u : 0u),
+    (unsigned)(r.contactValid ? 1u : 0u),
+    (unsigned)(r.vib ? 1u : 0u),
+    (double)(fOk ? r.freqHz : 0.0f),
+    (unsigned)(r.freqValid ? 1u : 0u),
+    (double)(aOk ? r.ampMg : 0.0f),
+    (unsigned)(r.ampValid ? 1u : 0u),
+    (double)(sOk ? r.ssHz : 0.0f),
+    (unsigned)(r.ssValid ? 1u : 0u),
+    (unsigned)(r.gripNoObject ? 1u : 0u),
+    (double)(wOk ? r.gyroW : 0.0f),
+    (unsigned)r.axis,
+    (unsigned)(r.freqClipLimited ? 1u : 0u),
+    (unsigned)(allOk ? 1u : 0u)
+#if CT_HOLD_ENABLE
+    , (unsigned)(stateContactHoldOk() ? 1u : 0u),
+    (unsigned long)stateContactMsSinceEvidence()
+#endif
+    );
+
+  if (n <= 0 || n >= outSize) return -1;
+  return n;
+}
+
+/* 敲一次 D = 表头行 + 数据行。
+ * 每次都给表头而不是只在上电后给一次：现场常常只截取中间一两行贴到聊天里，
+ * 没有表头的一行数字回头没人认得出是哪一列。 */
+static void dumpLine(void) {
+  outPrintf("%s\n", OUT_DUMP_HEADER);
+  char buf[192];
+  const int n = outBuildDump(stateResult(), buf, (int)sizeof(buf));
+  if (n <= 0) { outPrintf("#DUMP 组装失败\n"); return; }
+  outPrintf("%.*s\n", n, buf);
+}
+
 #if POSTURE_ENABLE
 static void postureLine(void) {
   const PostureResult& p = postureResult();
@@ -682,6 +820,7 @@ CmdAction outPollCmd(void) {
         outPrintf("      Q 单行姿态诊断帧（便于连续记录）\n");
         outPrintf("      k0~k6 打标模式(仅CSV) | K 退出打标\n");
         outPrintf("      w 扫频采样：打一行带有效标记的标定数据(无效量显示?)\n");
+        outPrintf("      D 全量状态CSV(表头+数据)：看接触三路 condPosture/condAmp/condFreq\n");
         break;
       case '0': case '1': case '2': case '3': case '4':
         setPlot((uint8_t)(c - '0'));
@@ -691,6 +830,10 @@ CmdAction outPollCmd(void) {
        * 为什么单独一条命令：plotLine 的 CSV 丢掉了有效性标记，
        * 无效数据会被 fin() 变成 0.0，扫频时无法分辨真假。 */
       case 'w': sweepLine(); break;
+      /* 'D' = DUMP：一行全量状态 + 表头，专门看接触判据三路（condPosture/condAmp/condFreq）
+       * 到底哪一路卡住。与 'w' 的区别：'w' 是扫频标定用的精简行（无效量打 '?'），
+       * 'D' 是状态快照（全数字 + 有效性标志列）。 */
+      case 'D': setPlot(PLOT_OFF); dumpLine(); break;
       case 'c':
         setPlot(PLOT_OFF);
         act = CMD_RECAL;

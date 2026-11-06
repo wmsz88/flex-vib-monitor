@@ -1,0 +1,177 @@
+=== file 6: start/stop mode segments ===
+run#2 seq=1149~1745 dur=11.92s ss_mean=0.5000 ss_min=0.50 ss_max=0.50 ct1=205/597 (34.3%) vib1=250/597 amp=4~600
+run#2 seq=2248~2945 dur=13.94s ss_mean=1.0014 ss_min=1.00 ss_max=1.02 ct1=258/698 (37.0%) vib1=362/698 amp=4~533
+run#2 seq=3347~4144 dur=15.94s ss_mean=1.9949 ss_min=1.94 ss_max=2.03 ct1=0/798 (0.0%) vib1=496/798 amp=5~424
+run#2 seq=4398~5397 dur=19.98s ss_mean=2.9387 ss_min=2.91 ss_max=3.00 ct1=0/1000 (0.0%) vib1=662/1000 amp=4~288
+run#2 seq=5775~6047 dur=5.44s ss_mean=1.0000 ss_min=1.00 ss_max=1.00 ct1=106/273 (38.8%) vib1=161/273 amp=5~458
+run#2 seq=6099~6539 dur=8.80s ss_mean=2.9447 ss_min=2.90 ss_max=2.98 ct1=0/441 (0.0%) vib1=278/441 amp=5~278
+=== file 4: CT contact segments in 1s blocks ===
+-- run#3 ct1=3013/4813 range=988~4000 --
+  19.8s ct=50/50 freq=  75.1 amp= 234.4 max= 435
+  20.8s ct=50/50 freq=  67.7 amp= 180.8 max= 225
+  21.8s ct=50/50 freq=  68.0 amp= 156.0 max= 202
+  22.8s ct=50/50 freq=  68.1 amp= 126.0 max= 203
+  23.8s ct=50/50 freq=  66.9 amp= 184.1 max= 206
+  24.8s ct=50/50 freq=  67.1 amp= 175.2 max= 219
+  25.8s ct=50/50 freq=  66.2 amp= 194.9 max= 235
+  26.8s ct=50/50 freq=  72.5 amp= 282.7 max= 495
+  27.8s ct=50/50 freq=  92.7 amp= 489.3 max= 524
+  28.8s ct=50/50 freq=  93.0 amp= 488.9 max= 561
+  29.8s ct=50/50 freq=  93.9 amp= 506.9 max= 538
+  30.8s ct=50/50 freq=  94.3 amp= 500.5 max= 535
+  31.8s ct=50/50 freq=  94.3 amp= 515.3 max= 542
+  32.8s ct=50/50 freq=  93.8 amp= 518.6 max= 560
+  33.8s ct=50/50 freq=  93.6 amp= 489.8 max= 549
+  34.8s ct=50/50 freq=  93.7 amp= 485.0 max= 558
+  35.8s ct=50/50 freq=  94.0 amp= 432.1 max= 514
+  36.8s ct=50/50 freq=  99.0 amp= 542.6 max= 736
+  37.8s ct=50/50 freq= 109.4 amp= 689.8 max= 758
+  38.8s ct=50/50 freq= 109.7 amp= 709.0 max= 757
+  39.8s ct=50/50 freq= 109.5 amp= 738.9 max= 771
+  40.8s ct=50/50 freq= 109.5 amp= 730.6 max= 761
+  41.8s ct=50/50 freq= 109.7 amp= 720.0 max= 770
+  42.8s ct=50/50 freq= 109.6 amp= 733.7 max= 784
+  43.8s ct=50/50 freq= 109.8 amp= 724.9 max= 783
+  44.8s ct=50/50 freq= 110.5 amp= 697.7 max= 833
+  45.8s ct=50/50 freq= 111.0 amp= 647.3 max= 741
+  46.8s ct=50/50 freq= 111.0 amp= 701.1 max= 741
+  47.8s ct=50/50 freq= 105.9 amp= 566.6 max= 763
+  48.8s ct=50/50 freq=  85.4 amp= 296.6 max= 384
+  49.8s ct=50/50 freq=  84.5 amp= 288.0 max= 300
+  50.8s ct=50/50 freq=  84.2 amp= 282.4 max= 291
+  51.8s ct=50/50 freq=  84.3 amp= 282.4 max= 294
+  52.8s ct=50/50 freq=  84.2 amp= 284.2 max= 310
+  53.8s ct=50/50 freq=  84.2 amp= 285.9 max= 321
+  54.8s ct=50/50 freq=  84.3 amp= 299.2 max= 335
+  55.8s ct=50/50 freq=  84.1 amp= 276.1 max= 304
+  56.8s ct=50/50 freq=  70.8 amp= 206.4 max= 271
+  57.8s ct=50/50 freq=  69.6 amp= 191.5 max= 214
+  58.8s ct=50/50 freq=  71.6 amp= 193.3 max= 204
+  59.8s ct=50/50 freq=  72.1 amp= 191.8 max= 212
+  60.8s ct=50/50 freq=  71.7 amp= 194.8 max= 219
+  61.8s ct=50/50 freq=  71.5 amp= 192.4 max= 219
+  62.8s ct=50/50 freq=  70.9 amp= 192.7 max= 208
+  63.8s ct=50/50 freq=  70.9 amp= 189.6 max= 208
+  64.8s ct=50/50 freq=  71.6 amp= 186.8 max= 241
+  65.8s ct=50/50 freq=  70.7 amp= 187.0 max= 212
+  66.8s ct=50/50 freq=  70.8 amp= 187.2 max= 212
+  67.8s ct=50/50 freq=  70.7 amp= 184.9 max= 195
+  68.8s ct=50/50 freq=  70.7 amp= 188.0 max= 206
+  69.8s ct=50/50 freq=  71.3 amp= 188.0 max= 205
+  70.8s ct=50/50 freq=  71.2 amp= 194.4 max= 216
+  71.8s ct=50/50 freq=  71.0 amp= 189.4 max= 215
+  72.8s ct=50/50 freq=  68.5 amp= 212.7 max= 254
+  73.8s ct=50/50 freq=  66.3 amp= 187.4 max= 212
+  74.8s ct=50/50 freq=  67.1 amp= 182.8 max= 212
+  75.8s ct=50/50 freq=  66.8 amp= 201.8 max= 224
+  76.8s ct=50/50 freq=  68.1 amp= 204.3 max= 238
+  77.8s ct=50/50 freq=  70.2 amp= 213.0 max= 252
+  78.8s ct=50/50 freq=  69.0 amp= 219.9 max= 256
+  79.8s ct=13/50 freq=  67.5 amp=  23.4 max= 229
+=== file 5: CT contact segments in 1s blocks ===
+-- run#1 ct1=2372/5578 range=1629~4000 --
+  32.6s ct=50/50 freq=  93.7 amp= 523.9 max= 560
+  33.6s ct=50/50 freq=  93.7 amp= 485.6 max= 549
+  34.6s ct=50/50 freq=  93.9 amp= 502.4 max= 558
+  35.6s ct=50/50 freq=  93.7 amp= 421.5 max= 514
+  36.6s ct=50/50 freq=  96.3 amp= 509.4 max= 736
+  37.6s ct=50/50 freq= 109.4 amp= 682.0 max= 758
+  38.6s ct=50/50 freq= 109.7 amp= 703.5 max= 757
+  39.6s ct=50/50 freq= 109.6 amp= 737.5 max= 767
+  40.6s ct=50/50 freq= 109.5 amp= 732.9 max= 771
+  41.6s ct=50/50 freq= 109.6 amp= 722.9 max= 770
+  42.6s ct=50/50 freq= 109.6 amp= 726.3 max= 776
+  43.6s ct=50/50 freq= 109.8 amp= 741.2 max= 784
+  44.6s ct=50/50 freq= 110.4 amp= 677.9 max= 750
+  45.6s ct=50/50 freq= 110.9 amp= 670.3 max= 833
+  46.6s ct=50/50 freq= 111.1 amp= 687.6 max= 726
+  47.6s ct=50/50 freq= 109.6 amp= 638.5 max= 763
+  48.6s ct=50/50 freq=  86.4 amp= 302.3 max= 384
+  49.6s ct=50/50 freq=  84.5 amp= 288.4 max= 300
+  50.6s ct=50/50 freq=  84.2 amp= 283.3 max= 296
+  51.6s ct=50/50 freq=  84.3 amp= 282.4 max= 294
+  52.6s ct=50/50 freq=  84.2 amp= 283.9 max= 310
+  53.6s ct=50/50 freq=  84.2 amp= 282.9 max= 308
+  54.6s ct=50/50 freq=  84.3 amp= 297.6 max= 335
+  55.6s ct=50/50 freq=  84.3 amp= 285.9 max= 326
+  56.6s ct=50/50 freq=  73.2 amp= 212.0 max= 267
+  57.6s ct=50/50 freq=  69.4 amp= 196.3 max= 271
+  58.6s ct=50/50 freq=  71.4 amp= 194.1 max= 206
+  59.6s ct=50/50 freq=  72.1 amp= 191.6 max= 212
+  60.6s ct=50/50 freq=  71.7 amp= 192.6 max= 218
+  61.6s ct=50/50 freq=  71.6 amp= 195.2 max= 219
+  62.6s ct=50/50 freq=  71.0 amp= 191.7 max= 208
+  63.6s ct=50/50 freq=  70.8 amp= 191.0 max= 208
+  64.6s ct=50/50 freq=  71.6 amp= 183.1 max= 203
+  65.6s ct=50/50 freq=  70.7 amp= 190.7 max= 241
+  66.6s ct=50/50 freq=  70.8 amp= 187.7 max= 212
+  67.6s ct=50/50 freq=  70.7 amp= 184.7 max= 195
+  68.6s ct=50/50 freq=  70.7 amp= 187.2 max= 196
+  69.6s ct=50/50 freq=  71.2 amp= 188.0 max= 206
+  70.6s ct=50/50 freq=  71.3 amp= 193.4 max= 216
+  71.6s ct=50/50 freq=  70.9 amp= 190.9 max= 215
+  72.6s ct=50/50 freq=  69.3 amp= 210.1 max= 254
+  73.6s ct=50/50 freq=  66.4 amp= 191.5 max= 212
+  74.6s ct=50/50 freq=  66.9 amp= 182.0 max= 212
+  75.6s ct=50/50 freq=  67.0 amp= 196.3 max= 214
+  76.6s ct=50/50 freq=  67.5 amp= 209.3 max= 238
+  77.6s ct=50/50 freq=  70.2 amp= 204.8 max= 252
+  78.6s ct=50/50 freq=  69.0 amp= 220.0 max= 256
+  79.6s ct=22/50 freq=  68.2 amp=  63.9 max= 245
+-- run#2 ct1=1654/4785 range=963~3745 --
+  19.3s ct=50/50 freq=  90.6 amp= 238.6 max= 432
+  20.3s ct=50/50 freq=  81.1 amp= 204.8 max= 214
+  21.3s ct=50/50 freq=  80.5 amp= 190.0 max= 215
+  22.3s ct=50/50 freq=  80.4 amp= 186.6 max= 204
+  23.3s ct=50/50 freq=  80.1 amp= 180.2 max= 205
+  24.3s ct=50/50 freq=  79.3 amp= 185.9 max= 214
+  25.3s ct=50/50 freq=  78.7 amp= 187.3 max= 215
+  26.3s ct=50/50 freq=  79.0 amp= 187.0 max= 213
+  27.3s ct=50/50 freq=  78.0 amp= 201.5 max= 217
+  28.3s ct=50/50 freq=  78.7 amp= 172.1 max= 212
+  29.3s ct=50/50 freq=  78.3 amp= 190.9 max= 206
+  30.3s ct=50/50 freq=  78.3 amp= 195.3 max= 209
+  31.3s ct=50/50 freq=  79.1 amp= 176.8 max= 206
+  32.3s ct=50/50 freq=  78.7 amp= 192.8 max= 215
+  33.3s ct=50/50 freq=  79.1 amp= 147.9 max= 201
+  34.3s ct=16/50 freq=  73.8 amp=  39.5 max= 203
+  35.3s ct= 0/50 freq=   0.0 amp=  13.6 max=  16
+  36.3s ct= 0/50 freq=   0.0 amp=  13.6 max=  18
+  37.3s ct= 0/50 freq=   0.0 amp=  15.2 max=  50
+  38.3s ct= 0/50 freq=   0.0 amp=  12.8 max=  18
+  39.3s ct= 0/50 freq=  77.4 amp=  54.1 max= 245
+  40.3s ct= 0/50 freq=  96.0 amp= 291.7 max= 306
+  41.3s ct= 0/50 freq=  98.5 amp= 298.5 max= 312
+  42.3s ct= 0/50 freq=  98.4 amp= 305.1 max= 313
+  43.3s ct= 0/50 freq=  98.6 amp= 304.6 max= 313
+  44.3s ct= 0/50 freq=  98.6 amp= 294.4 max= 308
+  45.3s ct= 0/50 freq=  98.7 amp= 302.0 max= 313
+  46.3s ct= 0/50 freq=  98.6 amp= 284.1 max= 309
+  47.3s ct= 0/50 freq=  98.6 amp= 303.5 max= 318
+  48.3s ct= 0/50 freq=  98.7 amp= 301.1 max= 314
+  49.3s ct= 0/50 freq=  98.6 amp= 291.8 max= 308
+  50.3s ct= 0/50 freq=  98.8 amp= 278.6 max= 306
+  51.3s ct= 0/50 freq=  96.6 amp= 268.7 max= 312
+  52.3s ct= 0/50 freq=  71.2 amp= 137.1 max= 162
+  53.3s ct= 0/50 freq=  69.6 amp= 134.3 max= 147
+  54.3s ct= 0/50 freq=  70.5 amp= 122.6 max= 148
+  55.3s ct= 0/50 freq=  71.0 amp= 125.5 max= 151
+  56.3s ct= 5/50 freq=  84.0 amp= 251.5 max= 447
+  57.3s ct=50/50 freq= 114.9 amp= 463.3 max= 486
+  58.3s ct=50/50 freq= 116.6 amp= 471.4 max= 490
+  59.3s ct=50/50 freq= 116.6 amp= 464.3 max= 490
+  60.3s ct=50/50 freq= 117.0 amp= 468.1 max= 499
+  61.3s ct=50/50 freq= 117.8 amp= 498.1 max= 521
+  62.3s ct=50/50 freq= 118.3 amp= 506.9 max= 533
+  63.3s ct=50/50 freq= 135.8 amp= 774.1 max= 875
+  64.3s ct=50/50 freq= 145.9 amp= 844.6 max= 871
+  65.3s ct=50/50 freq= 148.3 amp= 837.7 max= 863
+  66.3s ct=50/50 freq= 149.8 amp= 852.9 max= 877
+  67.3s ct=50/50 freq= 151.1 amp= 857.5 max= 914
+  68.3s ct=50/50 freq= 151.4 amp= 860.6 max= 895
+  69.3s ct=50/50 freq= 151.4 amp= 859.0 max= 895
+  70.3s ct=50/50 freq= 151.6 amp= 858.7 max= 883
+  71.3s ct=50/50 freq= 152.3 amp= 856.3 max= 901
+  72.3s ct=50/50 freq= 151.9 amp= 866.5 max= 897
+  73.3s ct=50/50 freq= 152.2 amp= 857.5 max= 901
+  74.3s ct=33/50 freq= 142.5 amp= 354.9 max= 890

@@ -1,0 +1,13 @@
+
+[static_cycle_2] stable=9 START=0 HONGEST=6 OTHER/FINISH=3
+  START: 无样本
+  HONGEST: center=(522.4,47.2,1631.2) max_std=2.9 n=6
+  leave-one-run-out: 样本不足
+
+[static_cycle_3] stable=6 START=4 HONGEST=2 OTHER/FINISH=0
+  START: center=(125.1,-3.4,55.6) max_std=8.4 n=4
+  HONGEST: center=(-395.1,106.8,1976.0) max_std=2.0 n=2
+  distance START-HONGEST: 1992.6 mg
+  leave-one-run-out: 6/6
+
+FINISH events: 7, releaseStable=1: 6

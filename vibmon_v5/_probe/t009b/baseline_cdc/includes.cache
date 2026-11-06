@@ -1,0 +1,494 @@
+[
+  {
+    "added_include_path": "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32"
+  },
+  {
+    "added_include_path": "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3"
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\vibmon_v5.ino.cpp.merged",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\vibmon_v5.ino.cpp.merged.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\vibmon_v5.ino.cpp.merged",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\vibmon_v5.ino.cpp.merged.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\dsp.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\dsp.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\dsp.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\dsp.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": "Wire.h"
+  },
+  {
+    "added_include_path": "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src"
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\mpu.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\output.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\output.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\output.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\output.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\posture.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\posture.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\posture.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\posture.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\sampler.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\sampler.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\sampler.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\sampler.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\state.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\state.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\state.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\sketch\\state.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src\\Wire.cpp",
+      "depfile_path": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\libraries\\Wire\\Wire.cpp.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=cdc\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-ID:\\大学\\课程\\工科赛\\代码\\vibmon_v5",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/build_opt.h",
+        "@D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc/file_opts",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\libraries\\Wire\\src\\Wire.cpp",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\_probe\\t009b\\baseline_cdc\\libraries\\Wire\\Wire.cpp.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  }
+]

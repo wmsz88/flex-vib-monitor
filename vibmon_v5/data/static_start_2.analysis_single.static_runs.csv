@@ -1,0 +1,2 @@
+﻿session,runId,tStartMs,tEndMs,durationMs,ctXMean,ctYMean,ctZMean,ctXStd,ctYStd,ctZStd,label,distStart,distHongest
+static_start_2,1,64983.0,70062.0,5079.0,270.272,31.835,266.169,4.720,3.114,7.049,START,0.000,

@@ -61,6 +61,22 @@ static uint8_t s_ctPostCmd  = 0;   // (1) 姿态门
 static uint8_t s_ampHeld    = 0;   // (2) 幅值门
 static uint8_t s_freqHeld   = 0;   // (3) 频率门
 
+#if CT_HOLD_ENABLE
+/* 任务 B：保留最近一次振动证据的时间，使自动启停 OFF 段仍能维持 contact。
+ * 姿态门仍是安全边界；姿态一打开就清掉证据，绝不允许 hold 续命。 */
+static uint32_t s_ctEvidenceUs = 0;
+static bool     s_ctHaveEvidence = false;
+static bool     s_ctHoldOk = false;
+static uint32_t s_ctMsSinceEvidence = 0xFFFFFFFFu;
+
+static void ctHoldClear(void) {
+  s_ctEvidenceUs = 0;
+  s_ctHaveEvidence = false;
+  s_ctHoldOk = false;
+  s_ctMsSinceEvidence = 0xFFFFFFFFu;
+}
+#endif
+
 /* ---------- v5：闭合角度（陀螺积分） ----------
  * 分工：flatDist 负责"认零位"（绝对、不漂），三轴积分负责"量转了多少度"（分辨率高）。
  * 只积分、不融合姿态——姿态融合（互补滤波/卡尔曼）留给后续，先把角度量准。
@@ -245,7 +261,7 @@ static uint8_t gateStep(uint8_t held, float x, float onTh, float offTh) {
  *   连续性被破坏，上位机做持续时间统计时会严重低估。
  *
  * 【实际采用的规则】
- *   进入：三路**同时**成立。
+ *   进入：三路**同时**成立；CT_SS_ENTRY_ENABLE=1 时，姿态 + 启停节奏锁定（≥CT_SS_ENTRY_MIN_HZ）也可进入。
  *   保持：姿态仍成立，且"幅值或频率"任意一路仍成立。
  *   退出：其余情况。
  *   姿态是必要条件（手必须还握着）；振动类证据维持一条即可。
@@ -262,7 +278,8 @@ static uint8_t gateStep(uint8_t held, float x, float onTh, float offTh) {
  */
 #if CT_MODE == 3 || CT_MODE == 4
 static uint8_t combineContact(uint8_t postureOk, uint8_t ampOk, uint8_t freqOk,
-                              uint8_t ampKnown, uint8_t freqKnown, uint8_t prev) {
+                              uint8_t ampKnown, uint8_t freqKnown, uint8_t prev,
+                              uint32_t nowUs) {
 #if CT_FLAT_DEGRADE_STRICT
   const uint8_t ampEff  = ampOk;
   const uint8_t freqEff = freqOk;
@@ -270,9 +287,40 @@ static uint8_t combineContact(uint8_t postureOk, uint8_t ampOk, uint8_t freqOk,
   const uint8_t ampEff  = ampKnown  ? ampOk  : 1u;
   const uint8_t freqEff = freqKnown ? freqOk : 1u;
 #endif
-  if (!prev) return (postureOk && ampEff && freqEff) ? 1u : 0u;
+#if CT_SS_ENTRY_ENABLE
+  /* T011：启停节奏已锁定（≥SS_MIN_PERIODS 个规律周期）且够快，作为进入证据。
+   * ssStep 在 ctStep 之前执行，这里读到的是本帧最新值。 */
+  const uint8_t ssEff = (s_r.ssValid && s_r.ssHz >= CT_SS_ENTRY_MIN_HZ) ? 1u : 0u;
+#else
+  const uint8_t ssEff = 0u;
+#endif
+#if CT_HOLD_ENABLE
+  const uint8_t evidence = (ampEff || freqEff || ssEff) ? 1u : 0u;
+  if (!postureOk) {
+    ctHoldClear();
+  } else if (evidence) {
+    s_ctEvidenceUs = nowUs;
+    s_ctHaveEvidence = true;
+  }
+  s_ctMsSinceEvidence = s_ctHaveEvidence
+                            ? (uint32_t)((nowUs - s_ctEvidenceUs) / 1000u)
+                            : 0xFFFFFFFFu;
+  s_ctHoldOk = (postureOk && s_ctHaveEvidence &&
+                s_ctMsSinceEvidence <= (uint32_t)CT_HOLD_MS) ? 1u : 0u;
+#endif
+  if (!prev) return (postureOk && ((ampEff && freqEff) || ssEff)) ? 1u : 0u;
+#if CT_HOLD_ENABLE
+  return (postureOk && (ampEff || freqEff || s_ctHoldOk)) ? 1u : 0u;
+#else
+  (void)nowUs;
   return (postureOk && (ampEff || freqEff)) ? 1u : 0u;
+#endif
 }
+#endif
+
+#if CT_HOLD_ENABLE
+bool stateContactHoldOk(void) { return s_ctHoldOk; }
+uint32_t stateContactMsSinceEvidence(void) { return s_ctMsSinceEvidence; }
 #endif
 
 /* ---------- v5：闭合角度积分 ----------
@@ -339,7 +387,8 @@ static void angleStep(const DspFrame& f, uint32_t tUs) {
   }
 
   /* 长期收不到陀螺数据 ⇒ 角度不可信（区别于"没有陀螺"的 gyroSeen=false） */
-  if (s_r.gyroSeen && (uint32_t)(tUs - s_lastGyroUs) > (uint32_t)GYRO_STALE_MS * 1000u) {
+  if (s_r.angleValid && s_r.gyroSeen &&
+      (uint32_t)(tUs - s_lastGyroUs) > (uint32_t)GYRO_STALE_MS * 1000u) {
     s_r.angleValid = false;
     /* 【P1 修正】陀螺失效等价于"证据中断"：确认链必须从现在重新累计，
      * 否则恢复后的第一帧可能沿用中断前的时间基准，把确认延时算短。 */
@@ -350,8 +399,18 @@ static void angleStep(const DspFrame& f, uint32_t tUs) {
 
 static bool postureInput(float* x, float* onTh, float* offTh) {
 #if CT_MODE == 4
+  if (s_r.angleValid && s_flatRefSet) {
+    *x = s_r.closeAngleDeg; *onTh = ANGLE_CLOSED_DEG; *offTh = ANGLE_CLOSED_OFF_DEG;
+    return true;
+  }
+  /* 振动/超量程会让角度失效；若已有平放基准，用 flatDist 兜底姿态门，
+   * 避免"机械上仍夹住、但角度变 ?"时把 contact 直接判 0。 */
+  if (s_flatRefSet && s_flatDist >= 0.0f) {
+    *x = s_flatDist; *onTh = CT_FLAT_D_ON_MG; *offTh = CT_FLAT_D_OFF_MG;
+    return true;
+  }
   *x = s_r.closeAngleDeg; *onTh = ANGLE_CLOSED_DEG; *offTh = ANGLE_CLOSED_OFF_DEG;
-  return s_r.angleValid;
+  return false;
 #else
   *x = s_flatDist; *onTh = CT_FLAT_D_ON_MG; *offTh = CT_FLAT_D_OFF_MG;
   return s_flatRefSet;
@@ -371,9 +430,16 @@ static void ctStep(float dev, uint32_t tUs) {
   float px, pon, poff;
   if (!postureInput(&px, &pon, &poff)) {
     s_ctPosture      = 0;
+    s_ctPostCmd      = 0;
+    s_ampHeld        = 0;
+    s_freqHeld       = 0;
+#if CT_HOLD_ENABLE
+    ctHoldClear();
+#endif
     s_ctCand         = 0;
     s_ctCandUs       = 0;
     s_r.contact      = 0;
+    s_r.closed       = false;
     s_r.condPosture  = 0;
     s_r.condAmp      = 0;
     s_r.condFreq     = 0;
@@ -420,7 +486,7 @@ static void ctStep(float dev, uint32_t tUs) {
   const uint8_t raw = combineContact(s_ctPostCmd, s_ampHeld, s_freqHeld,
                                      s_r.ampValid  ? 1u : 0u,
                                      s_r.freqValid ? 1u : 0u,
-                                     s_r.contact);
+                                     s_r.contact, tUs);
   /* 三道门的输入此刻都可用（postureInput 已过），所以"结论可信"。
    * 注意语义：contactValid=1 只表示"这个 0/1 结论是按有效输入算出来的"，
    * 不表示 contact=1。上位机不能用 contactValid 当"检测到接触"。 */
@@ -634,6 +700,9 @@ static bool flatRefCommit(void) {
   s_r.contactValid = true;
   /* 拿到基准后重新开始确认，避免用旧状态立刻翻转 */
   s_ctPostCmd = 0; s_ampHeld = 0; s_freqHeld = 0;
+#if CT_HOLD_ENABLE
+  ctHoldClear();
+#endif
   s_ctPosture = 0; s_ctCand = 0; s_ctCandUs = 0;
   s_r.contact = 0;
   s_r.flatDist = 0.0f;
@@ -715,6 +784,9 @@ void stateClearFlatRef(void) {
   s_r.flatDist   = -1.0f;
   s_r.flatRefSwing = 0.0f;
   s_ctPostCmd = 0; s_ampHeld = 0; s_freqHeld = 0;
+#if CT_HOLD_ENABLE
+  ctHoldClear();
+#endif
   s_ctPosture = 0; s_ctCand = 0; s_ctCandUs = 0;
   /* 同时取消进行中的采集，避免"清掉后又被旧采集覆盖" */
   s_refPhase    = CTREF_IDLE;
@@ -750,6 +822,9 @@ void stateApplyCal(const DspCal& cal) {
   s_flatDist       = -1.0f;
   s_ctPosture = 0; s_ctCand = 0; s_ctCandUs = 0;
   s_ctPostCmd = 0; s_ampHeld = 0; s_freqHeld = 0;
+#if CT_HOLD_ENABLE
+  ctHoldClear();
+#endif
   s_r.contact = 0;
   s_r.gripNoObject = false;
 
@@ -845,6 +920,9 @@ void stateReset(void) {
   s_r.flatRefSwing = flatSwingKeep;
   s_r.flatRefRetry = flatRetryKeep;
   s_ctPostCmd = 0; s_ampHeld = 0; s_freqHeld = 0;
+#if CT_HOLD_ENABLE
+  ctHoldClear();
+#endif
   s_flatDist = -1.0f;
   /* 模式 3：有平放基准才可信；还没采到基准就仍是"不知道"。
    * 与模式 2 同一原则，不因 reset 而把"不知道"当成"未接触"。 */
@@ -876,7 +954,11 @@ void stateOnGap(const SamplerGap& g) {
   // ② 确认链：不跨缺口累计"连续"
   s_hiCnt = 0;
   s_loCnt = 0;
+#if SS_EDGE_FIX_ENABLE
+  s_ssVib = 1;   // 缺口后先要确认一次下降，防止 ON 段中途插进假起振边沿
+#else
   s_ssVib = 0;
+#endif
   s_ssHiCnt = 0;
   s_ssLoCnt = 0;
   s_ctCand = s_r.contact;      // 候选回到当前状态，重新计时

@@ -1,0 +1,5 @@
+
+[static_start_fixed_2] stable=2 START=2 HONGEST=0 OTHER/FINISH=0
+  START: center=(-11.7,9.3,-4.1) max_std=2.8 n=2
+  HONGEST: 无样本
+  leave-one-run-out: 样本不足

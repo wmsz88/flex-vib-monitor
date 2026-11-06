@@ -1,0 +1,34 @@
+[DUTY]   0%  (标称估算 0 RPM / ~0 Hz)
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=79s F=      ?Hz A=   403.3mg D=  1530mg ang=  244deg tr=    2mg vib=1 ct=0 grip=1 cl=1 w=10.4 cliplim=0 ax=0 ok=0
+#SWEEP t=79s F=  180.9Hz A=   731.3mg D=  1530mg ang=  248deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=15.1 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=80s F=  181.1Hz A=   729.8mg D=  1535mg ang=  254deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=21.5 cliplim=0 ax=0 ok=1
+#SWEEP t=81s F=  181.6Hz A=   746.6mg D=  1531mg ang=  258deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=24.8 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=81s F=  181.3Hz A=   742.1mg D=  1529mg ang=  263deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=16.9 cliplim=0 ax=0 ok=1
+#SWEEP t=82s F=  181.2Hz A=   754.0mg D=  1534mg ang=  267deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=14.6 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=82s F=  181.1Hz A=   731.7mg D=  1528mg ang=  271deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=14.3 cliplim=0 ax=0 ok=1
+#SWEEP t=83s F=  181.1Hz A=   752.2mg D=  1533mg ang=  275deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=16.9 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=83s F=  181.1Hz A=   747.7mg D=  1527mg ang=  279deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=25.7 cliplim=0 ax=0 ok=1
+#SWEEP t=84s F=  182.2Hz A=   748.8mg D=  1531mg ang=  284deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=19.4 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=84s F=  181.5Hz A=   749.2mg D=  1534mg ang=  288deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=24.0 cliplim=0 ax=0 ok=1
+#SWEEP t=85s F=  181.6Hz A=   750.2mg D=  1535mg ang=  293deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=14.1 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=85s F=  181.9Hz A=   752.6mg D=  1528mg ang=  297deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=24.9 cliplim=0 ax=0 ok=1
+#SWEEP t=86s F=  181.7Hz A=   741.4mg D=  1532mg ang=  301deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=15.5 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=86s F=  181.8Hz A=   755.0mg D=  1526mg ang=  305deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=18.1 cliplim=0 ax=0 ok=1
+#SWEEP t=87s F=  181.6Hz A=   755.1mg D=  1530mg ang=  309deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=17.6 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=87s F=  182.2Hz A=   751.6mg D=  1532mg ang=  314deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=18.7 cliplim=0 ax=0 ok=1
+#SWEEP t=88s F=  182.1Hz A=   736.0mg D=  1528mg ang=  318deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=25.8 cliplim=0 ax=0 ok=1
+[DUTY] 100%  (标称估算 9000 RPM / ~150 Hz)
+#SWEEP t=89s F=  181.7Hz A=   753.9mg D=  1533mg ang=  322deg tr=    2mg vib=1 ct=1 grip=0 cl=1 w=21.4 cliplim=0 ax=0 ok=1
+[STOP] 马达停
+[DUTY]   0%  (标称估算 0 RPM / ~0 Hz)
+[DUTY]   0%  (标称估算 0 RPM / ~0 Hz)

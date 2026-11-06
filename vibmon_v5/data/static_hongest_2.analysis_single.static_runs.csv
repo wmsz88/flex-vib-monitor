@@ -1,0 +1,2 @@
+﻿session,runId,tStartMs,tEndMs,durationMs,ctXMean,ctYMean,ctZMean,ctXStd,ctYStd,ctZStd,label,distStart,distHongest
+static_hongest_2,1,125031.0,134931.0,9900.0,-769.400,17.585,1551.226,7.391,2.431,0.454,HONGEST,,0.000

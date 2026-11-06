@@ -1,0 +1,5 @@
+﻿wall,epoch,t_global_s,round,phase,elapsed_s,Freq_Hz,Amp_mg,FlatDist_mg,CloseAngle_deg,RefSwing_mg,vib,contact,gripNoObject,closed,gyroW,clipLimited,axis,ok
+22:19:10.146,1793629150.147,5.5,0,boot,5.50,,5.1,1,0,1,0,0,0,0,0.2,0,2,0
+22:19:16.490,1793629156.490,11.8,0,dump_open_wait,0.00,,5.3,2,0,1,0,0,0,0,0.3,0,2,0
+22:19:22.140,1793629162.141,17.5,0,dump_empty_wait,0.00,99.6,61.5,534,54,1,1,0,0,0,120.1,0,2,1
+22:19:22.786,1793629162.786,18.1,0,dump_empty_wait,0.64,76.1,48.9,1454,111,1,1,0,0,1,131.5,0,2,1

@@ -1,0 +1,311 @@
+#SWEEP t=422s F=  172.5Hz A=    48.8mg D=    14mg ang=    0deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=2.9 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=1 d=55.0 x=52.1 y=13.4 z=9.5 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=422s F=  178.0Hz A=    79.3mg D=    15mg ang=    0deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=5.0 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=1 d=54.4 x=51.4 y=13.9 z=8.8 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=423s F=  180.2Hz A=    79.4mg D=    16mg ang=    0deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=3.6 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=1 d=53.0 x=50.1 y=13.5 z=8.8 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=423s F=  173.6Hz A=    62.4mg D=    17mg ang=    0deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=7.3 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=1 d=52.1 x=49.1 y=13.6 z=8.6 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=424s F=  183.4Hz A=    85.1mg D=    17mg ang=    0deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=7.2 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=1 d=51.2 x=48.3 y=13.5 z=8.1 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=424s F=  181.8Hz A=    73.9mg D=    17mg ang=    0deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=3.9 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=1 d=51.6 x=48.5 y=13.8 z=8.4 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=425s F=      ?Hz A=   110.2mg D=    17mg ang=    0deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=8.9 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=51.3 x=48.3 y=13.6 z=8.3 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=425s F=  143.3Hz A=    67.4mg D=     8mg ang=    6deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=19.5 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=1 d=51.2 x=48.2 y=13.8 z=8.2 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=1 scnt=3 n=501
+#SWEEP t=426s F=  181.5Hz A=   852.5mg D=   327mg ang=   53deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=208.6 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=57.1 y=13.5 z=10.2 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=0 scnt=0 n=501
+#SWEEP t=426s F=  168.5Hz A=   695.6mg D=  1284mg ang=   89deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=198.9 y=18.5 z=65.2 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=427s F=  171.0Hz A=   716.2mg D=  1430mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=687.4 y=102.1 z=843.5 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=427s F=  171.9Hz A=   695.3mg D=  1448mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=792.9 y=216.1 z=1183.9 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=428s F=  171.3Hz A=   631.5mg D=  1452mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.5 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1490.2 x=793.9 y=249.5 z=1236.1 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=0 scnt=1 n=502
+#SWEEP t=428s F=  170.8Hz A=   651.6mg D=  1453mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1496.4 x=791.8 y=255.2 z=1243.7 bx=-0.2 by=-1.0 bz=0.2 clsd=1 stable=0 scnt=2 n=502
+#SWEEP t=429s F=  170.9Hz A=   623.9mg D=  1457mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1498.8 x=791.7 y=257.6 z=1246.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=430s F=  170.7Hz A=   619.9mg D=  1455mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1501.6 x=788.8 y=260.9 z=1250.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=430s F=  170.4Hz A=   635.3mg D=  1456mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1502.4 x=786.6 y=262.1 z=1252.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=431s F=  170.8Hz A=   617.9mg D=  1456mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1502.8 x=785.8 y=262.0 z=1253.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=431s F=  171.1Hz A=   689.3mg D=  1458mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1503.1 x=787.5 y=261.5 z=1253.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=432s F=  170.7Hz A=   637.1mg D=  1460mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1504.7 x=786.7 y=263.7 z=1255.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=432s F=  170.7Hz A=   631.2mg D=  1458mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1505.6 x=785.8 y=266.4 z=1256.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=433s F=  170.1Hz A=   632.0mg D=  1461mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.5 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1505.5 x=782.6 y=267.9 z=1257.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=433s F=  169.6Hz A=   638.2mg D=  1460mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1506.9 x=784.7 y=267.5 z=1258.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=434s F=  169.5Hz A=   621.0mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1507.4 x=787.4 y=268.0 z=1257.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=434s F=  170.5Hz A=   628.2mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=784.7 y=269.6 z=1257.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=435s F=  170.7Hz A=   627.3mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1507.2 x=784.3 y=270.4 z=1258.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=435s F=  170.9Hz A=   612.7mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=784.4 y=271.3 z=1258.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=436s F=  169.1Hz A=   637.3mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1507.3 x=782.2 y=271.4 z=1259.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=436s F=  168.7Hz A=   620.9mg D=  1465mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=784.0 y=271.1 z=1259.5 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=437s F=  170.4Hz A=   644.3mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.2 x=787.4 y=270.6 z=1258.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=437s F=  170.8Hz A=   643.9mg D=  1461mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.5 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.6 x=784.3 y=271.5 z=1259.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=438s F=  171.4Hz A=   638.9mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.6 x=785.0 y=271.4 z=1259.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=438s F=  171.4Hz A=   617.7mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.5 x=785.4 y=271.3 z=1258.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=439s F=  171.4Hz A=   627.5mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=785.2 y=271.3 z=1259.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=439s F=  171.5Hz A=   628.7mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.6 x=784.6 y=271.7 z=1259.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=440s F=  171.8Hz A=   616.2mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=783.0 y=271.8 z=1259.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=440s F=  172.3Hz A=   607.1mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.1 x=786.5 y=271.1 z=1259.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=441s F=  172.5Hz A=   613.7mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.1 x=786.3 y=271.3 z=1259.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=441s F=  171.8Hz A=   616.7mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.9 x=784.3 y=271.5 z=1260.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=442s F=  172.3Hz A=   612.1mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.9 x=785.9 y=271.4 z=1259.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=442s F=  172.9Hz A=   612.5mg D=  1460mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.0 x=784.5 y=271.4 z=1260.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=443s F=  172.9Hz A=   628.6mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.4 x=783.6 y=272.0 z=1259.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=443s F=  173.4Hz A=   610.3mg D=  1465mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.4 x=786.6 y=271.3 z=1259.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=444s F=  173.0Hz A=   616.7mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.4 x=787.3 y=271.2 z=1258.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=444s F=  173.5Hz A=   617.3mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.6 x=784.2 y=271.9 z=1259.6 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=445s F=  173.5Hz A=   613.8mg D=  1465mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.9 x=784.2 y=271.5 z=1260.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=445s F=  173.4Hz A=   637.0mg D=  1461mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.6 x=788.2 y=270.3 z=1259.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=446s F=  173.2Hz A=   615.3mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.6 x=787.1 y=271.4 z=1257.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=446s F=  174.1Hz A=   620.8mg D=  1466mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1507.7 x=780.0 y=272.6 z=1261.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=447s F=  174.6Hz A=   614.5mg D=  1466mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.0 x=794.2 y=269.6 z=1256.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=447s F=  174.2Hz A=   616.2mg D=  1461mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.6 x=796.4 y=269.4 z=1256.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=448s F=  175.2Hz A=   639.5mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.2 x=786.8 y=271.9 z=1257.5 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=449s F=  174.9Hz A=   639.0mg D=  1467mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1507.1 x=783.0 y=272.9 z=1258.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=449s F=  174.8Hz A=   635.3mg D=  1465mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.5 x=795.8 y=269.2 z=1256.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=450s F=  175.8Hz A=   636.1mg D=  1461mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.5 x=790.7 y=270.1 z=1259.5 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=450s F=  175.5Hz A=   627.1mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=777.5 y=273.3 z=1263.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=451s F=  175.5Hz A=   633.5mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=781.7 y=273.0 z=1260.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=451s F=  175.5Hz A=   616.0mg D=  1461mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.8 x=782.8 y=272.6 z=1260.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=452s F=  175.5Hz A=   614.7mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.7 x=784.3 y=272.2 z=1259.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=452s F=  176.3Hz A=   625.5mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.0 x=784.8 y=272.0 z=1259.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=453s F=  176.5Hz A=   627.3mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.8 x=784.0 y=272.6 z=1259.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=453s F=  176.1Hz A=   617.0mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.9 x=784.2 y=272.1 z=1259.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=454s F=  175.8Hz A=   631.4mg D=  1465mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.0 x=785.0 y=272.3 z=1259.6 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=454s F=  176.8Hz A=   617.0mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.9 x=785.0 y=271.9 z=1260.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=455s F=  176.5Hz A=   611.3mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.1 x=780.5 y=273.3 z=1261.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=455s F=  176.3Hz A=   629.8mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.6 x=784.3 y=272.6 z=1259.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=456s F=  176.3Hz A=   629.1mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.5 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.8 x=783.1 y=272.6 z=1260.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=456s F=  176.9Hz A=   642.9mg D=  1465mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.8 x=784.2 y=272.2 z=1259.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=457s F=  177.1Hz A=   614.6mg D=  1464mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.8 x=787.3 y=271.6 z=1259.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=457s F=  175.5Hz A=   634.4mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.8 x=779.9 y=273.5 z=1262.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=458s F=  176.7Hz A=   634.8mg D=  1463mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1506.8 x=777.8 y=274.1 z=1261.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=458s F=  177.2Hz A=   641.6mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.5 x=785.3 y=272.1 z=1260.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=459s F=  177.3Hz A=   630.6mg D=  1462mg ang=   93deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.4 x=780.8 y=273.1 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=459s F=  176.2Hz A=   646.2mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.2 x=783.9 y=272.5 z=1260.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=460s F=  177.4Hz A=   627.8mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.6 x=787.6 y=271.5 z=1258.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=460s F=  176.7Hz A=   652.8mg D=  1460mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.5 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.8 x=785.3 y=272.1 z=1260.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=461s F=  177.2Hz A=   647.5mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=15.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.2 x=780.3 y=273.7 z=1261.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=461s F=  176.3Hz A=   639.8mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.0 x=784.0 y=272.5 z=1260.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=462s F=  175.5Hz A=   650.7mg D=  1461mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=781.9 y=273.5 z=1260.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=462s F=  174.7Hz A=   625.9mg D=  1463mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.0 x=782.4 y=273.4 z=1261.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=463s F=  177.0Hz A=   649.4mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.5 x=784.0 y=273.3 z=1259.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=464s F=  176.2Hz A=   620.4mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=15.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.1 x=786.1 y=272.4 z=1260.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=464s F=  175.3Hz A=   624.7mg D=  1463mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.0 x=786.4 y=272.2 z=1259.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=465s F=  176.5Hz A=   639.8mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.3 x=786.1 y=272.3 z=1259.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=465s F=  175.5Hz A=   634.6mg D=  1461mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1507.6 x=775.7 y=276.9 z=1262.6 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=466s F=  177.7Hz A=   655.2mg D=  1466mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.9 x=782.1 y=277.1 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=466s F=  176.4Hz A=   645.5mg D=  1463mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.3 x=785.8 y=276.3 z=1261.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=467s F=  175.1Hz A=   641.5mg D=  1463mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.4 x=782.2 y=276.9 z=1262.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=467s F=  174.8Hz A=   634.7mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.7 x=776.3 y=278.3 z=1263.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=468s F=  175.2Hz A=   635.3mg D=  1467mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.5 x=782.7 y=276.8 z=1261.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=468s F=  173.9Hz A=   652.9mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1512.5 x=790.2 y=276.8 z=1259.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=469s F=  176.9Hz A=   654.2mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.7 x=783.6 y=276.7 z=1261.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=469s F=  177.3Hz A=   653.6mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.4 x=784.8 y=276.5 z=1261.6 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=470s F=  176.7Hz A=   645.9mg D=  1463mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.6 x=782.3 y=276.7 z=1262.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=470s F=  176.6Hz A=   644.6mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.0 x=784.4 y=276.9 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=471s F=  175.8Hz A=   654.7mg D=  1466mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.7 x=782.9 y=276.9 z=1261.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=471s F=  175.6Hz A=   641.5mg D=  1466mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.2 x=782.7 y=276.8 z=1261.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=472s F=  176.6Hz A=   654.6mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.5 x=786.2 y=276.1 z=1260.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=472s F=  176.1Hz A=   646.1mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.9 x=779.4 y=277.6 z=1262.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=473s F=  173.9Hz A=   658.0mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.2 x=780.5 y=276.9 z=1262.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=473s F=  175.4Hz A=   639.3mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.9 x=777.2 y=277.5 z=1264.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=474s F=  173.2Hz A=   632.9mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.8 x=780.7 y=277.0 z=1263.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=474s F=  174.3Hz A=   630.0mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.2 x=770.0 y=279.0 z=1266.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=475s F=  174.4Hz A=   631.3mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.0 x=778.7 y=277.3 z=1263.5 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=475s F=  174.2Hz A=   642.0mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.4 x=781.4 y=276.6 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=476s F=  175.2Hz A=   631.7mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.6 x=781.8 y=276.7 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=477s F=  175.2Hz A=   638.0mg D=  1466mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=778.1 y=277.4 z=1263.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=477s F=  173.3Hz A=   641.1mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.0 x=782.8 y=276.4 z=1262.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=478s F=  174.7Hz A=   642.9mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.5 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.9 x=777.6 y=277.5 z=1262.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=478s F=  173.2Hz A=   643.1mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.5 x=774.0 y=278.5 z=1264.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=479s F=  175.5Hz A=   648.6mg D=  1466mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.7 x=784.9 y=275.8 z=1262.0 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=479s F=  176.7Hz A=   649.3mg D=  1462mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.6 x=782.8 y=276.1 z=1263.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=480s F=  176.0Hz A=   627.4mg D=  1467mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.5 x=781.9 y=276.6 z=1262.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=480s F=  176.2Hz A=   638.4mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.5 x=787.8 y=275.1 z=1260.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=481s F=  175.9Hz A=   638.5mg D=  1465mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.6 x=783.9 y=276.0 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=481s F=  176.1Hz A=   636.4mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.1 x=783.7 y=275.9 z=1262.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=482s F=  175.8Hz A=   641.2mg D=  1466mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.0 x=783.4 y=276.2 z=1262.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=482s F=  176.1Hz A=   648.3mg D=  1463mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.1 x=785.8 y=275.3 z=1260.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=483s F=  176.7Hz A=   650.8mg D=  1464mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.3 x=780.5 y=277.1 z=1262.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=483s F=  175.2Hz A=   652.3mg D=  1467mg ang=   94deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.6 x=781.7 y=276.3 z=1262.6 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=484s F=  174.9Hz A=   632.2mg D=  1462mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=15.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.0 x=784.8 y=275.7 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=484s F=  173.2Hz A=   643.9mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.4 x=778.4 y=277.5 z=1264.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=485s F=  176.4Hz A=   651.3mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=15.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1508.2 x=770.2 y=279.3 z=1266.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=485s F=  177.5Hz A=   657.6mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.7 x=784.3 y=275.5 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=486s F=  177.3Hz A=   648.3mg D=  1463mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.3 x=783.7 y=276.0 z=1261.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=486s F=  177.3Hz A=   634.0mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.6 x=780.3 y=276.9 z=1262.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=487s F=  177.1Hz A=   632.6mg D=  1467mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.8 x=783.2 y=276.2 z=1261.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=487s F=  177.4Hz A=   640.2mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.9 x=785.0 y=275.5 z=1261.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=488s F=  177.8Hz A=   646.1mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.8 x=784.2 y=275.6 z=1261.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=488s F=  175.9Hz A=   631.0mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.8 x=782.5 y=276.6 z=1261.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=489s F=  177.8Hz A=   648.8mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.0 x=783.1 y=276.1 z=1261.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=489s F=  178.5Hz A=   655.9mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.3 x=783.1 y=276.1 z=1261.5 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=490s F=  177.5Hz A=   656.9mg D=  1463mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.2 x=782.2 y=276.6 z=1261.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=490s F=  177.8Hz A=   658.4mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1509.7 x=781.7 y=276.2 z=1261.6 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=491s F=  176.5Hz A=   624.4mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.1 x=782.0 y=276.0 z=1261.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=491s F=  176.3Hz A=   634.6mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.6 x=786.0 y=276.6 z=1261.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=492s F=  176.0Hz A=   611.3mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1512.0 x=786.1 y=276.9 z=1261.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=492s F=  177.0Hz A=   623.3mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.8 x=783.1 y=276.6 z=1261.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=493s F=  177.4Hz A=   616.8mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.3 x=784.2 y=277.0 z=1261.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=493s F=  175.8Hz A=   640.7mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.6 x=785.6 y=276.8 z=1261.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=494s F=  176.3Hz A=   645.2mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.6 x=782.8 y=277.3 z=1261.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=495s F=  176.6Hz A=   634.0mg D=  1468mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.7 x=786.6 y=276.8 z=1260.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=495s F=  174.3Hz A=   652.5mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1512.6 x=789.3 y=276.0 z=1260.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=496s F=  175.9Hz A=   651.0mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=783.7 y=277.3 z=1262.1 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=496s F=  176.8Hz A=   642.7mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.5 x=780.9 y=277.5 z=1262.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=497s F=  177.1Hz A=   655.3mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.3 x=783.4 y=277.4 z=1262.2 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=497s F=  176.4Hz A=   665.3mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.3 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.6 x=783.4 y=276.9 z=1261.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=498s F=  175.9Hz A=   651.4mg D=  1467mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.1 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1511.4 x=784.3 y=276.4 z=1261.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=498s F=  175.9Hz A=   655.0mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.7 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1512.0 x=786.5 y=276.1 z=1261.4 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=499s F=  175.0Hz A=   652.1mg D=  1464mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=15.4 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.2 x=780.2 y=277.5 z=1262.8 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=499s F=  175.0Hz A=   643.7mg D=  1467mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=13.6 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=782.8 y=276.8 z=1261.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=500s F=  173.4Hz A=   662.8mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.3 x=786.0 y=275.8 z=1259.7 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=500s F=  174.7Hz A=   643.6mg D=  1465mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=14.0 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=787.0 y=275.8 z=1259.5 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=501s F=  176.1Hz A=   662.9mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1510.3 x=783.3 y=276.5 z=1261.3 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=501s F=  175.0Hz A=   654.1mg D=  1466mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.2 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=782.2 y=276.6 z=1261.9 bx=-0.2 by=-1.0 bz=0.2 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=502s F=  173.3Hz A=   645.3mg D=  1469mg ang=   95deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.5 cliplim=0 ax=0 ok=1

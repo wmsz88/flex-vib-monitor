@@ -1,0 +1,6 @@
+﻿session,runId,tStartMs,tEndMs,durationMs,ctXMean,ctYMean,ctZMean,ctXStd,ctYStd,ctZStd,label,distStart,distHongest
+static_start_hongest_same_1,1,27347.0,30787.0,3440.0,-0.516,-0.609,2.322,0.459,0.848,0.450,START,0.000,1765.274
+static_start_hongest_same_1,2,36807.0,40397.0,3590.0,215.334,-30.664,61.244,28.281,1.827,10.972,OTHER/FINISH,225.757,1639.969
+static_start_hongest_same_1,3,42917.0,43857.0,940.0,658.316,-5.855,1639.581,3.401,0.879,3.980,HONGEST,1764.853,2.175
+static_start_hongest_same_1,4,48777.0,51447.0,2670.0,658.632,-1.590,1640.373,1.440,0.976,1.812,HONGEST,1765.698,2.175
+static_start_hongest_same_1,5,54417.0,57247.0,2830.0,315.069,-33.779,106.733,28.118,2.666,14.497,OTHER/FINISH,334.060,1571.517

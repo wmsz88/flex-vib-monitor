@@ -1,0 +1,2 @@
+mode: COMP_FRAME_CL=0, frame=35 bytes, body=30 bytes, min buffer=36
+comp_frame_test: 22 pass / 0 fail

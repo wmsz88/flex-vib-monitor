@@ -1,0 +1,20 @@
+事件数: 1
+参数: start=30deg move=3dps still=20dps plateau=250ms commit=300ms open=20deg openStill=500ms
+
+[obj5_p1] n=1
+  closureMs        n=  1 min= 1150.000 median= 1150.000 max= 1150.000
+  plateauAngle     n=  1 min=  101.545 median=  101.545 max=  101.545
+  gyroPeak         n=  1 min=  162.180 median=  162.180 max=  162.180
+  gyroEnergy       n=  1 min= 5727.256 median= 5727.256 max= 5727.256
+  impactA          n=  1 min=  132.600 median=  132.600 max=  132.600
+  ringdownDb       n=  1 min=   -8.548 median=   -8.548 max=   -8.548
+  ctXMean          n=  1 min=  545.319 median=  545.319 max=  545.319
+  ctYMean          n=  1 min=  436.235 median=  436.235 max=  436.235
+  ctZMean          n=  1 min= 1378.022 median= 1378.022 max= 1378.022
+  angleSlopeDegS   n=  1 min=   39.909 median=   39.909 max=   39.909
+  releaseSlowAngle n=  1 min=   15.300 median=   15.300 max=   15.300
+  settleAngle      n=  1 min=   12.971 median=   12.971 max=   12.971
+  settleSlopeDegS  n=  1 min=   -2.480 median=   -2.480 max=   -2.480
+  cycleZeroAngle   n=  1 min=   12.971 median=   12.971 max=   12.971
+  closureAngleRelative n=  1 min=   88.574 median=   88.574 max=   88.574
+  returnMinAngle   n=  1 min=   10.200 median=   10.200 max=   10.200

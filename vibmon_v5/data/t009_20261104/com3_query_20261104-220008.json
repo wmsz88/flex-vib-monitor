@@ -1,0 +1,10 @@
+{
+  "port": "COM3",
+  "baud": 115200,
+  "duration_s": 8.0,
+  "sent": "q\\n",
+  "bytes_received": 0,
+  "captured_at": "20261104-220008",
+  "raw_file": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009_20261104\\com3_query_20261104-220008.bin",
+  "timed_file": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009_20261104\\com3_query_20261104-220008.timed.txt"
+}

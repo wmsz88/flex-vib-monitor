@@ -21,7 +21,7 @@ vibmon_v5/
   test/             主机测试
   _probe/           采集与分析脚本
   data/             实测原始数据
-```
+```1
 
 推荐按以下顺序阅读代码：
 
@@ -160,7 +160,7 @@ esp_timer 1kHz
 当前正式判据：
 
 ```text
-closed = angleValid && theta > 60°
+closed = angleValid && flatRefSet && theta > 60°
 
 contact = closed
           && A > 400mg
@@ -336,10 +336,10 @@ stopTimeout
 
 ### 6.3 比赛 35 字节帧
 
-默认关闭：
+当前工作区配置为开启（现场对接用）；若平台协议未确认，改回 0 保持静默：
 
 ```c
-#define COMP_FRAME_ENABLED 0
+#define COMP_FRAME_ENABLED 1
 ```
 
 启用后输出：
@@ -478,6 +478,27 @@ g++ -std=c++17 -Wall -I test -I . `
 22/22 通过
 ```
 
+接触判据状态机测试（模式 4）：
+
+```powershell
+g++ -std=c++17 -Wall -I test -I . `
+  test\contact_test.cpp state.cpp `
+  -o test\contact_test.exe
+
+.\test\contact_test.exe
+```
+
+要求：
+
+```text
+43/43 通过
+```
+
+说明：`contact_test` 直接用合成 `DspFrame` 驱动 `state.cpp`，覆盖平放基准、
+姿态/幅值/频率三道门、滞回、确认延时、数据失效与退出规则；C1/C3 的
+FINDING-01（无基准不置 `contactValid`）与 C12 的 FINDING-04（输入失效清
+`closed`）已在 2026-11-02 修复，详见 `代码测试报告_20261102.md` §8。
+
 ### 9.2 双 FQBN 编译
 
 ```powershell
@@ -504,7 +525,9 @@ $src = "D:\大学\课程\工科赛\代码\vibmon_v5"
 
 比赛烧录**必须**使用 `CDCOnBoot=cdc`。非 CDC 构建会让 `Serial`
 占用 GPIO20/21，与默认 `PIN_COMP_RX/TX` 冲突，比赛帧无法正常初始化。
-`COMP_FRAME_ENABLED` 保持默认 0，只有确认平台协议后才改为 1 并重新烧录。
+当前工作区为 `UART_SWAP=1` + `COMP_FRAME_ENABLED=1`；CDC 模式下
+调试口走 USB，比赛口独占 GPIO21/20。官方未公开帧协议和波特率，平台
+确认前可把 `COMP_FRAME_ENABLED` 改回 0 并重新烧录。
 
 COM 口变化时先执行：
 
@@ -588,6 +611,7 @@ I2C 错误是否非零
 双 FQBN 编译 0 warning
 gyro_test 8/8
 comp_frame_test 22/22
+contact_test 43/43
 静止漂移测试
 0.5 / 1 / 2 / 3Hz 启停频率
 4cm 圆柱体单轮接触

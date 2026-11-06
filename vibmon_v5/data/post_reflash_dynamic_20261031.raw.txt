@@ -1,0 +1,75 @@
+#SWEEP t=46s F=      ?Hz A=     6.2mg D=    14mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=46s F=      ?Hz A=     5.2mg D=    14mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=47s F=      ?Hz A=     5.4mg D=    15mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=47s F=      ?Hz A=     6.2mg D=    15mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=48s F=      ?Hz A=     5.6mg D=    15mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=48s F=      ?Hz A=     5.7mg D=    14mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=49s F=      ?Hz A=     5.0mg D=    15mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=49s F=      ?Hz A=     5.3mg D=    15mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=50s F=      ?Hz A=     5.9mg D=    15mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=51s F=      ?Hz A=     5.6mg D=    16mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=51s F=      ?Hz A=     6.6mg D=    16mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=52s F=      ?Hz A=     5.5mg D=    16mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=52s F=      ?Hz A=     5.3mg D=    17mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=53s F=      ?Hz A=     6.9mg D=    17mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=53s F=      ?Hz A=     5.5mg D=    18mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=54s F=      ?Hz A=     5.5mg D=    18mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=54s F=      ?Hz A=     5.0mg D=    18mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=55s F=      ?Hz A=     6.1mg D=    18mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=55s F=      ?Hz A=     5.6mg D=    18mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=0 ok=0
+#SWEEP t=56s F=      ?Hz A=     6.2mg D=    18mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=56s F=      ?Hz A=     6.2mg D=    18mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=1 ok=0
+#SWEEP t=57s F=      ?Hz A=     6.6mg D=    20mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=1 ok=0
+#SWEEP t=57s F=      ?Hz A=    25.5mg D=    24mg ang=    1deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=18.3 cliplim=0 ax=2 ok=0
+#SWEEP t=58s F=      ?Hz A=    42.0mg D=    37mg ang=    7deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=29.8 cliplim=0 ax=2 ok=0
+#SWEEP t=58s F=      ?Hz A=    64.2mg D=   297mg ang=   25deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=28.2 cliplim=0 ax=2 ok=0
+#SWEEP t=59s F=      ?Hz A=    34.4mg D=   594mg ang=   42deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=41.9 cliplim=0 ax=2 ok=0
+#SWEEP t=59s F=      ?Hz A=    14.9mg D=   831mg ang=   55deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=12.1 cliplim=0 ax=2 ok=0
+#SWEEP t=60s F=      ?Hz A=     5.3mg D=   956mg ang=   59deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.7 cliplim=0 ax=2 ok=0
+#SWEEP t=61s F=      ?Hz A=     6.3mg D=   998mg ang=   62deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=4.9 cliplim=0 ax=2 ok=0
+#SWEEP t=61s F=      ?Hz A=     5.8mg D=  1064mg ang=   67deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=4.5 cliplim=0 ax=2 ok=0
+#SWEEP t=62s F=      ?Hz A=     6.1mg D=  1104mg ang=   69deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=4.4 cliplim=0 ax=2 ok=0
+#SWEEP t=62s F=      ?Hz A=     5.4mg D=  1147mg ang=   71deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=63s F=      ?Hz A=     5.5mg D=  1155mg ang=   71deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=63s F=      ?Hz A=     6.4mg D=  1164mg ang=   73deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=11.2 cliplim=0 ax=2 ok=0
+#SWEEP t=64s F=      ?Hz A=     4.5mg D=  1187mg ang=   73deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=64s F=      ?Hz A=     5.6mg D=  1189mg ang=   73deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=65s F=  116.1Hz A=    75.7mg D=  1139mg ang=   63deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=145.0 cliplim=0 ax=2 ok=1
+#SWEEP t=65s F=  140.0Hz A=    12.6mg D=   562mg ang=   20deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=25.9 cliplim=0 ax=1 ok=1
+#SWEEP t=66s F=      ?Hz A=     7.5mg D=   283mg ang=   15deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=5.6 cliplim=0 ax=2 ok=0
+#SWEEP t=66s F=      ?Hz A=     6.1mg D=   218mg ang=   13deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=2.5 cliplim=0 ax=2 ok=0
+#SWEEP t=67s F=      ?Hz A=     6.0mg D=   192mg ang=   12deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=1.8 cliplim=0 ax=2 ok=0
+#SWEEP t=67s F=      ?Hz A=     6.2mg D=   176mg ang=   11deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=1.6 cliplim=0 ax=2 ok=0
+#SWEEP t=68s F=      ?Hz A=    22.6mg D=   208mg ang=   16deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=21.3 cliplim=0 ax=2 ok=0
+#SWEEP t=68s F=   72.5Hz A=    38.7mg D=   515mg ang=   42deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=102.1 cliplim=0 ax=2 ok=1
+#SWEEP t=69s F=  105.5Hz A=    11.8mg D=  1015mg ang=   71deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=14.9 cliplim=0 ax=2 ok=1
+#SWEEP t=69s F=   93.6Hz A=    26.7mg D=  1303mg ang=   90deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=54.8 cliplim=0 ax=2 ok=1
+#SWEEP t=70s F=      ?Hz A=     9.5mg D=  1467mg ang=   98deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=3.5 cliplim=0 ax=0 ok=0
+#SWEEP t=70s F=      ?Hz A=     5.9mg D=  1507mg ang=   98deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=71s F=      ?Hz A=     5.2mg D=  1509mg ang=   98deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=71s F=      ?Hz A=     6.9mg D=  1509mg ang=   98deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=1.0 cliplim=0 ax=2 ok=0
+#SWEEP t=72s F=      ?Hz A=    11.1mg D=  1504mg ang=   98deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=1.9 cliplim=0 ax=2 ok=0
+#SWEEP t=72s F=      ?Hz A=     8.6mg D=  1482mg ang=   95deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=14.6 cliplim=0 ax=0 ok=0
+#SWEEP t=73s F=      ?Hz A=    43.2mg D=  1447mg ang=   89deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=8.8 cliplim=0 ax=2 ok=0
+#SWEEP t=73s F=      ?Hz A=    26.1mg D=  1185mg ang=   65deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=17.7 cliplim=0 ax=2 ok=0
+#SWEEP t=74s F=      ?Hz A=    25.6mg D=   673mg ang=   30deg tr=    1mg vib=1 ct=0 grip=0 cl=0 w=48.9 cliplim=0 ax=2 ok=0
+#SWEEP t=74s F=      ?Hz A=     6.8mg D=   394mg ang=   22deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=7.8 cliplim=0 ax=2 ok=0
+#SWEEP t=75s F=      ?Hz A=     5.5mg D=   314mg ang=   19deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=4.7 cliplim=0 ax=2 ok=0
+#SWEEP t=76s F=      ?Hz A=     9.4mg D=   276mg ang=   17deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=5.3 cliplim=0 ax=2 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 6.2 mg(可信)  振动 0  启停 0.00 Hz(未确立, 3 周期)
+接触 0(可信)  闭合角 16° (闭合>=60/退出45) [V]
+      幅值 6.2/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 24 / 停 24 | 读失败 0  缓冲溢出 0  不连续 1(缺 0, 抖动 1)  削顶 0  I2C错 0
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=UNKNOWN stable=HONGEST d=300mg x/y/z=-284/3/-90 窗口=有效 scnt=0 n=501 基线=2/0/1
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias -65.1/15.0/1080.6 mg  |g|=1083 mg  std 3.3/3.4/4.5 mg
+[CAL] 带内 sigma 3.00/2.78/3.94 mg  静置包络 5.67  静置姿态 1.13 mg
+[CAL] 阈值 过零 14.2 | 启停 28.3/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.02/0.05 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+

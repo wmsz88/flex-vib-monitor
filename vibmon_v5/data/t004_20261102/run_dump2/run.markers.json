@@ -1,0 +1,28 @@
+{
+  "sensor": "COM9",
+  "source_old": "COM7",
+  "source_new": "COM7",
+  "sel_old": "a",
+  "sel_new": "b",
+  "phases": [
+    {
+      "phase": "dump_open_wait",
+      "round": 0,
+      "start_epoch": 1793629156.278,
+      "should_s": "wait<=40",
+      "end_epoch": 1793629156.49
+    },
+    {
+      "phase": "dump_empty_wait",
+      "round": 0,
+      "start_epoch": 1793629161.94,
+      "should_s": "wait<=40",
+      "end_epoch": 1793629162.786
+    }
+  ],
+  "source_events": [],
+  "faults": [],
+  "t_pull_epoch": null,
+  "status_rows": [],
+  "fault_count": 0
+}

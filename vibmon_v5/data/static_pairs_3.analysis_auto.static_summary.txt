@@ -1,0 +1,8 @@
+
+[static_pairs_3] stable=15 START=7 HONGEST=8 OTHER/FINISH=0
+  START: center=(-137.7,0.7,-52.4) max_std=6.5 n=7
+  HONGEST: center=(348.8,33.4,1585.6) max_std=5.9 n=8
+  distance START-HONGEST: 1709.1 mg
+  leave-one-run-out: 15/15
+
+FINISH events: 8, releaseStable=1: 6

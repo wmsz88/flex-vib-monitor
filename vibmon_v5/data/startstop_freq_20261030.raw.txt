@@ -1,0 +1,779 @@
+#SWEEP t=477s F=      ?Hz A=   367.1mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=6.3 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 367.1 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 367.1/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 58 / 停 57 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1515mg x/y/z=779/323/1262 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=477s F=  151.3Hz A=   651.7mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.2 cliplim=0 ax=0 ok=1
+#SWEEP t=477s F=  161.6Hz A=   643.7mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.0 cliplim=0 ax=0 ok=1
+#SWEEP t=478s F=  161.9Hz A=   636.0mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.4 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 106.4 Hz(有效)  幅值 110.1 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 110.1/400 mg [-]  频率 106.4/120 Hz [-]  三路与=0
+起 58 / 停 57 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1515mg x/y/z=777/322/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=478s F=   77.8Hz A=    16.1mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=0.9 cliplim=0 ax=0 ok=1
+#SWEEP t=478s F=      ?Hz A=     6.2mg D=  1466mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=478s F=      ?Hz A=     6.1mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=479s F=      ?Hz A=   356.4mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=12.9 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 112.5 Hz(有效)  幅值 518.5 mg(可信)  振动 1  启停 0.49 Hz(有效, 2 周期)
+接触 0(可信) 空夹?  闭合角 91° (闭合>=60/退出45) [V]
+幅值 518.5/400 mg [*]  频率 112.5/120 Hz [-]  三路与=0
+起 59 / 停 58 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=780/323/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=479s F=  151.6Hz A=   677.8mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.0 cliplim=0 ax=0 ok=1
+#SWEEP t=479s F=  161.7Hz A=   658.9mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.0 cliplim=0 ax=0 ok=1
+#SWEEP t=480s F=  162.2Hz A=   651.3mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.5 cliplim=0 ax=0 ok=1
+#SWEEP t=480s F=   77.7Hz A=    21.5mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=0.9 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 77.7 Hz(有效)  幅值 21.5 mg(可信)  振动 1  启停 0.49 Hz(有效, 2 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 21.5/400 mg [-]  频率 77.7/120 Hz [-]  三路与=0
+起 59 / 停 58 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1515mg x/y/z=778/323/1262 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=480s F=      ?Hz A=     6.4mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=480s F=      ?Hz A=     5.3mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=481s F=      ?Hz A=   280.3mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=5.1 cliplim=0 ax=1 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 140.1 Hz(有效)  幅值 574.0 mg(可信)  振动 1  启停 0.50 Hz(有效, 3 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 574.0/400 mg [*]  频率 140.1/120 Hz [*]  三路与=1
+起 60 / 停 59 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1515mg x/y/z=779/323/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=481s F=  149.9Hz A=   679.5mg D=  1462mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.7 cliplim=0 ax=0 ok=1
+#SWEEP t=481s F=  160.8Hz A=   659.8mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.7 cliplim=0 ax=0 ok=1
+#SWEEP t=481s F=  162.3Hz A=   641.6mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.2 cliplim=0 ax=0 ok=1
+#SWEEP t=482s F=  121.1Hz A=   124.6mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=2.9 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 11.9 mg(可信)  振动 0  启停 0.50 Hz(有效, 3 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 11.9/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 60 / 停 60 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=780/323/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=482s F=      ?Hz A=     5.4mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.0 cliplim=0 ax=1 ok=0
+#SWEEP t=482s F=      ?Hz A=     5.5mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=483s F=      ?Hz A=     5.2mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=483s F=  121.5Hz A=   508.3mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=16.0 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 137.7 Hz(有效)  幅值 616.5 mg(可信)  振动 1  启停 0.50 Hz(有效, 4 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 616.5/400 mg [*]  频率 137.7/120 Hz [*]  三路与=1
+起 61 / 停 60 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/323/1262 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=483s F=  157.9Hz A=   648.8mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.7 cliplim=0 ax=0 ok=1
+#SWEEP t=483s F=  162.3Hz A=   654.4mg D=  1467mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.6 cliplim=0 ax=0 ok=1
+#SWEEP t=484s F=  138.7Hz A=   214.9mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=4.0 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 7.7 mg(可信)  振动 0  启停 0.50 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 7.7/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 61 / 停 61 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=778/323/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=484s F=      ?Hz A=     5.2mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=1 ok=0
+#SWEEP t=484s F=      ?Hz A=     6.6mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=485s F=      ?Hz A=     5.6mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=485s F=  132.4Hz A=   554.4mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=7.6 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 154.8 Hz(有效)  幅值 667.2 mg(可信)  振动 1  启停 0.50 Hz(有效, 4 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 667.2/400 mg [*]  频率 154.8/120 Hz [*]  三路与=1
+起 62 / 停 61 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/323/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=485s F=  160.7Hz A=   664.8mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.0 cliplim=0 ax=0 ok=1
+#SWEEP t=485s F=  162.6Hz A=   645.9mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=10.7 cliplim=0 ax=0 ok=1
+#SWEEP t=486s F=  163.1Hz A=   540.8mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=11.7 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 4.9 mg(可信)  振动 0  启停 0.50 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+      幅值 4.9/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 62 / 停 62 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/324/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+
+#SWEEP t=487s F=   75.8Hz A=   356.8mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=6.6 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 75.8 Hz(有效)  幅值 356.8 mg(可信)  振动 1  启停 0.50 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 356.8/400 mg [-]  频率 75.8/120 Hz [-]  三路与=0
+起 63 / 停 62 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/323/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=488s F=  153.9Hz A=   684.1mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.5 cliplim=0 ax=0 ok=1
+#SWEEP t=488s F=  107.2Hz A=   131.5mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=4.2 cliplim=0 ax=0 ok=1
+#SWEEP t=488s F=      ?Hz A=     6.0mg D=  1466mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=1 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 102.5 Hz(有效)  幅值 456.5 mg(可信)  振动 1  启停 0.00 Hz(未确立, 4 周期)
+接触 0(可信) 空夹?  闭合角 91° (闭合>=60/退出45) [V]
+幅值 456.5/400 mg [*]  频率 102.5/120 Hz [-]  三路与=0
+起 64 / 停 63 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/323/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=488s F=  102.5Hz A=   456.5mg D=  1467mg ang=   91deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=13.2 cliplim=0 ax=0 ok=1
+#SWEEP t=489s F=  156.0Hz A=   662.6mg D=  1467mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=8.8 cliplim=0 ax=0 ok=1
+#SWEEP t=489s F=   86.3Hz A=    84.9mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=1.5 cliplim=0 ax=0 ok=1
+#SWEEP t=489s F=      ?Hz A=     6.2mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=1 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 108.2 Hz(有效)  幅值 513.2 mg(可信)  振动 1  启停 0.00 Hz(未确立, 4 周期)
+接触 0(可信) 空夹?  闭合角 91° (闭合>=60/退出45) [V]
+幅值 513.2/400 mg [*]  频率 108.2/120 Hz [-]  三路与=0
+起 65 / 停 64 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/324/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=490s F=  108.2Hz A=   513.2mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=7.2 cliplim=0 ax=0 ok=1
+#SWEEP t=490s F=  158.3Hz A=   644.1mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.7 cliplim=0 ax=0 ok=1
+#SWEEP t=490s F=   85.8Hz A=    26.9mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=0.9 cliplim=0 ax=0 ok=1
+#SWEEP t=490s F=      ?Hz A=     6.2mg D=  1466mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=1 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 116.6 Hz(有效)  幅值 529.4 mg(可信)  振动 1  启停 0.00 Hz(未确立, 4 周期)
+接触 0(可信) 空夹?  闭合角 91° (闭合>=60/退出45) [V]
+幅值 529.4/400 mg [*]  频率 116.6/120 Hz [-]  三路与=0
+起 66 / 停 65 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/324/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=491s F=  116.6Hz A=   529.4mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=16.7 cliplim=0 ax=0 ok=1
+#SWEEP t=491s F=  161.1Hz A=   598.6mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.0 cliplim=0 ax=0 ok=1
+#SWEEP t=491s F=      ?Hz A=    12.7mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=0.3 cliplim=0 ax=0 ok=0
+#SWEEP t=491s F=      ?Hz A=    15.4mg D=  1467mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=1.6 cliplim=0 ax=2 ok=0
+#SWEEP t=492s F=  143.1Hz A=   640.0mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=8.7 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 143.1 Hz(有效)  幅值 640.0 mg(可信)  振动 1  启停 1.00 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 640.0/400 mg [*]  频率 143.1/120 Hz [*]  三路与=1
+起 67 / 停 66 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/324/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=492s F=  159.7Hz A=   346.7mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=12.3 cliplim=0 ax=0 ok=1
+#SWEEP t=492s F=      ?Hz A=     7.5mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.3 cliplim=0 ax=0 ok=0
+#SWEEP t=492s F=      ?Hz A=   355.2mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=14.5 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 147.6 Hz(有效)  幅值 651.6 mg(可信)  振动 1  启停 1.00 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 651.6/400 mg [*]  频率 147.6/120 Hz [*]  三路与=1
+起 68 / 停 67 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=778/324/1263 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=493s F=  155.0Hz A=   667.9mg D=  1468mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=5.8 cliplim=0 ax=0 ok=1
+#SWEEP t=493s F=  117.7Hz A=   168.2mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=3.6 cliplim=0 ax=0 ok=1
+#SWEEP t=493s F=      ?Hz A=     5.1mg D=  1466mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=1 ok=0
+#SWEEP t=494s F=  122.3Hz A=   510.2mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=6.1 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 148.9 Hz(有效)  幅值 678.9 mg(可信)  振动 1  启停 1.00 Hz(有效, 4 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 678.9/400 mg [*]  频率 148.9/120 Hz [*]  三路与=1
+起 69 / 停 68 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=779/324/1263 窗口=有效 scnt=3 n=501 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=494s F=  159.0Hz A=   655.6mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=9.2 cliplim=0 ax=0 ok=1
+#SWEEP t=494s F=      ?Hz A=    13.0mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=0.6 cliplim=0 ax=0 ok=0
+#SWEEP t=494s F=      ?Hz A=    18.4mg D=  1466mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=1.7 cliplim=0 ax=2 ok=0
+#SWEEP t=495s F=  144.1Hz A=   623.2mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=14.2 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 151.3 Hz(有效)  幅值 679.6 mg(可信)  振动 1  启停 1.00 Hz(有效, 4 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 679.6/400 mg [*]  频率 151.3/120 Hz [*]  三路与=1
+起 70 / 停 69 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=777/323/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=495s F=  160.8Hz A=   331.6mg D=  1468mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=6.2 cliplim=0 ax=0 ok=1
+#SWEEP t=495s F=      ?Hz A=     8.5mg D=  1466mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.2 cliplim=0 ax=0 ok=0
+#SWEEP t=495s F=      ?Hz A=   331.0mg D=  1464mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=18.6 cliplim=0 ax=0 ok=0
+#SWEEP t=496s F=  146.0Hz A=   687.5mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=7.2 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 157.5 Hz(有效)  幅值 642.0 mg(可信)  振动 1  启停 1.00 Hz(有效, 4 周期)
+接触 1(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 642.0/400 mg [*]  频率 157.5/120 Hz [*]  三路与=1
+起 71 / 停 70 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/325/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=496s F=  111.8Hz A=   185.2mg D=  1462mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=3.8 cliplim=0 ax=0 ok=1
+#SWEEP t=496s F=      ?Hz A=     6.6mg D=  1465mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.3 cliplim=0 ax=1 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 5.7 mg(可信)  振动 0  启停 1.00 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+      幅值 5.7/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 72 / 停 72 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=778/324/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+
+#SWEEP t=498s F=      ?Hz A=   364.9mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=15.1 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 364.9 mg(可信)  振动 1  启停 0.00 Hz(未确立, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 364.9/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 73 / 停 72 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=778/324/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=498s F=   90.5Hz A=   121.7mg D=  1468mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=3.0 cliplim=0 ax=0 ok=1
+#SWEEP t=499s F=  100.5Hz A=   453.0mg D=  1467mg ang=   91deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=11.3 cliplim=0 ax=0 ok=1
+#SWEEP t=499s F=   89.3Hz A=    88.9mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=1.3 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 350.9 mg(可信)  振动 1  启停 0.00 Hz(未确立, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 350.9/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 74 / 停 73 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/324/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=499s F=  125.1Hz A=   514.9mg D=  1463mg ang=   91deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=7.1 cliplim=0 ax=0 ok=1
+#SWEEP t=500s F=      ?Hz A=    28.4mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=0.7 cliplim=0 ax=0 ok=0
+#SWEEP t=500s F=  131.2Hz A=   514.8mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=12.0 cliplim=0 ax=0 ok=1
+#SWEEP t=500s F=      ?Hz A=    13.5mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=0.2 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 111.5 Hz(有效)  幅值 501.4 mg(可信)  振动 1  启停 0.00 Hz(未确立, 4 周期)
+接触 0(可信) 空夹?  闭合角 91° (闭合>=60/退出45) [V]
+幅值 501.4/400 mg [*]  频率 111.5/120 Hz [-]  三路与=0
+起 76 / 停 75 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/324/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=500s F=  129.8Hz A=   498.4mg D=  1466mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=17.4 cliplim=0 ax=0 ok=1
+#SWEEP t=501s F=      ?Hz A=    12.0mg D=  1467mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=0.7 cliplim=0 ax=0 ok=0
+#SWEEP t=501s F=  132.2Hz A=   423.2mg D=  1467mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=9.4 cliplim=0 ax=0 ok=1
+#SWEEP t=501s F=      ?Hz A=    43.8mg D=  1464mg ang=   91deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=3.7 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 95.4 Hz(有效)  幅值 483.1 mg(可信)  振动 1  启停 2.00 Hz(有效, 4 周期)
+接触 0(可信) 空夹?  闭合角 91° (闭合>=60/退出45) [V]
+幅值 483.1/400 mg [*]  频率 95.4/120 Hz [-]  三路与=0
+起 78 / 停 77 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/324/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=501s F=  136.2Hz A=   284.3mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=5.1 cliplim=0 ax=0 ok=1
+#SWEEP t=502s F=      ?Hz A=   353.2mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=14.7 cliplim=0 ax=0 ok=0
+#SWEEP t=502s F=  123.2Hz A=   181.5mg D=  1465mg ang=   91deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=2.4 cliplim=0 ax=0 ok=1
+#SWEEP t=502s F=      ?Hz A=   358.1mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=11.3 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 126.1 Hz(有效)  幅值 528.9 mg(可信)  振动 1  启停 2.00 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 91° (闭合>=60/退出45) [V]
+幅值 528.9/400 mg [*]  频率 126.1/120 Hz [*]  三路与=1
+起 80 / 停 79 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/325/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=502s F=  117.2Hz A=   129.7mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=2.7 cliplim=0 ax=0 ok=1
+#SWEEP t=503s F=      ?Hz A=   372.1mg D=  1464mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=7.9 cliplim=0 ax=0 ok=0
+#SWEEP t=503s F=   72.9Hz A=    29.1mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.0 cliplim=0 ax=0 ok=1
+#SWEEP t=503s F=  131.7Hz A=   478.2mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=10.3 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 131.7 Hz(有效)  幅值 478.2 mg(可信)  振动 1  启停 2.00 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 478.2/400 mg [*]  频率 131.7/120 Hz [*]  三路与=1
+起 82 / 停 81 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=778/324/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=504s F=      ?Hz A=    13.1mg D=  1466mg ang=   92deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=1.2 cliplim=0 ax=0 ok=0
+#SWEEP t=504s F=  134.0Hz A=   280.4mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=3.4 cliplim=0 ax=0 ok=1
+#SWEEP t=504s F=      ?Hz A=   336.7mg D=  1470mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=13.5 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 136.0 Hz(有效)  幅值 384.0 mg(可信)  振动 1  启停 2.01 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 384.0/400 mg [-]  频率 136.0/120 Hz [*]  三路与=0
+起 84 / 停 83 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/325/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=504s F=  124.9Hz A=   136.5mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=1 grip=0 cl=1 w=2.3 cliplim=0 ax=0 ok=1
+#SWEEP t=505s F=      ?Hz A=   349.9mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=10.0 cliplim=0 ax=0 ok=0
+#SWEEP t=505s F=  116.4Hz A=   126.6mg D=  1468mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.6 cliplim=0 ax=0 ok=1
+#SWEEP t=505s F=  110.8Hz A=   445.2mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=11.7 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 134.9 Hz(有效)  幅值 383.1 mg(可信)  振动 1  启停 2.00 Hz(有效, 4 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 383.1/400 mg [-]  频率 134.9/120 Hz [*]  三路与=0
+起 86 / 停 85 | 读失败 3  缓冲溢出 0  不连续 3(缺 3, 抖动 1)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1518mg x/y/z=781/325/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=506s F=   78.4Hz A=    52.8mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.9 cliplim=0 ax=0 ok=1
+#SWEEP t=506s F=  115.1Hz A=   508.8mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=11.7 cliplim=0 ax=0 ok=1
+#SWEEP t=506s F=   68.7Hz A=    30.4mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.2 cliplim=0 ax=0 ok=1
+#SWEEP t=506s F=  117.4Hz A=   503.8mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=11.6 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 283.4 mg(可信)  振动 1  启停 0.00 Hz(未确立, 4 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 283.4/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 88 / 停 87 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=UNKNOWN stable=HONGEST d=-1mg x/y/z=783/325/1263 窗口=无效 scnt=0 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=507s F=      ?Hz A=    23.1mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=0.6 cliplim=0 ax=0 ok=0
+#SWEEP t=507s F=  126.4Hz A=   517.5mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=8.5 cliplim=0 ax=0 ok=1
+#SWEEP t=507s F=      ?Hz A=    72.8mg D=  1465mg ang=   92deg tr=    1mg vib=0 ct=0 grip=0 cl=1 w=3.3 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 6.3 mg(可信)  振动 0  启停 0.00 Hz(未确立, 0 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+      幅值 6.3/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 90 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=778/325/1264 窗口=有效 scnt=3 n=501 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+
+#SWEEP t=509s F=      ?Hz A=   379.3mg D=  1464mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=5.9 cliplim=0 ax=0 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 379.3 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 379.3/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=778/325/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=509s F=   62.7Hz A=   220.0mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=7.5 cliplim=0 ax=0 ok=1
+#SWEEP t=509s F=   74.9Hz A=    78.5mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.6 cliplim=0 ax=0 ok=1
+#SWEEP t=510s F=  119.5Hz A=   277.6mg D=  1468mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=5.2 cliplim=0 ax=0 ok=1
+#SWEEP t=510s F=  114.1Hz A=   493.5mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=6.6 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 114.1 Hz(有效)  幅值 493.5 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信) 空夹?  闭合角 92° (闭合>=60/退出45) [V]
+幅值 493.5/400 mg [*]  频率 114.1/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/325/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=510s F=   74.0Hz A=   353.8mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=5.6 cliplim=0 ax=0 ok=1
+#SWEEP t=511s F=   76.3Hz A=    37.1mg D=  1468mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=2.4 cliplim=0 ax=0 ok=1
+#SWEEP t=511s F=   82.8Hz A=    66.7mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.1 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 114.9 Hz(有效)  幅值 410.5 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信) 空夹?  闭合角 92° (闭合>=60/退出45) [V]
+幅值 410.5/400 mg [*]  频率 114.9/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=780/326/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=511s F=  119.9Hz A=   192.7mg D=  1463mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=4.3 cliplim=0 ax=0 ok=1
+#SWEEP t=511s F=  106.7Hz A=   475.8mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=7.8 cliplim=0 ax=0 ok=1
+#SWEEP t=512s F=      ?Hz A=   361.1mg D=  1464mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=7.4 cliplim=0 ax=0 ok=0
+#SWEEP t=512s F=   87.3Hz A=    48.4mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.8 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 116.4 Hz(有效)  幅值 315.6 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信) 空夹?  闭合角 92° (闭合>=60/退出45) [V]
+幅值 315.6/400 mg [-]  频率 116.4/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=778/326/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=512s F=   90.2Hz A=   131.4mg D=  1468mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=3.6 cliplim=0 ax=0 ok=1
+#SWEEP t=512s F=  121.4Hz A=   302.7mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=12.5 cliplim=0 ax=0 ok=1
+#SWEEP t=513s F=   97.6Hz A=   377.9mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=11.7 cliplim=0 ax=0 ok=1
+#SWEEP t=513s F=   83.0Hz A=    91.0mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=5.6 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 117.8 Hz(有效)  幅值 304.5 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信) 空夹?  闭合角 92° (闭合>=60/退出45) [V]
+幅值 304.5/400 mg [-]  频率 117.8/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=780/325/1263 窗口=有效 scnt=3 n=501 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=513s F=   90.5Hz A=   123.6mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=2.5 cliplim=0 ax=0 ok=1
+#SWEEP t=513s F=  110.1Hz A=   343.8mg D=  1468mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=5.1 cliplim=0 ax=0 ok=1
+#SWEEP t=514s F=   98.1Hz A=   415.3mg D=  1469mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=5.7 cliplim=0 ax=0 ok=1
+#SWEEP t=514s F=   62.7Hz A=   145.7mg D=  1464mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=5.6 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 122.3 Hz(有效)  幅值 274.8 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 274.8/400 mg [-]  频率 122.3/120 Hz [*]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=779/326/1264 窗口=有效 scnt=3 n=501 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=514s F=   85.6Hz A=    76.1mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=1.4 cliplim=0 ax=0 ok=1
+#SWEEP t=515s F=  120.6Hz A=   265.3mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=4.2 cliplim=0 ax=0 ok=1
+#SWEEP t=515s F=  121.2Hz A=   298.0mg D=  1468mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=4.5 cliplim=0 ax=0 ok=1
+#SWEEP t=515s F=   90.1Hz A=   406.1mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=9.3 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 117.6 Hz(有效)  幅值 147.3 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 147.3/400 mg [-]  频率 117.6/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1518mg x/y/z=779/324/1265 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=515s F=      ?Hz A=   335.4mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=16.4 cliplim=0 ax=0 ok=0
+#SWEEP t=516s F=   63.2Hz A=    40.4mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=2.2 cliplim=0 ax=0 ok=1
+#SWEEP t=516s F=  106.2Hz A=   144.5mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=3.6 cliplim=0 ax=0 ok=1
+#SWEEP t=516s F=  117.0Hz A=   269.9mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=6.1 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 82.4 Hz(有效)  幅值 95.8 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 95.8/400 mg [-]  频率 82.4/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1516mg x/y/z=778/325/1263 窗口=有效 scnt=3 n=501 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=516s F=  112.9Hz A=   450.1mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=5.7 cliplim=0 ax=0 ok=1
+#SWEEP t=517s F=  105.2Hz A=   459.5mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=13.0 cliplim=0 ax=0 ok=1
+#SWEEP t=517s F=   63.0Hz A=   338.0mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=14.9 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 79.7 Hz(有效)  幅值 75.8 mg(可信)  振动 1  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+幅值 75.8/400 mg [-]  频率 79.7/120 Hz [-]  三路与=0
+起 91 / 停 90 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=776/325/1265 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+#SWEEP t=517s F=   79.7Hz A=    75.8mg D=  1466mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=0.9 cliplim=0 ax=0 ok=1
+#SWEEP t=518s F=  116.1Hz A=   267.7mg D=  1465mg ang=   92deg tr=    1mg vib=1 ct=0 grip=0 cl=1 w=2.1 cliplim=0 ax=0 ok=1
+#SWEEP t=518s F=  111.1Hz A=   461.9mg D=  1467mg ang=   92deg tr=    1mg vib=1 ct=0 grip=1 cl=1 w=11.7 cliplim=0 ax=0 ok=1
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 5.7 mg(可信)  振动 0  启停 0.00 Hz(未确立, 1 周期)
+接触 0(可信)  闭合角 92° (闭合>=60/退出45) [V]
+      幅值 5.7/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 91 / 停 91 | 读失败 3  缓冲溢出 0  不连续 4(缺 3, 抖动 2)  削顶 27  I2C错 4
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=HONGEST stable=HONGEST d=1517mg x/y/z=778/325/1264 窗口=有效 scnt=3 n=502 基线=0/24/-3
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias 236.8/-111.3/-934.5 mg  |g|=970 mg  std 3.6/3.4/4.4 mg
+[CAL] 带内 sigma 3.02/2.84/3.90 mg  静置包络 5.69  静置姿态 0.39 mg
+[CAL] 阈值 过零 14.0 | 启停 28.4/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.07/0.04 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+

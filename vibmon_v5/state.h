@@ -24,7 +24,8 @@ struct Result {
   uint8_t contact;     // 接触状态 0/1（状态量，非瞬时测量值）
   bool    contactValid;// 接触字段是否可信。
                        //   CT_MODE=2 且已记录接触姿态 → true
-                       //   CT_MODE=3 且已记录平放基准 → true
+  //   CT_MODE=3/4 且已记录平放基准 → true
+  //     （CT_MODE=4 角度有效时用闭合角；角度失效时用 flatDist 兜底）
                        //   其余情况（含未记录参考点、采集被判"在动"）→ false
                        // 上位机据此区分"未接触"与"不知道"。
   float   ctDev;       // 姿态偏差 mg（相对标定零偏）

@@ -1,0 +1,8 @@
+
+[static_start_hongest_same_1] stable=5 START=1 HONGEST=2 OTHER/FINISH=2
+  START: center=(-0.5,-0.6,2.3) max_std=0.8 n=1
+  HONGEST: center=(658.5,-3.7,1640.0) max_std=4.0 n=2
+  distance START-HONGEST: 1765.3 mg
+  leave-one-run-out: 2/2
+
+FINISH events: 3, releaseStable=1: 2

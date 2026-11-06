@@ -1,0 +1,2 @@
+uart diff_ranges [(176, 207), (9991, 9992), (9994, 9995), (366463, 366495)] normalized_equal True sha 788405f3c7b00cba0281bce2bdd9c6cb8a94ed1ad5a939ac7cab5fb04d962203
+cdc diff_ranges [(176, 207), (9923, 9924), (9926, 9927), (371551, 371583)] normalized_equal True sha 0c2c415d289e715206040a834d04a0b35fffba11f9840de60bd83906144419d2

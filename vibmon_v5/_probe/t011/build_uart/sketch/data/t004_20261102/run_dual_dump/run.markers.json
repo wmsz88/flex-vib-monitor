@@ -1,0 +1,121 @@
+#line 1 "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t004_20261102\\run_dual_dump\\run.markers.json"
+{
+  "sensor": "COM9",
+  "source_old": "COM7",
+  "source_new": "COM7",
+  "sel_old": "a",
+  "sel_new": "b",
+  "phases": [
+    {
+      "phase": "dual_orig_open_wait",
+      "round": 0,
+      "start_epoch": 1793628756.053,
+      "should_s": "wait<=40",
+      "end_epoch": 1793628756.892
+    },
+    {
+      "phase": "dual_orig_closed_wait",
+      "round": 0,
+      "start_epoch": 1793628762.005,
+      "should_s": "wait<=40",
+      "end_epoch": 1793628765.389
+    },
+    {
+      "phase": "dual_orig_on",
+      "round": 0,
+      "start_epoch": 1793628765.39,
+      "should_s": 12.0,
+      "end_epoch": 1793628777.409
+    },
+    {
+      "phase": "dual_orig_off",
+      "round": 0,
+      "start_epoch": 1793628777.409,
+      "should_s": 4.0,
+      "end_epoch": 1793628781.451
+    },
+    {
+      "phase": "dual_new_open_wait",
+      "round": 0,
+      "start_epoch": 1793628789.485,
+      "should_s": "wait<=40",
+      "end_epoch": 1793628797.765
+    },
+    {
+      "phase": "dual_new_closed_wait",
+      "round": 0,
+      "start_epoch": 1793628802.865,
+      "should_s": "wait<=40",
+      "end_epoch": 1793628804.778
+    },
+    {
+      "phase": "dual_new_on",
+      "round": 0,
+      "start_epoch": 1793628804.779,
+      "should_s": 12.0,
+      "end_epoch": 1793628816.98
+    },
+    {
+      "phase": "dual_new_off",
+      "round": 0,
+      "start_epoch": 1793628816.981,
+      "should_s": 4.0,
+      "end_epoch": 1793628820.995
+    },
+    {
+      "phase": "dump_open_wait",
+      "round": 0,
+      "start_epoch": 1793628830.011,
+      "should_s": "wait<=40",
+      "end_epoch": 1793628840.426
+    },
+    {
+      "phase": "dump_empty_wait",
+      "round": 0,
+      "start_epoch": 1793628845.916,
+      "should_s": "wait<=40",
+      "end_epoch": 1793628847.181
+    }
+  ],
+  "source_events": [
+    {
+      "wall": "22:12:28.357",
+      "epoch": 1793628748.357,
+      "cmd": "z",
+      "which": "old",
+      "sent": "z"
+    },
+    {
+      "wall": "22:12:45.389",
+      "epoch": 1793628765.39,
+      "cmd": "h",
+      "which": "old",
+      "sent": "ah"
+    },
+    {
+      "wall": "22:12:57.408",
+      "epoch": 1793628777.409,
+      "cmd": "z",
+      "which": "old",
+      "sent": "z"
+    },
+    {
+      "wall": "22:13:24.779",
+      "epoch": 1793628804.779,
+      "cmd": "p",
+      "which": "new",
+      "sent": "bp"
+    },
+    {
+      "wall": "22:13:36.980",
+      "epoch": 1793628816.981,
+      "cmd": "z",
+      "which": "new",
+      "sent": "z"
+    }
+  ],
+  "faults": [],
+  "t_pull_epoch": null,
+  "status_rows": [],
+  "fault_count": 0
+}

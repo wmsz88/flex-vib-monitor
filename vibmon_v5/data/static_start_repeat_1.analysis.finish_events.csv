@@ -1,0 +1,8 @@
+﻿session,eventId,startMs,commitMs,releaseStable,releaseSlowMs,releaseSlowAngle,settleAngle,cycleZeroAngle,closureAngleRelative
+static_start_repeat_1,1,72295.0,86895.0,1,2660.000,2.400,2.357,2.357,112.186
+static_start_repeat_1,2,90825.0,95545.0,0,1661.000,13.400,,,
+static_start_repeat_1,3,97645.0,100575.0,0,1520.000,18.300,,,
+static_start_repeat_1,4,102375.0,111075.0,1,2000.000,14.300,14.376,14.376,95.566
+static_start_repeat_1,5,114015.0,122115.0,1,2771.000,14.500,14.457,14.457,94.236
+static_start_repeat_1,6,125995.0,129695.0,0,1410.000,26.000,,,
+static_start_repeat_1,7,131355.0,138635.0,0,,,,,

@@ -1,0 +1,2 @@
+﻿session,eventId,startMs,commitMs,releaseStable,releaseSlowMs,releaseSlowAngle,settleAngle,cycleZeroAngle,closureAngleRelative
+static_hongest_fixed_2,1,68380.0,68830.0,1,1260.000,24.200,24.076,24.076,61.124

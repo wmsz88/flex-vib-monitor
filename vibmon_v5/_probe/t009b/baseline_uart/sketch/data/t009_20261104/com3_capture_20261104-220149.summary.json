@@ -1,0 +1,170 @@
+#line 1 "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009_20261104\\com3_capture_20261104-220149.summary.json"
+{
+  "frames": 1141,
+  "checksum_errors": 0,
+  "freq_nonzero": 273,
+  "vib_counts": {
+    "0": 787,
+    "1": 354
+  },
+  "ct_counts": {
+    "0": 1141
+  },
+  "ss_counts": {
+    "0.0": 1141
+  },
+  "valid_counts": {
+    "0": 2,
+    "1": 38,
+    "9": 827,
+    "B": 271,
+    "A": 2,
+    "8": 1
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "start_s": 10.82,
+      "end_s": 10.96,
+      "start_seq": 174,
+      "end_seq": 181,
+      "duration_s": 0.14,
+      "amp_max_mg": 58,
+      "vib_frames": 7,
+      "active_frames": 8,
+      "top_frequencies": "180.8Hz×3, 201.7Hz×3"
+    },
+    {
+      "episode": 2,
+      "start_s": 11.18,
+      "end_s": 11.5,
+      "start_seq": 192,
+      "end_seq": 208,
+      "duration_s": 0.32,
+      "amp_max_mg": 65,
+      "vib_frames": 8,
+      "active_frames": 10,
+      "top_frequencies": ""
+    },
+    {
+      "episode": 3,
+      "start_s": 12.1,
+      "end_s": 14.28,
+      "start_seq": 238,
+      "end_seq": 347,
+      "duration_s": 2.18,
+      "amp_max_mg": 995,
+      "vib_frames": 107,
+      "active_frames": 108,
+      "top_frequencies": "130.5Hz×4, 95.1Hz×4, 75.6Hz×4"
+    },
+    {
+      "episode": 4,
+      "start_s": 15.38,
+      "end_s": 15.38,
+      "start_seq": 402,
+      "end_seq": 402,
+      "duration_s": 0.0,
+      "amp_max_mg": 291,
+      "vib_frames": 0,
+      "active_frames": 1,
+      "top_frequencies": ""
+    },
+    {
+      "episode": 5,
+      "start_s": 16.02,
+      "end_s": 17.84,
+      "start_seq": 434,
+      "end_seq": 525,
+      "duration_s": 1.82,
+      "amp_max_mg": 163,
+      "vib_frames": 75,
+      "active_frames": 79,
+      "top_frequencies": "135.5Hz×7, 91.1Hz×4, 73.4Hz×4"
+    },
+    {
+      "episode": 6,
+      "start_s": 19.88,
+      "end_s": 20.14,
+      "start_seq": 627,
+      "end_seq": 640,
+      "duration_s": 0.26,
+      "amp_max_mg": 55,
+      "vib_frames": 13,
+      "active_frames": 14,
+      "top_frequencies": "147.2Hz×3, 141Hz×3, 131.9Hz×3"
+    },
+    {
+      "episode": 7,
+      "start_s": 20.66,
+      "end_s": 20.72,
+      "start_seq": 666,
+      "end_seq": 669,
+      "duration_s": 0.06,
+      "amp_max_mg": 45,
+      "vib_frames": 3,
+      "active_frames": 4,
+      "top_frequencies": ""
+    },
+    {
+      "episode": 8,
+      "start_s": 20.96,
+      "end_s": 21.2,
+      "start_seq": 681,
+      "end_seq": 693,
+      "duration_s": 0.24,
+      "amp_max_mg": 61,
+      "vib_frames": 10,
+      "active_frames": 11,
+      "top_frequencies": "135.3Hz×2"
+    },
+    {
+      "episode": 9,
+      "start_s": 21.72,
+      "end_s": 22.8,
+      "start_seq": 719,
+      "end_seq": 773,
+      "duration_s": 1.08,
+      "amp_max_mg": 435,
+      "vib_frames": 46,
+      "active_frames": 48,
+      "top_frequencies": "102.9Hz×4, 160.8Hz×4, 99.4Hz×3"
+    },
+    {
+      "episode": 10,
+      "start_s": 24.6,
+      "end_s": 24.66,
+      "start_seq": 863,
+      "end_seq": 866,
+      "duration_s": 0.06,
+      "amp_max_mg": 68,
+      "vib_frames": 3,
+      "active_frames": 4,
+      "top_frequencies": ""
+    },
+    {
+      "episode": 11,
+      "start_s": 25.4,
+      "end_s": 26.94,
+      "start_seq": 903,
+      "end_seq": 980,
+      "duration_s": 1.54,
+      "amp_max_mg": 954,
+      "vib_frames": 77,
+      "active_frames": 78,
+      "top_frequencies": "136.4Hz×4, 100.6Hz×4, 136.2Hz×4"
+    },
+    {
+      "episode": 12,
+      "start_s": 28.42,
+      "end_s": 28.72,
+      "start_seq": 1054,
+      "end_seq": 1069,
+      "duration_s": 0.3,
+      "amp_max_mg": 133,
+      "vib_frames": 5,
+      "active_frames": 7,
+      "top_frequencies": ""
+    }
+  ]
+}

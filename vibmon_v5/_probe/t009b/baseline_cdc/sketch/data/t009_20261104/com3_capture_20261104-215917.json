@@ -1,0 +1,11 @@
+#line 1 "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009_20261104\\com3_capture_20261104-215917.json"
+{
+  "port": "COM3",
+  "baud": 115200,
+  "duration_s": 30.0,
+  "bytes": 0,
+  "captured_at": "20261104-215917",
+  "raw_file": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009_20261104\\com3_capture_20261104-215917.bin",
+  "text_file": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009_20261104\\com3_capture_20261104-215917.txt",
+  "timed_file": "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009_20261104\\com3_capture_20261104-215917.timed.txt"
+}

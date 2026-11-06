@@ -1,0 +1,2 @@
+﻿session,eventId,startMs,commitMs,releaseStable,releaseSlowMs,releaseSlowAngle,settleAngle,cycleZeroAngle,closureAngleRelative
+static_start_2,1,64892.0,73312.0,0,,,,,

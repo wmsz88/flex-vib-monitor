@@ -1,0 +1,61 @@
+[
+  {
+    "added_include_path": "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32"
+  },
+  {
+    "added_include_path": "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3"
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\t009_a_fix_uart_20261105\\sketch\\vibsource_c3_key.ino.cpp.merged",
+      "depfile_path": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\t009_a_fix_uart_20261105\\sketch\\vibsource_c3_key.ino.cpp.merged.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2601/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/defines",
+        "-IC:\\Users\\Lenovo\\Desktop\\STM32project\\vibsource_c3_key",
+        "-iprefix",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/include/",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/flags/includes",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.12/qio_qspi/include",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\cores\\esp32",
+        "-IC:\\Users\\Lenovo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12\\variants\\esp32c3",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Temp\\t009_a_fix_uart_20261105/build_opt.h",
+        "@C:\\Users\\Lenovo\\AppData\\Local\\Temp\\t009_a_fix_uart_20261105/file_opts",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\t009_a_fix_uart_20261105\\sketch\\vibsource_c3_key.ino.cpp.merged",
+        "-o",
+        "nul",
+        "-MMD",
+        "-MF",
+        "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\t009_a_fix_uart_20261105\\sketch\\vibsource_c3_key.ino.cpp.merged.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  }
+]

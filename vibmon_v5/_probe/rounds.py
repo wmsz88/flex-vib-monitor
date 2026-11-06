@@ -21,7 +21,8 @@ SWEEP_RE = re.compile(
     r"#SWEEP t=(?P<t>\d+)s F=\s*(?P<f>[0-9.]+|\?)Hz A=\s*(?P<a>[0-9.]+|\?)mg "
     r"D=\s*(?P<d>[0-9.]+|\?)mg (?:ang=\s*(?P<ang>[0-9.]+|\?)deg )?"
     r"tr=\s*(?P<tr>[0-9.]+|\?)mg vib=(?P<vib>\d+) "
-    r"ct=(?P<ct>\d+) grip=(?P<grip>\d+) cliplim=(?P<clim>\d+) ax=(?P<ax>\d+) ok=(?P<ok>\d+)"
+    r"ct=(?P<ct>\d+) grip=(?P<grip>\d+) (?:cl=\d+ w=[0-9.]+ )?"
+    r"cliplim=(?P<clim>\d+) ax=(?P<ax>\d+) ok=(?P<ok>\d+)"
 )
 
 FIELDS = ["elapsed_s", "round", "phase", "Freq_Hz", "Amp_mg", "FlatDist_mg",

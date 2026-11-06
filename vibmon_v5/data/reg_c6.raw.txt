@@ -1,0 +1,446 @@
+Freq_Hz:0.0,Amp_mg:10.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:38.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:51.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:64.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:169.0,Amp_mg:73.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:169.0,Amp_mg:51.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:169.0,Amp_mg:44.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:164.9,Amp_mg:53.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:164.9,Amp_mg:76.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:164.9,Amp_mg:76.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:164.9,Amp_mg:76.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:150.8,Amp_mg:91.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:150.8,Amp_mg:96.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:150.8,Amp_mg:93.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:154.7,Amp_mg:45.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:154.7,Amp_mg:50.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:154.7,Amp_mg:61.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:140.9,Amp_mg:84.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:140.9,Amp_mg:45.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:140.9,Amp_mg:30.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:144.8,Amp_mg:18.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:144.8,Amp_mg:72.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:144.8,Amp_mg:157.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:129.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:190.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:235.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:259.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:144.3,Amp_mg:196.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:144.3,Amp_mg:171.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:144.3,Amp_mg:135.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:129.7,Amp_mg:159.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:129.7,Amp_mg:140.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:129.7,Amp_mg:150.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:125.2,Amp_mg:99.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:125.2,Amp_mg:58.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:125.2,Amp_mg:29.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:117.4,Amp_mg:49.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:117.4,Amp_mg:346.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:117.4,Amp_mg:316.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:121.1,Amp_mg:124.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:121.1,Amp_mg:62.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:121.1,Amp_mg:60.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:121.1,Amp_mg:55.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:135.7,Amp_mg:61.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:135.7,Amp_mg:40.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:135.7,Amp_mg:40.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:102.7,Amp_mg:42.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:102.7,Amp_mg:44.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:102.7,Amp_mg:46.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:97.5,Amp_mg:60.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:97.5,Amp_mg:47.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:97.5,Amp_mg:26.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:90.4,Amp_mg:18.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:17.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:38.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:137.0,Amp_mg:308.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:137.0,Amp_mg:485.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:137.0,Amp_mg:601.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:137.0,Amp_mg:702.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:162.8,Amp_mg:527.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:162.8,Amp_mg:364.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:162.8,Amp_mg:143.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:171.9,Amp_mg:141.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:171.9,Amp_mg:268.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:171.9,Amp_mg:235.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:122.8,Amp_mg:144.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:122.8,Amp_mg:83.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:122.8,Amp_mg:177.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:127.4,Amp_mg:559.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:127.4,Amp_mg:694.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:127.4,Amp_mg:610.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:122.2,Amp_mg:449.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:122.2,Amp_mg:609.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:122.2,Amp_mg:657.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:122.2,Amp_mg:427.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:126.4,Amp_mg:369.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:126.4,Amp_mg:231.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:126.4,Amp_mg:111.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:94.7,Amp_mg:160.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:94.7,Amp_mg:239.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:94.7,Amp_mg:556.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:141.9,Amp_mg:740.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:141.9,Amp_mg:696.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:141.9,Amp_mg:244.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:153.4,Amp_mg:223.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:153.4,Amp_mg:201.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:153.4,Amp_mg:943.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:116.5,Amp_mg:1072.7,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:100
+Freq_Hz:116.5,Amp_mg:161.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:116.5,Amp_mg:170.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:116.5,Amp_mg:150.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:130.4,Amp_mg:96.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:130.4,Amp_mg:101.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:130.4,Amp_mg:151.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:133.2,Amp_mg:307.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:133.2,Amp_mg:319.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:133.2,Amp_mg:64.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:127.4,Amp_mg:68.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:127.4,Amp_mg:65.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:127.4,Amp_mg:36.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:128.2,Amp_mg:11.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:24.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:76.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:60.2,SS_Hz_x10:11.2,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:20.3,SS_Hz_x10:11.2,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:13.6,SS_Hz_x10:11.2,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.3,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.9,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:34.5,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:40.3,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:23.4,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.9,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.2,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.3,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:13.1,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:16.8,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:18.4,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:21.5,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:22.4,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:17.4,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.9,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:72.5,SS_Hz_x10:11.2,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:75.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:13.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:30.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:30.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:20.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:4.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:51.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:22.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:19.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:14.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:14.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:46.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:53.8,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:28.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:25.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:32.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:121.3,Amp_mg:24.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:121.3,Amp_mg:28.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:121.3,Amp_mg:14.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:39.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:36.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:30.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:31.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:17.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:84.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:70.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:13.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:17.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:14.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:4.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:4.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:13.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:13.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:4.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:5.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:13.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:17.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:17.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:9.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:14.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:16.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:16.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:11.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.8,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.9,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:10.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:22.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:33.1,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:33.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:50.6,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:125.7,Amp_mg:40.0,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:125.7,Amp_mg:45.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:125.7,Amp_mg:31.2,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:119.8,Amp_mg:7.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:8.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.5,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:23.0,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:17.4,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:7.2,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:6.3,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:46.7,SS_Hz_x10:0.0,Vib_x50:0,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:44.3,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:15.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:19.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:30.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:37.5,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:43.1,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:19.4,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:12.6,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+Freq_Hz:0.0,Amp_mg:25.9,SS_Hz_x10:0.0,Vib_x50:50,Contact_x100:0
+#SWEEP t=23s F=      ?Hz A=    23.4mg D=  1328mg ang=   16deg tr=    7mg vib=1 ct=0 grip=0 cl=0 w=4.5 cliplim=0 ax=0 ok=0
+#SWEEP t=23s F=      ?Hz A=     6.2mg D=  1332mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=0 ok=0
+#SWEEP t=23s F=      ?Hz A=     5.5mg D=  1336mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=24s F=      ?Hz A=     5.4mg D=  1337mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=0 ok=0
+#SWEEP t=24s F=      ?Hz A=     5.6mg D=  1337mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=24s F=      ?Hz A=     6.4mg D=  1337mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=24s F=      ?Hz A=     6.1mg D=  1337mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=25s F=      ?Hz A=    16.2mg D=  1338mg ang=   16deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=4.3 cliplim=0 ax=1 ok=0
+#SWEEP t=25s F=      ?Hz A=     7.8mg D=  1337mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=3.2 cliplim=0 ax=1 ok=0
+#SWEEP t=25s F=      ?Hz A=    15.5mg D=  1338mg ang=   16deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=17.2 cliplim=0 ax=1 ok=0
+#SWEEP t=26s F=  170.6Hz A=    13.3mg D=  1337mg ang=   15deg tr=    7mg vib=1 ct=0 grip=0 cl=0 w=5.1 cliplim=1 ax=1 ok=0
+#SWEEP t=26s F=      ?Hz A=    32.1mg D=  1340mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=2.6 cliplim=0 ax=0 ok=0
+#SWEEP t=26s F=      ?Hz A=     9.4mg D=  1345mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=2.9 cliplim=0 ax=1 ok=0
+#SWEEP t=26s F=      ?Hz A=     6.1mg D=  1348mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=27s F=      ?Hz A=     6.4mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=27s F=      ?Hz A=     5.7mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=27s F=      ?Hz A=     6.5mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=1 ok=0
+#SWEEP t=27s F=      ?Hz A=     4.4mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=28s F=      ?Hz A=     7.2mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=28s F=      ?Hz A=     7.9mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.8 cliplim=0 ax=2 ok=0
+#SWEEP t=28s F=      ?Hz A=     6.2mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.7 cliplim=0 ax=2 ok=0
+#SWEEP t=28s F=      ?Hz A=     5.7mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=29s F=      ?Hz A=     6.6mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=29s F=      ?Hz A=     5.9mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=29s F=      ?Hz A=     5.3mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=29s F=      ?Hz A=     5.7mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=30s F=      ?Hz A=     6.3mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=30s F=      ?Hz A=     6.0mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=30s F=      ?Hz A=     5.8mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=1 ok=0
+#SWEEP t=31s F=      ?Hz A=     5.9mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=31s F=      ?Hz A=     5.3mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=31s F=      ?Hz A=     6.1mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=31s F=      ?Hz A=     5.5mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=32s F=      ?Hz A=     5.9mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=32s F=      ?Hz A=     5.0mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#SWEEP t=32s F=      ?Hz A=     5.9mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=32s F=      ?Hz A=     6.5mg D=  1351mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=1 ok=0
+#SWEEP t=33s F=      ?Hz A=     6.7mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=1 ok=0
+#SWEEP t=33s F=      ?Hz A=     6.0mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=33s F=      ?Hz A=     5.4mg D=  1349mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=33s F=      ?Hz A=     6.6mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=34s F=      ?Hz A=    14.3mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=1 ok=0
+#SWEEP t=34s F=      ?Hz A=     5.0mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=1 ok=0
+#SWEEP t=34s F=      ?Hz A=     6.7mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=34s F=      ?Hz A=     5.4mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=35s F=      ?Hz A=     5.8mg D=  1350mg ang=   15deg tr=    7mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0

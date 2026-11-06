@@ -1,0 +1,4 @@
+﻿session,eventId,startMs,commitMs,releaseStable,releaseSlowMs,releaseSlowAngle,settleAngle,cycleZeroAngle,closureAngleRelative
+static_start_hongest_same_1,1,31457.0,32627.0,1,3812.000,17.700,15.043,15.043,106.657
+static_start_hongest_same_1,2,40967.0,42657.0,1,3670.000,21.800,20.906,20.906,101.168
+static_start_hongest_same_1,3,47297.0,47937.0,0,,,,,

@@ -1,0 +1,5 @@
+
+[static_hongest_2] stable=1 START=0 HONGEST=1 OTHER/FINISH=0
+  START: 无样本
+  HONGEST: center=(-769.4,17.6,1551.2) max_std=7.4 n=1
+  leave-one-run-out: 样本不足

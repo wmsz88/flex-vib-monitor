@@ -1,0 +1,2 @@
+﻿eventId,class,label,startMs,plateauMs,commitMs,openMs,closureMs,startAngle,plateauAngle,angleMoved,gyroPeak,gyroEnergy,impactA,ampPost100,ringdownDb,decayTauMs,ctYMean,ctZMean,angleSlopeDegS,closedRatio,gapCount,sampleCount,touchScore,scoreValid
+1,obj4_p1,1,224814.000,298774.000,300904.000,,73960.000,11.200,143.821,131.900,290.860,173766.304,136.810,101.788,-2.568,3961.507,167.949,1536.618,31.455,1.000,1,7610,,0

@@ -1,0 +1,7 @@
+
+[static_pairs_6] stable=17 START=10 HONGEST=0 OTHER/FINISH=7
+  START: center=(-502.2,-35.0,-1616.3) max_std=9.5 n=10
+  HONGEST: 无样本
+  leave-one-run-out: 样本不足
+
+FINISH events: 7, releaseStable=1: 0

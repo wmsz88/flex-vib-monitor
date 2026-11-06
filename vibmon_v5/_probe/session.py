@@ -28,6 +28,7 @@ SWEEP_RE = re.compile(
     r"D=\s*(?P<d>[0-9.]+|\?)mg (?:ang=\s*(?P<ang>[0-9.]+|\?)deg )?"
     r"tr=\s*(?P<tr>[0-9.]+|\?)mg "
     r"vib=(?P<vib>\d+) ct=(?P<ct>\d+) grip=(?P<grip>\d+) "
+    r"(?:cl=\d+ w=[0-9.]+ )?"
     r"cliplim=(?P<clim>\d+) ax=(?P<ax>\d+) ok=(?P<ok>\d+)"
 )
 

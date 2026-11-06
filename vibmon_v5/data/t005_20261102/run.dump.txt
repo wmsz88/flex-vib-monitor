@@ -1,0 +1,5 @@
+
+== dcon_empty 23:03:06.308 ==
+#DUMPH,t_ms,closed,flatDist,flatDistValid,closeAngleDeg,angleValid,condPosture,condAmp,condFreq,ct,ctValid,vib,freqHz,freqValid,ampMg,ampValid,ssHz,ssValid,grip,gyroW,ax,cliplim,ok
+#DUMP,397293,1,1612.9,1,103.9,1,1,0,0,0,1,0,0.0,0,6.3,1,0.00,0,0,0.2,0,0,0
+

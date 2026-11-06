@@ -1,0 +1,479 @@
+#HOST t=5.19 cycle=1 phase=START source=关闭
+#SWEEP t=144s F=      ?Hz A=     6.0mg D=    58mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=218.3 x=-192.2 y=47.4 z=-94.2 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=144s F=      ?Hz A=     6.1mg D=    61mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.7 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=221.3 x=-195.2 y=46.8 z=-95.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=145s F=      ?Hz A=     5.8mg D=    64mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=224.0 x=-197.9 y=46.1 z=-96.4 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=145s F=      ?Hz A=     5.4mg D=    68mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=226.9 x=-200.6 y=45.5 z=-98.1 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=146s F=      ?Hz A=     5.6mg D=    71mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=230.5 x=-204.2 y=45.0 z=-99.2 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=146s F=      ?Hz A=     5.5mg D=    72mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=232.7 x=-206.6 y=44.7 z=-99.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=147s F=      ?Hz A=     5.6mg D=    75mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=234.4 x=-208.1 y=44.6 z=-100.5 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=147s F=      ?Hz A=     5.9mg D=    78mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=236.7 x=-210.4 y=43.9 z=-101.4 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=148s F=      ?Hz A=     4.5mg D=    79mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=238.8 x=-212.4 y=43.4 z=-102.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=148s F=      ?Hz A=     5.4mg D=    81mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=240.5 x=-214.2 y=43.3 z=-102.9 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#HOST t=15.38 cycle=1 phase=空握 source=关闭
+#SWEEP t=154s F=      ?Hz A=   130.5mg D=   992mg ang=   98deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=225.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=-232.7 y=35.0 z=-114.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=154s F=  131.9Hz A=  1035.4mg D=  1573mg ang=  113deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=34.4 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+[FAULT] 传感器无响应，结果已清零，每 1000 ms 尝试重连
+#SWEEP t=155s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+#SWEEP t=155s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=156s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+#SWEEP t=157s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=157s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=158s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+#SWEEP t=158s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=159s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=512
+#HOST t=25.58 cycle=1 phase=接触 source=开启
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 就绪，配置寄存器回读一致
+[OK] 传感器已恢复
+[FAULT] 传感器无响应，结果已清零，每 1000 ms 尝试重连
+#SWEEP t=164s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=165s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+#SWEEP t=165s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=166s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+#SWEEP t=166s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=167s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+#SWEEP t=167s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=168s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+#SWEEP t=168s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=169s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+#HOST t=36.05 cycle=1 phase=回START source=关闭
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 就绪，配置寄存器回读一致
+[OK] 传感器已恢复
+#SWEEP t=175s F=      ?Hz A=    10.3mg D=   192mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.2 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=281.5 y=53.0 z=1082.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=512
+#SWEEP t=175s F=      ?Hz A=     6.7mg D=   211mg ang=    2deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=5.3 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=37.2 x=25.3 y=-11.5 z=23.5 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=1 n=502
+#SWEEP t=176s F=      ?Hz A=     5.0mg D=   184mg ang=    4deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.8 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=32.1 x=21.3 y=-13.1 z=18.8 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=2 n=502
+#SWEEP t=176s F=      ?Hz A=     6.9mg D=   167mg ang=    5deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=7.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=19.7 x=1.0 y=-18.9 z=3.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=177s F=      ?Hz A=     5.5mg D=   151mg ang=    6deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.7 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=27.6 x=-16.3 y=-21.4 z=-7.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=177s F=      ?Hz A=     4.6mg D=   138mg ang=    6deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=41.4 x=-31.3 y=-22.1 z=-17.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=501
+#SWEEP t=178s F=      ?Hz A=     7.5mg D=   126mg ang=    7deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.6 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=55.5 x=-44.7 y=-22.7 z=-25.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=178s F=      ?Hz A=     6.3mg D=   118mg ang=    8deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=68.1 x=-56.3 y=-22.9 z=-32.2 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=179s F=      ?Hz A=    12.2mg D=   108mg ang=    8deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.9 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=78.9 x=-66.3 y=-23.0 z=-37.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=179s F=      ?Hz A=     5.6mg D=   103mg ang=    8deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=91.0 x=-77.0 y=-23.2 z=-44.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=501
+#HOST t=46.27 cycle=2 phase=START source=关闭
+#SWEEP t=185s F=      ?Hz A=     5.4mg D=    84mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=161.9 x=-141.4 y=-25.9 z=-76.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=185s F=      ?Hz A=     5.8mg D=    84mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=166.2 x=-145.3 y=-26.0 z=-78.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=186s F=      ?Hz A=     5.9mg D=    85mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=170.2 x=-149.0 y=-26.0 z=-79.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=186s F=      ?Hz A=     6.1mg D=    86mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=173.8 x=-152.2 y=-26.4 z=-81.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=187s F=      ?Hz A=     5.4mg D=    88mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=178.1 x=-156.0 y=-26.7 z=-83.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=187s F=      ?Hz A=     6.2mg D=    89mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=181.6 x=-159.2 y=-27.1 z=-84.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=188s F=      ?Hz A=     5.4mg D=    90mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.0 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=184.9 x=-162.3 y=-27.2 z=-86.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=188s F=      ?Hz A=     5.9mg D=    90mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=188.4 x=-165.8 y=-27.2 z=-87.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=189s F=      ?Hz A=     5.3mg D=    92mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=191.4 x=-168.5 y=-27.2 z=-88.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=189s F=      ?Hz A=     6.6mg D=    93mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=194.0 x=-170.9 y=-27.2 z=-89.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#HOST t=56.48 cycle=2 phase=空握 source=关闭
+#SWEEP t=195s F=  121.3Hz A=    24.4mg D=  1583mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=6.3 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=191.1 y=24.7 z=457.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=196s F=      ?Hz A=    94.0mg D=  1628mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=11.6 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=237.3 y=20.1 z=1355.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=196s F=      ?Hz A=    13.5mg D=  1635mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=6.8 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1522.0 x=212.4 y=0.9 z=1506.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=1 n=502
+#SWEEP t=197s F=      ?Hz A=     9.8mg D=  1633mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=8.9 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=210.8 y=-26.7 z=1520.2 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=197s F=      ?Hz A=    12.0mg D=  1634mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.4 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1535.5 x=211.3 y=-41.0 z=1520.2 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=1 n=501
+#SWEEP t=198s F=      ?Hz A=     7.5mg D=  1633mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=3.7 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1534.5 x=212.3 y=-44.0 z=1519.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=198s F=      ?Hz A=     8.0mg D=  1632mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.4 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1534.1 x=212.9 y=-45.4 z=1518.4 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=199s F=      ?Hz A=     8.1mg D=  1633mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.8 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1533.7 x=213.3 y=-50.4 z=1517.8 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=199s F=      ?Hz A=     7.4mg D=  1632mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=1.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1533.5 x=213.5 y=-51.4 z=1517.5 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=200s F=      ?Hz A=     9.5mg D=  1632mg ang=  109deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=1.6 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1533.0 x=214.2 y=-51.9 z=1516.9 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#HOST t=66.63 cycle=2 phase=接触 source=开启
+[FAULT] 传感器无响应，结果已清零，每 1000 ms 尝试重连
+#SWEEP t=205s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=206s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=206s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=207s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=207s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=208s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=208s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=209s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=209s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=210s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#HOST t=77.11 cycle=2 phase=回START source=关闭
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 就绪，配置寄存器回读一致
+[OK] 传感器已恢复
+#SWEEP t=216s F=      ?Hz A=    18.3mg D=   275mg ang=    4deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=12.8 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=279.8 y=-52.3 z=304.3 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=502
+#SWEEP t=216s F=      ?Hz A=     8.1mg D=   241mg ang=    6deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=4.5 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=65.1 y=-16.9 z=52.4 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=502
+#SWEEP t=217s F=      ?Hz A=   566.2mg D=   234mg ang=    8deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=188.0 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=91.4 x=68.0 y=-26.3 z=53.7 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=1 n=501
+#SWEEP t=217s F=      ?Hz A=    10.1mg D=   184mg ang=   10deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=8.0 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=12.5 y=-26.4 z=12.2 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=501
+#SWEEP t=218s F=      ?Hz A=     5.4mg D=   158mg ang=   11deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.8 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=25.9 x=-7.3 y=-24.8 z=-1.6 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=1 n=501
+#SWEEP t=218s F=      ?Hz A=     5.9mg D=   144mg ang=   11deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=33.6 x=-25.2 y=-19.0 z=-13.1 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=2 n=502
+#SWEEP t=219s F=      ?Hz A=     6.2mg D=   131mg ang=   12deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.0 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=46.7 x=-38.3 y=-18.3 z=-21.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=501
+#SWEEP t=219s F=      ?Hz A=     5.2mg D=   121mg ang=   12deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.9 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=60.5 x=-50.6 y=-18.4 z=-29.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=220s F=      ?Hz A=     6.9mg D=   114mg ang=   13deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.7 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=71.3 x=-60.3 y=-18.4 z=-34.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=220s F=      ?Hz A=     5.7mg D=   107mg ang=   13deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=79.7 x=-67.9 y=-18.6 z=-38.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#HOST t=87.42 cycle=3 phase=START source=关闭
+#SWEEP t=226s F=      ?Hz A=     6.5mg D=    80mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=149.7 x=-130.8 y=-20.9 z=-71.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=501
+#SWEEP t=226s F=      ?Hz A=     6.1mg D=    79mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=154.4 x=-135.0 y=-21.4 z=-73.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=227s F=      ?Hz A=     4.6mg D=    80mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=158.5 x=-138.9 y=-21.0 z=-75.2 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=227s F=      ?Hz A=     5.8mg D=    80mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.8 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=161.8 x=-141.9 y=-21.5 z=-76.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=501
+#SWEEP t=228s F=      ?Hz A=     5.8mg D=    80mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=164.4 x=-144.3 y=-21.7 z=-77.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=229s F=      ?Hz A=     5.1mg D=    81mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.8 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=168.1 x=-147.8 y=-21.5 z=-79.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=229s F=      ?Hz A=     5.1mg D=    81mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=171.7 x=-151.2 y=-21.8 z=-80.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=230s F=      ?Hz A=     4.9mg D=    82mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=175.0 x=-154.0 y=-21.8 z=-82.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=230s F=      ?Hz A=     5.3mg D=    83mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=178.4 x=-157.1 y=-21.7 z=-83.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=231s F=      ?Hz A=     6.5mg D=    84mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=181.9 x=-160.3 y=-21.9 z=-85.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#HOST t=97.71 cycle=3 phase=空握 source=关闭
+#SWEEP t=236s F=  101.0Hz A=    59.0mg D=  1359mg ang=  109deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=37.8 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=-131.9 y=-34.6 z=-81.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=237s F=      ?Hz A=    56.7mg D=  1628mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=3.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=276.5 y=-49.2 z=858.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=237s F=      ?Hz A=    16.6mg D=  1647mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=5.9 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=206.8 y=-49.6 z=1469.7 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=238s F=      ?Hz A=     9.3mg D=  1645mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=6.8 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1546.1 x=197.2 y=-36.8 z=1532.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=1 n=502
+#SWEEP t=238s F=      ?Hz A=    17.0mg D=  1644mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=5.0 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1548.6 x=198.5 y=-32.6 z=1535.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=2 n=501
+#SWEEP t=239s F=      ?Hz A=     9.0mg D=  1646mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=4.2 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1548.1 x=199.0 y=-30.2 z=1534.8 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=239s F=      ?Hz A=     6.5mg D=  1645mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.9 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1548.7 x=198.8 y=-29.7 z=1535.4 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=240s F=      ?Hz A=    13.8mg D=  1645mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=9.4 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1548.3 x=199.0 y=-30.9 z=1535.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=240s F=      ?Hz A=     6.0mg D=  1644mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1548.5 x=198.9 y=-28.3 z=1535.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=241s F=      ?Hz A=    10.4mg D=  1645mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=3.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1548.4 x=198.9 y=-24.3 z=1535.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=501
+#HOST t=107.98 cycle=3 phase=接触 source=开启
+#SWEEP t=247s F=  180.0Hz A=   225.6mg D=   614mg ang=   40deg tr=    8mg vib=1 ct=0 grip=0 cl=0 w=26.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=1 cls=0 d=470.2 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[FAULT] 传感器无响应，结果已清零，每 1000 ms 尝试重连
+#SWEEP t=247s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=248s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=248s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=249s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=249s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=250s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=250s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=251s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=251s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#HOST t=118.56 cycle=3 phase=回START source=关闭
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 就绪，配置寄存器回读一致
+[OK] 传感器已恢复
+#SWEEP t=257s F=      ?Hz A=    19.2mg D=   272mg ang=    2deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=13.1 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=314.1 y=-30.2 z=347.6 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=502
+#SWEEP t=258s F=      ?Hz A=     6.0mg D=   262mg ang=    5deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=5.7 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=70.5 y=1.1 z=58.7 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=502
+#SWEEP t=258s F=      ?Hz A=     4.7mg D=   226mg ang=    7deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.9 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=98.6 x=76.0 y=2.9 z=61.5 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=1 n=502
+#SWEEP t=259s F=      ?Hz A=     5.2mg D=   197mg ang=    9deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=62.3 x=47.7 y=0.8 z=38.8 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=2 n=501
+#SWEEP t=259s F=      ?Hz A=     5.3mg D=   175mg ang=   10deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=32.9 x=24.1 y=-1.4 z=21.2 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=260s F=      ?Hz A=     5.7mg D=   158mg ang=   11deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=10.4 x=5.2 y=-3.0 z=7.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=260s F=      ?Hz A=     5.8mg D=   143mg ang=   12deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.9 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=11.8 x=-11.1 y=-4.7 z=-3.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=261s F=      ?Hz A=     5.5mg D=   131mg ang=   13deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=28.3 x=-25.4 y=-6.2 z=-12.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=261s F=      ?Hz A=     5.2mg D=   122mg ang=   13deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=43.3 x=-38.2 y=-7.7 z=-20.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=262s F=      ?Hz A=     5.4mg D=   112mg ang=   14deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=3.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=54.9 x=-48.1 y=-8.5 z=-26.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#HOST t=128.86 cycle=4 phase=START source=关闭
+#SWEEP t=267s F=      ?Hz A=     5.3mg D=    77mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=138.8 x=-121.6 y=-16.1 z=-66.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=268s F=      ?Hz A=     5.3mg D=    76mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=142.7 x=-125.2 y=-16.3 z=-68.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=501
+#SWEEP t=268s F=      ?Hz A=     6.1mg D=    76mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=147.3 x=-129.3 y=-16.8 z=-70.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=501
+#SWEEP t=269s F=      ?Hz A=     6.1mg D=    75mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=151.1 x=-132.7 y=-17.3 z=-72.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=269s F=      ?Hz A=     5.2mg D=    76mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=155.0 x=-136.5 y=-17.4 z=-73.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=270s F=      ?Hz A=     5.7mg D=    76mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.9 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=159.4 x=-140.2 y=-17.6 z=-75.7 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=501
+#SWEEP t=270s F=      ?Hz A=     6.8mg D=    76mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=162.6 x=-143.2 y=-17.8 z=-76.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=271s F=      ?Hz A=     5.2mg D=    77mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=167.7 x=-147.8 y=-18.1 z=-79.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=271s F=      ?Hz A=     6.1mg D=    78mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.7 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=171.2 x=-151.0 y=-18.2 z=-80.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=272s F=      ?Hz A=     5.7mg D=    78mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=174.5 x=-153.9 y=-18.7 z=-81.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#HOST t=139.10 cycle=4 phase=空握 source=关闭
+#SWEEP t=278s F=   97.2Hz A=   117.0mg D=  1543mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=12.0 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=151.3 y=39.5 z=561.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=278s F=      ?Hz A=    10.1mg D=  1634mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=0.9 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=203.4 y=10.4 z=1421.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=279s F=      ?Hz A=    16.8mg D=  1640mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=13.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1535.7 x=202.7 y=-17.7 z=1522.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=1 n=502
+#SWEEP t=279s F=      ?Hz A=     7.2mg D=  1641mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=4.1 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1544.1 x=201.9 y=-10.1 z=1530.7 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=2 n=502
+#SWEEP t=280s F=      ?Hz A=     6.3mg D=  1641mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=3.6 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1544.7 x=202.1 y=-7.1 z=1531.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=280s F=      ?Hz A=    91.0mg D=  1641mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=17.8 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1544.3 x=202.6 y=-4.6 z=1530.8 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=281s F=      ?Hz A=     9.0mg D=  1640mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.4 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1544.1 x=202.5 y=-1.9 z=1530.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=281s F=      ?Hz A=     6.2mg D=  1640mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=1.0 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1543.4 x=202.6 y=1.2 z=1529.9 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=282s F=      ?Hz A=     6.8mg D=  1640mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.1 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1543.8 x=202.8 y=-0.3 z=1530.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=282s F=      ?Hz A=     6.2mg D=  1641mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.6 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1543.7 x=203.4 y=-2.9 z=1530.1 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#HOST t=149.29 cycle=4 phase=接触 source=开启
+[FAULT] 传感器无响应，结果已清零，每 1000 ms 尝试重连
+#SWEEP t=288s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=288s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=289s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=289s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=290s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=290s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=291s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=292s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=292s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+#SWEEP t=293s F=      ?Hz A=       ?mg D=     0mg ang=    ?deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=261.8 y=-34.8 z=263.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#HOST t=159.82 cycle=4 phase=回START source=关闭
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 初始化失败：无应答 (寄存器 0x75)
+[MPU] 就绪，配置寄存器回读一致
+[OK] 传感器已恢复
+#SWEEP t=298s F=      ?Hz A=    12.3mg D=   278mg ang=    5deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=6.4 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=75.7 y=-5.2 z=63.1 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=0 n=502
+#SWEEP t=299s F=      ?Hz A=     5.6mg D=   240mg ang=    8deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=4.8 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=106.9 x=82.4 y=-10.1 z=66.1 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=1 n=501
+#SWEEP t=299s F=      ?Hz A=     4.9mg D=   211mg ang=    9deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=3.1 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=68.3 x=51.9 y=-13.1 z=41.0 bx=-1.0 by=0.3 bz=-0.0 clsd=0 stable=0 scnt=2 n=502
+#SWEEP t=300s F=      ?Hz A=    19.0mg D=   183mg ang=   11deg tr=    8mg vib=1 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=39.8 x=27.0 y=-16.3 z=22.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=300s F=      ?Hz A=    97.1mg D=   168mg ang=   12deg tr=    8mg vib=1 ct=0 grip=0 cl=0 w=5.0 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=19.1 x=3.5 y=-17.3 z=6.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=301s F=      ?Hz A=     7.0mg D=   155mg ang=   13deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=6.3 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=21.5 x=-11.1 y=-18.3 z=-3.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=301s F=      ?Hz A=    14.1mg D=   138mg ang=   14deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=4.8 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=37.8 x=-29.9 y=-18.0 z=-16.1 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=302s F=      ?Hz A=     6.2mg D=   124mg ang=   14deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=53.9 x=-45.3 y=-16.9 z=-25.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=302s F=      ?Hz A=     5.0mg D=   116mg ang=   15deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=66.4 x=-56.5 y=-16.4 z=-32.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=303s F=      ?Hz A=     5.6mg D=   109mg ang=   15deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=76.5 x=-65.7 y=-16.6 z=-37.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#HOST t=170.08 cycle=5 phase=START source=关闭
+#SWEEP t=309s F=      ?Hz A=     6.6mg D=    79mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=147.3 x=-128.6 y=-20.2 z=-70.7 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=309s F=      ?Hz A=     5.9mg D=    79mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.8 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=152.2 x=-133.0 y=-20.7 z=-72.7 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=310s F=      ?Hz A=     4.7mg D=    79mg ang=    1deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.7 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=156.1 x=-136.6 y=-20.8 z=-74.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=310s F=      ?Hz A=     5.9mg D=    80mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=160.6 x=-140.7 y=-21.1 z=-76.3 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=311s F=      ?Hz A=     5.7mg D=    80mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=164.2 x=-144.0 y=-21.6 z=-77.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=311s F=      ?Hz A=     5.0mg D=    81mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=168.6 x=-148.1 y=-21.6 z=-79.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=312s F=      ?Hz A=     6.3mg D=    82mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=171.6 x=-150.7 y=-22.0 z=-80.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=312s F=      ?Hz A=     6.9mg D=    82mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=174.9 x=-153.6 y=-22.1 z=-82.6 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=313s F=      ?Hz A=     6.2mg D=    84mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.5 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=178.3 x=-156.8 y=-22.0 z=-83.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=313s F=      ?Hz A=     5.2mg D=    84mg ang=    0deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=0 d=181.4 x=-159.7 y=-22.5 z=-84.8 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#HOST t=180.28 cycle=5 phase=空握 source=关闭
+#SWEEP t=319s F=      ?Hz A=    23.9mg D=  1463mg ang=  111deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=2.9 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=78.2 y=-34.9 z=130.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=319s F=  119.1Hz A=    20.4mg D=  1632mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=7.1 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=251.0 y=-39.3 z=1141.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=501
+#SWEEP t=320s F=   96.5Hz A=    22.7mg D=  1642mg ang=  110deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=2.2 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=203.1 y=-38.6 z=1502.0 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=0 n=502
+#SWEEP t=320s F=      ?Hz A=     6.6mg D=  1641mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=0.7 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1542.9 x=201.7 y=-31.5 z=1529.2 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=1 n=502
+#SWEEP t=321s F=      ?Hz A=     6.6mg D=  1640mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=1.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1543.4 x=203.6 y=-31.7 z=1529.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=0 scnt=2 n=502
+#SWEEP t=321s F=      ?Hz A=     9.9mg D=  1640mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=2.9 cliplim=0 ax=0 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1542.5 x=205.3 y=-30.1 z=1528.4 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=322s F=      ?Hz A=     9.1mg D=  1640mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=5.6 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1542.2 x=205.2 y=-29.5 z=1528.1 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=322s F=      ?Hz A=     7.9mg D=  1639mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=0.0 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1541.9 x=205.4 y=-28.0 z=1527.8 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=323s F=      ?Hz A=     9.2mg D=  1639mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=5.4 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1541.6 x=205.7 y=-25.0 z=1527.5 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=324s F=      ?Hz A=     6.9mg D=  1639mg ang=  110deg tr=    8mg vib=0 ct=0 grip=0 cl=1 w=1.1 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=2 d=1541.2 x=205.7 y=-26.0 z=1527.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#HOST t=190.38 cycle=5 phase=接触 source=开启
+#SWEEP t=329s F=  169.9Hz A=   519.3mg D=   388mg ang=   24deg tr=    8mg vib=1 ct=0 grip=0 cl=0 w=59.8 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=158.2 y=-23.0 z=137.5 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=329s F=  168.8Hz A=   269.7mg D=   422mg ang=   28deg tr=    8mg vib=1 ct=0 grip=0 cl=0 w=28.9 cliplim=0 ax=0 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=152.8 y=-24.9 z=137.1 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=330s F=  126.9Hz A=   717.3mg D=  1160mg ang=   94deg tr=    8mg vib=1 ct=0 grip=0 cl=1 w=98.4 cliplim=1 ax=2 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=174.9 y=-30.8 z=140.4 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=330s F=  163.6Hz A=   896.9mg D=  1494mg ang=  101deg tr=    8mg vib=1 ct=1 grip=0 cl=1 w=71.4 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=325.2 y=-16.7 z=823.2 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=506
+#SWEEP t=331s F=  162.1Hz A=   922.4mg D=  1550mg ang=  102deg tr=    8mg vib=1 ct=1 grip=0 cl=1 w=35.9 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=297.8 y=59.1 z=1327.8 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=332s F=  163.4Hz A=   919.3mg D=  1554mg ang=  102deg tr=    8mg vib=1 ct=1 grip=0 cl=1 w=35.4 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1444.5 x=267.3 y=102.5 z=1415.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=501
+#SWEEP t=332s F=  162.3Hz A=   892.2mg D=  1572mg ang=  102deg tr=    8mg vib=1 ct=1 grip=0 cl=1 w=36.2 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1458.3 x=261.6 y=107.6 z=1430.4 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=333s F=  160.7Hz A=   879.9mg D=  1581mg ang=  102deg tr=    8mg vib=1 ct=1 grip=0 cl=1 w=25.5 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1475.2 x=265.7 y=103.6 z=1447.1 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#SWEEP t=333s F=  162.2Hz A=   851.1mg D=  1563mg ang=  102deg tr=    8mg vib=1 ct=1 grip=0 cl=1 w=39.7 cliplim=0 ax=2 ok=1
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=264.8 y=105.0 z=1447.9 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=334s F=  162.6Hz A=   966.8mg D=  1563mg ang=  102deg tr=    8mg vib=1 ct=1 grip=0 cl=1 w=27.3 cliplim=0 ax=1 ok=1
+#POST cal=1 act=0 valid=1 cls=2 d=1462.1 x=263.3 y=117.0 z=1433.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=1 scnt=3 n=502
+#HOST t=200.87 cycle=5 phase=回START source=关闭
+#SWEEP t=339s F=      ?Hz A=    20.3mg D=   335mg ang=   16deg tr=    8mg vib=1 ct=0 grip=0 cl=0 w=14.3 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=338.4 y=25.7 z=653.6 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=501
+#SWEEP t=340s F=      ?Hz A=    20.0mg D=   239mg ang=   13deg tr=    8mg vib=1 ct=0 grip=0 cl=0 w=32.1 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=153.4 y=51.7 z=161.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=340s F=      ?Hz A=     9.5mg D=   212mg ang=   11deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=5.3 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=0 cls=0 d=-1.0 x=73.0 y=50.6 z=65.1 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=0 n=502
+#SWEEP t=341s F=      ?Hz A=     5.8mg D=   186mg ang=    9deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.8 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=51.3 x=38.1 y=-2.9 z=33.0 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=1 n=501
+#SWEEP t=341s F=      ?Hz A=     6.5mg D=   165mg ang=    8deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.1 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=17.9 x=-2.7 y=-17.3 z=2.1 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=1 n=502
+#SWEEP t=342s F=      ?Hz A=     5.3mg D=   146mg ang=    7deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=2.4 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=29.8 x=-21.0 y=-19.2 z=-10.3 bx=-1.0 by=0.3 bz=-0.0 clsd=2 stable=0 scnt=2 n=502
+#SWEEP t=342s F=      ?Hz A=     5.4mg D=   129mg ang=    6deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.8 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=49.3 x=-40.2 y=-20.0 z=-21.9 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=343s F=      ?Hz A=     6.0mg D=   120mg ang=    6deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=0.9 cliplim=0 ax=2 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=65.5 x=-54.7 y=-21.4 z=-30.5 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=344s F=      ?Hz A=     8.2mg D=   109mg ang=    6deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=1.1 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=80.1 x=-67.6 y=-22.3 z=-38.4 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502
+#SWEEP t=344s F=      ?Hz A=    12.4mg D=    99mg ang=    6deg tr=    8mg vib=0 ct=0 grip=0 cl=0 w=10.3 cliplim=0 ax=1 ok=0
+#POST cal=1 act=0 valid=1 cls=1 d=91.7 x=-78.3 y=-20.8 z=-44.7 bx=-1.0 by=0.3 bz=-0.0 clsd=1 stable=1 scnt=3 n=502

@@ -1,0 +1,9 @@
+
+[static_pairs_1] stable=19 START=10 HONGEST=9 OTHER/FINISH=0
+  START: center=(190.8,14.2,643.2) max_std=38.8 n=10
+  HONGEST: center=(139.1,15.6,371.7) max_std=30.0 n=9
+  distance START-HONGEST: 276.3 mg
+  leave-one-run-out: 11/19
+  mistakes: [('START', 'HONGEST'), ('HONGEST', 'START'), ('START', 'HONGEST'), ('START', 'HONGEST'), ('START', 'HONGEST'), ('START', 'HONGEST'), ('HONGEST', 'START'), ('START', 'HONGEST')]
+
+FINISH events: 6, releaseStable=1: 6

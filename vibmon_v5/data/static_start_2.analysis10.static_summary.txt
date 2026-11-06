@@ -1,0 +1,7 @@
+
+[static_start_2] stable=1 START=0 HONGEST=0 OTHER/FINISH=1
+  START: 无样本
+  HONGEST: 无样本
+  leave-one-run-out: 样本不足
+
+FINISH events: 1, releaseStable=1: 0

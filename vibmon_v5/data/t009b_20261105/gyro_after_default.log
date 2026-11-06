@@ -1,0 +1,12 @@
+=== v5 gyro_test (CT_MODE=4 GYRO_DIV=4 FS=1000 DT=0.0040) ===
+
+[PASS] G1 100dps x 1s -> 100.0 deg (expect 100±2)
+[PASS] G3 still 60s @0.5dps -> drift 0.0 deg (expect <=3)
+[PASS] G5 over-range -> angleValid=false
+[PASS] G5b over-range latch stays invalid after normal samples
+[PASS] G5c parked at open clears over-range latch
+[PASS] G6 前置：有陀螺时 angleValid=true
+[PASS] G6 陀螺中断 -> angleValid=false
+[PASS] G7 10 次开合循环，回张开后角度未归零的次数 = 0
+
+全部通过（8/8 项通过）

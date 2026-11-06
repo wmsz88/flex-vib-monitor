@@ -1,0 +1,12 @@
+﻿elapsed_s,phase,Freq_Hz,Amp_mg,FlatDist_mg,CloseAngle_deg,RefSwing_mg,vib,contact,gripNoObject,closed,gyroW,clipLimited,axis,ok
+0.0,open_off,,5.9,1,0,2,0,0,0,0,0.3,0,2,0
+1.1,open_off,,5.4,1,0,2,0,0,0,0,0.1,0,2,0
+2.1,open_off,,5.8,0,0,2,0,0,0,0,0.2,0,2,0
+3.2,open_off,,5.0,1,0,2,0,0,0,0,0.2,0,2,0
+4.1,open_off,,5.1,1,0,2,0,0,0,0,0.2,0,2,0
+0.0,closed_wait,,5.6,1,0,2,0,0,0,0,0.0,0,2,0
+0.7,closed_wait,,5.5,1,0,2,0,0,0,0,0.2,0,2,0
+1.1,closed_wait,,5.6,1,0,2,0,0,0,0,0.1,0,2,0
+1.6,closed_wait,,6.0,2,0,2,0,0,0,0,1.0,0,2,0
+2.0,closed_wait,,4.9,1,0,2,0,0,0,0,0.1,0,2,0
+2.7,closed_wait,,6.0,2,0,2,0,0,0,0,0.2,0,2,0

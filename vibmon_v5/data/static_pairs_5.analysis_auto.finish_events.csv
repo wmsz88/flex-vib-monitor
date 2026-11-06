@@ -1,0 +1,2 @@
+﻿session,eventId,startMs,commitMs,releaseStable,releaseSlowMs,releaseSlowAngle,settleAngle,cycleZeroAngle,closureAngleRelative
+static_pairs_5,1,119646.0,120186.0,1,4789.000,4.800,4.694,4.694,103.765

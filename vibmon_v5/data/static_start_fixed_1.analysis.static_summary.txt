@@ -1,0 +1,7 @@
+
+[static_start_fixed_1] stable=1 START=1 HONGEST=0 OTHER/FINISH=0
+  START: center=(327.1,-130.9,-909.0) max_std=1.3 n=1
+  HONGEST: 无样本
+  leave-one-run-out: 样本不足
+
+FINISH events: 1, releaseStable=1: 0

@@ -1,0 +1,89 @@
+#line 1 "D:\\大学\\课程\\工科赛\\代码\\vibmon_v5\\data\\t009b_20261105\\suite_summary.json"
+{
+  "date": "2026-11-05",
+  "source_dir": "C:/Users/Lenovo/Downloads/T009/单测",
+  "note": "Files 2-6 are 20000-line overlapping snapshots; per-file metrics below use every parseable frame in each file and are not mutually exclusive.",
+  "files": {
+    "1.txt": {
+      "frames": 5052,
+      "checksum_errors": 0,
+      "boots": 2,
+      "final_run": {
+        "seq": "0~3671",
+        "frames": 3672,
+        "duration_s": 73.42,
+        "ct1": 35,
+        "vib1": 1270,
+        "amp_max_mg": 1179,
+        "ct_segments": ["3248~3282 (0.68s)"]
+      }
+    },
+    "2.txt": {
+      "frames": 11669,
+      "checksum_errors": 0,
+      "boots": 6,
+      "ct1_total": 0,
+      "vib1_total": 598,
+      "amp_max_mg": 1016,
+      "ss_nonzero": {"0.11": 888}
+    },
+    "3.txt": {
+      "frames": 10159,
+      "checksum_errors": 0,
+      "boots": 13,
+      "brownout": 2,
+      "ct1_total": 0,
+      "vib1_total": 1307,
+      "amp_max_mg": 1126,
+      "ss_nonzero": {"0.87": 114}
+    },
+    "4.txt": {
+      "frames": 10209,
+      "checksum_errors": 0,
+      "boots": 10,
+      "brownout": 1,
+      "final_run": {
+        "frames": 4813,
+        "duration_s": 96.24,
+        "ct1": 3013,
+        "vib1": 3425,
+        "amp_max_mg": 974,
+        "ct_segment": "988~4000 (60.24s, 3013/3013)"
+      }
+    },
+    "5.txt": {
+      "frames": 10363,
+      "checksum_errors": 0,
+      "boots": 1,
+      "final_run": {
+        "frames": 4785,
+        "duration_s": 95.68,
+        "ct1": 1654,
+        "vib1": 2752,
+        "amp_max_mg": 914,
+        "ct_segments": ["963~1728 (15.30s)", "2858~3745 (17.74s)"]
+      }
+    },
+    "6.txt": {
+      "frames": 10286,
+      "checksum_errors": 1,
+      "boots": 8,
+      "brownout": 1,
+      "final_run": {
+        "frames": 7067,
+        "duration_s": 141.32,
+        "ct1": 871,
+        "vib1": 2986,
+        "amp_max_mg": 669,
+        "start_stop": [
+          {"nominal_hz": 0.5, "samples": 597, "duration_s": 11.92, "ss_mean_hz": 0.5000, "ct_ratio": 0.343},
+          {"nominal_hz": 1.0, "samples": 698, "duration_s": 13.94, "ss_mean_hz": 1.0014, "ct_ratio": 0.370},
+          {"nominal_hz": 2.0, "samples": 798, "duration_s": 15.94, "ss_mean_hz": 1.9949, "ct_ratio": 0.000},
+          {"nominal_hz": 3.0, "samples": 1000, "duration_s": 19.98, "ss_mean_hz": 2.9387, "ct_ratio": 0.000},
+          {"nominal_hz": 1.0, "samples": 273, "duration_s": 5.44, "ss_mean_hz": 1.0000, "ct_ratio": 0.388},
+          {"nominal_hz": 3.0, "samples": 441, "duration_s": 8.80, "ss_mean_hz": 2.9447, "ct_ratio": 0.000}
+        ]
+      }
+    }
+  }
+}

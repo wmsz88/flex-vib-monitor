@@ -1,0 +1,4 @@
+﻿session,eventId,startMs,commitMs,releaseStable,releaseSlowMs,releaseSlowAngle,settleAngle,cycleZeroAngle,closureAngleRelative
+static_cycle_4,1,649810.0,688320.0,0,210.000,6.400,,,
+static_cycle_4,2,688790.0,734140.0,1,220.000,9.300,13.304,13.304,344.202
+static_cycle_4,3,737940.0,746690.0,0,850.000,105.100,,,

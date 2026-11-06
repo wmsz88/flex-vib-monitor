@@ -1,0 +1,440 @@
+
+===== 1.txt =====
+{
+  "bytes": 339689,
+  "display_lines": 9841,
+  "frames": 5052,
+  "checksum_errors": 0,
+  "boot_count": 2,
+  "brownout_count": 0,
+  "poweron_count": 2,
+  "rtc_sw_reset_count": 0,
+  "runs": [
+    {
+      "first": 0,
+      "last": 1084,
+      "frames": 1085,
+      "seq_duration_s": 21.68,
+      "ss": {
+        "0.0": 1085
+      },
+      "ct1": 0,
+      "vib1": 92,
+      "amp_max": 209,
+      "freq_nonzero": 84,
+      "valid": {
+        "0": 2,
+        "1": 38,
+        "9": 961,
+        "B": 84
+      }
+    },
+    {
+      "first": 849,
+      "last": 1145,
+      "frames": 295,
+      "seq_duration_s": 5.92,
+      "ss": {
+        "0.0": 295
+      },
+      "ct1": 0,
+      "vib1": 71,
+      "amp_max": 438,
+      "freq_nonzero": 36,
+      "valid": {
+        "9": 259,
+        "B": 36
+      }
+    },
+    {
+      "first": 0,
+      "last": 3671,
+      "frames": 3672,
+      "seq_duration_s": 73.42,
+      "ss": {
+        "0.0": 3672
+      },
+      "ct1": 35,
+      "vib1": 1270,
+      "amp_max": 1179,
+      "freq_nonzero": 928,
+      "valid": {
+        "0": 2,
+        "1": 38,
+        "9": 2703,
+        "B": 924,
+        "8": 1,
+        "A": 4
+      }
+    }
+  ]
+}
+  CT runs in run#3: 3248~3282(0.68s)
+
+===== 2.txt =====
+{
+  "bytes": 738119,
+  "display_lines": 20000,
+  "frames": 11669,
+  "checksum_errors": 0,
+  "boot_count": 6,
+  "brownout_count": 0,
+  "poweron_count": 6,
+  "rtc_sw_reset_count": 0,
+  "runs": [
+    {
+      "first": 6202,
+      "last": 9999,
+      "frames": 3798,
+      "seq_duration_s": 75.94,
+      "ss": {
+        "0.0": 3798
+      },
+      "ct1": 0,
+      "vib1": 0,
+      "amp_max": 23,
+      "freq_nonzero": 0,
+      "valid": {
+        "9": 3798
+      }
+    },
+    {
+      "first": 0,
+      "last": 2403,
+      "frames": 2404,
+      "seq_duration_s": 48.06,
+      "ss": {
+        "0.0": 2404
+      },
+      "ct1": 0,
+      "vib1": 16,
+      "amp_max": 38,
+      "freq_nonzero": 13,
+      "valid": {
+        "9": 2391,
+        "B": 13
+      }
+    },
+    {
+      "first": 0,
+      "last": 4490,
+      "frames": 4491,
+      "seq_duration_s": 89.8,
+      "ss": {
+        "0.0": 3603,
+        "0.11": 888
+      },
+      "ct1": 0,
+      "vib1": 582,
+      "amp_max": 1016,
+      "freq_nonzero": 321,
+      "valid": {
+        "0": 2,
+        "1": 38,
+        "9": 3244,
+        "B": 310,
+        "8": 1,
+        "A": 8,
+        "D": 885,
+        "F": 3
+      }
+    },
+    {
+      "first": 0,
+      "last": 975,
+      "frames": 976,
+      "seq_duration_s": 19.5,
+      "ss": {
+        "0.0": 976
+      },
+      "ct1": 0,
+      "vib1": 0,
+      "amp_max": 21,
+      "freq_nonzero": 0,
+      "valid": {
+        "0": 53,
+        "1": 38,
+        "9": 885
+      }
+    }
+  ]
+}
+  SS run#3 seg#1 seq=3430~4317 dur=17.74s values={0.11: 888} ct1=0/888 vib1=20/888 amp=5~292
+
+===== 3.txt =====
+{
+  "bytes": 687849,
+  "display_lines": 20000,
+  "frames": 10159,
+  "checksum_errors": 0,
+  "boot_count": 13,
+  "brownout_count": 2,
+  "poweron_count": 9,
+  "rtc_sw_reset_count": 0,
+  "runs": [
+    {
+      "first": 1192,
+      "last": 4649,
+      "frames": 3458,
+      "seq_duration_s": 69.14,
+      "ss": {
+        "0.0": 3458
+      },
+      "ct1": 0,
+      "vib1": 40,
+      "amp_max": 103,
+      "freq_nonzero": 32,
+      "valid": {
+        "9": 3425,
+        "8": 1,
+        "B": 32
+      }
+    },
+    {
+      "first": 0,
+      "last": 1024,
+      "frames": 1025,
+      "seq_duration_s": 20.48,
+      "ss": {
+        "0.0": 1025
+      },
+      "ct1": 0,
+      "vib1": 64,
+      "amp_max": 159,
+      "freq_nonzero": 45,
+      "valid": {
+        "0": 2,
+        "1": 38,
+        "9": 940,
+        "B": 45
+      }
+    },
+    {
+      "first": 0,
+      "last": 5675,
+      "frames": 5676,
+      "seq_duration_s": 113.5,
+      "ss": {
+        "0.0": 5562,
+        "0.87": 114
+      },
+      "ct1": 0,
+      "vib1": 1203,
+      "amp_max": 1126,
+      "freq_nonzero": 635,
+      "valid": {
+        "0": 2,
+        "1": 78,
+        "9": 4852,
+        "B": 628,
+        "D": 109,
+        "F": 5,
+        "A": 2
+      }
+    }
+  ]
+}
+  SS run#3 seg#1 seq=1636~1749 dur=2.26s values={0.87: 114} ct1=0/114 vib1=18/114 amp=5~236
+
+===== 4.txt =====
+{
+  "bytes": 689310,
+  "display_lines": 20000,
+  "frames": 10209,
+  "checksum_errors": 0,
+  "boot_count": 10,
+  "brownout_count": 1,
+  "poweron_count": 9,
+  "rtc_sw_reset_count": 0,
+  "runs": [
+    {
+      "first": 5423,
+      "last": 9999,
+      "frames": 4577,
+      "seq_duration_s": 91.52,
+      "ss": {
+        "0.0": 4577
+      },
+      "ct1": 0,
+      "vib1": 64,
+      "amp_max": 179,
+      "freq_nonzero": 44,
+      "valid": {
+        "9": 4493,
+        "1": 40,
+        "B": 44
+      }
+    },
+    {
+      "first": 0,
+      "last": 818,
+      "frames": 819,
+      "seq_duration_s": 16.36,
+      "ss": {
+        "0.0": 819
+      },
+      "ct1": 0,
+      "vib1": 4,
+      "amp_max": 35,
+      "freq_nonzero": 3,
+      "valid": {
+        "9": 816,
+        "B": 3
+      }
+    },
+    {
+      "first": 0,
+      "last": 4812,
+      "frames": 4813,
+      "seq_duration_s": 96.24,
+      "ss": {
+        "0.0": 4813
+      },
+      "ct1": 3013,
+      "vib1": 3425,
+      "amp_max": 974,
+      "freq_nonzero": 3283,
+      "valid": {
+        "0": 2,
+        "1": 38,
+        "9": 1489,
+        "B": 3283,
+        "8": 1
+      }
+    }
+  ]
+}
+  CT runs in run#3: 988~4000(60.24s)
+
+===== 5.txt =====
+{
+  "bytes": 692570,
+  "display_lines": 20000,
+  "frames": 10363,
+  "checksum_errors": 0,
+  "boot_count": 1,
+  "brownout_count": 0,
+  "poweron_count": 1,
+  "rtc_sw_reset_count": 0,
+  "runs": [
+    {
+      "first": 1629,
+      "last": 7206,
+      "frames": 5578,
+      "seq_duration_s": 111.54,
+      "ss": {
+        "0.0": 5578
+      },
+      "ct1": 2372,
+      "vib1": 2503,
+      "amp_max": 833,
+      "freq_nonzero": 2466,
+      "valid": {
+        "B": 2466,
+        "9": 3072,
+        "1": 40
+      }
+    },
+    {
+      "first": 0,
+      "last": 4784,
+      "frames": 4785,
+      "seq_duration_s": 95.68,
+      "ss": {
+        "0.0": 4785
+      },
+      "ct1": 1654,
+      "vib1": 2752,
+      "amp_max": 914,
+      "freq_nonzero": 2626,
+      "valid": {
+        "0": 2,
+        "1": 78,
+        "9": 2079,
+        "B": 2624,
+        "A": 2
+      }
+    }
+  ]
+}
+  CT runs in run#1: 1629~4000(47.42s)
+  CT runs in run#2: 963~1728(15.30s), 2858~3745(17.74s)
+
+===== 6.txt =====
+{
+  "bytes": 690980,
+  "display_lines": 20000,
+  "frames": 10286,
+  "checksum_errors": 1,
+  "boot_count": 8,
+  "brownout_count": 1,
+  "poweron_count": 3,
+  "rtc_sw_reset_count": 1,
+  "runs": [
+    {
+      "first": 5633,
+      "last": 8851,
+      "frames": 3219,
+      "seq_duration_s": 64.36,
+      "ss": {
+        "0.0": 3219
+      },
+      "ct1": 0,
+      "vib1": 27,
+      "amp_max": 57,
+      "freq_nonzero": 13,
+      "valid": {
+        "9": 3206,
+        "B": 13
+      }
+    },
+    {
+      "first": 0,
+      "last": 7066,
+      "frames": 7067,
+      "seq_duration_s": 141.32,
+      "ss": {
+        "0.0": 3260,
+        "0.5": 597,
+        "1.02": 50,
+        "1.0": 921,
+        "2.0": 401,
+        "1.99": 299,
+        "2.01": 26,
+        "1.97": 24,
+        "1.94": 23,
+        "2.03": 25,
+        "2.95": 237,
+        "2.94": 305,
+        "3.0": 17,
+        "2.91": 100,
+        "2.97": 85,
+        "2.92": 119,
+        "2.93": 356,
+        "2.96": 188,
+        "2.9": 17,
+        "2.98": 17
+      },
+      "ct1": 871,
+      "vib1": 2986,
+      "amp_max": 669,
+      "freq_nonzero": 2315,
+      "valid": {
+        "0": 2,
+        "1": 38,
+        "9": 2641,
+        "B": 578,
+        "D": 2070,
+        "F": 1737,
+        "8": 1
+      }
+    }
+  ]
+}
+  SS run#2 seg#1 seq=1149~1745 dur=11.92s values={0.5: 597} ct1=205/597 vib1=250/597 amp=4~600
+  SS run#2 seg#2 seq=2248~2945 dur=13.94s values={1.02: 50, 1.0: 648} ct1=258/698 vib1=362/698 amp=4~533
+  SS run#2 seg#3 seq=3347~4144 dur=15.94s values={2.0: 401, 1.99: 299, 2.01: 26, 1.97: 24, 1.94: 23, 2.03: 25} ct1=0/798 vib1=496/798 amp=5~424
+  SS run#2 seg#4 seq=4398~5397 dur=19.98s values={2.95: 151, 2.94: 238, 3.0: 17, 2.91: 100, 2.97: 51, 2.92: 102, 2.93: 238, 2.96: 103} ct1=0/1000 vib1=662/1000 amp=4~288
+  SS run#2 seg#5 seq=5775~6047 dur=5.44s values={1.0: 273} ct1=106/273 vib1=161/273 amp=5~458
+  SS run#2 seg#6 seq=6099~6539 dur=8.80s values={2.9: 17, 2.93: 118, 2.96: 85, 2.98: 17, 2.94: 67, 2.92: 17, 2.95: 86, 2.97: 34} ct1=0/441 vib1=278/441 amp=5~278
+  CT runs in run#2: 762~804(0.84s), 859~904(0.90s), 959~1004(0.90s), 1059~1105(0.92s), 1161~1204(0.86s), 1260~1304(0.88s), 1360~1406(0.92s), 1459~1505(0.92s), 1559~1580(0.42s), 2161~2179(0.36s), 2210~2228(0.36s), 2257~2279(0.44s), 2309~2329(0.40s), 2359~2380(0.42s), 2410~2429(0.38s), 2458~2479(0.42s), 2509~2528(0.38s), 2560~2578(0.36s), 2609~2631(0.44s), 2659~2680(0.42s), 2708~2730(0.44s), 2759~2779(0.40s), 2808~2829(0.42s), 5586~5605(0.38s), 5636~5655(0.38s), 5685~5705(0.40s), 5735~5755(0.40s), 5785~5806(0.42s), 5835~5855(0.40s), 5884~5905(0.42s), 5935~5954(0.38s), 5984~6004(0.40s)

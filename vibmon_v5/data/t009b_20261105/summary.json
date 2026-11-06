@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-05",
+  "executor": "flash (Codex)",
+  "task_a": {
+    "source": "C:/Users/Lenovo/Desktop/STM32project/vibsource_c3_key/vibsource_c3_key.ino",
+    "changes": [
+      "autoTick restart bypasses setOut() so only the 80 ms CYCLE_KICK_MS kick runs",
+      "T0-T3 command no longer calls autoStart twice"
+    ],
+    "builds": {
+      "uart_disabled": {
+        "fqbn": "esp32:esp32:esp32c3",
+        "flash_bytes": 313848,
+        "ram_bytes": 14532,
+        "bin_sha256": "d49b1737269f445138ffc0a15bb8d871a42651cb0ed25da2441600a167e6540d"
+      },
+      "cdc_enabled": {
+        "fqbn": "esp32:esp32:esp32c3:CDCOnBoot=cdc",
+        "flash_bytes": 309384,
+        "ram_bytes": 14708,
+        "bin_sha256": "ed8cae92bcf86bd62fd3dd6fcffd3df6f04868658c3f6b8e1e20b34bfe50e9b3"
+      }
+    }
+  },
+  "task_b": {
+    "defaults": {
+      "CT_HOLD_ENABLE": 0,
+      "CT_HOLD_MS": 1200
+    },
+    "builds": {
+      "default_uart": {
+        "flash_bytes": 366342,
+        "ram_bytes": 30092,
+        "bin_sha256": "76ff9910fb4ae7119e761d407710a373b46f1beba90dc721318a8923e94280d4"
+      },
+      "default_cdc": {
+        "flash_bytes": 371442,
+        "ram_bytes": 30268,
+        "bin_sha256": "7024a406ec4c9a0258fc69ff547bfded211e71c3685d267ff455c42da27067f1"
+      },
+      "hold_uart": {
+        "flash_bytes": 366654,
+        "ram_bytes": 30100,
+        "bin_sha256": "ef87b296d578a123860c468ee420d3083f145ea73ebaeed238cbb1ace6d7d419"
+      },
+      "hold_cdc": {
+        "flash_bytes": 371768,
+        "ram_bytes": 30284,
+        "bin_sha256": "602f97f65a914c55c7c6e3ea87f83fc8000e4d27ad9001a4ee002e16e48ae0b1"
+      }
+    },
+    "host_tests": {
+      "contact_default": "46/46 pass",
+      "contact_hold": "56/56 pass",
+      "dump_default": "19 pass / 0 fail",
+      "gyro_default": "8/8 pass",
+      "comp_frame_default": "22 pass / 0 fail",
+      "dump_hold_probe": "5/5 pass"
+    },
+    "default_bin_diff_review": {
+      "uart_diff_byte_ranges_zero_based": [[176, 207], [9991, 9992], [9994, 9995], [366463, 366495]],
+      "cdc_diff_byte_ranges_zero_based": [[176, 207], [9923, 9924], [9926, 9927], [371551, 371583]],
+      "uart_normalized_equal": true,
+      "cdc_normalized_equal": true,
+      "note": "Differences are the 32-byte ELF SHA field, compile timestamp, and trailing image digest; after zeroing metadata ranges the images are byte-identical."
+    }
+  }
+}

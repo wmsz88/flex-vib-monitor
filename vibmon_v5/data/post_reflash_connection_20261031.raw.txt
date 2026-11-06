@@ -1,0 +1,73 @@
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 6.2 mg(可信)  振动 0  启停 0.00 Hz(未确立, 0 周期)
+接触 0(可信)  闭合角 0° (闭合>=60/退出45) [V]
+      幅值 6.2/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 0 / 停 0 | 读失败 0  缓冲溢出 0  不连续 0(缺 0, 抖动 0)  削顶 0  I2C错 0
+采样器 | 回调中 1  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=START stable=START d=5mg x/y/z=7/-0/1 窗口=有效 scnt=3 n=502 基线=2/0/1
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias -65.1/15.0/1080.6 mg  |g|=1083 mg  std 3.3/3.4/4.5 mg
+[CAL] 带内 sigma 3.00/2.78/3.94 mg  静置包络 5.67  静置姿态 1.13 mg
+[CAL] 阈值 过零 14.2 | 启停 28.3/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.02/0.05 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+
+#SWEEP t=16s F=      ?Hz A=     4.8mg D=     6mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=16s F=      ?Hz A=     5.4mg D=     6mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=17s F=      ?Hz A=     6.1mg D=     6mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=18s F=      ?Hz A=     5.5mg D=     6mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=18s F=      ?Hz A=     6.1mg D=     7mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=19s F=      ?Hz A=     5.0mg D=     7mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=19s F=      ?Hz A=     6.8mg D=     6mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=20s F=      ?Hz A=     4.4mg D=     7mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=20s F=      ?Hz A=     5.7mg D=     7mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=21s F=      ?Hz A=     5.8mg D=     7mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=21s F=      ?Hz A=     6.1mg D=     8mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=22s F=      ?Hz A=     5.5mg D=     8mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=22s F=      ?Hz A=     5.8mg D=     8mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=23s F=      ?Hz A=     4.7mg D=     8mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=23s F=      ?Hz A=     5.7mg D=     9mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=24s F=      ?Hz A=     6.3mg D=     8mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=24s F=      ?Hz A=     5.6mg D=     9mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=25s F=      ?Hz A=     5.6mg D=     9mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=25s F=      ?Hz A=     5.1mg D=     9mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=26s F=      ?Hz A=     5.9mg D=     9mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=26s F=      ?Hz A=     5.7mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=27s F=      ?Hz A=     4.8mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=27s F=      ?Hz A=     5.6mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.0 cliplim=0 ax=2 ok=0
+#SWEEP t=28s F=      ?Hz A=     5.9mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=29s F=      ?Hz A=     5.6mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=29s F=      ?Hz A=     5.6mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=30s F=      ?Hz A=     5.4mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=30s F=      ?Hz A=     4.8mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=31s F=      ?Hz A=     5.6mg D=    10mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=31s F=      ?Hz A=     5.0mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=32s F=      ?Hz A=     5.7mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=32s F=      ?Hz A=     4.6mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=33s F=      ?Hz A=     5.7mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+#SWEEP t=33s F=      ?Hz A=     6.2mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.1 cliplim=0 ax=2 ok=0
+#SWEEP t=34s F=      ?Hz A=     7.3mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.4 cliplim=0 ax=2 ok=0
+#SWEEP t=34s F=      ?Hz A=     5.7mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=35s F=      ?Hz A=     5.9mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=35s F=      ?Hz A=     5.3mg D=    11mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.2 cliplim=0 ax=2 ok=0
+#SWEEP t=36s F=      ?Hz A=     6.0mg D=    12mg ang=    0deg tr=    1mg vib=0 ct=0 grip=0 cl=0 w=0.3 cliplim=0 ax=2 ok=0
+
+--- 状态 ---
+传感器 在线  标定 有效/合格  绘图组 0(关)  调试行 关
+主频 0.0 Hz(无效)  幅值 4.2 mg(可信)  振动 0  启停 0.00 Hz(未确立, 0 周期)
+接触 0(可信)  闭合角 0° (闭合>=60/退出45) [V]
+      幅值 4.2/400 mg [-]  频率 0.0/120 Hz [-]  三路与=0
+起 0 / 停 0 | 读失败 0  缓冲溢出 0  不连续 0(缺 0, 抖动 0)  削顶 0  I2C错 0
+采样器 | 回调中 0  停止超时 0  非法重置 0  定时器错 0(0x00)
+姿态诊断 | raw=START stable=START d=11mg x/y/z=13/0/3 窗口=有效 scnt=3 n=502 基线=2/0/1
+[CAL] 本次：成功，已提交
+[CAL] 生效：有效标定 | 质量合格 | 样本 2285
+[CAL] bias -65.1/15.0/1080.6 mg  |g|=1083 mg  std 3.3/3.4/4.5 mg
+[CAL] 带内 sigma 3.00/2.78/3.94 mg  静置包络 5.67  静置姿态 1.13 mg
+[CAL] 阈值 过零 14.2 | 启停 28.3/14.2 | 接触 30.0/18.0 mg
+[CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+[GYRO] 零偏 7.99/4.02/0.05 dps  标准差最大 0.14 dps  量程 ±500 dps  采样 250 Hz
+

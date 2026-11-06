@@ -10,7 +10,7 @@
 #define LED_ACTIVE_LOW 0         // 1 = 灌电流接法（GPIO 低电平点亮）
 
 /* ---------- 调试口（Serial） ---------- */
-#define UART_SWAP      0         // 1 = 交换 TX/RX
+#define UART_SWAP      1        // 1 = 交换 TX/RX
 #if UART_SWAP
   #define PIN_DEBUG_TX  20
   #define PIN_DEBUG_RX  21
@@ -36,10 +36,20 @@
 #endif
 /* 比赛帧开关：协议/口径确定前保持 0，比赛口完全不发送任何字节 */
 #ifndef COMP_FRAME_ENABLED
-#define COMP_FRAME_ENABLED 0
+#define COMP_FRAME_ENABLED 1
 #endif
 #ifndef COMP_PERIOD_MS
 #define COMP_PERIOD_MS 20        // 50Hz
+#endif
+/* 比赛帧是否带 CL（closed，手指闭合）字段：默认 0 = 关闭。
+ * 关闭时帧与历史版本**逐字节一致**（35 字节），现场平台允许改帧格式后
+ * 只需把这里改成 1 重新烧录，不需要动 output.cpp：
+ *   关闭：$VD,SEQ,FREQx10,AMP_MG,VIB,CT,SSx100,VALID,CHK           (35 字节)
+ *   开启：$VD,SEQ,FREQx10,AMP_MG,VIB,CT,CL,SSx100,VALID,CHK        (37 字节)
+ * 为什么单独一个 CL 位：CT=0 时平台看不出是"手没合"还是"合了但没振动证据"，
+ * closed=1 且 CT=0 即空握/无振动证据；closed=0 即尚未握下。 */
+#ifndef COMP_FRAME_CL
+#define COMP_FRAME_CL 0
 #endif
 
 /* ---------- MPU6050 ---------- */
@@ -323,6 +333,44 @@
 #define CT_OFF_RATIO     0.6f    // 模式 0/1 用：释放阈值 = 比例 × 接触阈值（滞回）
 #define CT_CONFIRM_MS    100     // 接触状态翻转确认时间（四种模式共用）
 
+/* ---------- 启停 CT 保持门控（任务 B） ----------
+ * 默认关闭，保证出发固件行为不变；开宏后仅在“姿态仍闭合”时，
+ * 用最近一次振动证据把 contact 延长到 CT_HOLD_MS，覆盖自动启停 OFF 段。
+ * 进入条件不放宽，松手/姿态打开仍立即退出。
+ */
+#ifndef CT_HOLD_ENABLE
+#define CT_HOLD_ENABLE   1
+#endif
+#ifndef CT_HOLD_MS
+#define CT_HOLD_MS       1200
+#endif
+
+/* ---------- 启停节奏进入接触（T011 场外，2026-11-05） ----------
+ * 2/3Hz 启停的 ON 窗只有 250/167ms，振子建不到 CT_FLAT_A_ON_MG，进不了接触。
+ * 不降幅值门（手指动作瞬态 250~1179mg 会误进），改用"启停频率已锁定"作第二条进入证据：
+ * 锁定需要 ≥SS_MIN_PERIODS 个规律周期，手指动作是一次性的形不成节奏
+ * （实测空握/夹物出现过的读数只有 0.11/0.87Hz）。
+ * 只对 ≥CT_SS_ENTRY_MIN_HZ 生效：0.5/1Hz 走原幅值路径即可进入。
+ * 依赖 hold 覆盖 OFF 段，所以只能和 CT_HOLD_ENABLE 一起开。 */
+#ifndef CT_SS_ENTRY_ENABLE
+#define CT_SS_ENTRY_ENABLE  CT_HOLD_ENABLE
+#endif
+#ifndef CT_SS_ENTRY_MIN_HZ
+#define CT_SS_ENTRY_MIN_HZ  1.5f
+#endif
+
+/* ---------- 启停缺口假边沿修正（T011-2 场外，2026-11-06） ----------
+ * 实板 结果\T009\新\3.txt 75.8s：0.5Hz ON 段中途一次采样缺口后读数掉了 8s。
+ * 原因：缺口后把 s_ssVib 清 0，下一个包络点（仍在 ON 段）被当成"起振"，插进 0.4s 假周期，
+ * 一致性检查要等它滑出 SS_USE_PERIODS 窗口才恢复。改为置 1：缺口后先确认一次下降才接受起振。
+ * 代价：缺口恰好落在真起振上时少记一个边沿（该周期算成 2 倍，同样被一致性检查拒掉）。
+ * 实板回放：空握假读数不增加（11→9 秒），76~83s 掉线消失。
+ * 试过"从最新周期往回取一致段"让 0.5Hz 读数提前 4s，但空握假读数 11→27 秒，已撤回。
+ * 默认跟随 CT_HOLD_ENABLE，出发默认版不变。 */
+#ifndef SS_EDGE_FIX_ENABLE
+#define SS_EDGE_FIX_ENABLE  CT_HOLD_ENABLE
+#endif
+
 /* ---------- 模式 2：到接触姿态的距离判据（v3 原判据，保留对比）----------
  * 【数值来源】c4.csv 5 轮握/松 + c5.csv 3 分钟静置，见 07-Q4 文档 §5。
  *   握住：到接触姿态 6~1309 mg（稳态多数 <50）
@@ -584,6 +632,24 @@
 /* ---------- 其它 ---------- */
 #if (CT_CONFIRM_MS < 0)
   #error "CT_CONFIRM_MS 不能为负"
+#endif
+#if (CT_HOLD_ENABLE != 0) && (CT_HOLD_ENABLE != 1)
+  #error "CT_HOLD_ENABLE 只能为 0 或 1"
+#endif
+#if CT_HOLD_ENABLE && (CT_HOLD_MS <= CT_CONFIRM_MS)
+  #error "CT_HOLD_MS 必须大于 CT_CONFIRM_MS"
+#endif
+#if CT_HOLD_ENABLE && (CT_HOLD_MS < 0)
+  #error "CT_HOLD_MS 不能为负"
+#endif
+#if (CT_SS_ENTRY_ENABLE != 0) && (CT_SS_ENTRY_ENABLE != 1)
+  #error "CT_SS_ENTRY_ENABLE 只能为 0 或 1"
+#endif
+#if (SS_EDGE_FIX_ENABLE != 0) && (SS_EDGE_FIX_ENABLE != 1)
+  #error "SS_EDGE_FIX_ENABLE 只能为 0 或 1"
+#endif
+#if CT_SS_ENTRY_ENABLE && !CT_HOLD_ENABLE
+  #error "CT_SS_ENTRY_ENABLE 依赖 CT_HOLD_ENABLE：没有 hold，OFF 段会在 CT_CONFIRM_MS 后掉 0"
 #endif
 #if (CAL_RETRY_MS <= 0)
   #error "CAL_RETRY_MS 必须大于 0"

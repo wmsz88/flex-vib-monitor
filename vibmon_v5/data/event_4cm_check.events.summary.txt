@@ -1,0 +1,2 @@
+事件数: 0
+参数: start=10deg move=3dps still=20dps plateau=250ms commit=300ms open=20deg openStill=500ms
