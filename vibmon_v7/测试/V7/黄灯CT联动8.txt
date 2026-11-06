@@ -1,0 +1,430 @@
+夹1	23:05:43.653	#F=145.7 A=4.8 vib=1 SS=0.00(x) ct=0 dev=1046.5 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.659	#V6 closed=0 ang=123.8 lpW=3.2 settled=1 moved=0.0
+夹1	23:05:43.660	#F=176.1 A=6.0 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.660	#V6 closed=0 ang=124.4 lpW=3.3 settled=1 moved=0.0
+夹1	23:05:43.660	#F=165.1 A=5.5 vib=1 SS=0.00(x) ct=0 dev=1046.3 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.660	#V6 closed=0 ang=124.9 lpW=3.1 settled=1 moved=0.0
+夹1	23:05:43.660	#F=163.3 A=7.3 vib=1 SS=0.00(x) ct=0 dev=1046.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.660	#V6 closed=0 ang=125.5 lpW=3.3 settled=1 moved=0.0
+夹1	23:05:43.660	#F=147.6 A=5.0 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.660	#V6 closed=0 ang=126.0 lpW=3.1 settled=1 moved=0.0
+夹1	23:05:43.660	#F=160.3 A=6.2 vib=1 SS=0.00(x) ct=0 dev=1046.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.660	#V6 closed=0 ang=126.8 lpW=4.5 settled=1 moved=0.0
+夹1	23:05:43.660	#F=190.7 A=7.0 vib=1 SS=0.00(x) ct=0 dev=1046.5 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.660	#V6 closed=0 ang=127.4 lpW=3.3 settled=1 moved=0.0
+夹1	23:05:43.661	#F=142.8 A=81.4 vib=1 SS=0.00(x) ct=0 dev=1046.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.661	#V6 closed=0 ang=128.2 lpW=4.7 settled=1 moved=0.0
+夹1	23:05:43.661	#F=109.9 A=4.9 vib=1 SS=0.00(x) ct=0 dev=1045.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.661	#V6 closed=0 ang=128.7 lpW=3.2 settled=1 moved=0.0
+夹1	23:05:43.661	#F=164.0 A=7.0 vib=1 SS=0.00(x) ct=0 dev=1045.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.661	#V6 closed=0 ang=129.2 lpW=3.1 settled=1 moved=0.0
+夹1	23:05:43.661	#F=114.9 A=9.7 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.661	#V6 closed=0 ang=129.7 lpW=2.4 settled=1 moved=0.0
+夹1	23:05:43.661	#F=0.0(x) A=11.9 vib=1 SS=0.00(x) ct=0 dev=1046.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.661	#V6 closed=0 ang=130.3 lpW=3.1 settled=1 moved=0.0
+夹1	23:05:43.661	#F=161.9 A=6.4 vib=1 SS=0.00(x) ct=0 dev=1046.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.661	#V6 closed=0 ang=130.8 lpW=3.2 settled=1 moved=0.0
+夹1	23:05:43.661	#F=172.9 A=12.5 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.662	#V6 closed=0 ang=131.4 lpW=3.2 settled=1 moved=0.0
+夹1	23:05:43.662	#F=127.2 A=249.3 vib=1 SS=0.00(x) ct=0 dev=1046.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.662	#V6 closed=0 ang=130.4 lpW=8.8 settled=1 moved=0.0
+夹1	23:05:43.662	#F=119.7 A=228.1 vib=1 SS=0.00(x) ct=0 dev=1056.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.662	#V6 closed=0 ang=129.3 lpW=7.8 settled=0 moved=0.0
+夹1	23:05:43.662	#F=139.4 A=159.3 vib=1 SS=0.00(x) ct=0 dev=1081.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.662	#V6 closed=0 ang=128.9 lpW=79.8 settled=0 moved=0.0
+夹1	23:05:43.662	#F=127.4 A=356.3 vib=1 SS=0.00(x) ct=0 dev=995.3 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.662	#V6 closed=0 ang=128.2 lpW=127.1 settled=0 moved=0.0
+夹1	23:05:43.662	#F=122.7 A=300.9 vib=1 SS=0.00(x) ct=0 dev=953.7 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.662	#V6 closed=1 ang=127.2 lpW=98.1 settled=0 moved=0.0
+夹1	23:05:43.662	#F=125.5 A=581.9 vib=1 SS=0.00(x) ct=0 dev=966.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.662	#V6 closed=1 ang=126.6 lpW=97.6 settled=0 moved=0.0
+夹1	23:05:43.662	#F=128.7 A=374.8 vib=1 SS=0.00(x) ct=0 dev=977.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.663	#V6 closed=1 ang=126.1 lpW=22.3 settled=0 moved=0.0
+夹1	23:05:43.663	#F=145.1 A=316.4 vib=1 SS=0.00(x) ct=0 dev=998.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.663	#V6 closed=1 ang=125.2 lpW=22.6 settled=0 moved=0.0
+夹1	23:05:43.663	#F=125.9 A=564.0 vib=1 SS=0.00(x) ct=0 dev=1014.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=4
+夹1	23:05:43.663	#V6 closed=1 ang=126.7 lpW=8.1 settled=0 moved=0.0
+夹1	23:05:43.663	#F=132.1 A=776.7 vib=1 SS=0.00(x) ct=0 dev=1018.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6 [clip]
+夹1	23:05:43.663	#V6 closed=1 ang=127.5 lpW=9.8 settled=0 moved=0.0
+夹1	23:05:43.663	#F=128.6 A=784.3 vib=1 SS=0.00(x) ct=0 dev=1018.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:43.663	#V6 closed=1 ang=127.2 lpW=20.5 settled=0 moved=0.0
+夹1	23:05:43.862	#F=125.2 A=573.2 vib=1 SS=0.00(x) ct=0 dev=1019.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:43.862	#V6 closed=1 ang=125.2 lpW=16.3 settled=0 moved=0.0
+夹1	23:05:44.063	#F=125.3 A=580.5 vib=1 SS=0.00(x) ct=0 dev=1015.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:44.063	#V6 closed=1 ang=126.5 lpW=8.8 settled=0 moved=0.0
+夹1	23:05:44.264	#F=125.2 A=607.2 vib=1 SS=0.00(x) ct=0 dev=1017.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:44.264	#V6 closed=1 ang=127.0 lpW=3.5 settled=1 moved=0.0
+夹1	23:05:44.434	#F=125.9 A=579.9 vib=1 SS=0.00(x) ct=1 dev=1022.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:44.434	#V6 closed=1 ang=127.6 lpW=3.6 settled=1 moved=0.5
+夹1	23:05:44.652	#F=125.9 A=589.9 vib=1 SS=0.00(x) ct=1 dev=1010.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:44.652	#V6 closed=1 ang=128.2 lpW=3.7 settled=1 moved=1.0
+夹1	23:05:44.840	#F=126.1 A=582.0 vib=1 SS=0.00(x) ct=1 dev=1023.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:44.841	#V6 closed=1 ang=128.3 lpW=5.2 settled=1 moved=1.1
+夹1	23:05:45.040	#F=125.9 A=609.4 vib=1 SS=0.00(x) ct=1 dev=1013.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:45.040	#V6 closed=1 ang=128.8 lpW=4.1 settled=1 moved=1.3
+夹1	23:05:45.257	#F=126.3 A=627.2 vib=1 SS=0.00(x) ct=1 dev=1020.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:45.257	#V6 closed=1 ang=129.2 lpW=3.1 settled=1 moved=1.5
+夹1	23:05:45.441	#F=126.7 A=696.8 vib=1 SS=0.00(x) ct=1 dev=1014.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:45.441	#V6 closed=1 ang=129.7 lpW=3.2 settled=1 moved=1.5
+夹1	23:05:45.644	#F=126.7 A=681.0 vib=1 SS=0.00(x) ct=1 dev=1016.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:45.644	#V6 closed=1 ang=130.3 lpW=3.4 settled=1 moved=1.5
+夹1	23:05:45.862	#F=126.7 A=684.9 vib=1 SS=0.00(x) ct=1 dev=1015.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:45.862	#V6 closed=1 ang=130.9 lpW=3.6 settled=1 moved=1.6
+夹1	23:05:46.049	#F=126.9 A=661.0 vib=1 SS=0.00(x) ct=1 dev=1013.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:46.049	#V6 closed=1 ang=131.4 lpW=3.4 settled=1 moved=1.6
+夹1	23:05:46.235	#F=127.0 A=614.1 vib=1 SS=0.00(x) ct=1 dev=1022.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:46.235	#V6 closed=1 ang=132.0 lpW=3.4 settled=1 moved=1.6
+夹1	23:05:46.451	#F=127.0 A=603.6 vib=1 SS=0.00(x) ct=1 dev=1021.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:46.451	#V6 closed=1 ang=132.5 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:46.639	#F=126.8 A=626.5 vib=1 SS=0.00(x) ct=1 dev=1017.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:46.639	#V6 closed=1 ang=133.1 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:46.840	#F=126.8 A=611.9 vib=1 SS=0.00(x) ct=1 dev=1022.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:46.840	#V6 closed=1 ang=133.7 lpW=3.2 settled=1 moved=1.7
+夹1	23:05:47.041	#F=126.9 A=646.0 vib=1 SS=0.00(x) ct=1 dev=1019.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:47.041	#V6 closed=1 ang=134.2 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:47.259	#F=126.9 A=671.3 vib=1 SS=0.00(x) ct=1 dev=1014.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:47.259	#V6 closed=1 ang=134.8 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:47.462	#F=127.0 A=643.5 vib=1 SS=0.00(x) ct=1 dev=1018.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:47.462	#V6 closed=1 ang=135.4 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:47.649	#F=126.8 A=658.7 vib=1 SS=0.00(x) ct=1 dev=1007.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:47.649	#V6 closed=1 ang=135.9 lpW=3.2 settled=1 moved=1.7
+夹1	23:05:47.864	#F=126.6 A=666.7 vib=1 SS=0.00(x) ct=1 dev=1014.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:47.864	#V6 closed=1 ang=136.5 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:48.034	#F=126.9 A=659.4 vib=1 SS=0.00(x) ct=1 dev=1019.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:48.034	#V6 closed=1 ang=137.0 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:48.265	#F=126.9 A=646.8 vib=1 SS=0.00(x) ct=1 dev=1010.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:48.265	#V6 closed=1 ang=137.6 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:48.433	#F=126.6 A=628.6 vib=1 SS=0.00(x) ct=1 dev=1016.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:48.433	#V6 closed=1 ang=138.2 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:48.636	#F=126.9 A=647.4 vib=1 SS=0.00(x) ct=1 dev=1016.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:48.636	#V6 closed=1 ang=138.7 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:48.870	#F=127.0 A=601.4 vib=1 SS=0.00(x) ct=1 dev=1014.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:48.870	#V6 closed=1 ang=139.3 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:49.061	#F=126.9 A=609.1 vib=1 SS=0.00(x) ct=1 dev=1023.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:49.061	#V6 closed=1 ang=139.9 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:49.261	#F=126.9 A=658.1 vib=1 SS=0.00(x) ct=1 dev=1020.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:49.261	#V6 closed=1 ang=140.4 lpW=3.6 settled=1 moved=1.7
+夹1	23:05:49.433	#F=126.6 A=688.0 vib=1 SS=0.00(x) ct=1 dev=1017.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:49.433	#V6 closed=1 ang=140.9 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:49.650	#F=126.7 A=655.7 vib=1 SS=0.00(x) ct=1 dev=1025.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:49.650	#V6 closed=1 ang=141.5 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:49.852	#F=126.9 A=635.5 vib=1 SS=0.00(x) ct=1 dev=1016.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:49.852	#V6 closed=1 ang=142.1 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:50.039	#F=126.9 A=675.5 vib=1 SS=0.00(x) ct=1 dev=1016.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:50.039	#V6 closed=1 ang=142.6 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:50.244	#F=126.8 A=632.8 vib=1 SS=0.00(x) ct=1 dev=1017.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:50.244	#V6 closed=1 ang=143.2 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:50.463	#F=126.8 A=666.4 vib=1 SS=0.00(x) ct=1 dev=1011.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:50.463	#V6 closed=1 ang=143.8 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:50.633	#F=126.7 A=670.1 vib=1 SS=0.00(x) ct=1 dev=1015.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:50.633	#V6 closed=1 ang=144.3 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:50.848	#F=126.9 A=665.6 vib=1 SS=0.00(x) ct=1 dev=1017.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:50.849	#V6 closed=1 ang=144.9 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:51.064	#F=126.7 A=657.1 vib=1 SS=0.00(x) ct=1 dev=1007.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:51.064	#V6 closed=1 ang=145.4 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:51.235	#F=126.9 A=687.9 vib=1 SS=0.00(x) ct=1 dev=1018.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:51.235	#V6 closed=1 ang=146.0 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:51.434	#F=126.8 A=671.7 vib=1 SS=0.00(x) ct=1 dev=1018.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:51.434	#V6 closed=1 ang=146.6 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:51.652	#F=126.9 A=648.3 vib=1 SS=0.00(x) ct=1 dev=1010.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:51.652	#V6 closed=1 ang=147.1 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:51.839	#F=127.0 A=678.3 vib=1 SS=0.00(x) ct=1 dev=1017.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:51.839	#V6 closed=1 ang=147.7 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:52.044	#F=127.0 A=682.2 vib=1 SS=0.00(x) ct=1 dev=1012.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:52.044	#V6 closed=1 ang=148.2 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:52.262	#F=126.8 A=667.3 vib=1 SS=0.00(x) ct=1 dev=1009.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:52.262	#V6 closed=1 ang=148.8 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:52.450	#F=127.0 A=664.9 vib=1 SS=0.00(x) ct=1 dev=1015.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:52.450	#V6 closed=1 ang=149.4 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:52.634	#F=127.2 A=667.9 vib=1 SS=0.00(x) ct=1 dev=1012.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:52.634	#V6 closed=1 ang=149.9 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:52.851	#F=127.0 A=675.0 vib=1 SS=0.00(x) ct=1 dev=1010.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:52.851	#V6 closed=1 ang=150.5 lpW=3.4 settled=1 moved=1.7
+夹1	23:05:53.036	#F=127.0 A=685.1 vib=1 SS=0.00(x) ct=1 dev=1017.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:53.036	#V6 closed=1 ang=151.1 lpW=3.3 settled=1 moved=1.7
+夹1	23:05:53.238	#F=127.0 A=703.5 vib=1 SS=0.00(x) ct=1 dev=1019.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:53.238	#V6 closed=1 ang=151.6 lpW=3.5 settled=1 moved=1.7
+夹1	23:05:53.438	#F=126.7 A=700.6 vib=1 SS=0.00(x) ct=1 dev=1010.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+夹1	23:05:53.438	#V6 closed=1 ang=152.1 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.675	#F=126.6 A=770.3 vib=1 SS=0.00(x) ct=1 dev=1022.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.675	#V6 closed=1 ang=152.7 lpW=3.3 settled=1 moved=1.7
+松	23:05:59.675	#F=126.7 A=696.5 vib=1 SS=0.00(x) ct=1 dev=1014.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.675	#V6 closed=1 ang=153.3 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.675	#F=127.0 A=688.0 vib=1 SS=0.00(x) ct=1 dev=1016.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.676	#V6 closed=1 ang=153.9 lpW=3.6 settled=1 moved=1.7
+松	23:05:59.676	#F=126.8 A=655.8 vib=1 SS=0.00(x) ct=1 dev=1021.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.676	#V6 closed=1 ang=154.4 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.676	#F=126.8 A=669.1 vib=1 SS=0.00(x) ct=1 dev=1011.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.676	#V6 closed=1 ang=155.0 lpW=3.2 settled=1 moved=1.7
+松	23:05:59.676	#F=126.9 A=692.4 vib=1 SS=0.00(x) ct=1 dev=1017.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.676	#V6 closed=1 ang=155.6 lpW=3.5 settled=1 moved=1.7
+松	23:05:59.676	#F=126.7 A=688.4 vib=1 SS=0.00(x) ct=1 dev=1020.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.676	#V6 closed=1 ang=156.1 lpW=3.6 settled=1 moved=1.7
+松	23:05:59.676	#F=126.7 A=672.4 vib=1 SS=0.00(x) ct=1 dev=1013.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.676	#V6 closed=1 ang=156.7 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.697	#F=126.7 A=683.5 vib=1 SS=0.00(x) ct=1 dev=1024.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=157.2 lpW=3.3 settled=1 moved=1.7
+松	23:05:59.698	#F=126.9 A=683.9 vib=1 SS=0.00(x) ct=1 dev=1017.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=157.8 lpW=3.5 settled=1 moved=1.7
+松	23:05:59.698	#F=126.8 A=668.6 vib=1 SS=0.00(x) ct=1 dev=1014.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=158.4 lpW=3.5 settled=1 moved=1.7
+松	23:05:59.698	#F=127.0 A=663.5 vib=1 SS=0.00(x) ct=1 dev=1018.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=158.9 lpW=3.2 settled=1 moved=1.7
+松	23:05:59.698	#F=126.8 A=650.8 vib=1 SS=0.00(x) ct=1 dev=1013.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=159.5 lpW=3.3 settled=1 moved=1.7
+松	23:05:59.698	#F=126.7 A=685.0 vib=1 SS=0.00(x) ct=1 dev=1014.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=160.1 lpW=3.6 settled=1 moved=1.7
+松	23:05:59.698	#F=126.9 A=687.5 vib=1 SS=0.00(x) ct=1 dev=1018.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=160.6 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.698	#F=126.8 A=704.5 vib=1 SS=0.00(x) ct=1 dev=1009.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=161.1 lpW=3.2 settled=1 moved=1.7
+松	23:05:59.698	#F=126.6 A=728.8 vib=1 SS=0.00(x) ct=1 dev=1018.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=161.8 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.698	#F=126.6 A=719.5 vib=1 SS=0.00(x) ct=1 dev=1015.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.698	#V6 closed=1 ang=162.3 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.698	#F=126.7 A=774.0 vib=1 SS=0.00(x) ct=1 dev=1012.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.699	#V6 closed=1 ang=162.9 lpW=3.6 settled=1 moved=1.7
+松	23:05:59.699	#F=126.9 A=804.3 vib=1 SS=0.00(x) ct=1 dev=1020.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.699	#V6 closed=1 ang=163.4 lpW=3.4 settled=1 moved=1.7
+松	23:05:59.699	#F=126.9 A=780.0 vib=1 SS=0.00(x) ct=1 dev=1010.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.699	#V6 closed=1 ang=164.0 lpW=3.3 settled=1 moved=1.7
+松	23:05:59.699	#F=126.6 A=728.1 vib=1 SS=0.00(x) ct=1 dev=1016.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.699	#V6 closed=1 ang=164.6 lpW=3.5 settled=1 moved=1.7
+松	23:05:59.699	#F=125.4 A=715.8 vib=1 SS=0.00(x) ct=1 dev=1013.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.699	#V6 closed=1 ang=165.5 lpW=5.8 settled=1 moved=1.8
+松	23:05:59.699	#F=124.7 A=256.4 vib=1 SS=0.00(x) ct=1 dev=1015.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=6
+松	23:05:59.699	#V6 closed=1 ang=166.6 lpW=14.2 settled=0 moved=2.2
+松	23:05:59.699	#F=134.8 A=476.9 vib=1 SS=0.00(x) ct=1 dev=1005.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.699	#V6 closed=1 ang=168.0 lpW=32.2 settled=0 moved=7.1
+松	23:05:59.699	#F=129.1 A=430.3 vib=1 SS=0.00(x) ct=0 dev=1009.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.699	#V6 closed=1 ang=170.7 lpW=108.5 settled=0 moved=0.0
+松	23:05:59.699	#F=127.2 A=225.1 vib=1 SS=0.00(x) ct=0 dev=987.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.699	#V6 closed=1 ang=170.6 lpW=96.7 settled=0 moved=0.0
+松	23:05:59.699	#F=141.3 A=27.9 vib=1 SS=0.00(x) ct=0 dev=1011.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.699	#V6 closed=1 ang=171.4 lpW=38.0 settled=0 moved=0.0
+松	23:05:59.699	#F=90.8 A=11.2 vib=1 SS=0.00(x) ct=0 dev=1014.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.699	#V6 closed=1 ang=172.2 lpW=19.5 settled=0 moved=0.0
+松	23:05:59.699	#F=65.8 A=155.9 vib=1 SS=0.00(x) ct=0 dev=1050.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.699	#V6 closed=1 ang=173.4 lpW=39.5 settled=0 moved=0.0
+松	23:05:59.699	#F=95.6 A=7.1 vib=1 SS=0.00(x) ct=0 dev=1042.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.699	#V6 closed=0 ang=174.5 lpW=8.7 settled=0 moved=0.0
+松	23:05:59.861	#F=180.5 A=7.7 vib=1 SS=0.00(x) ct=0 dev=1041.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:05:59.861	#V6 closed=0 ang=174.9 lpW=5.6 settled=1 moved=0.0
+松	23:06:00.046	#F=68.1 A=81.8 vib=1 SS=0.00(x) ct=0 dev=1059.5 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:00.046	#V6 closed=0 ang=175.7 lpW=15.3 settled=0 moved=0.0
+松	23:06:00.234	#F=141.5 A=12.7 vib=1 SS=0.00(x) ct=0 dev=1047.3 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:00.234	#V6 closed=0 ang=176.1 lpW=2.4 settled=0 moved=0.0
+松	23:06:00.452	#F=148.5 A=15.1 vib=1 SS=0.00(x) ct=0 dev=1040.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:00.452	#V6 closed=0 ang=177.8 lpW=13.3 settled=0 moved=0.0
+松	23:06:00.656	#F=131.9 A=31.6 vib=1 SS=0.00(x) ct=0 dev=1045.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:00.656	#V6 closed=0 ang=178.8 lpW=4.9 settled=0 moved=0.0
+松	23:06:00.842	#F=186.0 A=24.0 vib=1 SS=0.00(x) ct=0 dev=1042.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:00.842	#V6 closed=0 ang=181.5 lpW=7.8 settled=0 moved=0.0
+松	23:06:01.059	#F=135.4 A=9.0 vib=1 SS=0.00(x) ct=0 dev=1046.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:01.059	#V6 closed=0 ang=182.1 lpW=3.0 settled=1 moved=0.0
+松	23:06:01.248	#F=159.7 A=5.2 vib=1 SS=0.00(x) ct=0 dev=1045.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:01.248	#V6 closed=0 ang=182.7 lpW=3.0 settled=1 moved=0.0
+松	23:06:01.465	#F=155.3 A=5.3 vib=1 SS=0.00(x) ct=0 dev=1045.5 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:01.465	#V6 closed=0 ang=183.2 lpW=3.0 settled=1 moved=0.0
+松	23:06:01.651	#F=165.7 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1045.5 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:01.652	#V6 closed=0 ang=183.8 lpW=3.0 settled=1 moved=0.0
+松	23:06:01.853	#F=138.9 A=6.1 vib=1 SS=0.00(x) ct=0 dev=1045.8 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:01.853	#V6 closed=0 ang=184.4 lpW=3.0 settled=1 moved=0.0
+松	23:06:02.059	#F=162.6 A=6.9 vib=1 SS=0.00(x) ct=0 dev=1046.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:02.059	#V6 closed=0 ang=185.0 lpW=3.0 settled=1 moved=0.0
+松	23:06:02.274	#F=147.3 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1045.8 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:02.274	#V6 closed=0 ang=185.6 lpW=3.0 settled=1 moved=0.0
+松	23:06:02.459	#F=175.7 A=5.2 vib=1 SS=0.00(x) ct=0 dev=1045.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:02.459	#V6 closed=0 ang=186.1 lpW=3.0 settled=1 moved=0.0
+松	23:06:02.677	#F=170.8 A=5.5 vib=1 SS=0.00(x) ct=0 dev=1045.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:02.677	#V6 closed=0 ang=186.7 lpW=3.0 settled=1 moved=0.0
+松	23:06:02.865	#F=159.4 A=6.1 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:02.865	#V6 closed=0 ang=187.3 lpW=3.0 settled=1 moved=0.0
+松	23:06:03.052	#F=183.4 A=5.2 vib=1 SS=0.00(x) ct=0 dev=1046.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:03.052	#V6 closed=0 ang=187.9 lpW=3.0 settled=1 moved=0.0
+松	23:06:03.257	#F=168.2 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1045.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:03.257	#V6 closed=0 ang=188.5 lpW=3.0 settled=1 moved=0.0
+松	23:06:03.441	#F=164.1 A=5.5 vib=1 SS=0.00(x) ct=0 dev=1046.0 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:03.441	#V6 closed=0 ang=189.0 lpW=3.0 settled=1 moved=0.0
+松	23:06:03.657	#F=171.0 A=6.2 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:03.657	#V6 closed=0 ang=189.6 lpW=3.1 settled=1 moved=0.0
+松	23:06:03.857	#F=167.6 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1046.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:03.857	#V6 closed=0 ang=190.2 lpW=3.1 settled=1 moved=0.0
+松	23:06:04.059	#F=168.5 A=5.1 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:04.059	#V6 closed=0 ang=190.8 lpW=3.0 settled=1 moved=0.0
+松	23:06:04.244	#F=160.3 A=6.0 vib=1 SS=0.00(x) ct=0 dev=1046.0 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:04.244	#V6 closed=0 ang=191.3 lpW=3.1 settled=1 moved=0.0
+松	23:06:04.448	#F=156.8 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1045.7 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:04.448	#V6 closed=0 ang=191.9 lpW=3.1 settled=1 moved=0.0
+松	23:06:04.650	#F=169.9 A=6.5 vib=1 SS=0.00(x) ct=0 dev=1045.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:04.650	#V6 closed=0 ang=192.5 lpW=3.1 settled=1 moved=0.0
+松	23:06:04.834	#F=187.1 A=4.9 vib=1 SS=0.00(x) ct=0 dev=1045.7 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:04.834	#V6 closed=0 ang=193.1 lpW=3.1 settled=1 moved=0.0
+松	23:06:05.052	#F=177.1 A=18.2 vib=1 SS=0.00(x) ct=0 dev=1044.3 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:05.052	#V6 closed=0 ang=193.7 lpW=3.3 settled=1 moved=0.0
+松	23:06:05.240	#F=162.2 A=6.0 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:05.240	#V6 closed=0 ang=194.3 lpW=3.1 settled=1 moved=0.0
+松	23:06:05.442	#F=161.7 A=5.1 vib=1 SS=0.00(x) ct=0 dev=1045.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:05.442	#V6 closed=0 ang=194.8 lpW=3.1 settled=1 moved=0.0
+松	23:06:05.662	#F=141.8 A=6.9 vib=1 SS=0.00(x) ct=0 dev=1045.7 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:05.662	#V6 closed=0 ang=195.4 lpW=3.1 settled=1 moved=0.0
+松	23:06:05.850	#F=157.9 A=6.0 vib=1 SS=0.00(x) ct=0 dev=1045.7 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:05.850	#V6 closed=0 ang=196.0 lpW=3.1 settled=1 moved=0.0
+松	23:06:06.037	#F=153.5 A=6.1 vib=1 SS=0.00(x) ct=0 dev=1045.7 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:06.037	#V6 closed=0 ang=196.5 lpW=3.1 settled=1 moved=0.0
+松	23:06:06.236	#F=169.4 A=6.1 vib=1 SS=0.00(x) ct=0 dev=1046.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:06.236	#V6 closed=0 ang=197.1 lpW=3.1 settled=1 moved=0.0
+松	23:06:06.470	#F=161.3 A=6.3 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:06.470	#V6 closed=0 ang=197.7 lpW=3.1 settled=1 moved=0.0
+松	23:06:06.659	#F=168.3 A=5.1 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:06.659	#V6 closed=0 ang=198.2 lpW=3.1 settled=1 moved=0.0
+松	23:06:06.846	#F=146.6 A=4.7 vib=1 SS=0.00(x) ct=0 dev=1046.5 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:06.846	#V6 closed=0 ang=198.8 lpW=3.1 settled=1 moved=0.0
+松	23:06:07.046	#F=177.7 A=5.4 vib=1 SS=0.00(x) ct=0 dev=1046.0 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:07.046	#V6 closed=0 ang=199.4 lpW=3.1 settled=1 moved=0.0
+松	23:06:07.234	#F=169.5 A=6.1 vib=1 SS=0.00(x) ct=0 dev=1046.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:07.234	#V6 closed=0 ang=200.0 lpW=3.2 settled=1 moved=0.0
+松	23:06:07.451	#F=161.3 A=5.9 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:07.451	#V6 closed=0 ang=200.6 lpW=3.2 settled=1 moved=0.0
+松	23:06:07.670	#F=160.5 A=5.1 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:07.670	#V6 closed=0 ang=201.1 lpW=3.2 settled=1 moved=0.0
+松	23:06:07.853	#F=186.5 A=6.0 vib=1 SS=0.00(x) ct=0 dev=1046.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:07.853	#V6 closed=0 ang=201.7 lpW=3.1 settled=1 moved=0.0
+松	23:06:08.041	#F=173.1 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1046.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:08.041	#V6 closed=0 ang=202.3 lpW=3.2 settled=1 moved=0.0
+松	23:06:08.244	#F=163.4 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1046.5 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:08.244	#V6 closed=0 ang=202.8 lpW=3.2 settled=1 moved=0.0
+松	23:06:08.460	#F=189.5 A=5.3 vib=1 SS=0.00(x) ct=0 dev=1046.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:08.460	#V6 closed=0 ang=203.4 lpW=3.2 settled=1 moved=0.0
+松	23:06:08.661	#F=170.3 A=5.5 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:08.661	#V6 closed=0 ang=204.0 lpW=3.1 settled=1 moved=0.0
+松	23:06:08.862	#F=189.2 A=5.2 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:08.862	#V6 closed=0 ang=204.5 lpW=3.1 settled=1 moved=0.0
+松	23:06:09.063	#F=165.1 A=5.9 vib=1 SS=0.00(x) ct=0 dev=1046.3 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:09.063	#V6 closed=0 ang=205.1 lpW=3.2 settled=1 moved=0.0
+松	23:06:09.234	#F=137.3 A=5.4 vib=1 SS=0.00(x) ct=0 dev=1045.9 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:09.234	#V6 closed=0 ang=205.6 lpW=3.2 settled=1 moved=0.0
+松	23:06:09.450	#F=177.1 A=6.6 vib=1 SS=0.00(x) ct=0 dev=1045.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:09.450	#V6 closed=0 ang=206.2 lpW=3.2 settled=1 moved=0.0
+松	23:06:09.654	#F=164.0 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1045.7 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+松	23:06:09.654	#V6 closed=0 ang=206.8 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.636	#F=167.6 A=5.7 vib=1 SS=0.00(x) ct=0 dev=1045.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.636	#V6 closed=0 ang=207.4 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.636	#F=172.8 A=4.8 vib=1 SS=0.00(x) ct=0 dev=1046.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.636	#V6 closed=0 ang=207.9 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.636	#F=169.6 A=5.4 vib=1 SS=0.00(x) ct=0 dev=1046.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.636	#V6 closed=0 ang=208.5 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.636	#F=185.0 A=6.3 vib=1 SS=0.00(x) ct=0 dev=1046.1 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.636	#V6 closed=0 ang=209.0 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.636	#F=159.6 A=5.9 vib=1 SS=0.00(x) ct=0 dev=1046.2 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.636	#V6 closed=0 ang=209.6 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.636	#F=186.7 A=5.9 vib=1 SS=0.00(x) ct=0 dev=1045.8 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.636	#V6 closed=0 ang=210.2 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.636	#F=182.7 A=5.9 vib=1 SS=0.00(x) ct=0 dev=1045.4 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.636	#V6 closed=0 ang=210.7 lpW=3.2 settled=1 moved=0.0
+夹2	23:06:11.637	#F=177.4 A=58.1 vib=1 SS=0.00(x) ct=0 dev=1051.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.637	#V6 closed=0 ang=206.0 lpW=42.1 settled=0 moved=0.0
+夹2	23:06:11.637	#F=169.5 A=20.4 vib=1 SS=0.00(x) ct=0 dev=1031.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.637	#V6 closed=0 ang=211.6 lpW=28.1 settled=0 moved=0.0
+夹2	23:06:11.637	#F=154.3 A=117.0 vib=1 SS=0.00(x) ct=0 dev=1053.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.637	#V6 closed=0 ang=211.9 lpW=8.9 settled=0 moved=0.0
+夹2	23:06:11.844	#F=130.9 A=194.5 vib=1 SS=0.00(x) ct=0 dev=1050.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:11.844	#V6 closed=0 ang=211.8 lpW=3.9 settled=1 moved=0.0
+夹2	23:06:12.046	#F=123.8 A=143.4 vib=1 SS=0.00(x) ct=0 dev=1070.8 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:12.046	#V6 closed=0 ang=211.5 lpW=32.6 settled=0 moved=0.0
+夹2	23:06:12.261	#F=152.7 A=187.4 vib=1 SS=0.00(x) ct=0 dev=1043.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:12.261	#V6 closed=0 ang=210.7 lpW=8.4 settled=0 moved=0.0
+夹2	23:06:12.462	#F=139.7 A=204.4 vib=1 SS=0.00(x) ct=0 dev=1045.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:12.462	#V6 closed=0 ang=209.8 lpW=4.5 settled=1 moved=0.0
+夹2	23:06:12.649	#F=141.3 A=487.6 vib=1 SS=0.00(x) ct=0 dev=1029.6 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:12.649	#V6 closed=0 ang=204.6 lpW=199.2 settled=0 moved=0.0
+夹2	23:06:12.849	#F=127.6 A=510.3 vib=1 SS=0.00(x) ct=0 dev=949.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=9
+夹2	23:06:12.849	#V6 closed=1 ang=202.9 lpW=114.2 settled=0 moved=0.0
+夹2	23:06:13.034	#F=130.9 A=545.1 vib=1 SS=0.00(x) ct=0 dev=906.0 ax=2 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13 [clip]
+夹2	23:06:13.034	#V6 closed=1 ang=202.0 lpW=61.7 settled=0 moved=0.0
+夹2	23:06:13.249	#F=126.1 A=528.7 vib=1 SS=0.00(x) ct=0 dev=968.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:13.249	#V6 closed=1 ang=200.8 lpW=31.4 settled=0 moved=0.0
+夹2	23:06:13.450	#F=126.0 A=452.2 vib=1 SS=0.00(x) ct=0 dev=997.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:13.450	#V6 closed=1 ang=200.6 lpW=6.0 settled=0 moved=0.0
+夹2	23:06:13.637	#F=125.4 A=452.2 vib=1 SS=0.00(x) ct=1 dev=1011.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:13.637	#V6 closed=1 ang=201.0 lpW=3.4 settled=1 moved=0.1
+夹2	23:06:13.855	#F=125.2 A=439.7 vib=1 SS=0.00(x) ct=1 dev=1010.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:13.855	#V6 closed=1 ang=201.3 lpW=3.2 settled=1 moved=0.5
+夹2	23:06:14.041	#F=124.5 A=427.2 vib=1 SS=0.00(x) ct=1 dev=1016.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:14.041	#V6 closed=1 ang=201.9 lpW=3.3 settled=1 moved=0.9
+夹2	23:06:14.241	#F=124.4 A=428.8 vib=1 SS=0.00(x) ct=1 dev=1020.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:14.241	#V6 closed=1 ang=202.2 lpW=3.1 settled=1 moved=1.0
+夹2	23:06:14.444	#F=124.8 A=449.1 vib=1 SS=0.00(x) ct=1 dev=1023.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:14.444	#V6 closed=1 ang=202.8 lpW=3.9 settled=1 moved=1.2
+夹2	23:06:14.646	#F=125.3 A=465.4 vib=1 SS=0.00(x) ct=1 dev=1015.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:14.647	#V6 closed=1 ang=203.3 lpW=3.3 settled=1 moved=1.3
+夹2	23:06:14.846	#F=125.9 A=486.1 vib=1 SS=0.00(x) ct=1 dev=1016.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:14.846	#V6 closed=1 ang=203.8 lpW=3.3 settled=1 moved=1.4
+夹2	23:06:15.033	#F=125.6 A=451.5 vib=1 SS=0.00(x) ct=1 dev=1019.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:15.033	#V6 closed=1 ang=204.4 lpW=3.7 settled=1 moved=1.5
+夹2	23:06:15.251	#F=125.5 A=456.9 vib=1 SS=0.00(x) ct=1 dev=1015.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:15.251	#V6 closed=1 ang=204.9 lpW=3.3 settled=1 moved=1.5
+夹2	23:06:15.436	#F=125.5 A=447.2 vib=1 SS=0.00(x) ct=1 dev=1022.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:15.436	#V6 closed=1 ang=205.5 lpW=3.3 settled=1 moved=1.6
+夹2	23:06:15.639	#F=125.5 A=478.1 vib=1 SS=0.00(x) ct=1 dev=1018.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:15.639	#V6 closed=1 ang=206.0 lpW=3.4 settled=1 moved=1.6
+夹2	23:06:15.842	#F=125.3 A=474.1 vib=1 SS=0.00(x) ct=1 dev=1016.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:15.842	#V6 closed=1 ang=206.5 lpW=3.3 settled=1 moved=1.6
+夹2	23:06:16.058	#F=125.5 A=467.0 vib=1 SS=0.00(x) ct=1 dev=1019.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:16.059	#V6 closed=1 ang=207.0 lpW=3.1 settled=1 moved=1.6
+夹2	23:06:16.263	#F=125.6 A=503.6 vib=1 SS=0.00(x) ct=1 dev=1012.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:16.263	#V6 closed=1 ang=207.5 lpW=3.1 settled=1 moved=1.7
+夹2	23:06:16.432	#F=125.8 A=487.4 vib=1 SS=0.00(x) ct=1 dev=1019.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:16.463	#V6 closed=1 ang=208.1 lpW=3.3 settled=1 moved=1.7
+夹2	23:06:16.651	#F=125.8 A=547.2 vib=1 SS=0.00(x) ct=1 dev=1015.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:16.651	#V6 closed=1 ang=208.7 lpW=3.5 settled=1 moved=1.7
+夹2	23:06:16.851	#F=125.0 A=558.1 vib=1 SS=0.00(x) ct=1 dev=1011.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:16.851	#V6 closed=1 ang=209.2 lpW=3.6 settled=1 moved=1.7
+夹2	23:06:17.054	#F=125.0 A=560.6 vib=1 SS=0.00(x) ct=1 dev=1018.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:17.054	#V6 closed=1 ang=209.7 lpW=3.0 settled=1 moved=1.7
+夹2	23:06:17.258	#F=125.1 A=558.0 vib=1 SS=0.00(x) ct=1 dev=1020.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:17.258	#V6 closed=1 ang=210.3 lpW=3.8 settled=1 moved=1.7
+夹2	23:06:17.458	#F=125.0 A=576.2 vib=1 SS=0.00(x) ct=1 dev=1014.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:17.459	#V6 closed=1 ang=210.8 lpW=2.9 settled=1 moved=1.7
+夹2	23:06:17.643	#F=124.8 A=611.0 vib=1 SS=0.00(x) ct=1 dev=1016.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:17.643	#V6 closed=1 ang=211.4 lpW=3.9 settled=1 moved=1.7
+夹2	23:06:17.878	#F=124.9 A=593.7 vib=1 SS=0.00(x) ct=1 dev=1020.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:17.878	#V6 closed=1 ang=212.0 lpW=2.9 settled=1 moved=1.7
+夹2	23:06:18.049	#F=124.8 A=577.1 vib=1 SS=0.00(x) ct=1 dev=1023.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:18.049	#V6 closed=1 ang=212.6 lpW=3.8 settled=1 moved=1.7
+夹2	23:06:18.250	#F=124.6 A=563.1 vib=1 SS=0.00(x) ct=1 dev=1017.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:18.250	#V6 closed=1 ang=213.2 lpW=3.3 settled=1 moved=1.8
+夹2	23:06:18.450	#F=124.8 A=547.1 vib=1 SS=0.00(x) ct=1 dev=1013.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:18.450	#V6 closed=1 ang=213.6 lpW=3.1 settled=1 moved=1.8
+夹2	23:06:18.652	#F=125.0 A=591.9 vib=1 SS=0.00(x) ct=1 dev=1020.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:18.652	#V6 closed=1 ang=214.3 lpW=3.6 settled=1 moved=1.8
+夹2	23:06:18.868	#F=125.2 A=575.5 vib=1 SS=0.00(x) ct=1 dev=1022.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:18.869	#V6 closed=1 ang=214.8 lpW=3.5 settled=1 moved=1.8
+夹2	23:06:19.053	#F=125.2 A=564.2 vib=1 SS=0.00(x) ct=1 dev=1013.7 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:19.053	#V6 closed=1 ang=215.3 lpW=3.0 settled=1 moved=1.8
+夹2	23:06:19.253	#F=125.1 A=568.1 vib=1 SS=0.00(x) ct=1 dev=1015.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:19.253	#V6 closed=1 ang=216.0 lpW=4.1 settled=1 moved=1.8
+夹2	23:06:19.443	#F=124.9 A=589.2 vib=1 SS=0.00(x) ct=1 dev=1021.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:19.443	#V6 closed=1 ang=216.4 lpW=2.8 settled=1 moved=1.8
+夹2	23:06:19.659	#F=125.1 A=590.4 vib=1 SS=0.00(x) ct=1 dev=1015.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:19.659	#V6 closed=1 ang=217.1 lpW=3.9 settled=1 moved=1.8
+夹2	23:06:19.861	#F=125.1 A=631.9 vib=1 SS=0.00(x) ct=1 dev=1009.5 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:19.861	#V6 closed=1 ang=217.5 lpW=3.0 settled=1 moved=1.8
+夹2	23:06:20.046	#F=125.0 A=663.2 vib=1 SS=0.00(x) ct=1 dev=1014.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:20.046	#V6 closed=1 ang=218.2 lpW=3.6 settled=1 moved=1.8
+夹2	23:06:20.263	#F=124.8 A=665.2 vib=1 SS=0.00(x) ct=1 dev=1020.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:20.263	#V6 closed=1 ang=218.7 lpW=3.2 settled=1 moved=1.8
+夹2	23:06:20.448	#F=124.7 A=658.7 vib=1 SS=0.00(x) ct=1 dev=1015.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:20.448	#V6 closed=1 ang=219.4 lpW=3.8 settled=1 moved=1.8
+夹2	23:06:20.636	#F=124.8 A=618.2 vib=1 SS=0.00(x) ct=1 dev=1011.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:20.636	#V6 closed=1 ang=219.8 lpW=2.8 settled=1 moved=1.8
+夹2	23:06:20.857	#F=124.8 A=632.3 vib=1 SS=0.00(x) ct=1 dev=1014.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:20.857	#V6 closed=1 ang=220.4 lpW=4.0 settled=1 moved=1.8
+夹2	23:06:21.044	#F=124.7 A=593.7 vib=1 SS=0.00(x) ct=1 dev=1017.8 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:21.044	#V6 closed=1 ang=220.9 lpW=2.7 settled=1 moved=1.8
+夹2	23:06:21.232	#F=124.5 A=621.4 vib=1 SS=0.00(x) ct=1 dev=1017.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:21.232	#V6 closed=1 ang=221.5 lpW=3.7 settled=1 moved=1.8
+夹2	23:06:21.449	#F=124.5 A=663.2 vib=1 SS=0.00(x) ct=1 dev=1017.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:21.449	#V6 closed=1 ang=222.2 lpW=4.1 settled=1 moved=1.8
+夹2	23:06:21.634	#F=124.5 A=646.1 vib=1 SS=0.00(x) ct=1 dev=1013.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=13
+夹2	23:06:21.634	#V6 closed=1 ang=222.7 lpW=2.8 settled=1 moved=1.8

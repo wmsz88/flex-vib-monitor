@@ -1,0 +1,248 @@
+22:59:23.178 #F=129.0 A=1003.4 vib=1 SS=0.00(x) ct=0 dev=1018.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:23.178 #V6 closed=0 ang=5.1 lpW=3.2 settled=1 moved=0.0
+22:59:23.382 #F=129.2 A=1012.7 vib=1 SS=0.00(x) ct=0 dev=1012.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:23.382 #V6 closed=0 ang=5.7 lpW=3.6 settled=1 moved=0.0
+22:59:23.586 #F=129.3 A=1002.4 vib=1 SS=0.00(x) ct=0 dev=1008.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:23.586 #V6 closed=0 ang=6.2 lpW=3.6 settled=1 moved=0.0
+22:59:23.788 #F=129.2 A=1008.8 vib=1 SS=0.00(x) ct=0 dev=1013.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:23.788 #V6 closed=0 ang=6.8 lpW=3.5 settled=1 moved=0.0
+22:59:23.993 #F=128.8 A=1013.6 vib=1 SS=0.00(x) ct=0 dev=1010.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:23.993 #V6 closed=0 ang=7.4 lpW=3.4 settled=1 moved=0.0
+22:59:24.210 [CAL] 无有效标定，自动重试（请保持静置）
+22:59:24.210 [CAL] 开始标定 3200 ms，请保持模块静置
+22:59:26.035 [CAL] 本次：阶段A 静置质量不合格
+22:59:26.036 [CAL]   nBias=2285  stdMax=822.9 mg  |g|=1007 mg  env=0.00  ct=0.00  clip=0
+22:59:26.036 [CAL] 生效：未标定（编译期默认参数） | 质量可疑(标定时可能被碰或未静置) | 样本 0
+22:59:26.036 [CAL] bias 0.0/0.0/0.0 mg  |g|=0 mg  std 0.0/0.0/0.0 mg
+22:59:26.036 [CAL] 带内 sigma 0.00/0.00/0.00 mg  静置包络 0.00  静置姿态 0.00 mg
+22:59:26.036 [CAL] 阈值 过零 0.0 | 启停 8.0/4.0 | 接触 30.0/18.0 mg
+22:59:26.036 [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:59:26.242 [GYRO] 零偏 0.00/0.00/0.00 dps  标准差最大 0.00 dps  量程 ±500 dps  采样 250 Hz
+22:59:26.243 [CAL] 未提交：阶段A 静置质量不合格；沿用编译期默认参数（未标定）
+22:59:26.243 #F=0.0(x) A=0.0(x) vib=0 SS=0.00(x) ct=0 dev=0.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:26.243 #V6 closed=0 ang=0.0 lpW=0.1 settled=0 moved=0.0
+22:59:26.243 #F=129.2 A=1034.4 vib=1 SS=0.00(x) ct=0 dev=639.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:26.243 #V6 closed=0 ang=0.6 lpW=3.3 settled=1 moved=0.0
+22:59:26.445 #F=129.6 A=1025.7 vib=1 SS=0.00(x) ct=0 dev=874.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:26.445 #V6 closed=0 ang=1.3 lpW=3.6 settled=1 moved=0.0
+22:59:26.648 #F=129.4 A=1017.1 vib=1 SS=0.00(x) ct=0 dev=968.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:26.648 #V6 closed=0 ang=1.9 lpW=3.8 settled=1 moved=0.0
+22:59:26.852 #F=129.7 A=1028.7 vib=1 SS=0.00(x) ct=0 dev=1001.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:26.852 #V6 closed=0 ang=2.4 lpW=3.4 settled=1 moved=0.0
+22:59:27.053 #F=129.1 A=1013.6 vib=1 SS=0.00(x) ct=0 dev=1014.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:27.053 #V6 closed=0 ang=3.0 lpW=3.2 settled=1 moved=0.0
+22:59:27.255 #F=129.2 A=1014.9 vib=1 SS=0.00(x) ct=0 dev=1017.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:27.255 #V6 closed=0 ang=3.6 lpW=3.6 settled=1 moved=0.0
+22:59:27.459 #F=129.3 A=1017.5 vib=1 SS=0.00(x) ct=0 dev=1012.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:27.459 #V6 closed=0 ang=4.2 lpW=3.7 settled=1 moved=0.0
+22:59:27.664 #F=129.2 A=989.9 vib=1 SS=0.00(x) ct=0 dev=1012.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:27.664 #V6 closed=0 ang=4.9 lpW=3.8 settled=1 moved=0.0
+22:59:27.866 #F=129.2 A=996.5 vib=1 SS=0.00(x) ct=0 dev=1013.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:27.866 #V6 closed=0 ang=5.6 lpW=3.4 settled=1 moved=0.0
+22:59:28.069 #F=129.3 A=1002.3 vib=1 SS=0.00(x) ct=0 dev=1012.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:28.069 #V6 closed=0 ang=6.0 lpW=3.2 settled=1 moved=0.0
+22:59:28.270 #F=129.1 A=997.9 vib=1 SS=0.00(x) ct=0 dev=1014.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:28.270 #V6 closed=0 ang=6.5 lpW=3.6 settled=1 moved=0.0
+22:59:28.471 #F=129.2 A=1006.7 vib=1 SS=0.00(x) ct=0 dev=1016.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:28.471 #V6 closed=0 ang=7.2 lpW=3.9 settled=1 moved=0.0
+22:59:28.673 #F=129.1 A=999.5 vib=1 SS=0.00(x) ct=0 dev=1019.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:28.673 #V6 closed=0 ang=7.9 lpW=3.5 settled=1 moved=0.0
+22:59:28.878 #F=128.8 A=879.4 vib=1 SS=0.00(x) ct=0 dev=1019.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:28.878 #V6 closed=0 ang=8.3 lpW=3.4 settled=1 moved=0.0
+22:59:29.079 [CAL] 无有效标定，自动重试（请保持静置）
+22:59:29.079 [CAL] 开始标定 3200 ms，请保持模块静置
+22:59:31.034 [CAL] 本次：阶段A 静置质量不合格
+22:59:31.034 [CAL]   nBias=2285  stdMax=791.4 mg  |g|=1011 mg  env=0.00  ct=0.00  clip=0
+22:59:31.034 [CAL] 生效：未标定（编译期默认参数） | 质量可疑(标定时可能被碰或未静置) | 样本 0
+22:59:31.034 [CAL] bias 0.0/0.0/0.0 mg  |g|=0 mg  std 0.0/0.0/0.0 mg
+22:59:31.034 [CAL] 带内 sigma 0.00/0.00/0.00 mg  静置包络 0.00  静置姿态 0.00 mg
+22:59:31.034 [CAL] 阈值 过零 0.0 | 启停 8.0/4.0 | 接触 30.0/18.0 mg
+22:59:31.034 [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:59:31.246 [GYRO] 零偏 0.00/0.00/0.00 dps  标准差最大 0.00 dps  量程 ±500 dps  采样 250 Hz
+22:59:31.246 [CAL] 未提交：阶段A 静置质量不合格；沿用编译期默认参数（未标定）
+22:59:31.246 #F=0.0(x) A=0.0(x) vib=0 SS=0.00(x) ct=0 dev=0.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:31.246 #V6 closed=0 ang=0.0 lpW=0.1 settled=0 moved=0.0
+22:59:31.246 #F=132.0 A=953.9 vib=1 SS=0.00(x) ct=0 dev=639.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:31.246 #V6 closed=0 ang=0.5 lpW=3.3 settled=1 moved=0.0
+22:59:31.449 #F=132.0 A=939.9 vib=1 SS=0.00(x) ct=0 dev=875.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:31.449 #V6 closed=0 ang=1.1 lpW=3.3 settled=1 moved=0.0
+22:59:31.652 #F=131.6 A=938.0 vib=1 SS=0.00(x) ct=0 dev=966.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:31.652 #V6 closed=0 ang=1.6 lpW=3.3 settled=1 moved=0.0
+22:59:31.870 #F=131.9 A=934.9 vib=1 SS=0.00(x) ct=0 dev=994.9 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:31.870 #V6 closed=0 ang=2.1 lpW=3.3 settled=1 moved=0.0
+22:59:32.071 #F=131.4 A=945.4 vib=1 SS=0.00(x) ct=0 dev=1012.3 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:32.071 #V6 closed=0 ang=2.6 lpW=3.3 settled=1 moved=0.0
+22:59:32.276 #F=132.1 A=925.7 vib=1 SS=0.00(x) ct=0 dev=1015.6 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:32.276 #V6 closed=0 ang=3.2 lpW=3.6 settled=1 moved=0.0
+22:59:32.479 #F=131.7 A=907.9 vib=1 SS=0.00(x) ct=0 dev=1008.1 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:32.479 #V6 closed=0 ang=3.9 lpW=3.6 settled=1 moved=0.0
+22:59:32.683 #F=131.4 A=903.2 vib=1 SS=0.00(x) ct=0 dev=1022.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:32.683 #V6 closed=0 ang=4.4 lpW=3.3 settled=1 moved=0.0
+22:59:32.886 #F=131.8 A=944.7 vib=1 SS=0.00(x) ct=0 dev=1018.2 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:32.886 #V6 closed=0 ang=5.0 lpW=3.5 settled=1 moved=0.0
+22:59:33.088 #F=130.6 A=1074.4 vib=1 SS=0.00(x) ct=0 dev=1013.4 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:33.088 #V6 closed=0 ang=5.0 lpW=5.0 settled=1 moved=0.0
+22:59:33.290 #F=129.0 A=999.9 vib=1 SS=0.00(x) ct=0 dev=1011.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:33.290 #V6 closed=0 ang=5.5 lpW=3.1 settled=1 moved=0.0
+22:59:33.492 #F=129.5 A=994.0 vib=1 SS=0.00(x) ct=0 dev=1015.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:33.492 #V6 closed=0 ang=5.7 lpW=3.5 settled=1 moved=0.0
+22:59:33.695 #F=129.1 A=872.4 vib=1 SS=0.00(x) ct=0 dev=1018.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:33.695 #V6 closed=0 ang=6.2 lpW=3.5 settled=1 moved=0.0
+22:59:33.896 #F=128.9 A=922.2 vib=1 SS=0.00(x) ct=0 dev=1017.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:33.896 #V6 closed=0 ang=6.9 lpW=3.6 settled=1 moved=0.0
+22:59:34.099 [CAL] 无有效标定，自动重试（请保持静置）
+22:59:34.099 [CAL] 开始标定 3200 ms，请保持模块静置
+22:59:36.035 [CAL] 本次：阶段A 静置质量不合格
+22:59:36.035 [CAL]   nBias=2285  stdMax=887.5 mg  |g|=1017 mg  env=0.00  ct=0.00  clip=0
+22:59:36.035 [CAL] 生效：未标定（编译期默认参数） | 质量可疑(标定时可能被碰或未静置) | 样本 0
+22:59:36.035 [CAL] bias 0.0/0.0/0.0 mg  |g|=0 mg  std 0.0/0.0/0.0 mg
+22:59:36.035 [CAL] 带内 sigma 0.00/0.00/0.00 mg  静置包络 0.00  静置姿态 0.00 mg
+22:59:36.035 [CAL] 阈值 过零 0.0 | 启停 8.0/4.0 | 接触 30.0/18.0 mg
+22:59:36.035 [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:59:36.239 [GYRO] 零偏 0.00/0.00/0.00 dps  标准差最大 0.00 dps  量程 ±500 dps  采样 250 Hz
+22:59:36.239 [CAL] 未提交：阶段A 静置质量不合格；沿用编译期默认参数（未标定）
+22:59:36.239 #F=0.0(x) A=0.0(x) vib=0 SS=0.00(x) ct=0 dev=0.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:36.239 #V6 closed=0 ang=0.0 lpW=0.0 settled=0 moved=0.0
+22:59:36.439 #F=129.7 A=1011.2 vib=1 SS=0.00(x) ct=0 dev=645.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:36.440 #V6 closed=0 ang=0.5 lpW=3.4 settled=1 moved=0.0
+22:59:36.644 #F=130.0 A=1015.5 vib=1 SS=0.00(x) ct=0 dev=874.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:36.644 #V6 closed=0 ang=1.1 lpW=3.3 settled=1 moved=0.0
+22:59:36.644 #F=129.9 A=994.6 vib=1 SS=0.00(x) ct=0 dev=966.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:36.644 #V6 closed=0 ang=1.7 lpW=3.5 settled=1 moved=0.0
+22:59:36.844 #F=130.1 A=1002.3 vib=1 SS=0.00(x) ct=0 dev=1003.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:36.844 #V6 closed=0 ang=2.3 lpW=3.5 settled=1 moved=0.0
+22:59:37.046 #F=129.5 A=1005.0 vib=1 SS=0.00(x) ct=0 dev=1013.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:37.046 #V6 closed=0 ang=2.8 lpW=3.4 settled=1 moved=0.0
+22:59:37.249 #F=129.4 A=1014.7 vib=1 SS=0.00(x) ct=0 dev=1010.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:37.249 #V6 closed=0 ang=3.3 lpW=3.4 settled=1 moved=0.0
+22:59:37.452 #F=129.5 A=991.1 vib=1 SS=0.00(x) ct=0 dev=1012.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:37.453 #V6 closed=0 ang=3.9 lpW=3.3 settled=1 moved=0.0
+22:59:37.654 #F=129.6 A=1012.3 vib=1 SS=0.00(x) ct=0 dev=1019.4 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:37.654 #V6 closed=0 ang=4.6 lpW=3.6 settled=1 moved=0.0
+22:59:37.869 #F=129.4 A=999.5 vib=1 SS=0.00(x) ct=0 dev=1020.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:37.869 #V6 closed=0 ang=5.2 lpW=3.6 settled=1 moved=0.0
+22:59:38.073 #F=129.7 A=981.5 vib=1 SS=0.00(x) ct=0 dev=1019.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:38.073 #V6 closed=0 ang=5.7 lpW=3.4 settled=1 moved=0.0
+22:59:38.274 #F=129.9 A=1019.0 vib=1 SS=0.00(x) ct=0 dev=1013.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:38.274 #V6 closed=0 ang=6.2 lpW=3.5 settled=1 moved=0.0
+22:59:38.479 #F=129.9 A=1005.3 vib=1 SS=0.00(x) ct=0 dev=1015.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:38.479 #V6 closed=0 ang=6.9 lpW=3.6 settled=1 moved=0.0
+22:59:38.680 #F=129.6 A=1006.0 vib=1 SS=0.00(x) ct=0 dev=1017.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:38.680 #V6 closed=0 ang=7.4 lpW=3.4 settled=1 moved=0.0
+22:59:38.884 #F=129.7 A=1008.3 vib=1 SS=0.00(x) ct=0 dev=1019.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:38.884 #V6 closed=0 ang=8.0 lpW=3.4 settled=1 moved=0.0
+22:59:39.090 [CAL] 无有效标定，自动重试（请保持静置）
+22:59:39.090 [CAL] 开始标定 3200 ms，请保持模块静置
+22:59:41.034 [CAL] 本次：阶段A 静置质量不合格
+22:59:41.034 [CAL]   nBias=2285  stdMax=877.8 mg  |g|=1025 mg  env=0.00  ct=0.00  clip=0
+22:59:41.034 [CAL] 生效：未标定（编译期默认参数） | 质量可疑(标定时可能被碰或未静置) | 样本 0
+22:59:41.034 [CAL] bias 0.0/0.0/0.0 mg  |g|=0 mg  std 0.0/0.0/0.0 mg
+22:59:41.034 [CAL] 带内 sigma 0.00/0.00/0.00 mg  静置包络 0.00  静置姿态 0.00 mg
+22:59:41.034 [CAL] 阈值 过零 0.0 | 启停 8.0/4.0 | 接触 30.0/18.0 mg
+22:59:41.034 [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:59:41.248 [GYRO] 零偏 0.00/0.00/0.00 dps  标准差最大 0.00 dps  量程 ±500 dps  采样 250 Hz
+22:59:41.248 [CAL] 未提交：阶段A 静置质量不合格；沿用编译期默认参数（未标定）
+22:59:41.248 #F=0.0(x) A=0.0(x) vib=0 SS=0.00(x) ct=0 dev=0.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:41.248 #V6 closed=0 ang=0.0 lpW=0.1 settled=0 moved=0.0
+22:59:41.248 #F=129.8 A=1007.8 vib=1 SS=0.00(x) ct=0 dev=637.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:41.248 #V6 closed=0 ang=0.6 lpW=3.5 settled=1 moved=0.0
+22:59:41.452 #F=130.0 A=1013.6 vib=1 SS=0.00(x) ct=0 dev=876.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:41.452 #V6 closed=0 ang=1.1 lpW=3.4 settled=1 moved=0.0
+22:59:41.654 #F=129.8 A=1004.8 vib=1 SS=0.00(x) ct=0 dev=970.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:41.654 #V6 closed=0 ang=1.7 lpW=3.4 settled=1 moved=0.0
+22:59:41.857 #F=129.8 A=997.3 vib=1 SS=0.00(x) ct=0 dev=997.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:41.857 #V6 closed=0 ang=2.3 lpW=3.3 settled=1 moved=0.0
+22:59:42.060 #F=129.9 A=1016.6 vib=1 SS=0.00(x) ct=0 dev=1008.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:42.060 #V6 closed=0 ang=2.9 lpW=3.5 settled=1 moved=0.0
+22:59:42.262 #F=129.9 A=1001.5 vib=1 SS=0.00(x) ct=0 dev=1009.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:42.262 #V6 closed=0 ang=3.4 lpW=3.5 settled=1 moved=0.0
+22:59:42.464 #F=129.7 A=999.9 vib=1 SS=0.00(x) ct=0 dev=1018.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:42.464 #V6 closed=0 ang=3.9 lpW=3.3 settled=1 moved=0.0
+22:59:42.667 #F=129.4 A=982.7 vib=1 SS=0.00(x) ct=0 dev=1019.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:42.667 #V6 closed=0 ang=4.4 lpW=3.3 settled=1 moved=0.0
+22:59:42.871 #F=129.4 A=984.4 vib=1 SS=0.00(x) ct=0 dev=1018.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:42.871 #V6 closed=0 ang=5.0 lpW=3.3 settled=1 moved=0.0
+22:59:43.075 #F=129.3 A=993.4 vib=1 SS=0.00(x) ct=0 dev=1017.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:43.075 #V6 closed=0 ang=5.6 lpW=3.4 settled=1 moved=0.0
+22:59:43.278 #F=129.4 A=981.2 vib=1 SS=0.00(x) ct=0 dev=1010.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:43.278 #V6 closed=0 ang=6.1 lpW=3.3 settled=1 moved=0.0
+22:59:43.479 #F=129.3 A=985.5 vib=1 SS=0.00(x) ct=0 dev=1011.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:43.479 #V6 closed=0 ang=6.7 lpW=3.4 settled=1 moved=0.0
+22:59:43.682 #F=129.4 A=978.5 vib=1 SS=0.00(x) ct=0 dev=1018.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:43.682 #V6 closed=0 ang=7.2 lpW=3.5 settled=1 moved=0.0
+22:59:43.885 #F=129.7 A=984.6 vib=1 SS=0.00(x) ct=0 dev=1017.1 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:43.885 #V6 closed=0 ang=7.7 lpW=3.3 settled=1 moved=0.0
+22:59:44.086 [CAL] 无有效标定，自动重试（请保持静置）
+22:59:44.086 [CAL] 开始标定 3200 ms，请保持模块静置
+22:59:46.034 [CAL] 本次：阶段A 静置质量不合格
+22:59:46.034 [CAL]   nBias=2285  stdMax=884.8 mg  |g|=1023 mg  env=0.00  ct=0.00  clip=0
+22:59:46.034 [CAL] 生效：未标定（编译期默认参数） | 质量可疑(标定时可能被碰或未静置) | 样本 0
+22:59:46.034 [CAL] bias 0.0/0.0/0.0 mg  |g|=0 mg  std 0.0/0.0/0.0 mg
+22:59:46.034 [CAL] 带内 sigma 0.00/0.00/0.00 mg  静置包络 0.00  静置姿态 0.00 mg
+22:59:46.034 [CAL] 阈值 过零 0.0 | 启停 8.0/4.0 | 接触 30.0/18.0 mg
+22:59:46.034 [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:59:46.242 [GYRO] 零偏 0.00/0.00/0.00 dps  标准差最大 0.00 dps  量程 ±500 dps  采样 250 Hz
+22:59:46.242 [CAL] 未提交：阶段A 静置质量不合格；沿用编译期默认参数（未标定）
+22:59:46.242 #F=0.0(x) A=0.0(x) vib=0 SS=0.00(x) ct=0 dev=0.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:46.242 #V6 closed=0 ang=0.1 lpW=0.2 settled=0 moved=0.0
+22:59:46.242 #F=129.6 A=990.5 vib=1 SS=0.00(x) ct=0 dev=639.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:46.242 #V6 closed=0 ang=0.5 lpW=3.1 settled=1 moved=0.0
+22:59:46.444 #F=129.6 A=992.9 vib=1 SS=0.00(x) ct=0 dev=873.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:46.444 #V6 closed=0 ang=1.1 lpW=3.4 settled=1 moved=0.0
+22:59:46.645 #F=129.5 A=1006.0 vib=1 SS=0.00(x) ct=0 dev=963.9 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:46.645 #V6 closed=0 ang=1.6 lpW=3.4 settled=1 moved=0.0
+22:59:46.863 #F=129.7 A=991.3 vib=1 SS=0.00(x) ct=0 dev=1000.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:46.863 #V6 closed=0 ang=2.1 lpW=3.4 settled=1 moved=0.0
+22:59:47.063 #F=129.8 A=1011.6 vib=1 SS=0.00(x) ct=0 dev=1008.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:47.063 #V6 closed=0 ang=2.7 lpW=3.5 settled=1 moved=0.0
+22:59:47.264 #F=130.3 A=1021.8 vib=1 SS=0.00(x) ct=0 dev=1009.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:47.264 #V6 closed=0 ang=3.4 lpW=3.6 settled=1 moved=0.0
+22:59:47.465 #F=130.4 A=1008.5 vib=1 SS=0.00(x) ct=0 dev=1017.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:47.465 #V6 closed=0 ang=3.9 lpW=3.2 settled=1 moved=0.0
+22:59:47.666 #F=130.7 A=1005.0 vib=1 SS=0.00(x) ct=0 dev=1010.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:47.666 #V6 closed=0 ang=4.3 lpW=3.2 settled=1 moved=0.0
+22:59:47.868 #F=130.0 A=1005.3 vib=1 SS=0.00(x) ct=0 dev=1010.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:47.868 #V6 closed=0 ang=4.8 lpW=3.2 settled=1 moved=0.0
+22:59:48.070 #F=129.8 A=986.3 vib=1 SS=0.00(x) ct=0 dev=1016.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:48.070 #V6 closed=0 ang=5.3 lpW=2.9 settled=1 moved=0.0
+22:59:48.272 #F=129.6 A=1012.4 vib=1 SS=0.00(x) ct=0 dev=1018.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:48.272 #V6 closed=0 ang=5.9 lpW=3.8 settled=1 moved=0.0
+22:59:48.476 #F=129.3 A=846.7 vib=1 SS=0.00(x) ct=0 dev=1015.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:48.476 #V6 closed=0 ang=6.4 lpW=3.5 settled=1 moved=0.0
+22:59:48.679 #F=127.8 A=485.5 vib=1 SS=0.00(x) ct=0 dev=1018.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:48.679 #V6 closed=0 ang=6.7 lpW=3.2 settled=1 moved=0.0
+22:59:48.881 #F=127.6 A=1000.8 vib=1 SS=0.00(x) ct=0 dev=1013.6 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:48.881 #V6 closed=0 ang=7.3 lpW=3.4 settled=1 moved=0.0
+22:59:49.086 [CAL] 无有效标定，自动重试（请保持静置）
+22:59:49.086 [CAL] 开始标定 3200 ms，请保持模块静置
+22:59:51.034 [CAL] 本次：阶段A 静置质量不合格
+22:59:51.034 [CAL]   nBias=2285  stdMax=888.6 mg  |g|=1019 mg  env=0.00  ct=0.00  clip=0
+22:59:51.034 [CAL] 生效：未标定（编译期默认参数） | 质量可疑(标定时可能被碰或未静置) | 样本 0
+22:59:51.034 [CAL] bias 0.0/0.0/0.0 mg  |g|=0 mg  std 0.0/0.0/0.0 mg
+22:59:51.034 [CAL] 带内 sigma 0.00/0.00/0.00 mg  静置包络 0.00  静置姿态 0.00 mg
+22:59:51.034 [CAL] 阈值 过零 0.0 | 启停 8.0/4.0 | 接触 30.0/18.0 mg
+22:59:51.034 [CAL] 量程 ±4g（8192 LSB/g），削顶线 32700 LSB ≈ 3992 mg
+22:59:51.242 [GYRO] 零偏 0.00/0.00/0.00 dps  标准差最大 0.00 dps  量程 ±500 dps  采样 250 Hz
+22:59:51.242 [CAL] 未提交：阶段A 静置质量不合格；沿用编译期默认参数（未标定）
+22:59:51.242 #F=0.0(x) A=0.0(x) vib=0 SS=0.00(x) ct=0 dev=0.0 ax=0 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:51.242 #V6 closed=0 ang=0.1 lpW=0.2 settled=0 moved=0.0
+22:59:51.242 #F=128.7 A=968.6 vib=1 SS=0.00(x) ct=0 dev=643.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:51.242 #V6 closed=0 ang=0.7 lpW=3.5 settled=1 moved=0.0
+22:59:51.443 #F=128.9 A=986.1 vib=1 SS=0.00(x) ct=0 dev=873.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:51.443 #V6 closed=0 ang=1.2 lpW=3.5 settled=1 moved=0.0
+22:59:51.646 #F=128.9 A=930.8 vib=1 SS=0.00(x) ct=0 dev=960.7 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:51.646 #V6 closed=0 ang=1.8 lpW=3.4 settled=1 moved=0.0
+22:59:51.849 #F=128.9 A=966.2 vib=1 SS=0.00(x) ct=0 dev=991.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:51.850 #V6 closed=0 ang=2.3 lpW=3.3 settled=1 moved=0.0
+22:59:52.053 #F=129.1 A=969.6 vib=1 SS=0.00(x) ct=0 dev=1004.5 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:52.053 #V6 closed=0 ang=2.8 lpW=3.3 settled=1 moved=0.0
+22:59:52.255 #F=129.1 A=1003.9 vib=1 SS=0.00(x) ct=0 dev=1014.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:52.255 #V6 closed=0 ang=3.3 lpW=3.4 settled=1 moved=0.0
+22:59:52.457 #F=129.0 A=990.0 vib=1 SS=0.00(x) ct=0 dev=1015.2 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:52.457 #V6 closed=0 ang=3.8 lpW=3.3 settled=1 moved=0.0
+22:59:52.659 #F=129.0 A=998.1 vib=1 SS=0.00(x) ct=0 dev=1017.0 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:52.659 #V6 closed=0 ang=4.4 lpW=3.6 settled=1 moved=0.0
+22:59:52.860 #F=129.1 A=1003.3 vib=1 SS=0.00(x) ct=0 dev=1018.3 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:52.861 #V6 closed=0 ang=5.0 lpW=3.4 settled=1 moved=0.0
+22:59:53.063 #F=129.2 A=997.1 vib=1 SS=0.00(x) ct=0 dev=1015.8 ax=1 sens=1 gap=2 jit=2 drop=0 fail=0 clip=0
+22:59:53.063 #V6 closed=0 ang=5.7 lpW=3.4 settled=1 moved=0.0

@@ -1,0 +1,218 @@
+#F=128.0 A=891.9 vib=1 SS=0.00(x) ct=0 dev=1014.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=31.9 lpW=3.5 settled=1 moved=0.0
+#F=127.9 A=914.3 vib=1 SS=0.00(x) ct=0 dev=1013.4 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=32.5 lpW=3.4 settled=1 moved=0.0
+#F=127.8 A=894.8 vib=1 SS=0.00(x) ct=0 dev=1008.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=33.1 lpW=3.3 settled=1 moved=0.0
+#F=127.9 A=917.7 vib=1 SS=0.00(x) ct=0 dev=1010.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=33.7 lpW=3.4 settled=1 moved=0.0
+#F=127.9 A=900.7 vib=1 SS=0.00(x) ct=0 dev=1011.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=34.2 lpW=3.5 settled=1 moved=0.0
+#F=128.1 A=909.2 vib=1 SS=0.00(x) ct=0 dev=1017.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=34.8 lpW=3.4 settled=1 moved=0.0
+#F=128.0 A=896.8 vib=1 SS=0.00(x) ct=0 dev=1023.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=35.3 lpW=3.3 settled=1 moved=0.0
+#F=128.0 A=901.9 vib=1 SS=0.00(x) ct=0 dev=1021.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=35.9 lpW=3.6 settled=1 moved=0.0
+#F=127.8 A=912.0 vib=1 SS=0.00(x) ct=0 dev=1015.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=36.5 lpW=3.3 settled=1 moved=0.0
+#F=127.6 A=895.7 vib=1 SS=0.00(x) ct=0 dev=1008.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=37.0 lpW=3.3 settled=1 moved=0.0
+#F=127.7 A=908.6 vib=1 SS=0.00(x) ct=0 dev=1006.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=37.6 lpW=3.6 settled=1 moved=0.0
+#F=127.7 A=908.1 vib=1 SS=0.00(x) ct=0 dev=1011.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=38.2 lpW=3.5 settled=1 moved=0.0
+#F=127.6 A=896.5 vib=1 SS=0.00(x) ct=0 dev=1017.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=38.7 lpW=3.4 settled=1 moved=0.0
+#F=127.9 A=903.6 vib=1 SS=0.00(x) ct=0 dev=1018.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=39.3 lpW=3.4 settled=1 moved=0.0
+#F=127.6 A=888.3 vib=1 SS=0.00(x) ct=0 dev=1011.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=39.9 lpW=3.4 settled=1 moved=0.0
+#F=127.4 A=888.8 vib=1 SS=0.00(x) ct=0 dev=1010.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=40.5 lpW=3.5 settled=1 moved=0.0
+#F=127.6 A=896.9 vib=1 SS=0.00(x) ct=0 dev=1012.4 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=41.1 lpW=3.7 settled=1 moved=0.0
+#F=127.7 A=909.8 vib=1 SS=0.00(x) ct=0 dev=1010.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=41.6 lpW=3.2 settled=1 moved=0.0
+#F=127.5 A=881.5 vib=1 SS=0.00(x) ct=0 dev=1016.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=42.2 lpW=3.5 settled=1 moved=0.0
+#F=127.5 A=910.2 vib=1 SS=0.00(x) ct=0 dev=1013.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=42.7 lpW=3.4 settled=1 moved=0.0
+#F=127.7 A=898.4 vib=1 SS=0.00(x) ct=0 dev=1007.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=43.3 lpW=3.2 settled=1 moved=0.0
+#F=127.5 A=916.8 vib=1 SS=0.00(x) ct=0 dev=1009.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=43.9 lpW=3.5 settled=1 moved=0.0
+#F=127.5 A=910.9 vib=1 SS=0.00(x) ct=0 dev=1014.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=44.4 lpW=3.3 settled=1 moved=0.0
+#F=127.4 A=888.3 vib=1 SS=0.00(x) ct=0 dev=1014.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=44.9 lpW=3.2 settled=1 moved=0.0
+#F=127.4 A=921.3 vib=1 SS=0.00(x) ct=0 dev=1016.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=45.5 lpW=3.5 settled=1 moved=0.0
+#F=127.4 A=908.2 vib=1 SS=0.00(x) ct=0 dev=1008.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=46.1 lpW=3.3 settled=1 moved=0.0
+#F=127.6 A=901.4 vib=1 SS=0.00(x) ct=0 dev=1008.4 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=46.7 lpW=3.4 settled=1 moved=0.0
+#F=127.7 A=906.1 vib=1 SS=0.00(x) ct=0 dev=1017.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=47.1 lpW=3.2 settled=1 moved=0.0
+#F=127.5 A=901.3 vib=1 SS=0.00(x) ct=0 dev=1019.4 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=47.7 lpW=3.6 settled=1 moved=0.0
+#F=127.5 A=911.9 vib=1 SS=0.00(x) ct=0 dev=1015.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=48.3 lpW=3.4 settled=1 moved=0.0
+#F=127.6 A=887.0 vib=1 SS=0.00(x) ct=0 dev=1007.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=48.9 lpW=3.5 settled=1 moved=0.0
+#F=127.6 A=911.4 vib=1 SS=0.00(x) ct=0 dev=1012.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=49.5 lpW=3.5 settled=1 moved=0.0
+#F=127.4 A=918.2 vib=1 SS=0.00(x) ct=0 dev=1020.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=50.0 lpW=3.1 settled=1 moved=0.0
+#F=127.4 A=905.0 vib=1 SS=0.00(x) ct=0 dev=1019.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=50.6 lpW=3.6 settled=1 moved=0.0
+#F=127.3 A=905.7 vib=1 SS=0.00(x) ct=0 dev=1011.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=51.2 lpW=3.3 settled=1 moved=0.0
+#F=127.8 A=914.3 vib=1 SS=0.00(x) ct=0 dev=1010.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=51.7 lpW=3.5 settled=1 moved=0.0
+#F=127.8 A=927.8 vib=1 SS=0.00(x) ct=0 dev=1010.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=52.3 lpW=3.4 settled=1 moved=0.0
+#F=127.8 A=925.3 vib=1 SS=0.00(x) ct=0 dev=1013.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=52.8 lpW=3.3 settled=1 moved=0.0
+#F=127.6 A=899.2 vib=1 SS=0.00(x) ct=0 dev=1020.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=53.3 lpW=3.3 settled=1 moved=0.0
+#F=127.7 A=925.4 vib=1 SS=0.00(x) ct=0 dev=1016.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=53.9 lpW=3.4 settled=1 moved=0.0
+#F=127.9 A=912.9 vib=1 SS=0.00(x) ct=0 dev=1012.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=54.5 lpW=3.4 settled=1 moved=0.0
+#F=127.9 A=905.4 vib=1 SS=0.00(x) ct=0 dev=1008.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=55.1 lpW=3.3 settled=1 moved=0.0
+#F=127.8 A=928.1 vib=1 SS=0.00(x) ct=0 dev=1011.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=55.6 lpW=3.6 settled=1 moved=0.0
+#F=127.9 A=936.6 vib=1 SS=0.00(x) ct=0 dev=1012.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=56.2 lpW=3.3 settled=1 moved=0.0
+#F=127.7 A=906.7 vib=1 SS=0.00(x) ct=0 dev=1017.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=56.7 lpW=3.3 settled=1 moved=0.0
+#F=127.5 A=911.5 vib=1 SS=0.00(x) ct=0 dev=1013.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=57.3 lpW=3.4 settled=1 moved=0.0
+#F=127.5 A=950.1 vib=1 SS=0.00(x) ct=0 dev=1010.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=58.0 lpW=3.6 settled=1 moved=0.0
+#F=127.0 A=1027.3 vib=1 SS=0.00(x) ct=0 dev=1006.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=58.5 lpW=3.8 settled=1 moved=0.0
+#F=127.8 A=1063.7 vib=1 SS=0.00(x) ct=0 dev=1013.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=58.7 lpW=4.3 settled=1 moved=0.0
+#F=128.2 A=946.9 vib=1 SS=0.00(x) ct=0 dev=1015.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=59.3 lpW=3.0 settled=1 moved=0.0
+#F=128.4 A=985.9 vib=1 SS=0.00(x) ct=0 dev=1019.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=59.5 lpW=5.5 settled=1 moved=0.0
+#F=128.3 A=1011.5 vib=1 SS=0.00(x) ct=0 dev=1015.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=60.0 lpW=3.1 settled=1 moved=0.0
+#F=128.5 A=967.5 vib=1 SS=0.00(x) ct=0 dev=1016.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=60.3 lpW=3.4 settled=1 moved=0.0
+#F=128.0 A=965.4 vib=1 SS=0.00(x) ct=0 dev=1021.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=61.2 lpW=6.5 settled=1 moved=0.0
+#F=126.6 A=959.0 vib=1 SS=0.00(x) ct=0 dev=1009.4 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=62.1 lpW=4.5 settled=1 moved=0.0
+#F=126.5 A=922.8 vib=1 SS=0.00(x) ct=0 dev=1014.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=62.7 lpW=3.0 settled=1 moved=0.0
+#F=127.1 A=1017.7 vib=1 SS=0.00(x) ct=0 dev=1015.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=63.3 lpW=4.3 settled=1 moved=0.0
+#F=127.2 A=1025.2 vib=1 SS=0.00(x) ct=0 dev=1005.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=63.8 lpW=2.7 settled=1 moved=0.0
+#F=127.0 A=1038.4 vib=1 SS=0.00(x) ct=0 dev=1012.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=64.6 lpW=4.0 settled=1 moved=0.0
+#F=126.9 A=1042.0 vib=1 SS=0.00(x) ct=0 dev=1016.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=65.1 lpW=3.8 settled=1 moved=0.0
+#F=126.7 A=836.8 vib=1 SS=0.00(x) ct=0 dev=1011.4 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=65.7 lpW=3.2 settled=1 moved=0.0
+#F=126.7 A=1011.4 vib=1 SS=0.00(x) ct=0 dev=1018.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=66.2 lpW=2.8 settled=1 moved=0.0
+#F=126.8 A=1026.8 vib=1 SS=0.00(x) ct=0 dev=1016.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=66.7 lpW=3.7 settled=1 moved=0.0
+#F=127.0 A=1006.9 vib=1 SS=0.00(x) ct=0 dev=1008.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=67.2 lpW=3.2 settled=1 moved=0.0
+#F=126.8 A=1036.9 vib=1 SS=0.00(x) ct=0 dev=1019.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=67.7 lpW=3.1 settled=1 moved=0.0
+#F=127.0 A=1035.9 vib=1 SS=0.00(x) ct=0 dev=1017.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=68.4 lpW=4.3 settled=1 moved=0.0
+#F=127.1 A=1010.1 vib=1 SS=0.00(x) ct=0 dev=1007.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=68.8 lpW=2.7 settled=1 moved=0.0
+#F=127.1 A=1018.2 vib=1 SS=0.00(x) ct=0 dev=1014.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=69.5 lpW=3.4 settled=1 moved=0.0
+#F=127.2 A=1007.3 vib=1 SS=0.00(x) ct=0 dev=1018.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=69.9 lpW=3.6 settled=1 moved=0.0
+#F=127.3 A=1032.7 vib=1 SS=0.00(x) ct=0 dev=1013.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=70.6 lpW=3.5 settled=1 moved=0.0
+#F=127.5 A=1007.9 vib=1 SS=0.00(x) ct=0 dev=1009.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=71.2 lpW=3.1 settled=1 moved=0.0
+#F=127.4 A=1033.5 vib=1 SS=0.00(x) ct=0 dev=1011.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=71.9 lpW=4.1 settled=1 moved=0.0
+#F=127.6 A=1024.8 vib=1 SS=0.00(x) ct=0 dev=1021.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=72.3 lpW=2.8 settled=1 moved=0.0
+#F=127.4 A=1024.0 vib=1 SS=0.00(x) ct=0 dev=1019.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=73.0 lpW=4.2 settled=1 moved=0.0
+#F=127.2 A=1032.2 vib=1 SS=0.00(x) ct=0 dev=1012.4 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=73.5 lpW=2.7 settled=1 moved=0.0
+#F=127.3 A=1011.4 vib=1 SS=0.00(x) ct=0 dev=1005.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=74.2 lpW=4.4 settled=1 moved=0.0
+#F=127.4 A=1023.6 vib=1 SS=0.00(x) ct=0 dev=1015.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=74.7 lpW=2.8 settled=1 moved=0.0
+#F=127.4 A=1015.1 vib=1 SS=0.00(x) ct=0 dev=1018.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=75.3 lpW=3.9 settled=1 moved=0.0
+#F=127.5 A=1026.4 vib=1 SS=0.00(x) ct=0 dev=1012.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=75.9 lpW=3.0 settled=1 moved=0.0
+#F=127.5 A=1014.1 vib=1 SS=0.00(x) ct=0 dev=1006.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=76.4 lpW=3.2 settled=1 moved=0.0
+#F=127.5 A=1031.2 vib=1 SS=0.00(x) ct=0 dev=1011.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=77.1 lpW=3.8 settled=1 moved=0.0
+#F=127.4 A=1012.6 vib=1 SS=0.00(x) ct=0 dev=1016.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=77.5 lpW=2.8 settled=1 moved=0.0
+#F=127.7 A=1059.2 vib=1 SS=0.00(x) ct=0 dev=1018.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=78.2 lpW=4.1 settled=1 moved=0.0
+#F=127.7 A=1048.0 vib=1 SS=0.00(x) ct=0 dev=1017.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=78.7 lpW=3.2 settled=1 moved=0.0
+#F=127.9 A=1038.5 vib=1 SS=0.00(x) ct=0 dev=1008.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=79.2 lpW=2.9 settled=1 moved=0.0
+#F=128.1 A=1023.4 vib=1 SS=0.00(x) ct=0 dev=1012.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=79.9 lpW=3.7 settled=1 moved=0.0
+#F=127.9 A=1031.2 vib=1 SS=0.00(x) ct=0 dev=1013.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=80.5 lpW=4.0 settled=1 moved=0.0
+#F=128.0 A=1052.8 vib=1 SS=0.00(x) ct=0 dev=1011.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=81.0 lpW=3.5 settled=1 moved=0.0
+#F=128.0 A=1037.1 vib=1 SS=0.00(x) ct=0 dev=1021.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=81.5 lpW=2.8 settled=1 moved=0.0
+#F=127.8 A=1051.9 vib=1 SS=0.00(x) ct=0 dev=1019.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=82.0 lpW=3.4 settled=1 moved=0.0
+#F=128.0 A=1030.1 vib=1 SS=0.00(x) ct=0 dev=1017.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=82.7 lpW=4.0 settled=1 moved=0.0
+#F=127.6 A=1057.6 vib=1 SS=0.00(x) ct=0 dev=1011.8 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=83.2 lpW=2.8 settled=1 moved=0.0
+#F=127.8 A=1033.9 vib=1 SS=0.00(x) ct=0 dev=1008.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=83.7 lpW=3.3 settled=1 moved=0.0
+#F=127.8 A=1047.3 vib=1 SS=0.00(x) ct=0 dev=1011.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=84.4 lpW=4.1 settled=1 moved=0.0
+#F=127.8 A=1045.0 vib=1 SS=0.00(x) ct=0 dev=1014.3 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=84.8 lpW=3.0 settled=1 moved=0.0
+#F=127.8 A=1028.9 vib=1 SS=0.00(x) ct=0 dev=1017.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=85.3 lpW=3.1 settled=1 moved=0.0
+#F=127.8 A=1047.5 vib=1 SS=0.00(x) ct=0 dev=1016.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=86.0 lpW=3.9 settled=1 moved=0.0
+#F=127.8 A=1038.7 vib=1 SS=0.00(x) ct=0 dev=1015.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=86.6 lpW=3.2 settled=1 moved=0.0
+#F=127.6 A=1039.7 vib=1 SS=0.00(x) ct=0 dev=1007.2 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=87.1 lpW=2.9 settled=1 moved=0.0
+#F=127.7 A=1029.9 vib=1 SS=0.00(x) ct=0 dev=1008.6 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=87.8 lpW=4.2 settled=1 moved=0.0
+#F=127.9 A=1063.8 vib=1 SS=0.00(x) ct=0 dev=1014.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=88.3 lpW=3.8 settled=1 moved=0.0
+#F=128.2 A=1036.5 vib=1 SS=0.00(x) ct=0 dev=1014.1 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=88.8 lpW=3.2 settled=1 moved=0.0
+#F=127.9 A=1035.1 vib=1 SS=0.00(x) ct=0 dev=1018.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=89.3 lpW=2.9 settled=1 moved=0.0
+#F=128.0 A=1030.0 vib=1 SS=0.00(x) ct=0 dev=1020.5 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=90.0 lpW=3.7 settled=1 moved=0.0
+#F=128.0 A=1049.8 vib=1 SS=0.00(x) ct=0 dev=1015.9 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=90.6 lpW=3.9 settled=1 moved=0.0
+#F=127.9 A=1038.8 vib=1 SS=0.00(x) ct=0 dev=1016.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=91.1 lpW=3.2 settled=1 moved=0.0
+#F=128.0 A=1046.7 vib=1 SS=0.00(x) ct=0 dev=1009.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=91.7 lpW=2.9 settled=1 moved=0.0
+#F=127.9 A=1025.6 vib=1 SS=0.00(x) ct=0 dev=1005.0 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=92.3 lpW=3.5 settled=1 moved=0.0
+#F=127.8 A=1033.0 vib=1 SS=0.00(x) ct=0 dev=1008.7 ax=1 sens=1 gap=5 jit=5 drop=0 fail=0 clip=9
+#V6 closed=0 ang=92.9 lpW=4.1 settled=1 moved=0.0
