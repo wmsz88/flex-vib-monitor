@@ -3,7 +3,7 @@
 # 用法（任意目录）：
 #   powershell -ExecutionPolicy Bypass -File "D:\大学\课程\工科赛\代码\vibmon_v8\test\run_all.ps1"
 #
-# 测六个目标：contact / gyro / comp_frame / dump / ss_replay / layered_detection。
+# 测七个目标：contact / gyro / comp_frame / dump / ss_replay / layered_detection / v6_fallback。
 # 编译期 0 warning + 逐条数字与基线一致 才算 OK。
 # dump 的基线是 15/19（4 项失败是既有列数写死问题，v5 同样如此，见 RT013）。
 
@@ -21,7 +21,9 @@ $targets = [ordered]@{
   'comp_frame_test' = @{ src = 'test/comp_frame_test.cpp'; deps = @('output.cpp','state.cpp','dsp.cpp','layered_detection.cpp');   defs = @();                     pass = 22; total = 22 }
   'dump_test'       = @{ src = 'test/dump_test.cpp';       deps = @('output.cpp','state.cpp','dsp.cpp','layered_detection.cpp');   defs = @();                     pass = 15; total = 19 }
   'ss_replay'       = @{ src = 'test/ss_replay.cpp';       deps = @('state.cpp','layered_detection.cpp');                          defs = @('-DSTATE_TEST_HOOKS'); pass = -1; total = -1 }
-  'layered_detection' = @{ src = 'test/layered_detection_test.cpp'; deps = @('layered_detection.cpp'); defs = @(); pass = 8; total = 8 }
+  'layered_detection' = @{ src = 'test/layered_detection_test.cpp'; deps = @('layered_detection.cpp'); defs = @(); pass = 11; total = 11 }
+  # 关闭分层宏后应与 V6 行为一致（顺带验证 -D 覆盖不再触发 redefined 警告）
+  'v6_fallback'     = @{ src = 'test/contact_test.cpp';    deps = @('state.cpp','layered_detection.cpp');                          defs = @('-DLAYERED_DETECT_ENABLE=0'); pass = 89; total = 89 }
 }
 
 Push-Location $root

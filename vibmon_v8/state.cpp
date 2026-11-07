@@ -1217,6 +1217,21 @@ void stateOnFrame(const DspFrame& f, uint32_t tUs) {
     s_r.ctDev = f.ctDev;
     ssStep(f.env, tUs);
     ctStep(f.ctDev, tUs);
+
+#if LAYERED_DETECT_ENABLE
+    /* 分层推送必须与包络节奏一致：f.env 只在 envReady（每 ENV_HOP 个样本一次）
+     * 时才有效。若放在每样本路径上，其余样本会被填 0，实时层的确认计数永远
+     * 凑不满、均匀层的中位数也被 0 拉平。 */
+    s_layerInput.tUs = tUs;
+    s_layerInput.envMg = f.env;
+    s_layerInput.freqHz = s_r.freqHz;
+    s_layerInput.ssHz = s_r.ssHz;
+    s_layerInput.closed = (s_r.closeAngleDeg >= ANGLE_CLOSED_DEG) ? 1u : 0u;
+    s_layerInput.settled = s_r.settled ? 1u : 0u;
+    s_layerInput.freqValid = s_r.freqValid ? 1u : 0u;
+    s_layerInput.ssValid = s_r.ssValid ? 1u : 0u;
+    layerPush(&s_layerInput);
+#endif
   }
   if (f.winReady) {
     s_haveWin = true;
@@ -1233,17 +1248,6 @@ void stateOnFrame(const DspFrame& f, uint32_t tUs) {
     s_r.freqClipLimited = (f.clipLevel != CLIP_NONE);
   }
 
-#if LAYERED_DETECT_ENABLE
-  s_layerInput.tUs = tUs;
-  s_layerInput.envMg = f.envReady ? f.env : 0.0f;
-  s_layerInput.freqHz = s_r.freqHz;
-  s_layerInput.ssHz = s_r.ssHz;
-  s_layerInput.closed = (s_r.closeAngleDeg >= ANGLE_CLOSED_DEG) ? 1u : 0u;
-  s_layerInput.settled = s_r.settled ? 1u : 0u;
-  s_layerInput.freqValid = s_r.freqValid ? 1u : 0u;
-  s_layerInput.ssValid = s_r.ssValid ? 1u : 0u;
-  layerPush(&s_layerInput);
-#endif
 }
 
 void stateTick(uint32_t nowUs) {

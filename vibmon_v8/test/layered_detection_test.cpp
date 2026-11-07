@@ -71,6 +71,41 @@ int main() {
   }
   check(!layerUniform().stable, "uniform rejects drifting signal");
 
+  // Sparse validity: a full window where most samples carry no valid reading.
+  layerInit();
+  f = LayerInput{};
+  f.closed = 1;
+  f.settled = 1;
+  for (int i = 0; i < LAYER_WINDOW_N; ++i) {
+    f.tUs = i * 20000;
+    f.envMg = 800.0f;
+    f.freqHz = 160.0f;
+    f.ssHz = 1.0f;
+    f.freqValid = (i < 20) ? 1 : 0;
+    f.ssValid = (i < 20) ? 1 : 0;
+    layerPush(&f);
+  }
+  check(!layerUniform().stable, "uniform rejects sparse validity");
+  check(layerUniform().validRatio < (uint8_t)(LAYER_VALID_RATIO_MIN * 100.0f),
+        "uniform valid ratio below threshold");
+
+  // Sliding window: after a full window of new samples the old ones are gone.
+  layerInit();
+  f = LayerInput{};
+  f.closed = 1;
+  f.settled = 1;
+  f.freqValid = 1;
+  f.ssValid = 1;
+  for (int i = 0; i < LAYER_WINDOW_N * 2; ++i) {
+    f.tUs = i * 20000;
+    f.envMg = 800.0f;
+    f.freqHz = (i < LAYER_WINDOW_N) ? 160.0f : 100.0f;
+    f.ssHz = 1.0f;
+    layerPush(&f);
+  }
+  check(std::abs(layerUniform().freqMedian - 100.0f) < 0.11f,
+        "uniform window slides old samples out");
+
   std::printf("layered_detection_test: %d pass / %d fail\n", pass, fail);
   return fail ? 1 : 0;
 }

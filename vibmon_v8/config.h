@@ -36,7 +36,7 @@
 #endif
 /* 比赛帧开关：协议/口径确定前保持 0，比赛口完全不发送任何字节 */
 #ifndef COMP_FRAME_ENABLED
-#define COMP_FRAME_ENABLED 1
+#define COMP_FRAME_ENABLED 0
 #endif
 #ifndef COMP_PERIOD_MS
 #define COMP_PERIOD_MS 20        // 50Hz
@@ -251,14 +251,41 @@
 #define TH_LO_MIN_MG     4.0f
 
 /* ---------- T014 分层检测（实验） ---------- */
+/* 全部允许命令行 -D 覆盖：LAYERED_DETECT_ENABLE=0 时应完整回到 V6 行为 */
+#ifndef LAYERED_DETECT_ENABLE
 #define LAYERED_DETECT_ENABLE 1
+#endif
+#ifndef LAYER_WINDOW_N
 #define LAYER_WINDOW_N        50
+#endif
+#ifndef LAYER_VIB_HI_MG
 #define LAYER_VIB_HI_MG       120.0f
+#endif
+#ifndef LAYER_VIB_LO_MG
 #define LAYER_VIB_LO_MG       80.0f
+#endif
+#ifndef LAYER_VIB_CONFIRM
 #define LAYER_VIB_CONFIRM     3
+#endif
+#ifndef LAYER_FREQ_SPREAD_MAX
 #define LAYER_FREQ_SPREAD_MAX 0.08f
+#endif
+#ifndef LAYER_ENV_SPREAD_MAX
 #define LAYER_ENV_SPREAD_MAX  0.25f
+#endif
+#ifndef LAYER_VALID_RATIO_MIN
 #define LAYER_VALID_RATIO_MIN 0.70f
+#endif
+/* 整数镜像：仅供编译期断言用（#if 不能比较浮点字面量） */
+#ifndef LAYER_VIB_HI_MG_INT
+#define LAYER_VIB_HI_MG_INT      120
+#endif
+#ifndef LAYER_VIB_LO_MG_INT
+#define LAYER_VIB_LO_MG_INT      80
+#endif
+#ifndef LAYER_VALID_RATIO_MIN_INT
+#define LAYER_VALID_RATIO_MIN_INT 70
+#endif
 #ifndef SS_CONFIRM
 #define SS_CONFIRM       3       // 状态翻转需连续 3 个包络点（30ms）
 #endif
@@ -755,6 +782,21 @@
     #error "模式 3 的进入阈值必须为正"
   #endif
 #endif
+
+/* ---------- T014 分层检测参数检查 ---------- */
+#if (LAYER_WINDOW_N < 2) || (LAYER_WINDOW_N > 512)
+  #error "LAYER_WINDOW_N 必须在 2~512（窗口按此静态分配，过大会吃 RAM）"
+#endif
+#if (LAYER_VIB_CONFIRM < 1)
+  #error "LAYER_VIB_CONFIRM 必须 >= 1（否则单帧即翻转，失去确认意义）"
+#endif
+#if (LAYER_VIB_HI_MG_INT <= LAYER_VIB_LO_MG_INT)
+  #error "LAYER_VIB_HI 必须大于 LAYER_VIB_LO（否则滞回带反了，振动标志会在阈值处抖动）"
+#endif
+#if (LAYER_VALID_RATIO_MIN_INT < 0) || (LAYER_VALID_RATIO_MIN_INT > 100)
+  #error "LAYER_VALID_RATIO_MIN_INT 必须在 0~100"
+#endif
+
 #if (CT_REF_AVG_MS <= 0)
   #error "CT_REF_AVG_MS 必须大于 0（没有样本就无法求平均）"
 #endif
