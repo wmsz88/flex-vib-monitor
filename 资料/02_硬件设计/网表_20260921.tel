@@ -1,0 +1,35 @@
+$PACKAGES
+0805_C ! 0805_C ! '0.1uF' ; C1 
+0805_C ! 0805_C ! 10uF ; C3 
+0805_C ! 0805_C ! 1uF ; C2 
+0805_C ! 0805_C ! 22uF ; C4 
+0805_LED ! 0805_LED ! '{Value}' ; LED1 LED2 LED3 
+0805_R ! 0805_R ! '1.5kΩ' ; R4 
+0805_R ! 0805_R ! '120Ω' ; R1 R7 
+0805_R ! 0805_R ! '1kΩ' ; R3 
+0805_R ! 0805_R ! '360Ω' ; R2 R8 
+0805_R ! 0805_R ! '3kΩ' ; R5 
+0805_R ! 0805_R ! '4.7kΩ' ; R6 
+4PIN-Land ! 4PIN-Land ! '{Value}' ; U4 
+ESP32C3 ! ESP32C3 ! '{Value}' ; U1 
+MPU6050 ! MPU6050 ! '{Value}' ; U3 
+SK-3245S-L1-A ! SK-3245S-L1-A ! '{Value}' ; SW1 
+SOT-223 ! SOT-223 ! '{Value}' ; U2 
+$A_PROPERTIES
+$NETS
+'+12V' ; SW1.1 U4.4 
+'+5V' ; C1.2 C2.2 C4.2 R1.1 R3.1 U1.16 U2.2 U2.4 U3.1 
+'$1N10' ; LED3.2 R3.2 
+'$1N17' ; R8.1 U1.1 
+'$1N18' ; LED2.1 R8.2 
+'$1N20' ; R7.2 U1.6 
+'$1N21' ; LED1.1 R7.1 
+'$1N8' ; R1.2 R2.1 U2.1 
+GND ; C1.1 C2.1 C3.2 C4.1 LED1.2 LED2.2 LED3.1 R2.2 SW1.3 U1.15 U3.2 U3.5 U4.3 
+RX ; U1.7 U4.2 
+SCL ; U1.5 U3.3 
+SDA ; U1.4 U3.4 
+TX ; U1.8 U4.1 
+VIN ; C3.1 SW1.2 U2.3 
+$SCHEDULE
+$END
