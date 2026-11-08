@@ -18,7 +18,7 @@ if (-not $cc) { Write-Host '找不到 g++，请把 MinGW\bin 加进 PATH'; exit 
 $targets = [ordered]@{
   'contact_test'    = @{ src = 'test/contact_test.cpp';    deps = @('state.cpp');                          defs = @();                     pass = 89; total = 89 }
   'gyro_test'       = @{ src = 'test/gyro_test.cpp';       deps = @('dsp.cpp','state.cpp');                defs = @();                     pass = 8;  total = 8  }
-  'comp_frame_test' = @{ src = 'test/comp_frame_test.cpp'; deps = @('output.cpp','state.cpp','dsp.cpp');   defs = @();                     pass = 22; total = 22 }
+  'comp_frame_test' = @{ src = 'test/comp_frame_test.cpp'; deps = @('output.cpp','state.cpp','dsp.cpp');   defs = @();                     pass = 24; total = 24 }
   'dump_test'       = @{ src = 'test/dump_test.cpp';       deps = @('output.cpp','state.cpp','dsp.cpp');   defs = @();                     pass = 15; total = 19 }
   'ss_replay'       = @{ src = 'test/ss_replay.cpp';       deps = @('state.cpp');                          defs = @('-DSTATE_TEST_HOOKS'); pass = -1; total = -1 }
 }

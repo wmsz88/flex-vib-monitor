@@ -1,12 +1,13 @@
-// v5 串口比赛帧协议主机测试
+// 比赛帧（0x55 二进制帧）主机测试
 //
-// 编译（在 vibmon_v5 目录下；output.cpp 依赖 dsp.cpp 的 dspCal 系列符号，必须一起链）：
+// 现场口径：9600 8N1
+//   0x55 | 振动整数 | 振动小数 | 启停 | 接触 | 停止位(0x0D)
+//
+// 编译（在 vibmon_v6 目录下）：
 //   g++ -std=c++17 -Wall -I test -I . test/comp_frame_test.cpp output.cpp state.cpp dsp.cpp -o test/comp_frame_test.exe
-//   g++ -std=c++17 -Wall -DCOMP_FRAME_CL=1 -I test -I . test/comp_frame_test.cpp output.cpp state.cpp dsp.cpp -o test/comp_frame_test_cl1.exe
-// 两条都要跑：默认构建断言 35 字节帧（与历史逐字节一致），-DCOMP_FRAME_CL=1 断言 37 字节帧含 CL。
 //
 // 只测纯编码函数 compBuildFrame()：构造已知 Result 值，
-// 验证帧格式、字段宽度、校验和、缓冲区保护。
+// 验证帧头、字段顺序、0.1Hz 拆分、四舍五入、缓冲区保护。
 
 #include <stdio.h>
 #include <string.h>
@@ -77,172 +78,136 @@ static int g_pass = 0, g_fail = 0;
     else { g_fail++; printf("FAIL: %s\n", msg); } \
   } while (0)
 
-/* 帧长随 COMP_FRAME_CL 变化：0 = 35 字节（无 CL）／1 = 37 字节（CT 后插 CL）。
- * 本测试直接 include config.h，所以两种模式用同一个可执行文件是做不到的：
- * 要用 -DCOMP_FRAME_CL=1 重新编译，同一份断言按下面的常量自动切换。 */
-#if COMP_FRAME_CL
-  #define BODY_LEN   32
-  #define FRAME_LEN  37
-  #define OUT_MIN    38
-  #define BODY_ZERO  "$VD,0000,00000,00000,0,0,0,000,0"
-  #define BODY_CTACT "$VD,0137,01652,00966,1,1,1,120,F"
+#if COMP_FRAME_TRAILER_EN
+  #define FRAME_LEN 6
 #else
-  #define BODY_LEN   30
-  #define FRAME_LEN  35
-  #define OUT_MIN    36
-  #define BODY_ZERO  "$VD,0000,00000,00000,0,0,000,0"
-  #define BODY_CTACT "$VD,0137,01652,00966,1,1,120,F"
+  #define FRAME_LEN 5
 #endif
 
-/* 正文内的字段偏移：seq/freq/amp 两种模式相同；ss 与 valid 随 CL 后移 2 字节 */
-#define OFF_SEQ   4
-#define OFF_FREQ  9
-#define OFF_AMP   15
-#define OFF_CT    23
-#define OFF_CL    25                  /* 仅 COMP_FRAME_CL=1 时存在 */
-#define OFF_SS    (BODY_LEN - 5)
-#define OFF_VALID (BODY_LEN - 1)
+static uint8_t byteAt(const char* buf, int i) { return (uint8_t)buf[i]; }
 
-static uint8_t xorChk(const char* s, int n) {
-  uint8_t x = 0;
-  for (int i = 0; i < n; i++) x ^= (uint8_t)s[i];
-  return x;
-}
-
-/* 构造一个"典型接触"Result */
+/* 典型接触：165.2Hz、振动中、已接触 */
 static Result makeContact(void) {
   Result r = {};
   r.sensorOk = true;
   r.calOk = true;
-  r.calQuality = true;
   r.vib = 1;
   r.freqValid = true;
   r.freqHz = 165.2f;
-  r.ampValid = true;
-  r.ampMg = 965.7f;
-  r.ssValid = true;
-  r.ssHz = 1.20f;
-  r.ssPeriods = 4;
   r.contact = 1;
   r.contactValid = true;
-  r.closed = true;
   return r;
 }
 
-/* ---------------- 测试用例 ---------------- */
 static void testAllZero(void) {
-  Result r = {};   // 全零：所有字段无效
-  char buf[64];
+  Result r = {};
+  char buf[16];
   int n = compBuildFrame(r, 0, buf, sizeof(buf));
-  CHECK(n == FRAME_LEN, "all-zero frame length matches mode");
-  if (n == FRAME_LEN) {
-    CHECK(memcmp(buf, BODY_ZERO, BODY_LEN) == 0,
-          "all-zero body matches expected format");
-    CHECK(buf[FRAME_LEN - 2] == '\r' && buf[FRAME_LEN - 1] == '\n',
-          "frame ends with CRLF");
-    char body[64];
-    memcpy(body, buf, BODY_LEN);
-    uint8_t expect = xorChk(body, BODY_LEN);
-    char chkHex[4];
-    snprintf(chkHex, sizeof(chkHex), "%02X", expect);
-    CHECK(buf[BODY_LEN + 1] == chkHex[0] && buf[BODY_LEN + 2] == chkHex[1],
-          "checksum matches");
-  }
+  CHECK(n == FRAME_LEN, "all-zero frame length");
+  CHECK(byteAt(buf, 0) == COMP_FRAME_HEADER, "all-zero starts with 0x55");
+  CHECK(byteAt(buf, 1) == 0 && byteAt(buf, 2) == 0, "invalid freq -> 0,0");
+  CHECK(byteAt(buf, 3) == 0 && byteAt(buf, 4) == 0, "vib/contact -> 0,0");
+#if COMP_FRAME_TRAILER_EN
+  CHECK(byteAt(buf, 5) == COMP_FRAME_TRAILER, "trailer byte");
+#endif
 }
 
 static void testContact(void) {
   Result r = makeContact();
-  char buf[64];
+  char buf[16];
   int n = compBuildFrame(r, 137, buf, sizeof(buf));
-  CHECK(n == FRAME_LEN, "contact frame length matches mode");
-  if (n == FRAME_LEN) {
-    CHECK(memcmp(buf, BODY_CTACT, BODY_LEN) == 0,
-          "contact body matches expected format");
-  }
-#if COMP_FRAME_CL
-  /* CL 位专项：只翻转 closed，看 CL 位与校验是否跟着变 */
-  Result r0 = makeContact();
-  r0.closed = false;
-  char buf0[64];
-  compBuildFrame(r0, 137, buf0, sizeof(buf0));
-  CHECK(buf[OFF_CL] == '1' && buf0[OFF_CL] == '0', "CL=1 reflects closed=true / false");
-  CHECK(memcmp(buf0, "$VD,0137,01652,00966,1,1,0,120,F", 32) == 0,
-        "closed=false body is $VD,...,CT=1,CL=0,...");
-  CHECK(buf[BODY_LEN + 1] != buf0[BODY_LEN + 1] ||
-        buf[BODY_LEN + 2] != buf0[BODY_LEN + 2],
-        "checksum covers CL field (differs when CL flips)");
+  CHECK(n == FRAME_LEN, "contact frame length");
+  CHECK(byteAt(buf, 0) == 0x55, "header is 0x55");
+  CHECK(byteAt(buf, 1) == 165, "165.2Hz integer part");
+  CHECK(byteAt(buf, 2) == 2, "165.2Hz decimal part");
+  CHECK(byteAt(buf, 3) == 1, "vib=1");
+  CHECK(byteAt(buf, 4) == 1, "contact=1");
+#if COMP_FRAME_TRAILER_EN
+  CHECK(byteAt(buf, 5) == COMP_FRAME_TRAILER, "trailer is 0x0D");
 #endif
 }
 
-static void testSeqWrap(void) {
+static void testRounding(void) {
   Result r = makeContact();
-  char buf[64];
-  compBuildFrame(r, 9998, buf, sizeof(buf));
-  CHECK(memcmp(buf + OFF_SEQ, "9998", 4) == 0, "seq=9998 correct");
-  compBuildFrame(r, 9999, buf, sizeof(buf));
-  CHECK(memcmp(buf + OFF_SEQ, "9999", 4) == 0, "seq=9999 correct");
-  compBuildFrame(r, 10000, buf, sizeof(buf));
-  CHECK(memcmp(buf + OFF_SEQ, "0000", 4) == 0, "seq=10000 wraps to 0000");
-}
+  char buf[16];
 
-static void testInvalidFields(void) {
-  Result r = {};
-  r.ampValid = true; r.ampMg = 500.0f;
-  char buf[64];
-  compBuildFrame(r, 42, buf, sizeof(buf));
-  CHECK(memcmp(buf + OFF_SEQ, "0042", 4) == 0, "seq=42 padded");
-  CHECK(memcmp(buf + OFF_FREQ, "00000", 5) == 0, "invalid freq -> 00000");
-  CHECK(memcmp(buf + OFF_AMP, "00500", 5) == 0, "valid amp -> 00500");
-  CHECK(memcmp(buf + OFF_SS, "000", 3) == 0, "invalid ss -> 000");
-  CHECK(buf[OFF_VALID] == '1', "valid bitmap is '1' (amp only)");
-}
-
-static void testSaturation(void) {
-  Result r = makeContact();
-  r.freqHz = 9999.9f;   // *10 = 99999 exactly at limit
-  r.ampMg = 123456.0f;
-  r.ssHz = 9.99f;   // *100 = 999 exactly at limit
-  char buf[64];
+  r.freqHz = 165.24f;
   compBuildFrame(r, 0, buf, sizeof(buf));
-  CHECK(memcmp(buf + OFF_FREQ, "99999", 5) == 0, "freq clamped to 99999");
-  CHECK(memcmp(buf + OFF_AMP, "99999", 5) == 0, "amp clamped to 99999");
-  CHECK(memcmp(buf + OFF_SS, "999", 3) == 0, "ss clamped to 999");
+  CHECK(byteAt(buf, 1) == 165 && byteAt(buf, 2) == 2, "165.24 -> 165,2");
+
+  r.freqHz = 165.26f;
+  compBuildFrame(r, 0, buf, sizeof(buf));
+  CHECK(byteAt(buf, 1) == 165 && byteAt(buf, 2) == 3, "165.26 -> 165,3");
+
+  r.freqHz = 99.99f;
+  compBuildFrame(r, 0, buf, sizeof(buf));
+  CHECK(byteAt(buf, 1) == 100 && byteAt(buf, 2) == 0, "99.99 -> 100,0");
+}
+
+static void testInvalidFreq(void) {
+  Result r = makeContact();
+  r.freqValid = false;
+  r.freqHz = 165.2f;
+  char buf[16];
+  compBuildFrame(r, 0, buf, sizeof(buf));
+  CHECK(byteAt(buf, 1) == 0 && byteAt(buf, 2) == 0,
+        "freqValid=false sends 0,0 even if freqHz is set");
+}
+
+static void testClamp(void) {
+  Result r = makeContact();
+  r.freqHz = 300.0f;
+  char buf[16];
+  compBuildFrame(r, 0, buf, sizeof(buf));
+  CHECK(byteAt(buf, 1) == 255, "integer part clamps to 255");
+}
+
+static void testFlags(void) {
+  Result r = makeContact();
+  char buf[16];
+
+  r.vib = 0;
+  r.contact = 0;
+  compBuildFrame(r, 0, buf, sizeof(buf));
+  CHECK(byteAt(buf, 3) == 0 && byteAt(buf, 4) == 0, "vib/contact both 0");
+
+  r.vib = 1;
+  r.contact = 0;
+  compBuildFrame(r, 0, buf, sizeof(buf));
+  CHECK(byteAt(buf, 3) == 1 && byteAt(buf, 4) == 0, "vib only");
 }
 
 static void testBufferProtection(void) {
   Result r = makeContact();
-  char tiny[8];
-  CHECK(compBuildFrame(r, 0, tiny, sizeof(tiny)) == -1, "buffer too small returns -1");
   char exact[FRAME_LEN];
-  CHECK(compBuildFrame(r, 0, exact, sizeof(exact)) == -1, "buffer == frame len returns -1");
-  char ok[OUT_MIN];
-  CHECK(compBuildFrame(r, 0, ok, sizeof(ok)) == FRAME_LEN, "buffer == frame len+1 returns frame len");
+  char ok[FRAME_LEN + 1];
+  CHECK(compBuildFrame(r, 0, exact, sizeof(exact)) == -1,
+        "buffer == frame len returns -1");
+  CHECK(compBuildFrame(r, 0, ok, sizeof(ok)) == FRAME_LEN,
+        "buffer == frame len+1 returns frame len");
   CHECK(compBuildFrame(r, 0, nullptr, 64) == -1, "null buffer returns -1");
+  CHECK(compBuildFrame(r, 0, ok, 0) == -1, "zero-sized buffer returns -1");
 }
 
-static void testChecksumKnown(void) {
-  Result r = {};
-  r.ampValid = true; r.ampMg = 12.0f;
-  r.contactValid = true; r.contact = 0;
-  char buf[64];
-  compBuildFrame(r, 0, buf, sizeof(buf));
-  uint8_t expect = xorChk(buf, BODY_LEN);
-  char chkHex[4];
-  snprintf(chkHex, sizeof(chkHex), "%02X", expect);
-  CHECK(buf[BODY_LEN + 1] == chkHex[0] && buf[BODY_LEN + 2] == chkHex[1],
-        "checksum is consistent with xorChk");
+static void testSeqIgnored(void) {
+  Result r = makeContact();
+  char a[16], b[16];
+  int n1 = compBuildFrame(r, 0, a, sizeof(a));
+  int n2 = compBuildFrame(r, 65535, b, sizeof(b));
+  CHECK(n1 == n2 && memcmp(a, b, (size_t)n1) == 0,
+        "seq is not part of the field frame");
 }
 
 int main(void) {
-  printf("mode: COMP_FRAME_CL=%d, frame=%d bytes, body=%d bytes, min buffer=%d\n",
-         COMP_FRAME_CL, FRAME_LEN, BODY_LEN, OUT_MIN);
+  printf("binary frame: %d bytes (trailer=%d)\n", FRAME_LEN, COMP_FRAME_TRAILER_EN);
   testAllZero();
   testContact();
-  testSeqWrap();
-  testInvalidFields();
-  testSaturation();
+  testRounding();
+  testInvalidFreq();
+  testClamp();
+  testFlags();
   testBufferProtection();
-  testChecksumKnown();
+  testSeqIgnored();
   printf("comp_frame_test: %d pass / %d fail\n", g_pass, g_fail);
   return g_fail == 0 ? 0 : 1;
 }

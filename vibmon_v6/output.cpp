@@ -80,89 +80,40 @@ void compBegin(void) {
 
 bool compReady(void) { return s_compReady; }
 
-/* 数值编码：把物理量映射成定宽字段。
- * 约定：无效量一律发 0，由 VALID 位图区分"未知"与"测得 0"。 */
-static unsigned encFreqX10(const Result& r) {
-  if (!r.freqValid) return 0;
-  float v = r.freqHz * 10.0f;
-  if (!isfinite(v) || v < 0.0f) return 0;
-  if (v > 99999.0f) v = 99999.0f;
-  return (unsigned)(v + 0.5f);
-}
-
-static unsigned encAmpMg(const Result& r) {
-  if (!r.ampValid) return 0;
-  float v = r.ampMg;
-  if (!isfinite(v) || v < 0.0f) return 0;
-  if (v > 99999.0f) v = 99999.0f;
-  return (unsigned)(v + 0.5f);
-}
-
-static unsigned encSsX100(const Result& r) {
-  if (!r.ssValid) return 0;
-  float v = r.ssHz * 100.0f;
-  if (!isfinite(v) || v < 0.0f) return 0;
-  if (v > 999.0f) v = 999.0f;
-  return (unsigned)(v + 0.5f);
-}
-
-/* VALID 位图：bit0=ampValid bit1=freqValid bit2=ssValid bit3=contactValid */
-static char encValid(const Result& r) {
-  uint8_t v = 0;
-  if (r.ampValid)     v |= 0x01;
-  if (r.freqValid)    v |= 0x02;
-  if (r.ssValid)      v |= 0x04;
-  if (r.contactValid) v |= 0x08;
-  return "0123456789ABCDEF"[v & 0x0F];
-}
-
-static uint8_t xorChk(const char* s, int n) {
-  uint8_t x = 0;
-  for (int i = 0; i < n; i++) x ^= (uint8_t)s[i];
-  return x;
-}
-
-/* 帧格式（COMP_FRAME_CL=0 时 35 字节，=1 时 37 字节）：
- *   关闭：$VD,SEQ,FREQx10,AMP_MG,VIB,CT,SSx100,VALID,CHK\r\n
- *         正文 30 字节 + ',' + 2 位校验 + "\r\n" = 35
- *   开启：$VD,SEQ,FREQx10,AMP_MG,VIB,CT,CL,SSx100,VALID,CHK\r\n
- *         正文 32 字节 + ',' + 2 位校验 + "\r\n" = 37（CL 插在 CT 之后）
- * CL 门控在编译期，默认关闭 ⇒ 默认构建的字节流与历史版本完全相同。
- * 返回写入的字节数（不含 \0），失败返回 -1。 */
-#if COMP_FRAME_CL
-  #define COMP_BODY_SIZE  34        /* 正文 32 + '\0' */
-  #define COMP_OUT_MIN    38        /* 整帧 37 + '\0' */
-#else
-  #define COMP_BODY_SIZE  32        /* 正文 30 + '\0' */
-  #define COMP_OUT_MIN    36        /* 整帧 35 + '\0' */
-#endif
-
+/* 比赛帧编码（现场口径）：
+ *   0x55 | 振动整数 | 振动小数 | 启停 | 接触 | 停止位(0x0D)
+ * 振动主频按 0.1Hz 拆成整数与小数；无效时两字节都发 0。
+ * 返回写入的字节数（不含 '\0'），失败返回 -1。 */
 int compBuildFrame(const Result& r, uint16_t seq, char* out, int outSize) {
-  if (!out || outSize < COMP_OUT_MIN) return -1;
+  (void)seq;   // 现场帧不带序号
 
-  const unsigned fq = encFreqX10(r);
-  const unsigned am = encAmpMg(r);
-  const unsigned vb = (unsigned)(r.vib ? 1 : 0);
-  const unsigned ct = (unsigned)(r.contact ? 1 : 0);
-  const unsigned ss = encSsX100(r);
-  const char     vd = encValid(r);
-
-  char body[COMP_BODY_SIZE];
-#if COMP_FRAME_CL
-  const unsigned cl = (unsigned)(r.closed ? 1 : 0);
-  const int n = snprintf(body, sizeof(body), "$VD,%04u,%05u,%05u,%u,%u,%u,%03u,%c",
-                         (unsigned)(seq % 10000u), fq, am, vb, ct, cl, ss, vd);
-#else
-  const int n = snprintf(body, sizeof(body), "$VD,%04u,%05u,%05u,%u,%u,%03u,%c",
-                         (unsigned)(seq % 10000u), fq, am, vb, ct, ss, vd);
+  int len = 5;
+#if COMP_FRAME_TRAILER_EN
+  len++;
 #endif
-  if (n <= 0 || n >= (int)sizeof(body)) return -1;
+  if (!out || outSize < len + 1) return -1;
 
-  const uint8_t chk = xorChk(body, n);
-  const int m = snprintf(out, (size_t)outSize, "%s,%02X\r\n", body, chk);
-  if (m <= 0 || m >= outSize) return -1;
-  return m;
+  unsigned fi = 0, fd = 0;
+  if (r.freqValid && isfinite(r.freqHz) && r.freqHz > 0.0f) {
+    unsigned fq = (unsigned)(r.freqHz * 10.0f + 0.5f);
+    fi = fq / 10u;
+    fd = fq % 10u;
+    if (fi > 255u) fi = 255u;   // 单字节上限；80~180Hz 不会触发
+  }
+
+  int i = 0;
+  out[i++] = (char)COMP_FRAME_HEADER;
+  out[i++] = (char)fi;
+  out[i++] = (char)fd;
+  out[i++] = (char)(r.vib ? 1 : 0);
+  out[i++] = (char)(r.contact ? 1 : 0);
+#if COMP_FRAME_TRAILER_EN
+  out[i++] = (char)COMP_FRAME_TRAILER;
+#endif
+  out[i] = '\0';
+  return i;
 }
+
 
 void compPeriodic(uint32_t nowMs) {
 #if COMP_FRAME_ENABLED
@@ -204,10 +155,9 @@ void outPrintBanner(void) {
             s_compReady ? "UART1 ready" : "未启用",
             PIN_COMP_TX, PIN_COMP_RX, COMP_BAUD,
             COMP_FRAME_ENABLED ? "开启" : "关闭（协议未定）");
-#if COMP_FRAME_CL
-  outPrintf("[COMP] 帧含 CL 字段：%d 字节（$VD,...,CT,CL,SSx100,VALID,CHK）\n",
-            COMP_OUT_MIN - 1);
-#endif
+  outPrintf("[COMP] 帧格式：0x55|振整数|振小数|启停|接触%s（5%s 字节）\n",
+            COMP_FRAME_TRAILER_EN ? "|停止位" : "",
+            COMP_FRAME_TRAILER_EN ? "+1" : "");
   outPrintf("命令 '?' 查看帮助\n");
 }
 

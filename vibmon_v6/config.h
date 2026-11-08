@@ -32,7 +32,7 @@
 #define PIN_COMP_RX    20
 #endif
 #ifndef COMP_BAUD
-#define COMP_BAUD      115200
+#define COMP_BAUD      9600
 #endif
 /* 比赛帧开关：协议/口径确定前保持 0，比赛口完全不发送任何字节 */
 #ifndef COMP_FRAME_ENABLED
@@ -50,6 +50,19 @@
  * closed=1 且 CT=0 即空握/无振动证据；closed=0 即尚未握下。 */
 #ifndef COMP_FRAME_CL
 #define COMP_FRAME_CL 0
+#endif
+
+/* 现场口径：9600 8N1，帧 = 0x55 | 振动整数 | 振动小数 | 启停 | 接触 | 停止位。
+ * 停止位按帧尾字节 0x0D 实现；若平台指的是 UART 的 1 位停止位（帧只有 5 字节），
+ * 把 COMP_FRAME_TRAILER_EN 改成 0 重新编译。 */
+#ifndef COMP_FRAME_HEADER
+#define COMP_FRAME_HEADER 0x55
+#endif
+#ifndef COMP_FRAME_TRAILER_EN
+#define COMP_FRAME_TRAILER_EN 1
+#endif
+#ifndef COMP_FRAME_TRAILER
+#define COMP_FRAME_TRAILER 0x0D
 #endif
 
 /* ---------- MPU6050 ---------- */

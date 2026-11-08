@@ -26,6 +26,10 @@ core/
 __pycache__/
 *.pyc
 
+# ---- 串口采集日志（体积大，不入库）----
+测试/**/*.txt
+测试/**/*.csv
+
 # ---- Arduino / arduino-cli 构建目录 ----
 build/
 build-*/
