@@ -1,0 +1,242 @@
+# vibmon v2 维护说明
+
+基于 `zlj/sketch_oct12a`（vibmon v1.1）的模块化重构版。核心算法与 v1.1 相同，这一版把它拆成模块，并修了下面列出的问题。`zlj` 原文件没有改动。
+
+当前串口只输出 Arduino 串口绘图器格式（`标签:值`）。比赛帧协议确定后再加，见「以后加比赛帧」。
+
+## 模块划分
+
+| 文件 | 模块 | 负责 | 依赖 |
+|---|---|---|---|
+| `config.h` | 配置 | 引脚、量程、采样率、滤波参数、阈值、串口参数 | 无 |
+| `mpu.h/.cpp` | MPU 驱动 | 初始化、寄存器回读校验、读加速度、I2C 错误计数 | config |
+| `sampler.h/.cpp` | 采样 | 1kHz 定时采集、样本序号和时间戳、环形缓冲、丢样和断线检测 | mpu |
+| `dsp.h/.cpp` | 信号处理 | 标定、去零偏、高通、RMS 包络、姿态支路、主频估计 | sampler, mpu |
+| `state.h/.cpp` | 状态判断 | 振动启停、启停频率、接触状态、结果有效性、超时 | dsp |
+| `output.h/.cpp` | 输出 | 绘图行、调试行、LED、串口命令 | 上面全部（只读） |
+| `vibmon_v2.ino` | 主程序 | 模块编排：运行、故障恢复、标定 | 全部 |
+| `test/` | 主机测试 | 用合成信号测 dsp + state，不参与固件编译 | — |
+
+数据流：
+
+```text
+esp_timer 1kHz → mpuReadAccel → Sample{seq, tUs, raw} → 环形缓冲      (sampler)
+loop: samplerPop → 缺样? dspOnGap → dspProcess → DspFrame           (dsp)
+      → stateOnFrame / stateTick → Result                          (state)
+      → 绘图行 / 调试行 / LED                                        (output)
+```
+
+约定：
+- 只有 `state` 产生对外结果，`output` 只读 `Result`。
+- `Result` 里的 `freqValid`、`ssValid` 为 false 时，对应数值一定是 0。比赛帧直接用 `Result`，不需要再判断。
+- 新参数一律加到 `config.h`，不在 .cpp 里写数字常量。
+
+## 相对 v1.1 的修改
+
+| 问题 | v1.1 的情况 | v2 的处理 | 位置 |
+|---|---|---|---|
+| RMS 缓冲没有清空 | `resetPipeline` 把累计和清零了，`g_envBuf` 里还是旧数据，之后累计和对不上，可能变成负数，`sqrtf` 得到 NaN | 重置时清空缓冲；每轮重新求和，消除浮点累积误差；开方前限制为非负 | `dsp.cpp envReset / dspProcess` |
+| 初始化写入没有检查 | `mpuWrite` 的返回值被丢掉 | 每次写入都检查，写完逐个回读比对，失败时报告寄存器地址 | `mpu.cpp mpuInit` |
+| 样本没有时间信息 | 缓冲里只有 xyz | 每个样本带节拍序号和 `micros()`。序号断开或间隔偏离超过 0.5ms 视为不连续 | `sampler.cpp` |
+| 丢样后照常算 | 缺样的数据仍当作等间隔窗口算主频 | 不连续时清空窗口，重新攒满 128 个连续样本才出主频；缺超过 20 个样本时滤波器和包络也重置 | `dsp.cpp dspOnGap` |
+| 启停频率统计方式 | 8s 窗内的边沿数除以时间跨度，没有超时，一次误触发就会拉偏结果 | 相邻"起"边沿算周期，取最近 4 个周期的中位数；至少 2 个周期才出数；周期最大/最小超过 1.5 倍判为节奏不稳；超过 2 倍当前周期没有新边沿就失效 | `state.cpp ss*` |
+| 主频旧值 | 只在窗口计算时更新 | 振动停止立即清零；结果超过 300ms 没更新也清零 | `state.cpp stateTick` |
+| 运行中断线 | 读失败时直接 return，一直输出最后一次的读数 | 连续 20 次读失败或 100ms 没有新样本就进入故障：清零结果，LED 快闪，每秒尝试重连，恢复后沿用原标定 | `sampler.cpp samplerSensorLost`，`.ino enterFault` |
+| NaN 进入输出 | 没有检查 | 滤波输出出现非有限值时重置流水线；主频和启停频率都检查 `isfinite`；输出前再过一遍 `fin()` | `dsp.cpp`，`state.cpp`，`output.cpp` |
+| 接触判据 | 原始数据减零偏后的模长做 EMA，振动本身会把它抬高；状态没有滞回 | 先对每个轴低通，再求模长，振动分量基本被去掉；加了滞回和 100ms 确认。**判据默认 `CT_MODE=2`：以「接触姿态」为参考点求三轴距离**（旧模式 0/1 相对"标定姿态"，实测会全程误报，保留做对比） | `dsp.cpp` 姿态支路，`state.cpp ctStep` / `stateStartTouchRef` |
+| 标定质量 | 没有检查 | 记录阶段A 的标准差和零偏模长，标定时被碰过会提示"可疑" | `dsp.cpp dspCalibrate` |
+| 削顶 | 没有检查 | 统计 \|raw\| > 32700 的样本数，在调试行里显示 | `dsp.cpp` |
+| 回调属性 | `IRAM_ATTR` 加在会调用 Wire 的 esp_timer 回调上 | 去掉，显式指定 `ESP_TIMER_TASK` | `sampler.cpp` |
+
+## 使用
+
+### 编译和烧录
+
+- 开发板选 ESP32C3 Dev Module，esp32 核心 3.3.12（已验证）
+- 看哪个口：
+  - **USB CDC On Boot = Enabled**：`Serial` 走 USB，直接用 USB 线看。三轴波形（绘图组 4）只能在这种模式下用。
+  - **Disabled**：`Serial` 走 GPIO21(TX)/GPIO20(RX)，接 USB-TTL 模块看。
+- 命令行：
+
+```bash
+arduino-cli compile -b esp32:esp32:esp32c3 --warnings all vibmon_v2
+arduino-cli compile -b esp32:esp32:esp32c3:CDCOnBoot=cdc --warnings all vibmon_v2
+```
+
+上电后先标定 3.2s（绿灯和黄灯常亮），**这段时间不要碰模块**。
+
+### 串口绘图器
+
+打开 Arduino IDE 的「工具 → 串口绘图器」，波特率 115200。在输入框里发命令切换显示内容：
+
+| 命令 | 显示 | 用途 |
+|---|---|---|
+| `1`（默认） | `Freq_Hz`、`Amp_mg`、`SS_Hz_x10`、`Vib_x50`、`Contact_x100` | 总览。启停频率乘 10、振动和接触状态放大，方便和主频画在同一坐标里 |
+| `2` | 包络、启停高/低阈值、振动状态 | 调 `TH_HI_K` / `TH_LO_K` |
+| `3` | 姿态偏差、接触阈值、接触状态 | 采接触实测数据，调 `CT_*` |
+| `4` | 高通后的 X/Y/Z 波形，1kHz | 看原始振动、谐波、削顶（需要 USB CDC） |
+| `0` | 关闭绘图 | |
+
+其他命令（文字信息会打乱绘图，看文字时请用串口监视器）：
+
+| 命令 | 作用 |
+|---|---|
+| `d` | 5Hz 调试文字行（自动关闭绘图）。`(x)` 表示该值无效 |
+| `S` | 状态汇总：结果、各项统计、标定参数 |
+| `c` | 重新标定（须静置） |
+| `n` | 清零统计 |
+| **`t`** | **记录接触姿态参考点**（握住测试件时按，等 0.8 秒）|
+| **`t0`** | 清除接触姿态参考点（换机械手/工位时用）|
+| `k0`~`k6` | 打标模式（仅输出 CSV，用于采接触判据数据）|
+| `K` | 退出打标模式 |
+| `?` | 帮助 |
+
+**⚠️ 接触判据的现场流程**（`CT_MODE=2`）：
+
+```
+上电 → 自动标定 3.2 秒（必须静置）
+     → 握住测试件 → 按 t → 等 0.8 秒
+     → 松开，状态应显示"接触 0(可信)"
+     → 开始测试
+```
+
+**每次重新标定（`c`）后必须重按 `t`** —— 标定改变零偏，
+旧参考点不在同一坐标系，固件会自动清除它（`contactValid` 同步回 false）。
+
+### LED
+
+| 状态 | 绿 | 黄 |
+|---|---|---|
+| 正常 | 1Hz 闪 | 振动中常亮 |
+| 标定中 | 常亮 | 常亮 |
+| 传感器故障 | 灭 | 4Hz 快闪 |
+
+## 调参
+
+参数都在 `config.h`。常用的几个：
+
+| 现象 | 先看 | 调整 |
+|---|---|---|
+| 振动时 `Vib` 不起来，或静止时误报 | 绘图组 2 | `TH_HI_K`、`TH_LO_K`、`TH_*_MIN_MG` |
+| 振动时主频时有时无 | 绘图组 4 看幅值；`S` 看 `zcl` | `ZCL_K` 调小（弱信号），`MIN_PERIODS` |
+| 主频跳到 2 倍频 | 绘图组 4 看波形是否畸变 | 需要实测，可能要加 FFT 辅助 |
+| 不连续计数一直增长 | `S` 看"不连续"和"读失败" | `I2C_CLOCK` 降到 100k，或 `FS_HZ` 降到 500（`FREQ_HI_HZ` 也要相应调整） |
+| 启停频率出不来 | 调试行 `SS=…(x)` | `SS_CONSIST_RATIO` 放宽，`SS_T_MIN_MS`/`SS_T_MAX_MS` |
+| 接触误判 | `S` 看"到接触姿态"距离 | 模式 2：`CT_TOUCH_MG`/`CT_TOUCH_OFF_MG`（阈值设在握住与松开典型值之间）；先确认已按 `t` 记录参考点 |
+| 握住时距离偏大（参考点没记准） | `S` 看采集提示 | 确认按 `t` 后保持了 0.8 秒不动；必要时调 `CT_REF_SETTLE_MS`/`CT_REF_AVG_MS` |
+
+## 测试
+
+`test/` 下有 12 个主机测试，全部在电脑上运行并链接**真实源码**：
+
+| 测试 | 项数 | 覆盖 |
+|---|---|---|
+| `host_test` | 14 | 主频、启停、缺样、超时（算法基线） |
+| **`ct_test`** | **39 / 23 / 22** | **接触判据（T10a~j），对应 `CT_MODE=2/0/1`** |
+| `cal_test` | 54 | 标定事务化（T01~T04） |
+| `sampler_test` | 41 | 采样器启动/停止（T04、T14） |
+| `lock_probe` | 15 | 临界区配对（7 条路径的锁深度） |
+| `timing_test` | 24 | 时序统计（EMA、水位、缺口分流） |
+| `gap_test` | 41 | 缺样通知、虚假边沿（T05、T06） |
+| `clip_test` | 38 | 削顶质量（T09） |
+| `sweep_test` | 36 | 启停/主频矩阵、谐波、边界（T07、T08） |
+| `comp_test` | 29 | 比赛帧格式（T11） |
+| `wrap_test` | 14 | 序号与时间戳回绕（T13） |
+| `recover_test` | 21 | 断线恢复与阈值契约（T12） |
+
+**`ct_test` 要跑三种 `CT_MODE`**（判据方向相反，各模式分别断言）：
+
+```bash
+g++ -std=c++17 -Wall -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test.exe   # 默认 2
+g++ -std=c++17 -Wall -DCT_MODE=0 -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test_0.exe
+g++ -std=c++17 -Wall -DCT_MODE=1 -I test -I . test/ct_test.cpp dsp.cpp state.cpp -o test/ct_test_1.exe
+```
+
+最快的入口是 `host_test`：
+
+```bash
+cd vibmon_v2
+g++ -std=c++17 -Wall -I test -I . test/host_test.cpp dsp.cpp state.cpp -o test/host_test.exe && ./test/host_test.exe
+```
+
+各测试的编译命令（含所需 `-D` 与附加源文件）见文件头部注释。
+改动任何源码后，**全部 11 个都要跑**。
+
+合成信号只能验证逻辑，**不能代替实板测试**。各项实板验证见 `../vibmon_v2_修复方案/README.md` §6。
+
+## 还没解决的问题
+
+按"已实现 / 待实测 / 未实现"三类严格区分，**不把待实测写成已达标**。
+
+| # | 项目 | 状态 | 说明 |
+|---|---|---|---|
+| 1 | **接触识别** | ✅ **已实测可用** | 判据 = 「当前姿态到**接触姿态**的距离 < 400mg」（`CT_MODE=2`）。实机准确率 **99.13%**，零误报；握住 ≈ 0~50mg、松开 ≈ 1082~1750mg，两侧余量 398/382mg。参考点由选手现场按 `t` 记录（**注意**：是"关节旋转"引起姿态变化，轻触不转测不到）。见 `../vibmon_v2_修复方案/07-Q4-实测数据与判据决策.md` |
+| 2 | 主频抗谐波 | ⚠️ **主机已验证，待实测** | 20% 二/三次谐波 × 5 相位全部算对基频，无需 FFT。实板未验 |
+| 3 | 采样时钟拍频 | ⚠️ **待实测** | 用 `T` 命令看 `spanUsMax-Min`；若抖动偏大把 `MPU_CLKSEL` 改 1（PLL） |
+| 4 | 比赛帧 | ⚠️ **通道已就绪，帧未启用** | UART1 独立通道已建（`PIN_COMP_TX/RX`），但 `COMP_FRAME_ENABLED=0`，比赛口**完全静默**。等帧口径与对接方确认 |
+| 5 | 边沿时间精度 | ✅ **主机已验证** | 阈值穿越插值把快/慢上升沿的周期差从 20~30ms 降到 0ms |
+| 6 | 全部实板项 | ⚠️ **待实测** | 见 `../vibmon_v2_修复方案/README.md` §6 各步的"实板"列 |
+| 7 | ±2Hz、0.5s | ℹ️ 工程目标 | **不是官方公布的考核标准** |
+
+## 测量能力边界（对外表述以此为准）
+
+不要写"支持任意非零频率"或"覆盖整个加速度带宽"。准确的范围如下：
+
+| 项目 | 赛题要求 | 内部可测（容错带） | 硬边界 |
+|---|---|---|---|
+| 持续振动 | 80~180 Hz | 60~220 Hz | `FREQ_LO_HZ`/`FREQ_HI_HZ` |
+| 启停频率 | 0~3 Hz | 0.1~5 Hz | `SS_T_MAX_MS=12000` → 最低 0.083Hz |
+
+- **0 Hz 启停**表示"没有周期启停"，此时 `ssValid=false`，**不是**"测得 0Hz"。持续振动和完全静止都不报启停频率。
+- **低于 0.083Hz** 需要延长观察窗口，当前配置会把超长间隔当作"新一轮"，不报读数。
+- **220Hz 以上**不作保证：周期过滤会在边界处泄漏，可能给出一个被截断的读数（偏离真实值 1.5Hz 以上），不会伪装成准确值。
+- 以上是**算法能力**，不是赛题承诺。对外只承诺 80~180Hz / ±2Hz。
+
+## 参数与自检
+
+`config.h` 末尾有 28 条编译期检查，覆盖采样率、窗口关系、奈奎斯特、启停周期顺序、DLPF 带宽、索引容量等。
+改错宏会**立即编译报错**而不是烧进去才发现。
+
+大部分核心参数带 `#ifndef` 守卫，因此命令行 `-D` 可以覆盖，便于做对比实验：
+
+```bash
+arduino-cli compile -b esp32:esp32:esp32c3 --build-property "compiler.cpp.extra_flags=-DCT_MODE=1" vibmon_v2
+```
+
+`_probe/check_params.ps1` 会自动验证这批检查（10 个错误用例都应被拦住）：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File _probe\check_params.ps1
+```
+
+## 比赛帧
+
+UART1 独立通道已就绪，与调试口完全解耦（`output.cpp compBegin`）。引脚在 `config.h` 的 `PIN_COMP_TX/PIN_COMP_RX`，
+**改引脚只需改这两行**。
+
+**当前 `COMP_FRAME_ENABLED=0`：比赛口一个字节都不发。** 这是有意的——帧口径确定前不发半成品，
+避免平台误解析。状态报告走调试口：
+
+```
+[COMP] UART1 ready TX=21 RX=20 baud=115200，帧输出 关闭（协议未定）
+```
+
+帧格式（35 字节，`compBuildFrame` 已实现并经 `comp_test` 验证）：
+
+```
+$VD,SEQ,FREQx10,AMP_MG,VIB,CT,SSx100,VALID,CHK\r\n
+```
+
+`VALID` 位图：bit0=`ampValid`、bit1=`freqValid`、bit2=`ssValid`、bit3=`contactValid`。
+**无效量一律发 0，靠 VALID 位区分"未知"与"测得 0"**——这是清单 A1 的核心要求。
+
+启用后可用 `_probe/comp_sniff.py` 校验串口输出：
+
+```bash
+python _probe/comp_sniff.py COM5 115200 --secs 60
+python _probe/comp_sniff.py --file dump.txt      # 离线校验
+```
+
+它会检查帧格式、XOR 校验、序号连续性、`VALID` 与数值的语义一致性，
+并报出任何混入比赛口的调试文字（横幅/标定/绘图/帮助）。
+
